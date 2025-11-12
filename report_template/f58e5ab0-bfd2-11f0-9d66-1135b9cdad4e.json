@@ -1,0 +1,263 @@
+{
+  "entityType" : "REPORT_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "format" : "PDF",
+      "components" : [ {
+        "background" : null,
+        "borderColor" : "#048AD3",
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "dataSources" : [ {
+          "alarmFilterConfig" : {
+            "assigneeId" : null,
+            "searchPropagatedAlarms" : false,
+            "severityList" : null,
+            "statusList" : [ "ACTIVE" ],
+            "typeList" : null
+          },
+          "dataKeys" : [ {
+            "aggregationType" : null,
+            "color" : null,
+            "decimals" : 2,
+            "label" : "ph",
+            "name" : "ph",
+            "postFuncBody" : null,
+            "settings" : {
+              "cell" : null,
+              "columnWidth" : null,
+              "header" : null,
+              "type" : "COLUMN"
+            },
+            "timewindow" : null,
+            "type" : "timeseries",
+            "units" : "pH",
+            "usePostProcessing" : false
+          }, {
+            "aggregationType" : null,
+            "color" : "#4caf50",
+            "decimals" : 2,
+            "label" : "temperatura",
+            "name" : "temperatura",
+            "postFuncBody" : null,
+            "settings" : {
+              "cell" : null,
+              "columnWidth" : null,
+              "header" : null,
+              "type" : "COLUMN"
+            },
+            "timewindow" : null,
+            "type" : "timeseries",
+            "units" : "°C",
+            "usePostProcessing" : false
+          } ],
+          "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+          "entityAliasId" : null,
+          "filterId" : null,
+          "latestDataKeys" : [ ],
+          "type" : "device"
+        } ],
+        "margins" : {
+          "bottom" : 0,
+          "left" : 0,
+          "right" : 0,
+          "top" : 20
+        },
+        "paddings" : null,
+        "showTableHeading" : true,
+        "showTimestamp" : true,
+        "subType" : null,
+        "tableHeading" : {
+          "color" : "#000",
+          "font" : {
+            "family" : "Roboto",
+            "size" : 20.0,
+            "style" : "normal",
+            "weight" : "normal"
+          },
+          "height" : 40,
+          "text" : "${entityName}",
+          "textAlignment" : "center",
+          "verticalAlignment" : "middle"
+        },
+        "tableSortOrder" : {
+          "column" : null,
+          "direction" : "DESC"
+        },
+        "timestampColumnSettings" : {
+          "cell" : null,
+          "columnWidth" : null,
+          "header" : null,
+          "type" : "COLUMN"
+        },
+        "timestampLabel" : "Tiempo",
+        "timestampPattern" : "yyyy-MM-dd HH:mm:ss",
+        "timewindow" : {
+          "aggregation" : {
+            "limit" : 200,
+            "type" : "NONE"
+          },
+          "history" : {
+            "historyType" : 0,
+            "interval" : 1000,
+            "timewindowMs" : 86400000
+          },
+          "timezone" : null
+        },
+        "type" : "TIME_SERIES_TABLE"
+      } ],
+      "entityAliases" : [ ],
+      "filters" : [ ],
+      "footer" : {
+        "components" : [ {
+          "background" : null,
+          "borderColor" : null,
+          "borderRadius" : null,
+          "borderWidth" : null,
+          "color" : "#048AD3",
+          "dataSources" : [ ],
+          "font" : {
+            "family" : "Roboto",
+            "size" : 9.0,
+            "style" : "normal",
+            "weight" : "500"
+          },
+          "height" : null,
+          "margins" : null,
+          "paddings" : {
+            "bottom" : 6,
+            "left" : 6,
+            "right" : 6,
+            "top" : 6
+          },
+          "subType" : null,
+          "textAlignment" : "center",
+          "type" : "HEADING",
+          "value" : "Page: ${pageNumber}/${totalPages}",
+          "verticalAlignment" : "middle"
+        } ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "format" : "PDF",
+      "header" : {
+        "components" : [ {
+          "background" : null,
+          "borderColor" : null,
+          "borderRadius" : null,
+          "borderWidth" : null,
+          "leftVerticalAlignment" : "middle",
+          "leftView" : {
+            "alignment" : "left",
+            "background" : null,
+            "borderColor" : null,
+            "borderRadius" : null,
+            "borderWidth" : null,
+            "customWidth" : 100,
+            "dataSources" : [ {
+              "alarmFilterConfig" : {
+                "assigneeId" : null,
+                "searchPropagatedAlarms" : false,
+                "severityList" : null,
+                "statusList" : [ "ACTIVE" ],
+                "typeList" : null
+              },
+              "dataKeys" : [ null ],
+              "deviceId" : null,
+              "entityAliasId" : null,
+              "filterId" : null,
+              "latestDataKeys" : null,
+              "type" : "device"
+            } ],
+            "imageUrl" : "tb-image;/api/images/tenant/aquafilterSVG conletras.svg",
+            "margins" : null,
+            "paddings" : null,
+            "sourceType" : "image",
+            "subType" : null,
+            "type" : "IMAGE",
+            "widthType" : "custom"
+          },
+          "margins" : null,
+          "paddings" : null,
+          "rightVerticalAlignment" : "middle",
+          "rightView" : {
+            "background" : null,
+            "borderColor" : null,
+            "borderRadius" : null,
+            "borderWidth" : null,
+            "dataSources" : [ ],
+            "margins" : null,
+            "paddings" : null,
+            "subType" : null,
+            "type" : "RICH_TEXT",
+            "value" : ""
+          },
+          "splitGap" : 10,
+          "splitPosition" : 50.0,
+          "subType" : null,
+          "type" : "SPLIT_VIEW"
+        }, {
+          "background" : null,
+          "borderColor" : null,
+          "borderRadius" : null,
+          "borderWidth" : null,
+          "color" : "#037FFD",
+          "dataSources" : [ ],
+          "font" : {
+            "family" : "Roboto",
+            "size" : 40.0,
+            "style" : "normal",
+            "weight" : "normal"
+          },
+          "height" : null,
+          "margins" : null,
+          "paddings" : null,
+          "subType" : null,
+          "textAlignment" : "center",
+          "type" : "HEADING",
+          "value" : "Informe",
+          "verticalAlignment" : "middle"
+        } ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+      "pageBackground" : "#fff",
+      "pageMargins" : {
+        "bottom" : 20,
+        "left" : 20,
+        "right" : 20,
+        "top" : 20
+      },
+      "pageOrientation" : "PORTRAIT",
+      "pageSize" : "A4",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "description" : null,
+    "externalId" : null,
+    "format" : "PDF",
+    "id" : {
+      "entityType" : "REPORT_TEMPLATE",
+      "id" : "f58e5ab0-bfd2-11f0-9d66-1135b9cdad4e"
+    },
+    "name" : "prueba telemetria",
+    "ownerId" : null,
+    "type" : "REPORT"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
