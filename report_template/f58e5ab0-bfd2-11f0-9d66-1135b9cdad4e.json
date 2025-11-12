@@ -95,12 +95,13 @@
         "timewindow" : {
           "aggregation" : {
             "limit" : 200,
-            "type" : "NONE"
+            "type" : "AVG"
           },
           "history" : {
             "historyType" : 0,
-            "interval" : 1000,
-            "timewindowMs" : 86400000
+            "interval" : 300000,
+            "quickInterval" : "CURRENT_DAY",
+            "timewindowMs" : 3600000
           },
           "timezone" : null
         },
@@ -239,7 +240,7 @@
       },
       "pageOrientation" : "PORTRAIT",
       "pageSize" : "A4",
-      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+      "timeDataPattern" : "dd MMM yyyy HH:mm"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
