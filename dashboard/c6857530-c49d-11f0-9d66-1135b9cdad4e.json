@@ -514,7 +514,7 @@
                 "name" : "ph",
                 "type" : "timeseries",
                 "label" : "ph",
-                "color" : "#2196f3",
+                "color" : "#DC21F3",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -584,7 +584,13 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.5505657990011571
+                "_hash" : 0.5505657990011571,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
