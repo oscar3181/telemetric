@@ -1,0 +1,242 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "lastConnectedGateway" : "1184ded0-bfbd-11f0-9d66-1135b9cdad4e"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ed314410-bfda-11f0-9d66-1135b9cdad4e"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "c8aae4b0-c486-11f0-9d66-1135b9cdad4e"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+    },
+    "label" : null,
+    "name" : "SUBFRIO",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ed314410-bfda-11f0-9d66-1135b9cdad4e"
+    },
+    "softwareId" : null,
+    "type" : "panel cloro ph"
+  },
+  "credentials" : {
+    "credentialsId" : "pVWgaoPm5gdzhIX4GamT",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "1184ded0-bfbd-11f0-9d66-1135b9cdad4e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 131
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1763409957013,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1763325218122,
+      "longValue" : 1763325218121,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1763474445794,
+      "longValue" : 1763474445794,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1763474445794,
+      "longValue" : 1763474445794,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1763474445241,
+      "longValue" : 1763474445241,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : 0.01,
+      "jsonValue" : null,
+      "key" : "cloro",
+      "lastUpdateTs" : 1763474437171,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "conductividad",
+      "lastUpdateTs" : 1763474437171,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "flujo",
+      "lastUpdateTs" : 1763474437171,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 3.944,
+      "jsonValue" : null,
+      "key" : "ph",
+      "lastUpdateTs" : 1763474437171,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "purga",
+      "lastUpdateTs" : 1763474437171,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "redox",
+      "lastUpdateTs" : 1763474437171,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendcloro",
+      "lastUpdateTs" : 1762961129148,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendph",
+      "lastUpdateTs" : 1762966304446,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendtemperatura",
+      "lastUpdateTs" : 1763474437171,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendturbidez",
+      "lastUpdateTs" : 1763474437169,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 21.61,
+      "jsonValue" : null,
+      "key" : "temperatura",
+      "lastUpdateTs" : 1763474437171,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.186,
+      "jsonValue" : null,
+      "key" : "turbidez",
+      "lastUpdateTs" : 1763474437171,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "wifi",
+      "lastUpdateTs" : 1763474437171,
+      "longValue" : -82,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "calculo_ph" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+          },
+          "refEntityKey" : {
+            "key" : "ph",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "ph * 2",
+      "output" : {
+        "decimalsByDefault" : 2,
+        "name" : "ph2",
+        "type" : "TIME_SERIES"
+      },
+      "useLatestTs" : true
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1762971143957,
+      "failuresEnabled" : true
+    },
+    "name" : "ph2",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "99f925f0-be87-11f0-9d66-1135b9cdad4e"
+    },
+    "type" : "SIMPLE"
+  } ]
+}
