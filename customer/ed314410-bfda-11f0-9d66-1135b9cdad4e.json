@@ -1,0 +1,35 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : "Santa María de la Cabeza 9",
+    "address2" : null,
+    "city" : "Valladolid",
+    "country" : null,
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : "control@aquafilter.es",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ed314410-bfda-11f0-9d66-1135b9cdad4e"
+    },
+    "name" : "control",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : "+34682060828",
+    "state" : "Valladolid",
+    "title" : "control",
+    "zip" : "47012"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
