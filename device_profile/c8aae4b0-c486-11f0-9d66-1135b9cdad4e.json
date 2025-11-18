@@ -3,9 +3,15 @@
   "entity" : {
     "default" : false,
     "defaultDashboardId" : null,
-    "defaultEdgeRuleChainId" : null,
+    "defaultEdgeRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "9a679f30-be87-11f0-9d66-1135b9cdad4e"
+    },
     "defaultQueueName" : null,
-    "defaultRuleChainId" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "9a3fcbe0-be87-11f0-9d66-1135b9cdad4e"
+    },
     "description" : "perfil paneles",
     "externalId" : null,
     "firmwareId" : null,
