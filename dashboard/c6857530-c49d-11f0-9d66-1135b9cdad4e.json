@@ -514,7 +514,7 @@
                 "name" : "cloro",
                 "type" : "timeseries",
                 "label" : "cloro",
-                "color" : "#2196f3",
+                "color" : "#E91E63",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -2211,12 +2211,6 @@
                   "mobileHeight" : null,
                   "row" : 14,
                   "col" : 13
-                },
-                "42920401-a0b8-c295-6247-8cdd8d79abc8" : {
-                  "sizeX" : 13,
-                  "sizeY" : 4,
-                  "row" : 10,
-                  "col" : 0
                 },
                 "5eea1b72-7d17-4f15-a206-08cfb39654d1" : {
                   "sizeX" : 13,
