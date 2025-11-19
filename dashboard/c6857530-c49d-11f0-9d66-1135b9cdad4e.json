@@ -1059,7 +1059,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "title" : "Estado ph",
+              "title" : "Estado cloro",
               "ledColor" : "#4caf50",
               "initialValue" : true,
               "performCheckStatus" : false,
@@ -1086,7 +1086,7 @@
             "datasources" : [ ],
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "d9919ea0-bf30-11f0-9d66-1135b9cdad4e"
+              "deviceId" : "bb367890-bf30-11f0-9d66-1135b9cdad4e"
             },
             "enableDataExport" : true,
             "widgetCss" : "",
