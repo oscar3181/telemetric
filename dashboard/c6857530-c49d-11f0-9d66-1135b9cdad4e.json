@@ -509,12 +509,12 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "d9919ea0-bf30-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "bb367890-bf30-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
-                "name" : "ph",
+                "name" : "cloro",
                 "type" : "timeseries",
-                "label" : "ph",
-                "color" : "#DC21F3",
+                "label" : "cloro",
+                "color" : "#2196f3",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -584,9 +584,9 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.5505657990011571,
+                "_hash" : 0.6190746563329201,
                 "aggregationType" : null,
-                "units" : null,
+                "units" : "ppm",
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
