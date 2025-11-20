@@ -509,12 +509,12 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "d9919ea0-bf30-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "bb367890-bf30-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "cloro",
                 "type" : "timeseries",
                 "label" : "cloro",
-                "color" : "#E91E63",
+                "color" : "#2196f3",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -584,13 +584,7 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.6190746563329201,
-                "aggregationType" : null,
-                "units" : "ppm",
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.5698352293005575
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
