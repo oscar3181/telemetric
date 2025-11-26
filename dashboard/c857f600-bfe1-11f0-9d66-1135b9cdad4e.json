@@ -6953,7 +6953,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "6426b1e0-c4a9-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "ph",
                 "type" : "timeseries",
@@ -7103,7 +7103,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "6426b1e0-c4a9-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "cloro",
                 "type" : "timeseries",
@@ -7247,7 +7247,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "6426b1e0-c4a9-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "conductividad",
                 "type" : "timeseries",
@@ -7397,7 +7397,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "6426b1e0-c4a9-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "temperatura",
                 "type" : "timeseries",
@@ -7547,7 +7547,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "6426b1e0-c4a9-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "turbidez",
                 "type" : "timeseries",
@@ -7697,7 +7697,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "6426b1e0-c4a9-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "redox",
                 "type" : "timeseries",
@@ -7935,8 +7935,8 @@
                   "col" : 0
                 },
                 "5b89b8d0-f884-da30-f214-17c9ab2344c3" : {
-                  "sizeX" : 44,
-                  "sizeY" : 22,
+                  "sizeX" : 47,
+                  "sizeY" : 23.5,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
                   "row" : 312,
@@ -7999,12 +7999,12 @@
                   "col" : 238
                 },
                 "ba69bfa1-d430-d96a-922e-90802cb92723" : {
-                  "sizeX" : 55,
-                  "sizeY" : 57,
+                  "sizeX" : 30,
+                  "sizeY" : 41,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 207,
-                  "col" : 23
+                  "row" : 223,
+                  "col" : 22
                 },
                 "7fc4fbe0-2a9f-cad0-8977-6fceaf0ac922" : {
                   "sizeX" : 23,
@@ -8059,7 +8059,7 @@
                   "sizeY" : 21,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 91,
+                  "row" : 93,
                   "col" : 50
                 },
                 "8f83be3f-f1d3-6ee3-7f09-64240b917f06" : {
