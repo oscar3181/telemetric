@@ -10167,7 +10167,7 @@
               },
               "background" : {
                 "type" : "image",
-                "imageUrl" : "tb-image;/api/images/system/co2_chart_card_with_background_system_widget_background.png",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
@@ -10311,7 +10311,7 @@
               },
               "background" : {
                 "type" : "image",
-                "imageUrl" : "tb-image;/api/images/system/co2_chart_card_with_background_system_widget_background.png",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
@@ -10461,7 +10461,7 @@
               },
               "background" : {
                 "type" : "image",
-                "imageUrl" : "tb-image;/api/images/system/co2_chart_card_with_background_system_widget_background.png",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
@@ -10611,7 +10611,7 @@
               },
               "background" : {
                 "type" : "image",
-                "imageUrl" : "tb-image;/api/images/system/co2_chart_card_with_background_system_widget_background.png",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
@@ -10761,7 +10761,7 @@
               },
               "background" : {
                 "type" : "image",
-                "imageUrl" : "tb-image;/api/images/system/co2_chart_card_with_background_system_widget_background.png",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
@@ -10911,7 +10911,7 @@
               },
               "background" : {
                 "type" : "image",
-                "imageUrl" : "tb-image;/api/images/system/co2_chart_card_with_background_system_widget_background.png",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
