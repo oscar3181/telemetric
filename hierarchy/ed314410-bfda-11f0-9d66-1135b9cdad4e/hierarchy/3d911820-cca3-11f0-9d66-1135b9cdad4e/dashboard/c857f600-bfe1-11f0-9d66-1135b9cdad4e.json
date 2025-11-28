@@ -7358,7 +7358,7 @@
                       "key" : "state"
                     },
                     "getTimeSeries" : {
-                      "key" : "state"
+                      "key" : "flujo"
                     },
                     "getAlarmStatus" : {
                       "severityList" : null,
