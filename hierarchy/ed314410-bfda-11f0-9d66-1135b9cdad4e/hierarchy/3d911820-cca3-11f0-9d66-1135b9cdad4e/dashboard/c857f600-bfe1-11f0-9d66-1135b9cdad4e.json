@@ -5335,8 +5335,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/bottom-right-elbow-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Bottom right elbow pipe",
@@ -5363,7 +5497,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -5400,8 +5535,352 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/right-tee-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "rightFluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "rightFlow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "rightFlowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "rightFlowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "topFluid" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "topFlow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "topFlowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "topFlowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "bottomFluid" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "bottomFlow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "bottomFlowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "bottomFlowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "rightFluidColor" : "#1EC1F480",
+                  "topFluidColor" : "#1EC1F480",
+                  "bottomFluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Right tee pipe",
@@ -5428,7 +5907,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -5465,8 +5945,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-vertical-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long vertical pipe",
@@ -5493,7 +6107,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -5530,8 +6145,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-vertical-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long vertical pipe",
@@ -5558,7 +6307,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -5595,8 +6345,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-vertical-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long vertical pipe",
@@ -5623,7 +6507,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -5660,8 +6545,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/top-right-elbow-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Top right elbow pipe",
@@ -5688,7 +6707,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -5725,8 +6745,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-horizontal-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long horizontal pipe",
@@ -5753,7 +6907,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -6053,8 +7208,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-horizontal-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long horizontal pipe",
@@ -6081,7 +7370,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -6118,8 +7408,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/left-top-elbow-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Left top elbow pipe",
@@ -6184,8 +7608,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-horizontal-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long horizontal pipe",
@@ -6212,7 +7770,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -6315,8 +7874,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/horizontal-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Horizontal pipe",
@@ -6344,7 +8037,7 @@
             "configMode" : "basic",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "d1a6f4c0-8da7-11f0-a183-ed93958ce7de"
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -6381,8 +8074,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/left-bottom-elbow-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Left bottom elbow pipe",
@@ -6410,7 +8237,7 @@
             "configMode" : "basic",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "6426b1e0-c4a9-11f0-9d66-1135b9cdad4e"
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -6447,8 +8274,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/horizontal-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Horizontal pipe",
@@ -6476,7 +8437,7 @@
             "configMode" : "basic",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "d1a6f4c0-8da7-11f0-a183-ed93958ce7de"
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -7030,8 +8991,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-vertical-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long vertical pipe",
@@ -7058,7 +9153,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -7095,8 +9191,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-vertical-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long vertical pipe",
@@ -7123,7 +9353,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -7160,8 +9391,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-vertical-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long vertical pipe",
@@ -7188,7 +9553,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -7225,8 +9591,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-vertical-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long vertical pipe",
@@ -7253,7 +9753,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -7290,8 +9791,142 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/long-vertical-pipe.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "fluid" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujo"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
+                    }
+                  },
+                  "flow" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowDirection" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : true,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flowAnimationSpeed" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 1,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "leak" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "fluidColor" : "#1EC1F480",
+                  "pipeColor" : "#FFFFFF"
+                }
               }
             },
             "title" : "Long vertical pipe",
@@ -7318,7 +9953,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
