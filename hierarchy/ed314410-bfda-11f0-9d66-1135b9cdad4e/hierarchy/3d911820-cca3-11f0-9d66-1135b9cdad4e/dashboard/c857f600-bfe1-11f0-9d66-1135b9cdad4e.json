@@ -11142,7 +11142,7 @@
             "displayTimewindow" : true,
             "actions" : { },
             "borderRadius" : null,
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "margin" : "0"
           },
           "row" : 0,
@@ -11345,7 +11345,7 @@
             "displayTimewindow" : true,
             "actions" : { },
             "borderRadius" : null,
-            "enableDataExport" : true
+            "enableDataExport" : false
           },
           "row" : 0,
           "col" : 0,
@@ -11499,7 +11499,7 @@
             "displayTimewindow" : true,
             "actions" : { },
             "borderRadius" : null,
-            "enableDataExport" : true
+            "enableDataExport" : false
           },
           "row" : 0,
           "col" : 0,
@@ -11653,7 +11653,7 @@
             "displayTimewindow" : true,
             "actions" : { },
             "borderRadius" : null,
-            "enableDataExport" : true
+            "enableDataExport" : false
           },
           "row" : 0,
           "col" : 0,
@@ -11811,7 +11811,7 @@
             "displayTimewindow" : true,
             "actions" : { },
             "borderRadius" : null,
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "margin" : "0"
           },
           "row" : 0,
@@ -11984,7 +11984,7 @@
             "displayTimewindow" : true,
             "actions" : { },
             "borderRadius" : null,
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "margin" : "0"
           },
           "row" : 0,
