@@ -11894,7 +11894,7 @@
               "defaultColor" : "#AA00E6",
               "minValue" : 0,
               "maxValue" : 20000,
-              "majorTicksCount" : 10,
+              "majorTicksCount" : 5,
               "colorMajorTicks" : "#444",
               "minorTicks" : 10,
               "colorMinorTicks" : "#666",
@@ -12346,8 +12346,8 @@
                   "col" : 414
                 },
                 "1819b88b-1056-8ba2-3dd8-8f8858efb56e" : {
-                  "sizeX" : 82,
-                  "sizeY" : 71,
+                  "sizeX" : 118,
+                  "sizeY" : 98,
                   "row" : 383,
                   "col" : 509
                 }
