@@ -82,7 +82,7 @@
               "xPosKeyName" : "xPos",
               "yPosKeyName" : "yPos",
               "defaultZoomLevel" : 15,
-              "defaultCenterPosition" : "0,0",
+              "defaultCenterPosition" : "5",
               "disableScrollZooming" : false,
               "disableDoubleClickZooming" : false,
               "disableZoomControl" : false,
@@ -12365,7 +12365,7 @@
                   "sizeX" : 24,
                   "sizeY" : 12,
                   "row" : 2,
-                  "col" : 0
+                  "col" : 1
                 }
               },
               "gridSettings" : {
