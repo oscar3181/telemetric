@@ -12510,8 +12510,8 @@
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 0,
-                  "col" : 526
+                  "row" : 1,
+                  "col" : 528
                 }
               },
               "gridSettings" : {
