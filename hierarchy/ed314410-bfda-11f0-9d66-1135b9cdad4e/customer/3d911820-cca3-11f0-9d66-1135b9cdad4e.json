@@ -1,0 +1,43 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Frio Cubir Valladolid",
+      "allowWhiteLabeling" : false,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : "Spain",
+    "customMenuId" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ed314410-bfda-11f0-9d66-1135b9cdad4e"
+    },
+    "email" : "info@aquafilter.es",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3d911820-cca3-11f0-9d66-1135b9cdad4e"
+    },
+    "name" : "Frio Cubir Valladolid",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ed314410-bfda-11f0-9d66-1135b9cdad4e"
+    },
+    "parentCustomerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ed314410-bfda-11f0-9d66-1135b9cdad4e"
+    },
+    "phone" : null,
+    "state" : null,
+    "title" : "Frio Cubir Valladolid",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
