@@ -228,7 +228,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "ph",
                 "type" : "timeseries",
@@ -430,7 +430,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "cloro",
                 "type" : "timeseries",
@@ -589,7 +589,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "temperatura",
                 "type" : "timeseries",
@@ -743,7 +743,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "turbidez",
                 "type" : "timeseries",
@@ -903,7 +903,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "redox",
                 "type" : "timeseries",
@@ -1062,7 +1062,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "flujo",
                 "type" : "timeseries",
@@ -1231,7 +1231,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "temperatura",
                 "type" : "timeseries",
@@ -1607,7 +1607,8 @@
                 "lineHeight" : "16px"
               },
               "tooltipLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipHideZeroValues" : null
+              "tooltipHideZeroValues" : null,
+              "tooltipStackedShowTotal" : false
             },
             "title" : "Time series chart",
             "dropShadow" : true,
@@ -1671,7 +1672,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "cloro",
                 "type" : "timeseries",
@@ -2047,7 +2048,8 @@
                 "lineHeight" : "16px"
               },
               "tooltipLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipHideZeroValues" : null
+              "tooltipHideZeroValues" : null,
+              "tooltipStackedShowTotal" : false
             },
             "title" : "Time series chart",
             "dropShadow" : true,
@@ -2111,7 +2113,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "ph",
                 "type" : "timeseries",
@@ -2487,7 +2489,8 @@
                 "lineHeight" : "16px"
               },
               "tooltipLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipHideZeroValues" : null
+              "tooltipHideZeroValues" : null,
+              "tooltipStackedShowTotal" : false
             },
             "title" : "Time series chart",
             "dropShadow" : true,
@@ -2551,7 +2554,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "turbidez",
                 "type" : "timeseries",
@@ -2927,7 +2930,8 @@
                 "lineHeight" : "16px"
               },
               "tooltipLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipHideZeroValues" : null
+              "tooltipHideZeroValues" : null,
+              "tooltipStackedShowTotal" : false
             },
             "title" : "Time series chart",
             "dropShadow" : true,
@@ -2991,7 +2995,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "redox",
                 "type" : "timeseries",
@@ -3369,7 +3373,8 @@
                 "lineHeight" : "16px"
               },
               "tooltipLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipHideZeroValues" : null
+              "tooltipHideZeroValues" : null,
+              "tooltipStackedShowTotal" : false
             },
             "title" : "Time series chart",
             "dropShadow" : true,
@@ -3433,7 +3438,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "13a61540-8100-11f0-98c5-f52598b463af",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "flujo",
                 "type" : "timeseries",
@@ -3809,7 +3814,8 @@
                 "lineHeight" : "16px"
               },
               "tooltipLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipHideZeroValues" : null
+              "tooltipHideZeroValues" : null,
+              "tooltipStackedShowTotal" : false
             },
             "title" : "Time series chart",
             "dropShadow" : true,
