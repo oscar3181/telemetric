@@ -10133,15 +10133,9 @@
                 "name" : "ph",
                 "type" : "timeseries",
                 "label" : "ph 2",
-                "color" : "#048AD3",
+                "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.6907839635813658,
-                "aggregationType" : "NONE",
-                "units" : "pH",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.9860997277130399
               } ]
             } ],
             "showTitle" : false,
@@ -12114,16 +12108,16 @@
                   "sizeY" : 93,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 440,
-                  "col" : 155
+                  "row" : 349,
+                  "col" : 136
                 },
                 "b3446df8-fa35-9440-1aa7-306db690739c" : {
                   "sizeX" : 99,
                   "sizeY" : 93,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 447,
-                  "col" : 257
+                  "row" : 348,
+                  "col" : 242
                 },
                 "7ab936e6-3a8c-383a-0cd9-43f2da7a6878" : {
                   "sizeX" : 44,
@@ -12342,14 +12336,14 @@
                 "8a7b229e-321a-2b22-70b7-457efb6ea3b0" : {
                   "sizeX" : 81,
                   "sizeY" : 68,
-                  "row" : 383,
-                  "col" : 414
+                  "row" : 376,
+                  "col" : 509
                 },
                 "1819b88b-1056-8ba2-3dd8-8f8858efb56e" : {
                   "sizeX" : 80,
                   "sizeY" : 69,
-                  "row" : 383,
-                  "col" : 504
+                  "row" : 375,
+                  "col" : 600
                 }
               },
               "gridSettings" : {
@@ -12575,15 +12569,14 @@
       },
       "filters" : { },
       "timewindow" : {
-        "displayValue" : "",
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
         "selectedTab" : 0,
         "realtime" : {
           "realtimeType" : 0,
-          "interval" : 1000,
-          "timewindowMs" : 60000,
+          "interval" : 300000,
+          "timewindowMs" : 86400000,
           "quickInterval" : "CURRENT_DAY",
           "hideInterval" : false,
           "hideLastInterval" : false,
@@ -12593,10 +12586,7 @@
           "historyType" : 0,
           "interval" : 1000,
           "timewindowMs" : 60000,
-          "fixedTimewindow" : {
-            "startTimeMs" : 1748265286291,
-            "endTimeMs" : 1748351686291
-          },
+          "fixedTimewindow" : null,
           "quickInterval" : "CURRENT_DAY",
           "hideInterval" : false,
           "hideLastInterval" : false,
@@ -12606,7 +12596,8 @@
         "aggregation" : {
           "type" : "AVG",
           "limit" : 25000
-        }
+        },
+        "timezone" : null
       },
       "settings" : {
         "stateControllerId" : "entity",
