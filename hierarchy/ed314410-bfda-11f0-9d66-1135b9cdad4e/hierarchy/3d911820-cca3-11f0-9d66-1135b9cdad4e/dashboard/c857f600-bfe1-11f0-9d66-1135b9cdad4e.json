@@ -1322,8 +1322,8 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 5000,
-                "timewindowMs" : 1800000,
+                "interval" : 300000,
+                "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -1333,10 +1333,7 @@
                 "historyType" : 0,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1755453688760,
-                  "endTimeMs" : 1755540088760
-                },
+                "fixedTimewindow" : null,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -1763,8 +1760,8 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 5000,
-                "timewindowMs" : 1800000,
+                "interval" : 300000,
+                "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -1774,10 +1771,7 @@
                 "historyType" : 0,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1755453688760,
-                  "endTimeMs" : 1755540088760
-                },
+                "fixedTimewindow" : null,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -2204,8 +2198,8 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 5000,
-                "timewindowMs" : 900000,
+                "interval" : 300000,
+                "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -2215,10 +2209,7 @@
                 "historyType" : 0,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1755453688760,
-                  "endTimeMs" : 1755540088760
-                },
+                "fixedTimewindow" : null,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -3086,8 +3077,8 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 5000,
-                "timewindowMs" : 1800000,
+                "interval" : 300000,
+                "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -3097,10 +3088,7 @@
                 "historyType" : 0,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1755453688760,
-                  "endTimeMs" : 1755540088760
-                },
+                "fixedTimewindow" : null,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -3529,8 +3517,8 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 60000,
-                "timewindowMs" : 3600000,
+                "interval" : 300000,
+                "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -3540,10 +3528,7 @@
                 "historyType" : 0,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1755453688760,
-                  "endTimeMs" : 1755540088760
-                },
+                "fixedTimewindow" : null,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
