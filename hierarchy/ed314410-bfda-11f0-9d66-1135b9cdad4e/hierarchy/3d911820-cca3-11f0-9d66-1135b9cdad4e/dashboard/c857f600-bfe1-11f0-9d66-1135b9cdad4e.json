@@ -5546,8 +5546,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "flujo"
@@ -5558,8 +5558,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                      "compareToValue" : 1
+                      "compareToValue" : 1,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
                   "rightFlow" : {
@@ -5641,7 +5641,7 @@
                     }
                   },
                   "topFluid" : {
-                    "action" : "DO_NOTHING",
+                    "action" : "GET_TIME_SERIES",
                     "defaultValue" : false,
                     "executeRpc" : {
                       "method" : "getState",
@@ -5650,11 +5650,11 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
+                      "scope" : null,
+                      "key" : "state"
                     },
                     "getTimeSeries" : {
-                      "key" : "state"
+                      "key" : "flujo"
                     },
                     "getAlarmStatus" : {
                       "severityList" : null,
@@ -5662,8 +5662,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
                     }
                   },
                   "topFlow" : {
@@ -5745,7 +5745,7 @@
                     }
                   },
                   "bottomFluid" : {
-                    "action" : "DO_NOTHING",
+                    "action" : "GET_TIME_SERIES",
                     "defaultValue" : false,
                     "executeRpc" : {
                       "method" : "getState",
@@ -5754,11 +5754,11 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
+                      "scope" : null,
+                      "key" : "state"
                     },
                     "getTimeSeries" : {
-                      "key" : "state"
+                      "key" : "flujo"
                     },
                     "getAlarmStatus" : {
                       "severityList" : null,
@@ -5766,8 +5766,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
                     }
                   },
                   "bottomFlow" : {
@@ -5849,7 +5849,7 @@
                     }
                   },
                   "leak" : {
-                    "action" : "DO_NOTHING",
+                    "action" : "GET_TIME_SERIES",
                     "defaultValue" : false,
                     "executeRpc" : {
                       "method" : "getState",
@@ -5858,11 +5858,11 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
+                      "scope" : null,
+                      "key" : "state"
                     },
                     "getTimeSeries" : {
-                      "key" : "state"
+                      "key" : "flujo"
                     },
                     "getAlarmStatus" : {
                       "severityList" : null,
@@ -5870,8 +5870,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 1
                     }
                   }
                 },
