@@ -11840,7 +11840,13 @@
                 "label" : "conductividad",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.48925684808875847
+                "_hash" : 0.48925684808875847,
+                "aggregationType" : "NONE",
+                "units" : "µS/cm",
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -11940,7 +11946,7 @@
               "colorNeedleEnd" : null,
               "colorNeedleShadowUp" : "rgba(2, 255, 255, 0)",
               "colorNeedleShadowDown" : "rgba(188, 143, 143, 0.78)",
-              "highlightsWidth" : 15,
+              "highlightsWidth" : 10,
               "highlights" : [ {
                 "from" : 0,
                 "to" : 500,
@@ -11956,7 +11962,7 @@
               }, {
                 "from" : 2000,
                 "to" : 5000,
-                "color" : "rgba(59, 81, 102, 0.87)"
+                "color" : "rgba(59, 78, 102, 0.87)"
               }, {
                 "from" : 5000,
                 "to" : 20000,
