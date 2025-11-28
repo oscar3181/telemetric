@@ -5650,8 +5650,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "flujo"
@@ -5662,8 +5662,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                      "compareToValue" : 1
+                      "compareToValue" : 1,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
                   "topFlow" : {
@@ -5754,8 +5754,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "flujo"
@@ -5766,8 +5766,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                      "compareToValue" : 1
+                      "compareToValue" : 1,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
                   "bottomFlow" : {
@@ -5849,7 +5849,7 @@
                     }
                   },
                   "leak" : {
-                    "action" : "GET_TIME_SERIES",
+                    "action" : "DO_NOTHING",
                     "defaultValue" : false,
                     "executeRpc" : {
                       "method" : "getState",
@@ -5905,7 +5905,7 @@
             "titleIcon" : "mdi:lightbulb-outline",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
               "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
