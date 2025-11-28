@@ -11171,7 +11171,7 @@
                 "label" : "ph",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.9897964737150174
+                "_hash" : 0.8497025849368461
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -11681,7 +11681,7 @@
                 "label" : "redox",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.9409232138570305
+                "_hash" : 0.8421530048421023
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -12346,10 +12346,10 @@
                   "col" : 414
                 },
                 "1819b88b-1056-8ba2-3dd8-8f8858efb56e" : {
-                  "sizeX" : 118,
-                  "sizeY" : 98,
+                  "sizeX" : 80,
+                  "sizeY" : 69,
                   "row" : 383,
-                  "col" : 509
+                  "col" : 504
                 }
               },
               "gridSettings" : {
