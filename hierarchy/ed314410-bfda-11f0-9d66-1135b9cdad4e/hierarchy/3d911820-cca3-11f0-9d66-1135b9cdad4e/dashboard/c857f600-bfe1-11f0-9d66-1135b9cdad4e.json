@@ -1064,18 +1064,12 @@
               "name" : "",
               "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
-                "name" : "flujo",
+                "name" : "conductividad",
                 "type" : "timeseries",
-                "label" : "flujo",
+                "label" : "conductividad",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.968109657970293,
-                "aggregationType" : "NONE",
-                "units" : "µS/cm",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.8322767944203129
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
