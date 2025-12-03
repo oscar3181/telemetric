@@ -8732,8 +8732,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : "SHARED_SCOPE",
-                      "key" : "running"
+                      "key" : "running",
+                      "scope" : "SHARED_SCOPE"
                     },
                     "getTimeSeries" : {
                       "key" : "flujo"
@@ -8744,8 +8744,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                      "compareToValue" : 1
+                      "compareToValue" : 1,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
                   "warning" : {
@@ -8840,7 +8840,7 @@
                   "runningColor" : "#1C943E",
                   "stoppedColor" : "#696969",
                   "warningColor" : "#FAA405",
-                  "criticalColor" : "#D12730"
+                  "criticalColor" : "#8BC34A"
                 }
               },
               "background" : {
