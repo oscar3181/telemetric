@@ -8719,17 +8719,6 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0",
             "settings" : {
-              "background" : {
-                "type" : "color",
-                "imageUrl" : null,
-                "color" : "rgba(0,0,0,0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              },
-              "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/small-left-motor-pump.svg",
               "scadaSymbolObjectSettings" : {
                 "behavior" : {
@@ -8853,7 +8842,18 @@
                   "warningColor" : "#FAA405",
                   "criticalColor" : "#D12730"
                 }
-              }
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                },
+                "imageUrl" : null
+              },
+              "padding" : "0"
             },
             "title" : "Small left motor pump",
             "dropShadow" : false,
@@ -12394,10 +12394,10 @@
                 },
                 "fe02470b-9e84-0a2d-e1fe-44f05297efe0" : {
                   "sizeX" : 164,
-                  "sizeY" : 172,
+                  "sizeY" : 186,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 14,
+                  "row" : 0,
                   "col" : 71
                 },
                 "076018e4-95bb-c910-9a90-185b3c041273" : {
