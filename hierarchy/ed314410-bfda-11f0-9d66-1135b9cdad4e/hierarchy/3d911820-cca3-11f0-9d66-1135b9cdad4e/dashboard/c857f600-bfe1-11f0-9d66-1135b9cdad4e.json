@@ -8732,8 +8732,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "key" : "running",
-                      "scope" : "SHARED_SCOPE"
+                      "scope" : "SHARED_SCOPE",
+                      "key" : "running"
                     },
                     "getTimeSeries" : {
                       "key" : "flujo"
@@ -8744,8 +8744,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "compareToValue" : 1,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : 0
                     }
                   },
                   "warning" : {
