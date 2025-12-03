@@ -8745,11 +8745,11 @@
                     "dataToValue" : {
                       "type" : "NONE",
                       "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                      "compareToValue" : 0
+                      "compareToValue" : 1
                     }
                   },
                   "warning" : {
-                    "action" : "GET_ALARM_STATUS",
+                    "action" : "DO_NOTHING",
                     "defaultValue" : false,
                     "executeRpc" : {
                       "method" : "getState",
@@ -8758,8 +8758,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
+                      "scope" : null,
+                      "key" : "state"
                     },
                     "getTimeSeries" : {
                       "key" : "state"
@@ -8770,12 +8770,12 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : true
                     }
                   },
                   "critical" : {
-                    "action" : "GET_ALARM_STATUS",
+                    "action" : "DO_NOTHING",
                     "defaultValue" : false,
                     "executeRpc" : {
                       "method" : "getState",
@@ -8784,8 +8784,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
+                      "scope" : null,
+                      "key" : "state"
                     },
                     "getTimeSeries" : {
                       "key" : "state"
@@ -8796,8 +8796,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
+                      "compareToValue" : true
                     }
                   },
                   "criticalAnimation" : {
@@ -8840,7 +8840,7 @@
                   "runningColor" : "#1C943E",
                   "stoppedColor" : "#696969",
                   "warningColor" : "#FAA405",
-                  "criticalColor" : "#8BC34A"
+                  "criticalColor" : "#F44336"
                 }
               },
               "background" : {
