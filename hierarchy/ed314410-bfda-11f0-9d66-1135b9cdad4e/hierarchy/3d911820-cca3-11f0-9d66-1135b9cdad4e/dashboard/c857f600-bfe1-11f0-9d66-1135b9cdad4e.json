@@ -907,10 +907,17 @@
               "dataKeys" : [ {
                 "name" : "redox",
                 "type" : "timeseries",
-                "label" : "redox",
+                "label" : "Promedio redox",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.9409232138570305
+                "_hash" : 0.9409232138570305,
+                "aggregationType" : "AVG",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null,
+                "comparisonEnabled" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1347,15 +1354,13 @@
             "settings" : {
               "showLegend" : true,
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
+                "showAvg" : false,
                 "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showLatest" : true
               },
               "thresholds" : [ ],
               "dataZoom" : true,
@@ -1606,7 +1611,7 @@
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
@@ -1785,15 +1790,13 @@
             "settings" : {
               "showLegend" : true,
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
+                "showAvg" : false,
                 "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showLatest" : true
               },
               "thresholds" : [ ],
               "dataZoom" : true,
@@ -2223,15 +2226,13 @@
             "settings" : {
               "showLegend" : true,
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
+                "showAvg" : false,
                 "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showLatest" : true
               },
               "thresholds" : [ ],
               "dataZoom" : true,
@@ -2664,15 +2665,13 @@
             "settings" : {
               "showLegend" : true,
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
+                "showAvg" : false,
                 "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showLatest" : true
               },
               "thresholds" : [ ],
               "dataZoom" : true,
@@ -3102,15 +3101,13 @@
             "settings" : {
               "showLegend" : true,
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
+                "showAvg" : false,
                 "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showLatest" : true
               },
               "thresholds" : [ ],
               "dataZoom" : true,
