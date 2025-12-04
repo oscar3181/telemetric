@@ -2982,7 +2982,7 @@
               "name" : "",
               "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
-                "name" : "conductividad",
+                "name" : "redox",
                 "type" : "timeseries",
                 "label" : "Redox",
                 "color" : "#E89623",
@@ -3055,7 +3055,7 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.9951894043765774,
+                "_hash" : 0.3278784377304922,
                 "units" : "mV",
                 "decimals" : 2
               } ],
