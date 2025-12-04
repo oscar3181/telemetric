@@ -3542,15 +3542,13 @@
             "settings" : {
               "showLegend" : true,
               "legendConfig" : {
-                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
-                "showAvg" : true,
+                "showAvg" : false,
                 "showTotal" : false,
-                "showLatest" : false,
-                "valueFormat" : null
+                "showLatest" : true
               },
               "thresholds" : [ ],
               "dataZoom" : true,
@@ -3796,7 +3794,7 @@
               "tooltipHideZeroValues" : null,
               "tooltipStackedShowTotal" : false
             },
-            "title" : "Time series chart",
+            "title" : "Serie temporal ",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
