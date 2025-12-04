@@ -3422,7 +3422,7 @@
               "name" : "",
               "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
-                "name" : "flujo",
+                "name" : "conductividad",
                 "type" : "timeseries",
                 "label" : "Conductividad",
                 "color" : "#6F113A",
@@ -3495,7 +3495,7 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.28338168337441083,
+                "_hash" : 0.13143856091966222,
                 "units" : "µS/cm",
                 "decimals" : 0
               } ],
