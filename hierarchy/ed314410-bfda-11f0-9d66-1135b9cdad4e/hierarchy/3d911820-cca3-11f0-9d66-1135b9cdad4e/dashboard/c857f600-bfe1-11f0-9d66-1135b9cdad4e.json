@@ -2982,7 +2982,7 @@
               "name" : "",
               "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
-                "name" : "redox",
+                "name" : "conductividad",
                 "type" : "timeseries",
                 "label" : "Redox",
                 "color" : "#E89623",
@@ -3055,7 +3055,7 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.7349906501453876,
+                "_hash" : 0.9951894043765774,
                 "units" : "mV",
                 "decimals" : 2
               } ],
@@ -3512,7 +3512,7 @@
               "realtime" : {
                 "realtimeType" : 0,
                 "interval" : 300000,
-                "timewindowMs" : 86400000,
+                "timewindowMs" : 43200000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -3530,7 +3530,7 @@
                 "hideQuickInterval" : false
               },
               "aggregation" : {
-                "type" : "AVG",
+                "type" : "NONE",
                 "limit" : 25000
               },
               "timezone" : null
