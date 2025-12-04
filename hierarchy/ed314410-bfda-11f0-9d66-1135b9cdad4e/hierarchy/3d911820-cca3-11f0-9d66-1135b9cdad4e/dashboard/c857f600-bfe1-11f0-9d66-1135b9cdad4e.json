@@ -907,11 +907,11 @@
               "dataKeys" : [ {
                 "name" : "redox",
                 "type" : "timeseries",
-                "label" : "Promedio redox",
+                "label" : "redox",
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.9409232138570305,
-                "aggregationType" : "AVG",
+                "aggregationType" : "NONE",
                 "units" : null,
                 "decimals" : null,
                 "funcBody" : null,
