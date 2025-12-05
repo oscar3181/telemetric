@@ -3779,7 +3779,7 @@
               "useRowStyleFunction" : false,
               "rowStyleFunction" : ""
             },
-            "title" : "Alarms table",
+            "title" : "Tabla de alarmas",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
@@ -3790,10 +3790,9 @@
             "useDashboardTimewindow" : false,
             "showLegend" : false,
             "alarmSource" : {
-              "type" : "entity",
+              "type" : "device",
               "name" : "",
-              "deviceId" : "a81134f0-3bfd-11f0-9584-abfdb9c61187",
-              "entityAliasId" : "813afac6-fac1-9d0c-6669-421ec2cb6960",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
                 "name" : "createdTime",
                 "type" : "alarm",
@@ -3886,12 +3885,18 @@
               "typeList" : [ "General Alarm", "desconectado" ],
               "searchPropagatedAlarms" : false,
               "assignedToCurrentUser" : false,
-              "assigneeId" : null
+              "assigneeId" : {
+                "entityType" : "USER",
+                "id" : "061d1370-ccae-11f0-9d66-1135b9cdad4e"
+              }
             },
             "datasources" : [ ],
             "titleFont" : null,
             "titleColor" : null,
-            "enableDataExport" : true
+            "enableDataExport" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
