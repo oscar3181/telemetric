@@ -1208,7 +1208,7 @@
             "widgetStyle" : { },
             "widgetCss" : "",
             "pageSize" : 1024,
-            "decimals" : 2,
+            "decimals" : 0,
             "noDataDisplayMessage" : "",
             "configMode" : "advanced",
             "units" : "µS/cm",
@@ -1323,7 +1323,7 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 300000,
+                "interval" : 3600000,
                 "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
@@ -1759,7 +1759,7 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 300000,
+                "interval" : 3600000,
                 "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
@@ -2168,7 +2168,7 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 300000,
+                "interval" : 3600000,
                 "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
@@ -2577,7 +2577,7 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 300000,
+                "interval" : 3600000,
                 "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
@@ -2588,10 +2588,7 @@
                 "historyType" : 0,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1755453688760,
-                  "endTimeMs" : 1755540088760
-                },
+                "fixedTimewindow" : null,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -2989,7 +2986,7 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 300000,
+                "interval" : 3600000,
                 "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
@@ -3055,7 +3052,7 @@
               "yAxes" : {
                 "default" : {
                   "units" : "mV",
-                  "decimals" : 2,
+                  "decimals" : 0,
                   "show" : true,
                   "label" : "Redox",
                   "labelFont" : {
@@ -3089,6 +3086,37 @@
                   "order" : 0,
                   "min" : 0,
                   "max" : 1000
+                },
+                "axis1" : {
+                  "show" : false,
+                  "labelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "600",
+                    "lineHeight" : "1"
+                  },
+                  "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "showTickLabels" : true,
+                  "tickLabelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "400",
+                    "lineHeight" : "1"
+                  },
+                  "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                  "ticksFormatter" : null,
+                  "showTicks" : true,
+                  "ticksColor" : "rgba(0, 0, 0, 0.54)",
+                  "showLine" : true,
+                  "lineColor" : "rgba(0, 0, 0, 0.54)",
+                  "showSplitLines" : true,
+                  "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
+                  "id" : "axis1",
+                  "order" : 1
                 }
               },
               "thresholds" : [ ],
@@ -3400,8 +3428,8 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 300000,
-                "timewindowMs" : 43200000,
+                "interval" : 3600000,
+                "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -3419,7 +3447,7 @@
                 "hideQuickInterval" : false
               },
               "aggregation" : {
-                "type" : "NONE",
+                "type" : "AVG",
                 "limit" : 25000
               },
               "timezone" : null
@@ -10050,18 +10078,18 @@
               },
               "background" : {
                 "type" : "color",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 0
-                },
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
+                }
               },
               "padding" : "0"
             },
             "title" : "pH",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -10087,7 +10115,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 1,
             "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : "0",
+            "borderRadius" : " 2",
             "units" : "ph",
             "displayTimewindow" : false,
             "timewindow" : {
@@ -11518,7 +11546,7 @@
               "padding" : "0"
             },
             "title" : "Cloro libre",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -11544,7 +11572,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 1,
             "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : "0",
+            "borderRadius" : " ",
             "units" : "ppm",
             "displayTimewindow" : false,
             "timewindow" : {
@@ -11586,7 +11614,7 @@
             "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "0"
+            "margin" : "10px"
           },
           "row" : 0,
           "col" : 0,
@@ -11656,7 +11684,7 @@
               "padding" : "0"
             },
             "title" : "Conductividad",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -11724,7 +11752,7 @@
             "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "0"
+            "margin" : "10px"
           },
           "row" : 0,
           "col" : 0,
@@ -11794,7 +11822,7 @@
               "padding" : "0"
             },
             "title" : "Redox",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -11932,7 +11960,7 @@
               "padding" : "0"
             },
             "title" : "Temperatura",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -12070,7 +12098,7 @@
               "padding" : "0"
             },
             "title" : "Turbidez",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -12409,12 +12437,12 @@
                   "col" : 282
                 },
                 "3e723449-1ebb-bfe7-2ccd-2bf8525dbab5" : {
-                  "sizeX" : 192,
-                  "sizeY" : 80,
+                  "sizeX" : 189,
+                  "sizeY" : 85,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 36,
+                  "row" : 32,
                   "col" : 406
                 },
                 "9897931a-e536-8e4b-267e-4dd9b6d4c7c3" : {
@@ -12430,13 +12458,13 @@
                   "col" : 692
                 },
                 "c252bc7f-128e-f112-7cd4-4f80d269e73f" : {
-                  "sizeX" : 79,
+                  "sizeX" : 80,
                   "sizeY" : 69,
                   "row" : 445,
                   "col" : 605
                 },
                 "1d3cbb12-fa29-cb1d-0201-d3e301fd607f" : {
-                  "sizeX" : 83,
+                  "sizeX" : 91,
                   "sizeY" : 69,
                   "row" : 445,
                   "col" : 503
@@ -12470,26 +12498,26 @@
                   "col" : 696
                 },
                 "6e0b05dd-c8c7-e480-b114-403b75121552" : {
-                  "sizeX" : 188,
-                  "sizeY" : 79,
+                  "sizeX" : 203,
+                  "sizeY" : 93,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 36,
-                  "col" : 609
+                  "row" : 27,
+                  "col" : 602
                 },
                 "dc225c23-5974-be57-d02f-005bd40094e8" : {
-                  "sizeX" : 191,
-                  "sizeY" : 85,
+                  "sizeX" : 203,
+                  "sizeY" : 93,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 126,
-                  "col" : 406
+                  "row" : 120,
+                  "col" : 399
                 },
                 "59516c58-fa4a-a09c-13d1-7fe2edbd381f" : {
                   "sizeX" : 203,
-                  "sizeY" : 95,
+                  "sizeY" : 93,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
