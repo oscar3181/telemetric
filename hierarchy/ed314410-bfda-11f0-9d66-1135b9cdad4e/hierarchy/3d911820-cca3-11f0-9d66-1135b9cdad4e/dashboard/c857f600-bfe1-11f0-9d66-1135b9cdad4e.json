@@ -9999,12 +9999,12 @@
                 "name" : "ph",
                 "type" : "timeseries",
                 "label" : "ph",
-                "color" : "var(--tb-primary-500)",
+                "color" : "rgb(4, 138, 211)",
                 "settings" : { },
                 "_hash" : 0.6752236257563727,
                 "aggregationType" : null,
                 "units" : "pH",
-                "decimals" : null,
+                "decimals" : 2,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
@@ -10015,27 +10015,33 @@
               "latestDataKeys" : [ {
                 "name" : "ph",
                 "type" : "timeseries",
-                "label" : "ph 2",
-                "color" : "#4caf50",
+                "label" : "Latest",
+                "color" : "rgb(4, 138, 211)",
                 "settings" : { },
-                "_hash" : 0.9860997277130399
+                "_hash" : 0.6752236257563727,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ]
             } ],
-            "showTitle" : false,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : null,
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgb(0, 0, 0)",
             "padding" : "0",
             "settings" : {
-              "layout" : "left",
-              "autoScale" : true,
+              "layout" : "right",
+              "autoScale" : false,
               "showValue" : true,
               "valueFont" : {
-                "family" : "Roboto",
-                "size" : 28,
+                "size" : 12,
                 "sizeUnit" : "px",
-                "style" : "normal",
+                "family" : "Roboto",
                 "weight" : "500",
-                "lineHeight" : "32px"
+                "style" : "normal",
+                "lineHeight" : "12px"
               },
               "valueColor" : {
                 "type" : "constant",
@@ -10043,34 +10049,34 @@
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "background" : {
-                "type" : "image",
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
+                "type" : "color",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
                   "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 2
-                }
+                  "blur" : 0
+                },
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
               },
               "padding" : "0"
             },
-            "title" : "Simple Value and chart card",
+            "title" : "pH",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "titleStyle" : null,
             "mobileHeight" : null,
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 16,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "24px"
+              "lineHeight" : "12px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10080,10 +10086,10 @@
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
             "decimals" : 2,
-            "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "borderRadius" : null,
+            "titleColor" : "rgb(0, 0, 0)",
+            "borderRadius" : "0",
             "units" : "ph",
-            "displayTimewindow" : true,
+            "displayTimewindow" : false,
             "timewindow" : {
               "hideAggregation" : false,
               "hideAggInterval" : false,
@@ -10143,7 +10149,7 @@
                 "name" : "cloro",
                 "type" : "timeseries",
                 "label" : "cloro",
-                "color" : "#9C27B0",
+                "color" : "rgb(4, 138, 211)",
                 "settings" : { },
                 "_hash" : 0.07263637661066147,
                 "aggregationType" : null,
@@ -10160,26 +10166,32 @@
                 "name" : "cloro",
                 "type" : "timeseries",
                 "label" : "cloro 2",
-                "color" : "#9C27B0",
+                "color" : "rgb(4, 138, 211)",
                 "settings" : { },
-                "_hash" : 0.1987693155175395
+                "_hash" : 0.1987693155175395,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ]
             } ],
-            "showTitle" : false,
+            "showTitle" : true,
             "backgroundColor" : "rgba(0,0,0,0)",
             "color" : null,
             "padding" : "0",
             "settings" : {
-              "layout" : "left",
-              "autoScale" : true,
+              "layout" : "right",
+              "autoScale" : false,
               "showValue" : true,
               "valueFont" : {
-                "family" : "Roboto",
-                "size" : 28,
+                "size" : 12,
                 "sizeUnit" : "px",
-                "style" : "normal",
+                "family" : "Roboto",
                 "weight" : "500",
-                "lineHeight" : "32px"
+                "style" : "normal",
+                "lineHeight" : "12px"
               },
               "valueColor" : {
                 "type" : "constant",
@@ -10187,18 +10199,18 @@
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "background" : {
-                "type" : "image",
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
-                "color" : "rgba(0,0,0,0)",
+                "type" : "color",
+                "color" : "rgb(255, 255, 255)",
                 "overlay" : {
-                  "enabled" : true,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 2
-                }
+                  "enabled" : false,
+                  "color" : "rgb(0, 0, 0)",
+                  "blur" : 0
+                },
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
               },
               "padding" : "0"
             },
-            "title" : "Simple Value and chart card",
+            "title" : "Cloro Libre",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "titleStyle" : null,
@@ -10209,12 +10221,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 16,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "24px"
+              "lineHeight" : "12"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10223,7 +10235,7 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
-            "decimals" : 2,
+            "decimals" : 1,
             "titleColor" : "rgba(0, 0, 0, 0.87)",
             "borderRadius" : null,
             "units" : "mg/l",
@@ -10287,12 +10299,12 @@
                 "name" : "conductividad",
                 "type" : "timeseries",
                 "label" : "conductividad",
-                "color" : "#E89623",
+                "color" : "#048AD3",
                 "settings" : { },
                 "_hash" : 0.7540410305777979,
                 "aggregationType" : null,
                 "units" : "µS/cm",
-                "decimals" : 2,
+                "decimals" : 0,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
@@ -10304,32 +10316,32 @@
                 "name" : "conductividad",
                 "type" : "timeseries",
                 "label" : "conductividad 2",
-                "color" : "#E89623",
+                "color" : "#048AD3",
                 "settings" : { },
                 "_hash" : 0.2741625795662538,
                 "aggregationType" : "NONE",
                 "units" : "µS/cm",
-                "decimals" : 2,
+                "decimals" : 0,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               } ]
             } ],
-            "showTitle" : false,
+            "showTitle" : true,
             "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : null,
+            "color" : "#0B0B0B",
             "padding" : "0",
             "settings" : {
-              "layout" : "left",
-              "autoScale" : true,
+              "layout" : "right",
+              "autoScale" : false,
               "showValue" : true,
               "valueFont" : {
-                "family" : "Roboto",
-                "size" : 28,
+                "size" : 12,
                 "sizeUnit" : "px",
-                "style" : "normal",
+                "family" : "Roboto",
                 "weight" : "500",
-                "lineHeight" : "32px"
+                "style" : "normal",
+                "lineHeight" : "12px"
               },
               "valueColor" : {
                 "type" : "constant",
@@ -10337,20 +10349,20 @@
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "background" : {
-                "type" : "image",
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
-                "color" : "rgba(0,0,0,0)",
+                "type" : "color",
+                "color" : "rgba(17, 17, 17, 0)",
                 "overlay" : {
                   "enabled" : true,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 2
-                }
+                  "color" : "rgb(255, 255, 255)",
+                  "blur" : 0
+                },
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
               },
               "padding" : "0"
             },
-            "title" : "Simple Value and chart card",
+            "title" : "Conductividad",
             "dropShadow" : false,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
             "configMode" : "advanced",
@@ -10359,12 +10371,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 16,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "24px"
+              "lineHeight" : "12px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10374,7 +10386,7 @@
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
             "decimals" : 2,
-            "titleColor" : "rgba(0, 0, 0, 0.87)",
+            "titleColor" : "rgb(0, 0, 0)",
             "borderRadius" : null,
             "units" : "ph",
             "displayTimewindow" : true,
@@ -10437,12 +10449,12 @@
                 "name" : "temperatura",
                 "type" : "timeseries",
                 "label" : "temperatura",
-                "color" : "#4caf50",
+                "color" : "#048AD3",
                 "settings" : { },
                 "_hash" : 0.2540012549461914,
                 "aggregationType" : null,
                 "units" : "°C",
-                "decimals" : 2,
+                "decimals" : 0,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
@@ -10454,7 +10466,7 @@
                 "name" : "temperatura",
                 "type" : "timeseries",
                 "label" : "temperatura 2",
-                "color" : "#4caf50",
+                "color" : "#048AD3",
                 "settings" : { },
                 "_hash" : 0.5406070382133538,
                 "aggregationType" : "NONE",
@@ -10465,40 +10477,62 @@
                 "postFuncBody" : null
               } ]
             } ],
-            "showTitle" : false,
-            "backgroundColor" : "rgba(0,0,0,0)",
+            "showTitle" : true,
+            "backgroundColor" : "rgba(255, 255, 255, 0)",
             "color" : null,
             "padding" : "0",
             "settings" : {
-              "layout" : "left",
-              "autoScale" : true,
+              "layout" : "right",
+              "autoScale" : false,
               "showValue" : true,
               "valueFont" : {
                 "family" : "Roboto",
-                "size" : 28,
+                "size" : 12,
                 "sizeUnit" : "px",
                 "style" : "normal",
                 "weight" : "500",
-                "lineHeight" : "32px"
+                "lineHeight" : "12px"
               },
               "valueColor" : {
                 "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                "color" : "rgb(0, 0, 0)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                }
               },
               "background" : {
-                "type" : "image",
+                "type" : "color",
                 "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
-                "color" : "rgba(0,0,0,0)",
+                "color" : "rgb(255, 255, 255)",
                 "overlay" : {
                   "enabled" : true,
                   "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 2
+                  "blur" : 0
                 }
               },
-              "padding" : "0"
+              "padding" : "1"
             },
-            "title" : "Simple Value and chart card",
+            "title" : "Temperatura",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "titleStyle" : null,
@@ -10509,12 +10543,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 16,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "24px"
+              "lineHeight" : "12px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10524,7 +10558,7 @@
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
             "decimals" : 2,
-            "titleColor" : "rgba(0, 0, 0, 0.87)",
+            "titleColor" : "rgb(0, 0, 0)",
             "borderRadius" : null,
             "units" : "ph",
             "displayTimewindow" : true,
@@ -10567,7 +10601,7 @@
             "enableDataExport" : false,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "0"
+            "margin" : "2"
           },
           "row" : 0,
           "col" : 0,
@@ -10587,7 +10621,7 @@
                 "name" : "turbidez",
                 "type" : "timeseries",
                 "label" : "turbidez",
-                "color" : "#435B63",
+                "color" : "rgb(129, 196, 233)",
                 "settings" : { },
                 "_hash" : 0.40920732266617266,
                 "aggregationType" : null,
@@ -10604,7 +10638,7 @@
                 "name" : "turbidez",
                 "type" : "timeseries",
                 "label" : "turbidez 2",
-                "color" : "#435B63",
+                "color" : "#81C4E9",
                 "settings" : { },
                 "_hash" : 0.5803241813973066,
                 "aggregationType" : "NONE",
@@ -10615,21 +10649,21 @@
                 "postFuncBody" : null
               } ]
             } ],
-            "showTitle" : false,
+            "showTitle" : true,
             "backgroundColor" : "rgba(0,0,0,0)",
             "color" : null,
             "padding" : "0",
             "settings" : {
-              "layout" : "left",
-              "autoScale" : true,
+              "layout" : "right",
+              "autoScale" : false,
               "showValue" : true,
               "valueFont" : {
-                "family" : "Roboto",
-                "size" : 28,
+                "size" : 12,
                 "sizeUnit" : "px",
-                "style" : "normal",
+                "family" : "Roboto",
                 "weight" : "500",
-                "lineHeight" : "32px"
+                "style" : "normal",
+                "lineHeight" : "12px"
               },
               "valueColor" : {
                 "type" : "constant",
@@ -10637,18 +10671,18 @@
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "background" : {
-                "type" : "image",
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
+                "type" : "color",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 2
-                }
+                  "color" : "rgb(255, 255, 255)",
+                  "blur" : 0
+                },
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
               },
               "padding" : "0"
             },
-            "title" : "Simple Value and chart card",
+            "title" : "Turbidez",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "titleStyle" : null,
@@ -10659,12 +10693,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 16,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "24px"
+              "lineHeight" : "12px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10674,9 +10708,9 @@
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
             "decimals" : 2,
-            "titleColor" : "rgba(0, 0, 0, 0.87)",
+            "titleColor" : "rgb(0, 0, 0)",
             "borderRadius" : null,
-            "units" : "ph",
+            "units" : "ntu",
             "displayTimewindow" : true,
             "timewindow" : {
               "hideAggregation" : false,
@@ -10717,7 +10751,7 @@
             "enableDataExport" : false,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "0"
+            "margin" : "2"
           },
           "row" : 0,
           "col" : 0,
@@ -10737,12 +10771,12 @@
                 "name" : "redox",
                 "type" : "timeseries",
                 "label" : "redox",
-                "color" : "#F44336",
+                "color" : "rgb(4, 138, 211)",
                 "settings" : { },
                 "_hash" : 0.697355199796463,
                 "aggregationType" : null,
                 "units" : "mV",
-                "decimals" : 2,
+                "decimals" : 0,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
@@ -10754,32 +10788,32 @@
                 "name" : "redox",
                 "type" : "timeseries",
                 "label" : "redox 2",
-                "color" : "#F44336",
+                "color" : "rgb(4, 138, 211)",
                 "settings" : { },
                 "_hash" : 0.2003592731308086,
                 "aggregationType" : "NONE",
                 "units" : "mV",
-                "decimals" : 2,
+                "decimals" : 0,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               } ]
             } ],
-            "showTitle" : false,
+            "showTitle" : true,
             "backgroundColor" : "rgba(0,0,0,0)",
             "color" : null,
             "padding" : "0",
             "settings" : {
-              "layout" : "left",
-              "autoScale" : true,
+              "layout" : "right",
+              "autoScale" : false,
               "showValue" : true,
               "valueFont" : {
-                "family" : "Roboto",
-                "size" : 28,
+                "size" : 12,
                 "sizeUnit" : "px",
-                "style" : "normal",
+                "family" : "Roboto",
                 "weight" : "500",
-                "lineHeight" : "32px"
+                "style" : "normal",
+                "lineHeight" : "12px"
               },
               "valueColor" : {
                 "type" : "constant",
@@ -10787,18 +10821,18 @@
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "background" : {
-                "type" : "image",
+                "type" : "color",
                 "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
-                "color" : "rgba(0,0,0,0)",
+                "color" : "rgb(255, 255, 255)",
                 "overlay" : {
                   "enabled" : true,
                   "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 2
+                  "blur" : 0
                 }
               },
               "padding" : "0"
             },
-            "title" : "Simple Value and chart card",
+            "title" : "ORP-Redox",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "titleStyle" : null,
@@ -10809,12 +10843,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 16,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "24px"
+              "lineHeight" : "12px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10823,7 +10857,7 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
-            "decimals" : 2,
+            "decimals" : 0,
             "titleColor" : "rgba(0, 0, 0, 0.87)",
             "borderRadius" : null,
             "units" : "ph",
@@ -12445,40 +12479,40 @@
                   "col" : 282
                 },
                 "3e723449-1ebb-bfe7-2ccd-2bf8525dbab5" : {
-                  "sizeX" : 160,
-                  "sizeY" : 69,
+                  "sizeX" : 190,
+                  "sizeY" : 86,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 46,
-                  "col" : 407
+                  "row" : 36,
+                  "col" : 399
                 },
                 "0157f6b0-8092-9781-e63f-5e36df4edd57" : {
-                  "sizeX" : 160,
-                  "sizeY" : 69,
+                  "sizeX" : 185,
+                  "sizeY" : 88,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 45,
-                  "col" : 582
+                  "row" : 38,
+                  "col" : 602
                 },
                 "0a42ca72-e84a-f819-9c06-b8aca2895264" : {
-                  "sizeX" : 160,
-                  "sizeY" : 69,
+                  "sizeX" : 178.55072463768116,
+                  "sizeY" : 77,
                   "mobileHeight" : null,
-                  "preserveAspectRatio" : false,
+                  "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 129,
-                  "col" : 409
+                  "row" : 132,
+                  "col" : 405
                 },
                 "f6e4081e-19a8-d0b9-fa5d-fd9b3ca48546" : {
-                  "sizeX" : 160,
+                  "sizeX" : 168,
                   "sizeY" : 69,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 129,
-                  "col" : 583
+                  "row" : 133,
+                  "col" : 607
                 },
                 "95ac03a2-5852-923c-76ed-3feb69cf2aad" : {
                   "sizeX" : 160,
@@ -12486,7 +12520,7 @@
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 212,
+                  "row" : 209,
                   "col" : 410
                 },
                 "b09da67c-bc7d-aa6f-f1e3-9d8dc0a504c1" : {
@@ -12495,8 +12529,8 @@
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 212,
-                  "col" : 584
+                  "row" : 215,
+                  "col" : 633
                 },
                 "9897931a-e536-8e4b-267e-4dd9b6d4c7c3" : {
                   "sizeX" : 80,
