@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "FRIOCUBIT Ref: Valladolid",
+    "title" : "FRIOCUBIT",
     "image" : "tb-image;/api/images/tenant/torre_(1).svg",
     "mobileHide" : false,
     "mobileOrder" : 1,
@@ -10004,7 +10004,7 @@
                 "_hash" : 0.6752236257563727,
                 "aggregationType" : null,
                 "units" : "pH",
-                "decimals" : 2,
+                "decimals" : 1,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
@@ -10036,11 +10036,11 @@
               "autoScale" : false,
               "showValue" : true,
               "valueFont" : {
+                "family" : "Roboto",
                 "size" : 12,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
                 "style" : "normal",
+                "weight" : "500",
                 "lineHeight" : "12px"
               },
               "valueColor" : {
@@ -10050,13 +10050,13 @@
               },
               "background" : {
                 "type" : "color",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 0
-                },
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
+                }
               },
               "padding" : "0"
             },
@@ -10085,9 +10085,9 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
-            "decimals" : 2,
+            "decimals" : 1,
             "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : "0",
+            "borderRadius" : " ",
             "units" : "ph",
             "displayTimewindow" : false,
             "timewindow" : {
@@ -10129,7 +10129,7 @@
             "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "0"
+            "margin" : "10px"
           },
           "row" : 0,
           "col" : 0,
@@ -10186,11 +10186,11 @@
               "autoScale" : false,
               "showValue" : true,
               "valueFont" : {
+                "family" : "Roboto",
                 "size" : 12,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
                 "style" : "normal",
+                "weight" : "500",
                 "lineHeight" : "12px"
               },
               "valueColor" : {
@@ -10200,13 +10200,13 @@
               },
               "background" : {
                 "type" : "color",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgb(255, 255, 255)",
                 "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgb(0, 0, 0)",
+                  "enabled" : true,
+                  "color" : "rgb(255, 255, 255)",
                   "blur" : 0
-                },
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
+                }
               },
               "padding" : "0"
             },
@@ -10237,7 +10237,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 1,
             "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "borderRadius" : "10",
+            "borderRadius" : " ",
             "units" : "mg/l",
             "displayTimewindow" : true,
             "timewindow" : {
@@ -10279,7 +10279,7 @@
             "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "0"
+            "margin" : "10px"
           },
           "row" : 0,
           "col" : 0,
@@ -10336,11 +10336,11 @@
               "autoScale" : false,
               "showValue" : true,
               "valueFont" : {
+                "family" : "Roboto",
                 "size" : 12,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
                 "style" : "normal",
+                "weight" : "500",
                 "lineHeight" : "12px"
               },
               "valueColor" : {
@@ -10350,13 +10350,13 @@
               },
               "background" : {
                 "type" : "color",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(17, 17, 17, 0)",
                 "overlay" : {
                   "enabled" : true,
                   "color" : "rgb(255, 255, 255)",
                   "blur" : 0
-                },
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
+                }
               },
               "padding" : "0"
             },
@@ -10385,10 +10385,10 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
-            "decimals" : 2,
+            "decimals" : 0,
             "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : null,
-            "units" : "ph",
+            "borderRadius" : "0",
+            "units" : "μS",
             "displayTimewindow" : true,
             "timewindow" : {
               "hideAggregation" : false,
@@ -10429,7 +10429,7 @@
             "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "0"
+            "margin" : "4px"
           },
           "row" : 0,
           "col" : 0,
@@ -12479,40 +12479,40 @@
                   "col" : 282
                 },
                 "3e723449-1ebb-bfe7-2ccd-2bf8525dbab5" : {
-                  "sizeX" : 186,
-                  "sizeY" : 79.71428571428571,
-                  "mobileHeight" : null,
-                  "preserveAspectRatio" : true,
-                  "resizable" : true,
-                  "row" : 33,
-                  "col" : 405
-                },
-                "0157f6b0-8092-9781-e63f-5e36df4edd57" : {
-                  "sizeX" : 187,
-                  "sizeY" : 79,
+                  "sizeX" : 196,
+                  "sizeY" : 93,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 34,
+                  "row" : 27,
+                  "col" : 404
+                },
+                "0157f6b0-8092-9781-e63f-5e36df4edd57" : {
+                  "sizeX" : 191,
+                  "sizeY" : 88,
+                  "mobileHeight" : null,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 27,
                   "col" : 600
                 },
                 "0a42ca72-e84a-f819-9c06-b8aca2895264" : {
-                  "sizeX" : 197,
-                  "sizeY" : 84,
+                  "sizeX" : 207,
+                  "sizeY" : 87,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
                   "row" : 120,
-                  "col" : 400
+                  "col" : 402
                 },
                 "f6e4081e-19a8-d0b9-fa5d-fd9b3ca48546" : {
-                  "sizeX" : 189,
-                  "sizeY" : 77,
+                  "sizeX" : 179,
+                  "sizeY" : 82,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 125,
-                  "col" : 601
+                  "row" : 120,
+                  "col" : 611
                 },
                 "95ac03a2-5852-923c-76ed-3feb69cf2aad" : {
                   "sizeX" : 196,
@@ -12521,16 +12521,16 @@
                   "preserveAspectRatio" : true,
                   "resizable" : true,
                   "row" : 207,
-                  "col" : 402
+                  "col" : 412
                 },
                 "b09da67c-bc7d-aa6f-f1e3-9d8dc0a504c1" : {
-                  "sizeX" : 197,
-                  "sizeY" : 73,
+                  "sizeX" : 183,
+                  "sizeY" : 77,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
                   "row" : 211,
-                  "col" : 602
+                  "col" : 613
                 },
                 "9897931a-e536-8e4b-267e-4dd9b6d4c7c3" : {
                   "sizeX" : 80,
@@ -12855,7 +12855,7 @@
         "dashboardCss" : "\r\n\r\n"
       }
     },
-    "name" : "FRIOCUBIT Ref: Valladolid",
+    "name" : "FRIOCUBIT",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : {
