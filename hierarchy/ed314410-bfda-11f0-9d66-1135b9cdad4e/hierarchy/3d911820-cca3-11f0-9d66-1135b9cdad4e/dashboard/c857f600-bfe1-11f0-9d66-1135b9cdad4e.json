@@ -1479,7 +1479,10 @@
               },
               "yAxes" : {
                 "default" : {
+                  "units" : null,
+                  "decimals" : 0,
                   "show" : false,
+                  "label" : "",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -1489,6 +1492,7 @@
                     "lineHeight" : "1"
                   },
                   "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
                     "family" : "Roboto",
@@ -1604,12 +1608,12 @@
               "tooltipHideZeroValues" : null,
               "tooltipStackedShowTotal" : false
             },
-            "title" : "Serie temporal",
+            "title" : "Temperatura-Historico",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
@@ -2009,7 +2013,7 @@
               },
               "padding" : "12px"
             },
-            "title" : "Serie temporal ",
+            "title" : "Cloro Libre-Histórico",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
@@ -2414,7 +2418,7 @@
               },
               "padding" : "12px"
             },
-            "title" : "Serie temporal ",
+            "title" : "pH-Historico",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
@@ -2819,7 +2823,7 @@
               },
               "padding" : "12px"
             },
-            "title" : "Serie temporal ",
+            "title" : "Turbidez-Histórico",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
@@ -3257,7 +3261,7 @@
               },
               "padding" : "12px"
             },
-            "title" : "Serie temporal ",
+            "title" : "ORP-Redox-Historico",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
@@ -3691,12 +3695,12 @@
               "tooltipHideZeroValues" : null,
               "tooltipStackedShowTotal" : false
             },
-            "title" : "Serie temporal ",
+            "title" : "Conductividad-Historico",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
