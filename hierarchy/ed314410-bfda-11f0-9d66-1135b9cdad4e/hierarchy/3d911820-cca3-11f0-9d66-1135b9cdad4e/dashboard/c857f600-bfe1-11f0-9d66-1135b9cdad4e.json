@@ -10062,21 +10062,21 @@
             },
             "title" : "pH",
             "dropShadow" : false,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 12,
+              "size" : 20,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "12px"
+              "lineHeight" : "20px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10126,7 +10126,7 @@
               "color" : "rgba(0, 0, 0, 0.38)",
               "displayTypePrefix" : true
             },
-            "enableDataExport" : false,
+            "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
             "margin" : "0"
@@ -10212,7 +10212,7 @@
             },
             "title" : "Cloro Libre",
             "dropShadow" : false,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
             "configMode" : "advanced",
@@ -10221,12 +10221,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 12,
+              "size" : 20,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "12"
+              "lineHeight" : "20"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10237,7 +10237,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 1,
             "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "borderRadius" : null,
+            "borderRadius" : "10",
             "units" : "mg/l",
             "displayTimewindow" : true,
             "timewindow" : {
@@ -10276,7 +10276,7 @@
               "color" : "rgba(0, 0, 0, 0.38)",
               "displayTypePrefix" : true
             },
-            "enableDataExport" : false,
+            "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
             "margin" : "0"
@@ -10371,12 +10371,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 12,
+              "size" : 20,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "12px"
+              "lineHeight" : "20px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10426,7 +10426,7 @@
               "color" : "rgba(0, 0, 0, 0.38)",
               "displayTypePrefix" : true
             },
-            "enableDataExport" : false,
+            "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
             "margin" : "0"
@@ -10534,7 +10534,7 @@
             },
             "title" : "Temperatura",
             "dropShadow" : false,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
             "configMode" : "advanced",
@@ -10543,12 +10543,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 12,
+              "size" : 20,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "12px"
+              "lineHeight" : "20px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10598,10 +10598,10 @@
               "color" : "rgba(0, 0, 0, 0.38)",
               "displayTypePrefix" : true
             },
-            "enableDataExport" : false,
+            "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "2"
+            "margin" : "0"
           },
           "row" : 0,
           "col" : 0,
@@ -10684,7 +10684,7 @@
             },
             "title" : "Turbidez",
             "dropShadow" : false,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
             "configMode" : "advanced",
@@ -10693,12 +10693,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 12,
+              "size" : 20,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "12px"
+              "lineHeight" : "20px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10709,7 +10709,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 2,
             "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : null,
+            "borderRadius" : "10",
             "units" : "ntu",
             "displayTimewindow" : true,
             "timewindow" : {
@@ -10748,10 +10748,10 @@
               "color" : "rgba(0, 0, 0, 0.38)",
               "displayTypePrefix" : true
             },
-            "enableDataExport" : false,
+            "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "2"
+            "margin" : "0"
           },
           "row" : 0,
           "col" : 0,
@@ -10834,7 +10834,7 @@
             },
             "title" : "ORP-Redox",
             "dropShadow" : false,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
             "configMode" : "advanced",
@@ -10843,12 +10843,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 12,
+              "size" : 20,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "12px"
+              "lineHeight" : "20px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10859,7 +10859,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 0,
             "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "borderRadius" : null,
+            "borderRadius" : "10",
             "units" : "ph",
             "displayTimewindow" : true,
             "timewindow" : {
@@ -10898,7 +10898,7 @@
               "color" : "rgba(0, 0, 0, 0.38)",
               "displayTypePrefix" : true
             },
-            "enableDataExport" : false,
+            "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
             "margin" : "0"
@@ -12243,16 +12243,16 @@
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 1,
-                  "col" : 339
+                  "row" : 0,
+                  "col" : 403
                 },
                 "3e4a1b8d-695c-fa67-5534-fb8ba3077a9b" : {
                   "sizeX" : 89,
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 1,
-                  "col" : 433
+                  "row" : 0,
+                  "col" : 502
                 },
                 "1eb14538-7afa-d185-50aa-4c8047ed0222" : {
                   "sizeX" : 26,
@@ -12479,58 +12479,58 @@
                   "col" : 282
                 },
                 "3e723449-1ebb-bfe7-2ccd-2bf8525dbab5" : {
-                  "sizeX" : 190,
-                  "sizeY" : 86,
-                  "mobileHeight" : null,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 36,
-                  "col" : 399
-                },
-                "0157f6b0-8092-9781-e63f-5e36df4edd57" : {
-                  "sizeX" : 185,
-                  "sizeY" : 88,
-                  "mobileHeight" : null,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 38,
-                  "col" : 602
-                },
-                "0a42ca72-e84a-f819-9c06-b8aca2895264" : {
-                  "sizeX" : 178.55072463768116,
-                  "sizeY" : 77,
+                  "sizeX" : 186,
+                  "sizeY" : 79.71428571428571,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 132,
+                  "row" : 33,
                   "col" : 405
                 },
-                "f6e4081e-19a8-d0b9-fa5d-fd9b3ca48546" : {
-                  "sizeX" : 168,
-                  "sizeY" : 69,
+                "0157f6b0-8092-9781-e63f-5e36df4edd57" : {
+                  "sizeX" : 187,
+                  "sizeY" : 79,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 133,
-                  "col" : 607
+                  "row" : 34,
+                  "col" : 600
+                },
+                "0a42ca72-e84a-f819-9c06-b8aca2895264" : {
+                  "sizeX" : 197,
+                  "sizeY" : 84,
+                  "mobileHeight" : null,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 120,
+                  "col" : 400
+                },
+                "f6e4081e-19a8-d0b9-fa5d-fd9b3ca48546" : {
+                  "sizeX" : 189,
+                  "sizeY" : 77,
+                  "mobileHeight" : null,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 125,
+                  "col" : 601
                 },
                 "95ac03a2-5852-923c-76ed-3feb69cf2aad" : {
-                  "sizeX" : 160,
-                  "sizeY" : 69,
+                  "sizeX" : 196,
+                  "sizeY" : 84.52499999999999,
                   "mobileHeight" : null,
-                  "preserveAspectRatio" : false,
+                  "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 209,
-                  "col" : 410
+                  "row" : 207,
+                  "col" : 402
                 },
                 "b09da67c-bc7d-aa6f-f1e3-9d8dc0a504c1" : {
-                  "sizeX" : 160,
-                  "sizeY" : 69,
+                  "sizeX" : 197,
+                  "sizeY" : 73,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 215,
-                  "col" : 633
+                  "row" : 211,
+                  "col" : 602
                 },
                 "9897931a-e536-8e4b-267e-4dd9b6d4c7c3" : {
                   "sizeX" : 80,
@@ -12573,16 +12573,16 @@
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 1,
-                  "col" : 528
+                  "row" : 0,
+                  "col" : 599
                 },
                 "a8608af2-4f67-daf5-e844-b8b3e72c25c6" : {
                   "sizeX" : 91,
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 1,
-                  "col" : 620
+                  "row" : 0,
+                  "col" : 696
                 }
               },
               "gridSettings" : {
