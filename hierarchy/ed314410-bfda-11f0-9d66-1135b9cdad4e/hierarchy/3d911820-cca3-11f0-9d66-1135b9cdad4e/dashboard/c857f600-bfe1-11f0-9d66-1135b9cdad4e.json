@@ -1208,7 +1208,7 @@
             "widgetStyle" : { },
             "widgetCss" : "",
             "pageSize" : 1024,
-            "decimals" : 0,
+            "decimals" : 2,
             "noDataDisplayMessage" : "",
             "configMode" : "advanced",
             "units" : "µS/cm",
@@ -2169,7 +2169,7 @@
               "realtime" : {
                 "realtimeType" : 0,
                 "interval" : 300000,
-                "timewindowMs" : 43200000,
+                "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -3401,7 +3401,7 @@
               "realtime" : {
                 "realtimeType" : 0,
                 "interval" : 300000,
-                "timewindowMs" : 86400000,
+                "timewindowMs" : 43200000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -10050,18 +10050,18 @@
               },
               "background" : {
                 "type" : "color",
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 0
-                }
+                },
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
               },
               "padding" : "0"
             },
             "title" : "pH",
-            "dropShadow" : false,
+            "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -10087,7 +10087,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 1,
             "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : " 2",
+            "borderRadius" : "0",
             "units" : "ph",
             "displayTimewindow" : false,
             "timewindow" : {
@@ -11518,7 +11518,7 @@
               "padding" : "0"
             },
             "title" : "Cloro libre",
-            "dropShadow" : false,
+            "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -11544,7 +11544,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 1,
             "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : " ",
+            "borderRadius" : "0",
             "units" : "ppm",
             "displayTimewindow" : false,
             "timewindow" : {
@@ -11586,7 +11586,7 @@
             "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "10px"
+            "margin" : "0"
           },
           "row" : 0,
           "col" : 0,
@@ -12409,12 +12409,12 @@
                   "col" : 282
                 },
                 "3e723449-1ebb-bfe7-2ccd-2bf8525dbab5" : {
-                  "sizeX" : 189,
-                  "sizeY" : 85,
+                  "sizeX" : 192,
+                  "sizeY" : 80,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 32,
+                  "row" : 36,
                   "col" : 406
                 },
                 "9897931a-e536-8e4b-267e-4dd9b6d4c7c3" : {
@@ -12470,13 +12470,13 @@
                   "col" : 696
                 },
                 "6e0b05dd-c8c7-e480-b114-403b75121552" : {
-                  "sizeX" : 203,
-                  "sizeY" : 93,
+                  "sizeX" : 188,
+                  "sizeY" : 85,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 27,
-                  "col" : 602
+                  "row" : 30,
+                  "col" : 609
                 },
                 "dc225c23-5974-be57-d02f-005bd40094e8" : {
                   "sizeX" : 203,
