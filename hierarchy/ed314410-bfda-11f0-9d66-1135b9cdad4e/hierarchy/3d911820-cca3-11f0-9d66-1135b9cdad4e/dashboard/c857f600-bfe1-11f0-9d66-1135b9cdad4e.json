@@ -10087,7 +10087,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 1,
             "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : " ",
+            "borderRadius" : " 2",
             "units" : "ph",
             "displayTimewindow" : false,
             "timewindow" : {
@@ -11683,7 +11683,7 @@
             "decimals" : 1,
             "titleColor" : "rgb(0, 0, 0)",
             "borderRadius" : " ",
-            "units" : "Conductividad",
+            "units" : "µS/cm",
             "displayTimewindow" : false,
             "timewindow" : {
               "hideAggregation" : false,
@@ -11879,35 +11879,23 @@
               "name" : "",
               "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
-                "name" : "ph",
+                "name" : "temperatura",
                 "type" : "timeseries",
-                "label" : "ph",
-                "color" : "rgb(4, 138, 211)",
+                "label" : "temperatura",
+                "color" : "#F44336",
                 "settings" : { },
-                "_hash" : 0.6752236257563727,
-                "aggregationType" : null,
-                "units" : "pH",
-                "decimals" : 1,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.4206534480505165
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
               "latestDataKeys" : [ {
-                "name" : "ph",
+                "name" : "temperatura",
                 "type" : "timeseries",
-                "label" : "Latest",
-                "color" : "rgb(4, 138, 211)",
+                "label" : "temperatura 2",
+                "color" : "#F44336",
                 "settings" : { },
-                "_hash" : 0.6752236257563727,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.08353596507812044
               } ]
             } ],
             "showTitle" : true,
@@ -11943,7 +11931,7 @@
               },
               "padding" : "0"
             },
-            "title" : "pH",
+            "title" : "Temperatura",
             "dropShadow" : false,
             "enableFullscreen" : true,
             "titleStyle" : null,
@@ -11968,10 +11956,10 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "useDashboardTimewindow" : true,
-            "decimals" : 1,
+            "decimals" : 2,
             "titleColor" : "rgb(0, 0, 0)",
             "borderRadius" : " ",
-            "units" : "ph",
+            "units" : "°C",
             "displayTimewindow" : false,
             "timewindow" : {
               "hideAggregation" : false,
@@ -12029,35 +12017,23 @@
               "name" : "",
               "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
               "dataKeys" : [ {
-                "name" : "ph",
+                "name" : "turbidez",
                 "type" : "timeseries",
-                "label" : "ph",
-                "color" : "rgb(4, 138, 211)",
+                "label" : "turbidez 2",
+                "color" : "#009688",
                 "settings" : { },
-                "_hash" : 0.6752236257563727,
-                "aggregationType" : null,
-                "units" : "pH",
-                "decimals" : 1,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.15732840289821248
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
               "latestDataKeys" : [ {
-                "name" : "ph",
+                "name" : "turbidez",
                 "type" : "timeseries",
-                "label" : "Latest",
-                "color" : "rgb(4, 138, 211)",
+                "label" : "turbidez",
+                "color" : "#009688",
                 "settings" : { },
-                "_hash" : 0.6752236257563727,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.9819643711719158
               } ]
             } ],
             "showTitle" : true,
@@ -12093,7 +12069,7 @@
               },
               "padding" : "0"
             },
-            "title" : "pH",
+            "title" : "Turbidez",
             "dropShadow" : false,
             "enableFullscreen" : true,
             "titleStyle" : null,
@@ -12121,7 +12097,7 @@
             "decimals" : 1,
             "titleColor" : "rgb(0, 0, 0)",
             "borderRadius" : " ",
-            "units" : "ph",
+            "units" : "Ntu",
             "displayTimewindow" : false,
             "timewindow" : {
               "hideAggregation" : false,
