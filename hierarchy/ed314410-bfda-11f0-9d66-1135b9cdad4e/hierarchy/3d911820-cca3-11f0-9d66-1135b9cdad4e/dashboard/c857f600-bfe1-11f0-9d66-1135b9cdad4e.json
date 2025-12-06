@@ -10129,7 +10129,7 @@
             "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "10px"
+            "margin" : "0"
           },
           "row" : 0,
           "col" : 0,
@@ -12409,13 +12409,13 @@
                   "col" : 282
                 },
                 "3e723449-1ebb-bfe7-2ccd-2bf8525dbab5" : {
-                  "sizeX" : 203,
-                  "sizeY" : 93,
+                  "sizeX" : 189,
+                  "sizeY" : 85,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 27,
-                  "col" : 397
+                  "row" : 32,
+                  "col" : 406
                 },
                 "9897931a-e536-8e4b-267e-4dd9b6d4c7c3" : {
                   "sizeX" : 80,
