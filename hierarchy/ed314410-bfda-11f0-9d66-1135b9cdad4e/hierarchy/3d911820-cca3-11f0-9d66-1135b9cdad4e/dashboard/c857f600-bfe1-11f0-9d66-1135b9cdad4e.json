@@ -10071,12 +10071,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 20,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "20px"
+              "lineHeight" : "14px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10186,12 +10186,12 @@
               "autoScale" : false,
               "showValue" : true,
               "valueFont" : {
-                "family" : "Roboto",
                 "size" : 12,
                 "sizeUnit" : "px",
-                "style" : "normal",
+                "family" : "Roboto",
                 "weight" : "500",
-                "lineHeight" : "12px"
+                "style" : "normal",
+                "lineHeight" : "14px"
               },
               "valueColor" : {
                 "type" : "constant",
@@ -10200,13 +10200,13 @@
               },
               "background" : {
                 "type" : "color",
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgb(255, 255, 255)",
                 "overlay" : {
                   "enabled" : true,
                   "color" : "rgb(255, 255, 255)",
                   "blur" : 0
-                }
+                },
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
               },
               "padding" : "0"
             },
@@ -10221,12 +10221,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 20,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "20"
+              "lineHeight" : "14px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10371,12 +10371,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 20,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "20px"
+              "lineHeight" : "14px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10543,12 +10543,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 20,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "20px"
+              "lineHeight" : "14px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10693,12 +10693,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 20,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "20px"
+              "lineHeight" : "14px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
@@ -10843,12 +10843,12 @@
             "titleIcon" : "thermostat",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "titleFont" : {
-              "size" : 20,
+              "size" : 12,
               "sizeUnit" : "px",
               "family" : "Roboto",
               "weight" : "500",
               "style" : "normal",
-              "lineHeight" : "20px"
+              "lineHeight" : "14px"
             },
             "iconSize" : "18px",
             "titleTooltip" : "",
