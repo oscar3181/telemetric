@@ -11724,7 +11724,7 @@
             "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "10px"
+            "margin" : "0"
           },
           "row" : 0,
           "col" : 0,
