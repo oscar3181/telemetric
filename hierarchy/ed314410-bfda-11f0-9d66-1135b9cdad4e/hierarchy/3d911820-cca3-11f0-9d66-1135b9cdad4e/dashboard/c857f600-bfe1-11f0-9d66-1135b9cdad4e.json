@@ -3051,10 +3051,7 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : "mV",
-                  "decimals" : 0,
-                  "show" : true,
-                  "label" : "Redox",
+                  "show" : false,
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -3064,7 +3061,6 @@
                     "lineHeight" : "1"
                   },
                   "labelColor" : "rgba(0, 0, 0, 0.54)",
-                  "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
                     "family" : "Roboto",
