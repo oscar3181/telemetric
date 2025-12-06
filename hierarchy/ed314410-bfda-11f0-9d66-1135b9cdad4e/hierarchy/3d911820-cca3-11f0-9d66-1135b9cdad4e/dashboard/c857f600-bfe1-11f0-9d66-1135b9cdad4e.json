@@ -10087,7 +10087,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 1,
             "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : " 2",
+            "borderRadius" : "0",
             "units" : "ph",
             "displayTimewindow" : false,
             "timewindow" : {
@@ -10129,7 +10129,7 @@
             "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "0"
+            "margin" : "2"
           },
           "row" : 0,
           "col" : 0,
