@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "FRIOCUBIT Ref: Valladolid-Cond.1 ",
+    "title" : "FRIOCUBIT Ref: Valladolid",
     "image" : "tb-image;/api/images/tenant/torre_(1).svg",
     "mobileHide" : false,
     "mobileOrder" : 1,
@@ -12855,7 +12855,7 @@
         "dashboardCss" : "\r\n\r\n"
       }
     },
-    "name" : "FRIOCUBIT Ref: Valladolid-Cond.1 ",
+    "name" : "FRIOCUBIT Ref: Valladolid",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : {
