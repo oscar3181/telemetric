@@ -1822,10 +1822,7 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : null,
-                  "decimals" : 0,
-                  "show" : true,
-                  "label" : "",
+                  "show" : false,
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -1835,7 +1832,6 @@
                     "lineHeight" : "1"
                   },
                   "labelColor" : "rgba(0, 0, 0, 0.54)",
-                  "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
                     "family" : "Roboto",
@@ -1901,7 +1897,7 @@
                 "strategy" : "group",
                 "groupWidth" : {
                   "relative" : true,
-                  "relativeWidth" : 2,
+                  "relativeWidth" : 1,
                   "absoluteWidth" : 1000
                 },
                 "barWidth" : {
@@ -2231,10 +2227,7 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : null,
-                  "decimals" : 0,
-                  "show" : true,
-                  "label" : "",
+                  "show" : false,
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -2244,7 +2237,6 @@
                     "lineHeight" : "1"
                   },
                   "labelColor" : "rgba(0, 0, 0, 0.54)",
-                  "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
                     "family" : "Roboto",
@@ -2310,7 +2302,7 @@
                 "strategy" : "group",
                 "groupWidth" : {
                   "relative" : true,
-                  "relativeWidth" : 2,
+                  "relativeWidth" : 1,
                   "absoluteWidth" : 1000
                 },
                 "barWidth" : {
