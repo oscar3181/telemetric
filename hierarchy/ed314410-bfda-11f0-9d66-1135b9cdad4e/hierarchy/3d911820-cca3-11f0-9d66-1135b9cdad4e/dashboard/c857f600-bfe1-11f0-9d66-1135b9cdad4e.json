@@ -10050,18 +10050,18 @@
               },
               "background" : {
                 "type" : "color",
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : true,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 0
-                }
+                },
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
               },
               "padding" : "0"
             },
             "title" : "pH",
-            "dropShadow" : false,
+            "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -10129,7 +10129,7 @@
             "enableDataExport" : true,
             "resizable" : true,
             "preserveAspectRatio" : false,
-            "margin" : "2"
+            "margin" : "0"
           },
           "row" : 0,
           "col" : 0,
@@ -11518,7 +11518,7 @@
               "padding" : "0"
             },
             "title" : "Cloro libre",
-            "dropShadow" : false,
+            "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -11544,7 +11544,7 @@
             "useDashboardTimewindow" : true,
             "decimals" : 1,
             "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : " ",
+            "borderRadius" : " 2",
             "units" : "ppm",
             "displayTimewindow" : false,
             "timewindow" : {
@@ -12409,8 +12409,8 @@
                   "col" : 282
                 },
                 "3e723449-1ebb-bfe7-2ccd-2bf8525dbab5" : {
-                  "sizeX" : 189,
-                  "sizeY" : 85,
+                  "sizeX" : 191,
+                  "sizeY" : 87,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
