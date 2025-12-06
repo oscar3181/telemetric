@@ -11656,7 +11656,7 @@
               "padding" : "0"
             },
             "title" : "Conductividad",
-            "dropShadow" : false,
+            "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -11794,7 +11794,7 @@
               "padding" : "0"
             },
             "title" : "Redox",
-            "dropShadow" : false,
+            "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -11932,7 +11932,7 @@
               "padding" : "0"
             },
             "title" : "Temperatura",
-            "dropShadow" : false,
+            "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -12070,7 +12070,7 @@
               "padding" : "0"
             },
             "title" : "Turbidez",
-            "dropShadow" : false,
+            "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
@@ -12471,25 +12471,25 @@
                 },
                 "6e0b05dd-c8c7-e480-b114-403b75121552" : {
                   "sizeX" : 188,
+                  "sizeY" : 79,
+                  "mobileHeight" : null,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 36,
+                  "col" : 609
+                },
+                "dc225c23-5974-be57-d02f-005bd40094e8" : {
+                  "sizeX" : 191,
                   "sizeY" : 85,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 30,
-                  "col" : 609
-                },
-                "dc225c23-5974-be57-d02f-005bd40094e8" : {
-                  "sizeX" : 203,
-                  "sizeY" : 93,
-                  "mobileHeight" : null,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 120,
-                  "col" : 399
+                  "row" : 126,
+                  "col" : 406
                 },
                 "59516c58-fa4a-a09c-13d1-7fe2edbd381f" : {
                   "sizeX" : 203,
-                  "sizeY" : 93,
+                  "sizeY" : 95,
                   "mobileHeight" : null,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
