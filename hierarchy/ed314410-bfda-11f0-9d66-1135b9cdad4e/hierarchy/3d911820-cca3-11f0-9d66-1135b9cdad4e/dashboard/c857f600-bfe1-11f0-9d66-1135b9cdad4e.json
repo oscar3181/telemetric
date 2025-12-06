@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "Torre",
+    "title" : "Cond. Evap. nº1 ",
     "image" : "tb-image;/api/images/tenant/torre_(1).svg",
     "mobileHide" : false,
     "mobileOrder" : 1,
@@ -12579,7 +12579,7 @@
                   "sizeX" : 24,
                   "sizeY" : 12,
                   "row" : 1,
-                  "col" : 0
+                  "col" : 2
                 }
               },
               "gridSettings" : {
@@ -12821,7 +12821,7 @@
         "dashboardCss" : "\r\n\r\n"
       }
     },
-    "name" : "Torre",
+    "name" : "Cond. Evap. nº1 ",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : {
