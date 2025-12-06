@@ -10135,778 +10135,6 @@
           "col" : 0,
           "id" : "3e723449-1ebb-bfe7-2ccd-2bf8525dbab5"
         },
-        "0157f6b0-8092-9781-e63f-5e36df4edd57" : {
-          "typeFullFqn" : "system.simple_value_and_chart_card",
-          "type" : "timeseries",
-          "sizeX" : 4.5,
-          "sizeY" : 2,
-          "config" : {
-            "datasources" : [ {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
-              "dataKeys" : [ {
-                "name" : "cloro",
-                "type" : "timeseries",
-                "label" : "cloro",
-                "color" : "rgb(4, 138, 211)",
-                "settings" : { },
-                "_hash" : 0.07263637661066147,
-                "aggregationType" : null,
-                "units" : "mg/L",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              },
-              "latestDataKeys" : [ {
-                "name" : "cloro",
-                "type" : "timeseries",
-                "label" : "cloro 2",
-                "color" : "rgb(4, 138, 211)",
-                "settings" : { },
-                "_hash" : 0.1987693155175395,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ]
-            } ],
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : null,
-            "padding" : "0",
-            "settings" : {
-              "layout" : "right",
-              "autoScale" : false,
-              "showValue" : true,
-              "valueFont" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
-                "style" : "normal",
-                "lineHeight" : "14px"
-              },
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
-              },
-              "background" : {
-                "type" : "color",
-                "color" : "rgb(255, 255, 255)",
-                "overlay" : {
-                  "enabled" : true,
-                  "color" : "rgb(255, 255, 255)",
-                  "blur" : 0
-                },
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
-              },
-              "padding" : "0"
-            },
-            "title" : "Cloro Libre",
-            "dropShadow" : false,
-            "enableFullscreen" : true,
-            "titleStyle" : null,
-            "mobileHeight" : null,
-            "configMode" : "advanced",
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : "thermostat",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "titleFont" : {
-              "size" : 12,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : "normal",
-              "lineHeight" : "14px"
-            },
-            "iconSize" : "18px",
-            "titleTooltip" : "",
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "useDashboardTimewindow" : true,
-            "decimals" : 1,
-            "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "borderRadius" : " ",
-            "units" : "mg/l",
-            "displayTimewindow" : true,
-            "timewindow" : {
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 2,
-                "timewindowMs" : 60000,
-                "interval" : 43200000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1697382151041,
-                  "endTimeMs" : 1697468551041
-                },
-                "quickInterval" : "CURRENT_MONTH_SO_FAR"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "timewindowStyle" : {
-              "showIcon" : false,
-              "iconSize" : "24px",
-              "icon" : "query_builder",
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
-                "style" : "normal",
-                "lineHeight" : "16px"
-              },
-              "color" : "rgba(0, 0, 0, 0.38)",
-              "displayTypePrefix" : true
-            },
-            "enableDataExport" : true,
-            "resizable" : true,
-            "preserveAspectRatio" : false,
-            "margin" : "10px"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "0157f6b0-8092-9781-e63f-5e36df4edd57"
-        },
-        "0a42ca72-e84a-f819-9c06-b8aca2895264" : {
-          "typeFullFqn" : "system.simple_value_and_chart_card",
-          "type" : "timeseries",
-          "sizeX" : 4.5,
-          "sizeY" : 2,
-          "config" : {
-            "datasources" : [ {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
-              "dataKeys" : [ {
-                "name" : "conductividad",
-                "type" : "timeseries",
-                "label" : "conductividad",
-                "color" : "#048AD3",
-                "settings" : { },
-                "_hash" : 0.7540410305777979,
-                "aggregationType" : null,
-                "units" : "µS/cm",
-                "decimals" : 0,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              },
-              "latestDataKeys" : [ {
-                "name" : "conductividad",
-                "type" : "timeseries",
-                "label" : "conductividad 2",
-                "color" : "#048AD3",
-                "settings" : { },
-                "_hash" : 0.2741625795662538,
-                "aggregationType" : "NONE",
-                "units" : "µS/cm",
-                "decimals" : 0,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ]
-            } ],
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : "#0B0B0B",
-            "padding" : "0",
-            "settings" : {
-              "layout" : "right",
-              "autoScale" : false,
-              "showValue" : true,
-              "valueFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "12px"
-              },
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
-              },
-              "background" : {
-                "type" : "color",
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
-                "color" : "rgba(17, 17, 17, 0)",
-                "overlay" : {
-                  "enabled" : true,
-                  "color" : "rgb(255, 255, 255)",
-                  "blur" : 0
-                }
-              },
-              "padding" : "0"
-            },
-            "title" : "Conductividad",
-            "dropShadow" : false,
-            "enableFullscreen" : true,
-            "titleStyle" : null,
-            "mobileHeight" : null,
-            "configMode" : "advanced",
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : "thermostat",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "titleFont" : {
-              "size" : 12,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : "normal",
-              "lineHeight" : "14px"
-            },
-            "iconSize" : "18px",
-            "titleTooltip" : "",
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "useDashboardTimewindow" : true,
-            "decimals" : 0,
-            "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : "0",
-            "units" : "μS",
-            "displayTimewindow" : true,
-            "timewindow" : {
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 2,
-                "timewindowMs" : 60000,
-                "interval" : 43200000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1697382151041,
-                  "endTimeMs" : 1697468551041
-                },
-                "quickInterval" : "CURRENT_MONTH_SO_FAR"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "timewindowStyle" : {
-              "showIcon" : false,
-              "iconSize" : "24px",
-              "icon" : "query_builder",
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
-                "style" : "normal",
-                "lineHeight" : "16px"
-              },
-              "color" : "rgba(0, 0, 0, 0.38)",
-              "displayTypePrefix" : true
-            },
-            "enableDataExport" : true,
-            "resizable" : true,
-            "preserveAspectRatio" : false,
-            "margin" : "4px"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "0a42ca72-e84a-f819-9c06-b8aca2895264"
-        },
-        "f6e4081e-19a8-d0b9-fa5d-fd9b3ca48546" : {
-          "typeFullFqn" : "system.simple_value_and_chart_card",
-          "type" : "timeseries",
-          "sizeX" : 4.5,
-          "sizeY" : 2,
-          "config" : {
-            "datasources" : [ {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
-              "dataKeys" : [ {
-                "name" : "temperatura",
-                "type" : "timeseries",
-                "label" : "temperatura",
-                "color" : "#048AD3",
-                "settings" : { },
-                "_hash" : 0.2540012549461914,
-                "aggregationType" : null,
-                "units" : "°C",
-                "decimals" : 0,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              },
-              "latestDataKeys" : [ {
-                "name" : "temperatura",
-                "type" : "timeseries",
-                "label" : "temperatura 2",
-                "color" : "#048AD3",
-                "settings" : { },
-                "_hash" : 0.5406070382133538,
-                "aggregationType" : "NONE",
-                "units" : "°C",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ]
-            } ],
-            "showTitle" : true,
-            "backgroundColor" : "rgba(255, 255, 255, 0)",
-            "color" : null,
-            "padding" : "0",
-            "settings" : {
-              "layout" : "right",
-              "autoScale" : false,
-              "showValue" : true,
-              "valueFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "12px"
-              },
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "rgb(0, 0, 0)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
-                "gradient" : {
-                  "advancedMode" : false,
-                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
-                  "gradientAdvanced" : [ {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(0, 255, 0, 1)"
-                  }, {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(255, 0, 0, 1)"
-                  } ],
-                  "minValue" : 0,
-                  "maxValue" : 100
-                },
-                "rangeList" : {
-                  "advancedMode" : false,
-                  "range" : [ ],
-                  "rangeAdvanced" : [ ]
-                }
-              },
-              "background" : {
-                "type" : "color",
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
-                "color" : "rgb(255, 255, 255)",
-                "overlay" : {
-                  "enabled" : true,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 0
-                }
-              },
-              "padding" : "1"
-            },
-            "title" : "Temperatura",
-            "dropShadow" : false,
-            "enableFullscreen" : true,
-            "titleStyle" : null,
-            "mobileHeight" : null,
-            "configMode" : "advanced",
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : "thermostat",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "titleFont" : {
-              "size" : 12,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : "normal",
-              "lineHeight" : "14px"
-            },
-            "iconSize" : "18px",
-            "titleTooltip" : "",
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "useDashboardTimewindow" : true,
-            "decimals" : 2,
-            "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : null,
-            "units" : "ph",
-            "displayTimewindow" : true,
-            "timewindow" : {
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 2,
-                "timewindowMs" : 60000,
-                "interval" : 43200000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1697382151041,
-                  "endTimeMs" : 1697468551041
-                },
-                "quickInterval" : "CURRENT_MONTH_SO_FAR"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "timewindowStyle" : {
-              "showIcon" : false,
-              "iconSize" : "24px",
-              "icon" : "query_builder",
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
-                "style" : "normal",
-                "lineHeight" : "16px"
-              },
-              "color" : "rgba(0, 0, 0, 0.38)",
-              "displayTypePrefix" : true
-            },
-            "enableDataExport" : true,
-            "resizable" : true,
-            "preserveAspectRatio" : false,
-            "margin" : "0"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "f6e4081e-19a8-d0b9-fa5d-fd9b3ca48546"
-        },
-        "95ac03a2-5852-923c-76ed-3feb69cf2aad" : {
-          "typeFullFqn" : "system.simple_value_and_chart_card",
-          "type" : "timeseries",
-          "sizeX" : 4.5,
-          "sizeY" : 2,
-          "config" : {
-            "datasources" : [ {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
-              "dataKeys" : [ {
-                "name" : "turbidez",
-                "type" : "timeseries",
-                "label" : "turbidez",
-                "color" : "rgb(129, 196, 233)",
-                "settings" : { },
-                "_hash" : 0.40920732266617266,
-                "aggregationType" : null,
-                "units" : "NTU",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              },
-              "latestDataKeys" : [ {
-                "name" : "turbidez",
-                "type" : "timeseries",
-                "label" : "turbidez 2",
-                "color" : "#81C4E9",
-                "settings" : { },
-                "_hash" : 0.5803241813973066,
-                "aggregationType" : "NONE",
-                "units" : "NTU",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ]
-            } ],
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : null,
-            "padding" : "0",
-            "settings" : {
-              "layout" : "right",
-              "autoScale" : false,
-              "showValue" : true,
-              "valueFont" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
-                "style" : "normal",
-                "lineHeight" : "12px"
-              },
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
-              },
-              "background" : {
-                "type" : "color",
-                "color" : "rgba(0,0,0,0)",
-                "overlay" : {
-                  "enabled" : true,
-                  "color" : "rgb(255, 255, 255)",
-                  "blur" : 0
-                },
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png"
-              },
-              "padding" : "0"
-            },
-            "title" : "Turbidez",
-            "dropShadow" : false,
-            "enableFullscreen" : true,
-            "titleStyle" : null,
-            "mobileHeight" : null,
-            "configMode" : "advanced",
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : "thermostat",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "titleFont" : {
-              "size" : 12,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : "normal",
-              "lineHeight" : "14px"
-            },
-            "iconSize" : "18px",
-            "titleTooltip" : "",
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "useDashboardTimewindow" : true,
-            "decimals" : 2,
-            "titleColor" : "rgb(0, 0, 0)",
-            "borderRadius" : "10",
-            "units" : "ntu",
-            "displayTimewindow" : true,
-            "timewindow" : {
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 2,
-                "timewindowMs" : 60000,
-                "interval" : 43200000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1697382151041,
-                  "endTimeMs" : 1697468551041
-                },
-                "quickInterval" : "CURRENT_MONTH_SO_FAR"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "timewindowStyle" : {
-              "showIcon" : false,
-              "iconSize" : "24px",
-              "icon" : "query_builder",
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
-                "style" : "normal",
-                "lineHeight" : "16px"
-              },
-              "color" : "rgba(0, 0, 0, 0.38)",
-              "displayTypePrefix" : true
-            },
-            "enableDataExport" : true,
-            "resizable" : true,
-            "preserveAspectRatio" : false,
-            "margin" : "0"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "95ac03a2-5852-923c-76ed-3feb69cf2aad"
-        },
-        "b09da67c-bc7d-aa6f-f1e3-9d8dc0a504c1" : {
-          "typeFullFqn" : "system.simple_value_and_chart_card",
-          "type" : "timeseries",
-          "sizeX" : 4.5,
-          "sizeY" : 2,
-          "config" : {
-            "datasources" : [ {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
-              "dataKeys" : [ {
-                "name" : "redox",
-                "type" : "timeseries",
-                "label" : "redox",
-                "color" : "rgb(4, 138, 211)",
-                "settings" : { },
-                "_hash" : 0.697355199796463,
-                "aggregationType" : null,
-                "units" : "mV",
-                "decimals" : 0,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              },
-              "latestDataKeys" : [ {
-                "name" : "redox",
-                "type" : "timeseries",
-                "label" : "redox 2",
-                "color" : "rgb(4, 138, 211)",
-                "settings" : { },
-                "_hash" : 0.2003592731308086,
-                "aggregationType" : "NONE",
-                "units" : "mV",
-                "decimals" : 0,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              } ]
-            } ],
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : null,
-            "padding" : "0",
-            "settings" : {
-              "layout" : "right",
-              "autoScale" : false,
-              "showValue" : true,
-              "valueFont" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
-                "style" : "normal",
-                "lineHeight" : "12px"
-              },
-              "valueColor" : {
-                "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
-              },
-              "background" : {
-                "type" : "color",
-                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
-                "color" : "rgb(255, 255, 255)",
-                "overlay" : {
-                  "enabled" : true,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 0
-                }
-              },
-              "padding" : "0"
-            },
-            "title" : "ORP-Redox",
-            "dropShadow" : false,
-            "enableFullscreen" : true,
-            "titleStyle" : null,
-            "mobileHeight" : null,
-            "configMode" : "advanced",
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleIcon" : "thermostat",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "titleFont" : {
-              "size" : 12,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : "normal",
-              "lineHeight" : "14px"
-            },
-            "iconSize" : "18px",
-            "titleTooltip" : "",
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "useDashboardTimewindow" : true,
-            "decimals" : 0,
-            "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "borderRadius" : "10",
-            "units" : "ph",
-            "displayTimewindow" : true,
-            "timewindow" : {
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 2,
-                "timewindowMs" : 60000,
-                "interval" : 43200000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1697382151041,
-                  "endTimeMs" : 1697468551041
-                },
-                "quickInterval" : "CURRENT_MONTH_SO_FAR"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "timewindowStyle" : {
-              "showIcon" : false,
-              "iconSize" : "24px",
-              "icon" : "query_builder",
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
-                "style" : "normal",
-                "lineHeight" : "16px"
-              },
-              "color" : "rgba(0, 0, 0, 0.38)",
-              "displayTypePrefix" : true
-            },
-            "enableDataExport" : true,
-            "resizable" : true,
-            "preserveAspectRatio" : false,
-            "margin" : "0"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "b09da67c-bc7d-aa6f-f1e3-9d8dc0a504c1"
-        },
         "9897931a-e536-8e4b-267e-4dd9b6d4c7c3" : {
           "typeFullFqn" : "system.analogue_gauges.temperature_radial_gauge_canvas_gauges",
           "type" : "latest",
@@ -12213,6 +11441,732 @@
           "row" : 0,
           "col" : 0,
           "id" : "a8608af2-4f67-daf5-e844-b8b3e72c25c6"
+        },
+        "6e0b05dd-c8c7-e480-b114-403b75121552" : {
+          "typeFullFqn" : "system.simple_value_and_chart_card",
+          "type" : "timeseries",
+          "sizeX" : 4.5,
+          "sizeY" : 2,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "dataKeys" : [ {
+                "name" : "cloro",
+                "type" : "timeseries",
+                "label" : "cloro 3",
+                "color" : "#673AB7",
+                "settings" : { },
+                "_hash" : 0.5844550731089944,
+                "aggregationType" : null,
+                "units" : "ppm",
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "cloro",
+                "type" : "timeseries",
+                "label" : "cloro",
+                "color" : "#673AB7",
+                "settings" : { },
+                "_hash" : 0.713728137236405,
+                "aggregationType" : "NONE",
+                "units" : "ppm",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgb(0, 0, 0)",
+            "padding" : "0",
+            "settings" : {
+              "layout" : "right",
+              "autoScale" : false,
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "12px"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "background" : {
+                "type" : "color",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : true,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 0
+                }
+              },
+              "padding" : "0"
+            },
+            "title" : "Cloro libre",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : null,
+            "mobileHeight" : null,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "thermostat",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "14px"
+            },
+            "iconSize" : "18px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "decimals" : 1,
+            "titleColor" : "rgb(0, 0, 0)",
+            "borderRadius" : " ",
+            "units" : "ppm",
+            "displayTimewindow" : false,
+            "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 2,
+                "timewindowMs" : 60000,
+                "interval" : 43200000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697382151041,
+                  "endTimeMs" : 1697468551041
+                },
+                "quickInterval" : "CURRENT_MONTH_SO_FAR"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : true
+            },
+            "enableDataExport" : true,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6e0b05dd-c8c7-e480-b114-403b75121552"
+        },
+        "dc225c23-5974-be57-d02f-005bd40094e8" : {
+          "typeFullFqn" : "system.simple_value_and_chart_card",
+          "type" : "timeseries",
+          "sizeX" : 4.5,
+          "sizeY" : 2,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "dataKeys" : [ {
+                "name" : "conductividad",
+                "type" : "timeseries",
+                "label" : "conductividad 2",
+                "color" : "#E91E63",
+                "settings" : { },
+                "_hash" : 0.2130648821553568
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "conductividad",
+                "type" : "timeseries",
+                "label" : "conductividad",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.34884303197059907
+              } ]
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgb(0, 0, 0)",
+            "padding" : "0",
+            "settings" : {
+              "layout" : "right",
+              "autoScale" : false,
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "12px"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "background" : {
+                "type" : "color",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : true,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 0
+                }
+              },
+              "padding" : "0"
+            },
+            "title" : "Conductividad",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : null,
+            "mobileHeight" : null,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "thermostat",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "14px"
+            },
+            "iconSize" : "18px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "decimals" : 1,
+            "titleColor" : "rgb(0, 0, 0)",
+            "borderRadius" : " ",
+            "units" : "Conductividad",
+            "displayTimewindow" : false,
+            "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 2,
+                "timewindowMs" : 60000,
+                "interval" : 43200000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697382151041,
+                  "endTimeMs" : 1697468551041
+                },
+                "quickInterval" : "CURRENT_MONTH_SO_FAR"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : true
+            },
+            "enableDataExport" : true,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "dc225c23-5974-be57-d02f-005bd40094e8"
+        },
+        "59516c58-fa4a-a09c-13d1-7fe2edbd381f" : {
+          "typeFullFqn" : "system.simple_value_and_chart_card",
+          "type" : "timeseries",
+          "sizeX" : 4.5,
+          "sizeY" : 2,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "dataKeys" : [ {
+                "name" : "redox",
+                "type" : "timeseries",
+                "label" : "redox 2",
+                "color" : "#E89623",
+                "settings" : { },
+                "_hash" : 0.5107440899423489
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "redox",
+                "type" : "timeseries",
+                "label" : "redox",
+                "color" : "#E89623",
+                "settings" : { },
+                "_hash" : 0.6784323771719576
+              } ]
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgb(0, 0, 0)",
+            "padding" : "0",
+            "settings" : {
+              "layout" : "right",
+              "autoScale" : false,
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "12px"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "background" : {
+                "type" : "color",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : true,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 0
+                }
+              },
+              "padding" : "0"
+            },
+            "title" : "Redox",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : null,
+            "mobileHeight" : null,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "thermostat",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "14px"
+            },
+            "iconSize" : "18px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "decimals" : 1,
+            "titleColor" : "rgb(0, 0, 0)",
+            "borderRadius" : " ",
+            "units" : "mV",
+            "displayTimewindow" : false,
+            "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 2,
+                "timewindowMs" : 60000,
+                "interval" : 43200000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697382151041,
+                  "endTimeMs" : 1697468551041
+                },
+                "quickInterval" : "CURRENT_MONTH_SO_FAR"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : true
+            },
+            "enableDataExport" : true,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "59516c58-fa4a-a09c-13d1-7fe2edbd381f"
+        },
+        "0d625fd9-a08b-8535-6f0d-45de82cace65" : {
+          "typeFullFqn" : "system.simple_value_and_chart_card",
+          "type" : "timeseries",
+          "sizeX" : 4.5,
+          "sizeY" : 2,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "dataKeys" : [ {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "ph",
+                "color" : "rgb(4, 138, 211)",
+                "settings" : { },
+                "_hash" : 0.6752236257563727,
+                "aggregationType" : null,
+                "units" : "pH",
+                "decimals" : 1,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "Latest",
+                "color" : "rgb(4, 138, 211)",
+                "settings" : { },
+                "_hash" : 0.6752236257563727,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgb(0, 0, 0)",
+            "padding" : "0",
+            "settings" : {
+              "layout" : "right",
+              "autoScale" : false,
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "12px"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "background" : {
+                "type" : "color",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : true,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 0
+                }
+              },
+              "padding" : "0"
+            },
+            "title" : "pH",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : null,
+            "mobileHeight" : null,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "thermostat",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "14px"
+            },
+            "iconSize" : "18px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "decimals" : 1,
+            "titleColor" : "rgb(0, 0, 0)",
+            "borderRadius" : " ",
+            "units" : "ph",
+            "displayTimewindow" : false,
+            "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 2,
+                "timewindowMs" : 60000,
+                "interval" : 43200000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697382151041,
+                  "endTimeMs" : 1697468551041
+                },
+                "quickInterval" : "CURRENT_MONTH_SO_FAR"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : true
+            },
+            "enableDataExport" : true,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "0d625fd9-a08b-8535-6f0d-45de82cace65"
+        },
+        "21364d6e-d6bc-686b-1ea6-081172030bb0" : {
+          "typeFullFqn" : "system.simple_value_and_chart_card",
+          "type" : "timeseries",
+          "sizeX" : 4.5,
+          "sizeY" : 2,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "dataKeys" : [ {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "ph",
+                "color" : "rgb(4, 138, 211)",
+                "settings" : { },
+                "_hash" : 0.6752236257563727,
+                "aggregationType" : null,
+                "units" : "pH",
+                "decimals" : 1,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "Latest",
+                "color" : "rgb(4, 138, 211)",
+                "settings" : { },
+                "_hash" : 0.6752236257563727,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgb(0, 0, 0)",
+            "padding" : "0",
+            "settings" : {
+              "layout" : "right",
+              "autoScale" : false,
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "12px"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "background" : {
+                "type" : "color",
+                "imageUrl" : "tb-image;/api/images/system/volatile_organic_compounds_card_with_background_system_widget_background.png",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : true,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 0
+                }
+              },
+              "padding" : "0"
+            },
+            "title" : "pH",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : null,
+            "mobileHeight" : null,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "thermostat",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "14px"
+            },
+            "iconSize" : "18px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : true,
+            "decimals" : 1,
+            "titleColor" : "rgb(0, 0, 0)",
+            "borderRadius" : " ",
+            "units" : "ph",
+            "displayTimewindow" : false,
+            "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 2,
+                "timewindowMs" : 60000,
+                "interval" : 43200000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697382151041,
+                  "endTimeMs" : 1697468551041
+                },
+                "quickInterval" : "CURRENT_MONTH_SO_FAR"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : true
+            },
+            "enableDataExport" : true,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "21364d6e-d6bc-686b-1ea6-081172030bb0"
         }
       },
       "states" : {
@@ -12487,86 +12441,41 @@
                   "row" : 27,
                   "col" : 397
                 },
-                "0157f6b0-8092-9781-e63f-5e36df4edd57" : {
-                  "sizeX" : 191,
-                  "sizeY" : 88,
-                  "mobileHeight" : null,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 27,
-                  "col" : 600
-                },
-                "0a42ca72-e84a-f819-9c06-b8aca2895264" : {
-                  "sizeX" : 207,
-                  "sizeY" : 87,
-                  "mobileHeight" : null,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 120,
-                  "col" : 402
-                },
-                "f6e4081e-19a8-d0b9-fa5d-fd9b3ca48546" : {
-                  "sizeX" : 179,
-                  "sizeY" : 82,
-                  "mobileHeight" : null,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 120,
-                  "col" : 611
-                },
-                "95ac03a2-5852-923c-76ed-3feb69cf2aad" : {
-                  "sizeX" : 196,
-                  "sizeY" : 84.52499999999999,
-                  "mobileHeight" : null,
-                  "preserveAspectRatio" : true,
-                  "resizable" : true,
-                  "row" : 207,
-                  "col" : 412
-                },
-                "b09da67c-bc7d-aa6f-f1e3-9d8dc0a504c1" : {
-                  "sizeX" : 183,
-                  "sizeY" : 77,
-                  "mobileHeight" : null,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 211,
-                  "col" : 613
-                },
                 "9897931a-e536-8e4b-267e-4dd9b6d4c7c3" : {
                   "sizeX" : 80,
                   "sizeY" : 71,
-                  "row" : 295,
-                  "col" : 414
+                  "row" : 357,
+                  "col" : 408
                 },
                 "7a53e947-cf88-d5fe-e462-ec9b7fefa620" : {
                   "sizeX" : 81,
                   "sizeY" : 70,
-                  "row" : 295,
-                  "col" : 508
+                  "row" : 359,
+                  "col" : 692
                 },
                 "c252bc7f-128e-f112-7cd4-4f80d269e73f" : {
                   "sizeX" : 80,
                   "sizeY" : 69,
-                  "row" : 295,
-                  "col" : 597
+                  "row" : 445,
+                  "col" : 605
                 },
                 "1d3cbb12-fa29-cb1d-0201-d3e301fd607f" : {
                   "sizeX" : 91,
                   "sizeY" : 69,
-                  "row" : 295,
-                  "col" : 686
+                  "row" : 445,
+                  "col" : 503
                 },
                 "8a7b229e-321a-2b22-70b7-457efb6ea3b0" : {
                   "sizeX" : 81,
                   "sizeY" : 68,
-                  "row" : 376,
-                  "col" : 509
+                  "row" : 359,
+                  "col" : 504
                 },
                 "1819b88b-1056-8ba2-3dd8-8f8858efb56e" : {
                   "sizeX" : 80,
                   "sizeY" : 69,
-                  "row" : 375,
-                  "col" : 600
+                  "row" : 359,
+                  "col" : 601
                 },
                 "e8942bb4-0c23-7158-45c2-46a03e97913a" : {
                   "sizeX" : 89,
@@ -12583,6 +12492,51 @@
                   "resizable" : true,
                   "row" : 0,
                   "col" : 696
+                },
+                "6e0b05dd-c8c7-e480-b114-403b75121552" : {
+                  "sizeX" : 203,
+                  "sizeY" : 93,
+                  "mobileHeight" : null,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 27,
+                  "col" : 602
+                },
+                "dc225c23-5974-be57-d02f-005bd40094e8" : {
+                  "sizeX" : 203,
+                  "sizeY" : 93,
+                  "mobileHeight" : null,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 120,
+                  "col" : 399
+                },
+                "59516c58-fa4a-a09c-13d1-7fe2edbd381f" : {
+                  "sizeX" : 203,
+                  "sizeY" : 93,
+                  "mobileHeight" : null,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 120,
+                  "col" : 602
+                },
+                "0d625fd9-a08b-8535-6f0d-45de82cace65" : {
+                  "sizeX" : 203,
+                  "sizeY" : 93,
+                  "mobileHeight" : null,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 214,
+                  "col" : 399
+                },
+                "21364d6e-d6bc-686b-1ea6-081172030bb0" : {
+                  "sizeX" : 203,
+                  "sizeY" : 93,
+                  "mobileHeight" : null,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 215,
+                  "col" : 602
                 }
               },
               "gridSettings" : {
