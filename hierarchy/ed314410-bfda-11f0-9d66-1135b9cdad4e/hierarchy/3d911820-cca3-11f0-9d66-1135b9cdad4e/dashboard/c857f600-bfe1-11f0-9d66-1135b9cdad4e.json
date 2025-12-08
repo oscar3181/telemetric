@@ -946,7 +946,7 @@
               },
               "numbersColor" : "#263238",
               "showUnitTitle" : true,
-              "unitTitle" : "mV",
+              "unitTitle" : "Redox",
               "titleFont" : {
                 "family" : "Roboto",
                 "size" : 24,
@@ -1105,7 +1105,7 @@
               },
               "numbersColor" : "#263238",
               "showUnitTitle" : true,
-              "unitTitle" : "µS/cm",
+              "unitTitle" : "Conductividad",
               "titleFont" : {
                 "family" : "Roboto",
                 "size" : 24,
