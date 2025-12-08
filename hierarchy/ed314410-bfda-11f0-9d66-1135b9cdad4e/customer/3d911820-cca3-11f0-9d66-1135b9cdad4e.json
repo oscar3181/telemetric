@@ -22,7 +22,7 @@
       "entityType" : "CUSTOMER",
       "id" : "3d911820-cca3-11f0-9d66-1135b9cdad4e"
     },
-    "name" : "Frio Cubir Valladolid",
+    "name" : "Frio Cubit Valladolid",
     "ownerId" : {
       "entityType" : "CUSTOMER",
       "id" : "ed314410-bfda-11f0-9d66-1135b9cdad4e"
@@ -33,7 +33,7 @@
     },
     "phone" : null,
     "state" : null,
-    "title" : "Frio Cubir Valladolid",
+    "title" : "Frio Cubit Valladolid",
     "zip" : null
   },
   "attributes" : {
