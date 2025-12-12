@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "FRIOCUBIT",
+    "title" : "DEMO TORRE",
     "image" : "tb-image;/api/images/tenant/torre_(1).svg",
     "mobileHide" : false,
     "mobileOrder" : 1,
@@ -12765,7 +12765,7 @@
         "dashboardCss" : "\r\n\r\n"
       }
     },
-    "name" : "FRIOCUBIT",
+    "name" : "DEMO TORRE",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,
