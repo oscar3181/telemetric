@@ -1091,7 +1091,7 @@
               "needleCircleSize" : 7,
               "defaultColor" : "#AA00E6",
               "minValue" : 0,
-              "maxValue" : 5000,
+              "maxValue" : 8000,
               "majorTicksCount" : 10,
               "colorMajorTicks" : "rgb(0, 0, 0)",
               "minorTicks" : 10,
@@ -1160,6 +1160,10 @@
               }, {
                 "from" : 3500,
                 "to" : 5000,
+                "color" : "rgb(244, 67, 54)"
+              }, {
+                "from" : 5000,
+                "to" : 8000,
                 "color" : "rgb(244, 67, 54)"
               } ],
               "animation" : true,
