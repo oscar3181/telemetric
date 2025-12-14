@@ -836,7 +836,7 @@
               } ],
               "animation" : true,
               "animationDuration" : 1000,
-              "animationRule" : "linear"
+              "animationRule" : "delastic"
             },
             "title" : "Temperature radial gauge",
             "dropShadow" : true,
@@ -2945,7 +2945,7 @@
               "realtime" : {
                 "realtimeType" : 0,
                 "interval" : 3600000,
-                "timewindowMs" : 86400000,
+                "timewindowMs" : 43200000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
@@ -3383,7 +3383,7 @@
               "realtime" : {
                 "realtimeType" : 0,
                 "interval" : 3600000,
-                "timewindowMs" : 86400000,
+                "timewindowMs" : 43200000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
