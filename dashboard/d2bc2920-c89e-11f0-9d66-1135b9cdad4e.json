@@ -21,8 +21,8 @@
               "dataKeys" : [ {
                 "name" : "ppm",
                 "type" : "timeseries",
-                "label" : "Temperature",
-                "color" : "#2196f3",
+                "label" : "Mg/l",
+                "color" : "#9C27B0",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -92,10 +92,10 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.703026326486931,
-                "units" : "ppm",
-                "decimals" : 0,
+                "_hash" : 0.5477423705287654,
                 "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
@@ -155,7 +155,7 @@
               },
               "thresholds" : [ ],
               "dataZoom" : true,
-              "stack" : false,
+              "stack" : true,
               "yAxis" : {
                 "show" : true,
                 "label" : "",
@@ -362,7 +362,7 @@
                 "splitLinesColor" : "rgba(0, 0, 0, 0.12)"
               },
               "grid" : {
-                "show" : false,
+                "show" : true,
                 "backgroundColor" : null,
                 "borderWidth" : 1,
                 "borderColor" : "#ccc"
@@ -394,15 +394,15 @@
                 "lineHeight" : "16px"
               },
               "tooltipLabelColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipHideZeroValues" : null,
+              "tooltipHideZeroValues" : true,
               "tooltipStackedShowTotal" : false
             },
-            "title" : "Time series chart",
+            "title" : "Serie histórica ",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
