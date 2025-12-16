@@ -93,8 +93,12 @@
                   }
                 },
                 "_hash" : 0.703026326486931,
-                "units" : "°C",
-                "decimals" : 0
+                "units" : "ppm",
+                "decimals" : 0,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
