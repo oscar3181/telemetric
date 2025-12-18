@@ -418,6 +418,104 @@
           "row" : 0,
           "col" : 0,
           "id" : "dddeee9f-164b-2b22-1974-a110b710c2f6"
+        },
+        "1efaa29d-6af2-cc65-fa0c-1b1639dee9c7" : {
+          "typeFullFqn" : "system.cards.timeseries_table",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 6.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "904a8170-da0c-11f0-9d66-1135b9cdad4e",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "estado_txt",
+                "type" : "timeseries",
+                "label" : "Estado",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.655889700770228,
+                "units" : "",
+                "decimals" : 0,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "estado_id",
+                "type" : "timeseries",
+                "label" : "estado_id",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.05063395658730063,
+                "decimals" : 0
+              }, {
+                "name" : "ppm",
+                "type" : "timeseries",
+                "label" : "ppm",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.6490836316517752,
+                "units" : "ppm",
+                "decimals" : 0,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showTimestamp" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true
+            },
+            "title" : "Histórico ",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "displayTimewindow" : true,
+            "configMode" : "basic",
+            "titleFont" : null,
+            "titleColor" : null,
+            "titleIcon" : null,
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "1efaa29d-6af2-cc65-fa0c-1b1639dee9c7"
         }
       },
       "states" : {
@@ -432,6 +530,12 @@
                   "sizeY" : 5,
                   "mobileHeight" : null,
                   "row" : 0,
+                  "col" : 0
+                },
+                "1efaa29d-6af2-cc65-fa0c-1b1639dee9c7" : {
+                  "sizeX" : 8,
+                  "sizeY" : 6,
+                  "row" : 5,
                   "col" : 0
                 }
               },
