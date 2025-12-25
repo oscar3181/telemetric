@@ -209,7 +209,7 @@
             "borderColor" : null,
             "borderRadius" : null,
             "borderWidth" : null,
-            "customWidth" : 100,
+            "customWidth" : 250,
             "dataSources" : [ {
               "alarmFilterConfig" : {
                 "assigneeId" : null,
@@ -225,7 +225,7 @@
               "latestDataKeys" : null,
               "type" : "device"
             } ],
-            "imageUrl" : "tb-image;/api/images/tenant/aquafilterSVG conletras.svg",
+            "imageUrl" : "tb-image;/api/images/tenant/aquafilterSVG conletras_(1).svg",
             "margins" : null,
             "paddings" : null,
             "sourceType" : "image",
