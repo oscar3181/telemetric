@@ -209,7 +209,7 @@
             "borderColor" : null,
             "borderRadius" : null,
             "borderWidth" : null,
-            "customWidth" : 362,
+            "customWidth" : 250,
             "dataSources" : [ {
               "alarmFilterConfig" : {
                 "assigneeId" : null,
@@ -225,7 +225,7 @@
               "latestDataKeys" : null,
               "type" : "device"
             } ],
-            "imageUrl" : "tb-image;/api/images/tenant/aquafilter_logo.svg",
+            "imageUrl" : "tb-image;/api/images/tenant/aquafiltertelemetric cerca conlogo sinfondo PNG.png",
             "margins" : null,
             "paddings" : null,
             "sourceType" : "image",
