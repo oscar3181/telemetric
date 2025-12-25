@@ -167,7 +167,7 @@
             "weight" : "normal"
           },
           "height" : 40,
-          "text" : "${entityName}",
+          "text" : "FRIO CUBIT VALLADOLID",
           "textAlignment" : "center",
           "verticalAlignment" : "middle"
         },
