@@ -150,9 +150,9 @@
           },
           "history" : {
             "historyType" : 0,
-            "interval" : 300000,
+            "interval" : 1800000,
             "quickInterval" : "CURRENT_DAY",
-            "timewindowMs" : 3600000
+            "timewindowMs" : 604800000
           },
           "timezone" : null
         },
