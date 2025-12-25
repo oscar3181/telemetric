@@ -419,8 +419,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 470,
-        "layoutY" : 319
+        "layoutX" : 592,
+        "layoutY" : 356
       },
       "configuration" : {
         "modelId" : {
