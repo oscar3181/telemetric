@@ -50,6 +50,57 @@
             "type" : "timeseries",
             "units" : "°C",
             "usePostProcessing" : false
+          }, {
+            "aggregationType" : null,
+            "color" : "#f44336",
+            "decimals" : 0,
+            "label" : "conductividad",
+            "name" : "conductividad",
+            "postFuncBody" : null,
+            "settings" : {
+              "cell" : null,
+              "columnWidth" : null,
+              "header" : null,
+              "type" : "COLUMN"
+            },
+            "timewindow" : null,
+            "type" : "timeseries",
+            "units" : null,
+            "usePostProcessing" : false
+          }, {
+            "aggregationType" : null,
+            "color" : "#ffc107",
+            "decimals" : 0,
+            "label" : "temperatura 2",
+            "name" : "redox",
+            "postFuncBody" : null,
+            "settings" : {
+              "cell" : null,
+              "columnWidth" : null,
+              "header" : null,
+              "type" : "COLUMN"
+            },
+            "timewindow" : null,
+            "type" : "timeseries",
+            "units" : null,
+            "usePostProcessing" : false
+          }, {
+            "aggregationType" : null,
+            "color" : "#607d8b",
+            "decimals" : 0,
+            "label" : "turbidez",
+            "name" : "turbidez",
+            "postFuncBody" : null,
+            "settings" : {
+              "cell" : null,
+              "columnWidth" : null,
+              "header" : null,
+              "type" : "COLUMN"
+            },
+            "timewindow" : null,
+            "type" : "timeseries",
+            "units" : null,
+            "usePostProcessing" : false
           } ],
           "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
           "entityAliasId" : null,
