@@ -4,6 +4,46 @@
     "configuration" : {
       "format" : "PDF",
       "components" : [ {
+        "alignment" : "center",
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "config" : {
+          "baseUrl" : "https://telemetria.aquafilter.es",
+          "dashboardId" : "c857f600-bfe1-11f0-9d66-1135b9cdad4e",
+          "namePattern" : null,
+          "state" : "W3siaWQiOiJkZWZhdWx0IiwicGFyYW1zIjp7fX0seyJpZCI6ImdyYWZpY29zIiwicGFyYW1zIjp7fX1d",
+          "timewindow" : {
+            "selectedTab" : 1,
+            "history" : {
+              "historyType" : 0,
+              "interval" : 1000,
+              "timewindowMs" : 86400000
+            }
+          },
+          "timezone" : "Europe/Madrid",
+          "type" : "png",
+          "useCurrentUserCredentials" : false,
+          "useDashboardTimewindow" : true,
+          "userId" : null
+        },
+        "customWidth" : 100,
+        "dataSources" : [ {
+          "alarmFilterConfig" : null,
+          "dataKeys" : [ ],
+          "deviceId" : null,
+          "entityAliasId" : null,
+          "filterId" : null,
+          "latestDataKeys" : null,
+          "type" : "entity"
+        } ],
+        "margins" : null,
+        "paddings" : null,
+        "subType" : null,
+        "type" : "DASHBOARD",
+        "widthType" : "fitWidth"
+      }, {
         "background" : null,
         "borderColor" : "#048AD3",
         "borderRadius" : null,
