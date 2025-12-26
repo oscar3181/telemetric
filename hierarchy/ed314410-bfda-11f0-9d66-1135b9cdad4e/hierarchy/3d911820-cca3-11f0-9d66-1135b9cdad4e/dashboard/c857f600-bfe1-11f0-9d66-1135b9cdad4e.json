@@ -6799,22 +6799,80 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0",
             "settings" : {
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/torre.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : {
+                  "ventilador" : {
+                    "action" : "SET_ATTRIBUTE",
+                    "executeRpc" : {
+                      "method" : "setState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "setAttribute" : {
+                      "scope" : "SERVER_SCOPE",
+                      "key" : "state"
+                    },
+                    "putTimeSeries" : {
+                      "key" : "temperatura"
+                    },
+                    "valueToData" : {
+                      "type" : "CONSTANT",
+                      "constantValue" : true,
+                      "valueToDataFunction" : "/* Convert input boolean value to RPC parameters or attribute/time-series value */\nreturn value;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "ventilador" : {
+                    "type" : "range",
+                    "color" : "#048AD3",
+                    "gradient" : {
+                      "advancedMode" : false,
+                      "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                      "gradientAdvanced" : [ {
+                        "source" : {
+                          "type" : "constant"
+                        },
+                        "color" : "rgba(0, 255, 0, 1)"
+                      }, {
+                        "source" : {
+                          "type" : "constant"
+                        },
+                        "color" : "rgba(255, 0, 0, 1)"
+                      } ],
+                      "minValue" : 0,
+                      "maxValue" : 100
+                    },
+                    "rangeList" : {
+                      "advancedMode" : false,
+                      "range" : [ {
+                        "from" : 10,
+                        "to" : 20,
+                        "color" : "rgb(4, 138, 211)"
+                      }, {
+                        "from" : 20,
+                        "to" : 40,
+                        "color" : "rgb(244, 67, 54)"
+                      } ],
+                      "rangeAdvanced" : [ ]
+                    },
+                    "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                  }
+                }
+              },
               "background" : {
                 "type" : "color",
-                "imageUrl" : null,
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : false,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
-                }
+                },
+                "imageUrl" : null
               },
-              "padding" : "0",
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/torre.svg",
-              "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
-              }
+              "padding" : "0"
             },
             "title" : "SCADA symbol",
             "dropShadow" : false,
