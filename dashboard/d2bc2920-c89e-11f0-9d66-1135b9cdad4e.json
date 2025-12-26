@@ -584,6 +584,70 @@
           "row" : 0,
           "col" : 0,
           "id" : "3aab9986-e8ac-95f6-c669-5fafbb64a6bb"
+        },
+        "99af28c4-d104-2c4e-de77-16f1f35ab6f0" : {
+          "typeFullFqn" : "tenant.torre_colores",
+          "type" : "rpc",
+          "sizeX" : 13,
+          "sizeY" : 13,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgb(255, 255, 255)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/torre.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "TORRE:COLORES",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "advanced",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "99af28c4-d104-2c4e-de77-16f1f35ab6f0"
         }
       },
       "states" : {
@@ -611,6 +675,12 @@
                   "sizeY" : 6,
                   "row" : 0,
                   "col" : 8
+                },
+                "99af28c4-d104-2c4e-de77-16f1f35ab6f0" : {
+                  "sizeX" : 13,
+                  "sizeY" : 13,
+                  "row" : 11,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
