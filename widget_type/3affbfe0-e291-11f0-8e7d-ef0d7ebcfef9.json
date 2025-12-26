@@ -14,8 +14,14 @@
       "templateHtml" : "<tb-scada-symbol-widget\n    [ctx]='ctx'\n    [widgetTitlePanel]=\"widgetTitlePanel\">\n</tb-scada-symbol-widget>",
       "templateCss" : "",
       "controllerScript" : "self.onInit = function() {\n    self.ctx.$scope.actionWidget.onInit();\n}\n\nself.typeParameters = function() {\n    return {\n        previewWidth: '1300px',\n        previewHeight: '1320px',\n        embedTitlePanel: true,\n        targetDeviceOptional: true,\n        displayRpcMessageToast: false\n    };\n};\n\nself.onDestroy = function() {\n}\n",
-      "settingsSchema" : "",
-      "dataKeySettingsSchema" : "{}\n",
+      "settingsForm" : [ {
+        "id" : "ventilador",
+        "name" : "ventilador",
+        "type" : "color",
+        "default" : "#3C4253",
+        "required" : true
+      } ],
+      "dataKeySettingsForm" : [ ],
       "settingsDirective" : "tb-scada-symbol-widget-settings",
       "hasBasicMode" : true,
       "basicModeDirective" : "tb-scada-symbol-basic-config",
