@@ -37,10 +37,6 @@
       "toIndex" : 9,
       "type" : "True"
     }, {
-      "fromIndex" : 0,
-      "toIndex" : 11,
-      "type" : "True"
-    }, {
       "fromIndex" : 2,
       "toIndex" : 1,
       "type" : "Success"
@@ -63,10 +59,6 @@
     }, {
       "fromIndex" : 10,
       "toIndex" : 4,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 11,
-      "toIndex" : 12,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 10,
@@ -416,75 +408,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 592,
-        "layoutY" : 356
-      },
-      "configuration" : {
-        "modelId" : {
-          "entityType" : "AI_MODEL",
-          "id" : "703c5690-e193-11f0-8e7d-ef0d7ebcfef9"
-        },
-        "systemPrompt" : "Eres un experto analista de calidad del agua y sistemas de torres de refigeración. Tu tarea es analizar los datos de los sensores de un dispositivo IoT. Identifica si los valores de PH, temperatura y conductividad están fuera de los rangos normales para agua dulce y reporta qué valor se repite más allá de su rango. Mantén un tono profesional y objetivo.",
-        "userPrompt" : "Analiza los siguientes datos del sensor y proporciona un resumen, incluyendo el valor que más veces sale de rango: PH actual: $[ph] Temperatura: $[temperatura] Conductividad: $[conductividad]",
-        "resourceIds" : null,
-        "responseFormat" : {
-          "type" : "TEXT"
-        },
-        "timeoutSeconds" : 60,
-        "forceAck" : true
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugSettings" : {
-        "allEnabled" : false,
-        "allEnabledUntil" : 1766674591417,
-        "failuresEnabled" : false
-      },
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "9edfbe20-e197-11f0-8e7d-ef0d7ebcfef9"
-      },
-      "name" : "Detalle IA",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.ai.TbAiNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 684,
-        "layoutY" : 182
-      },
-      "configuration" : {
-        "processingSettings" : {
-          "type" : "ON_EVERY_MESSAGE"
-        },
-        "scope" : "SERVER_SCOPE",
-        "notifyDevice" : false,
-        "sendAttributesUpdatedNotification" : false,
-        "updateAttributesOnlyOnValueChange" : false
-      },
-      "configurationVersion" : 3,
-      "createdTime" : 0,
-      "debugSettings" : {
-        "allEnabled" : false,
-        "allEnabledUntil" : 1766671076988,
-        "failuresEnabled" : false
-      },
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "9ee05a60-e197-11f0-8e7d-ef0d7ebcfef9"
-      },
-      "name" : "salva ia",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
     } ],
     "ruleChainConnections" : null
   },
