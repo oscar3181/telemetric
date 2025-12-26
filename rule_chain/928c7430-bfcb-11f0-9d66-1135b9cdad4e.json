@@ -78,7 +78,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var ph = parseFloat(msg.ph);\r\nvar s = (metadata.shared_sendph || \"\").toString().toLowerCase();\r\nreturn (ph > 8.6 ||( ph < 7 && ph > 0.0)) && s !== \"true\";\r\n",
+        "jsScript" : "var ph = parseFloat(msg.ph);\r\nvar s = (metadata.shared_sendph || \"\").toString().toLowerCase();\r\nreturn (ph > 8.6 ||( ph < 6 && ph > 0.0)) && s !== \"true\";\r\n",
         "tbelScript" : ""
       },
       "configurationVersion" : 0,
@@ -328,7 +328,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var ph = parseFloat(msg.ph);\r\nif (ph < 8.6 && ph > 7) {\r\n    msg.sendph = false;\r\n    return {\r\n        msg: msg,\r\n        msgType: \"POST_ATTRIBUTES_REQUEST\"\r\n    };\r\n} else {\r\n    return null;\r\n}\r\n",
+        "jsScript" : "var ph = parseFloat(msg.ph);\r\nif (ph < 8.6 && ph > 6) {\r\n    msg.sendph = false;\r\n    return {\r\n        msg: msg,\r\n        msgType: \"POST_ATTRIBUTES_REQUEST\"\r\n    };\r\n} else {\r\n    return null;\r\n}\r\n",
         "tbelScript" : ""
       },
       "configurationVersion" : 0,
