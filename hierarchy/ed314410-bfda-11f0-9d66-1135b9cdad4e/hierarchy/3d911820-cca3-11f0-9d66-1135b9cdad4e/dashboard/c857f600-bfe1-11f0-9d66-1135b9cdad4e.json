@@ -7888,8 +7888,8 @@
                 "properties" : {
                   "openColor" : "#4CAF50",
                   "closedColor" : "#4CAF50",
-                  "minUs" : 2000,
-                  "maxUs" : 3000
+                  "minUs" : 1800,
+                  "maxUs" : 2000
                 }
               },
               "background" : {
