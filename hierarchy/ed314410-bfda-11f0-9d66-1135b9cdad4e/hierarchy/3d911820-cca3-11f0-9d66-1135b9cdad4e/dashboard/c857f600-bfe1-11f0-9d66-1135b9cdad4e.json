@@ -7896,8 +7896,8 @@
             "iconSize" : "24px",
             "configMode" : "advanced",
             "targetDevice" : {
-              "type" : "entity",
-              "entityAliasId" : "6f7b410e-04eb-a957-c95f-0f97510cd716"
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
