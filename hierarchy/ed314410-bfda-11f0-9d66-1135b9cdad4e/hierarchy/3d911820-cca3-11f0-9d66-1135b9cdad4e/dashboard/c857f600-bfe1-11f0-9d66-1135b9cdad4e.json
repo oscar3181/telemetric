@@ -7894,10 +7894,10 @@
             "titleIcon" : "mdi:lightbulb-outline",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+              "type" : "entity",
+              "entityAliasId" : "6f7b410e-04eb-a957-c95f-0f97510cd716"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -12775,6 +12775,18 @@
             "resolveMultiple" : true,
             "entityType" : "DEVICE",
             "entityList" : [ "a81134f0-3bfd-11f0-9584-abfdb9c61187", "3363f980-3bfd-11f0-9584-abfdb9c61187", "a87642e0-3bfe-11f0-9584-abfdb9c61187", "b86ef710-3bfd-11f0-9584-abfdb9c61187", "c82ea470-3bfd-11f0-9584-abfdb9c61187" ]
+          }
+        },
+        "6f7b410e-04eb-a957-c95f-0f97510cd716" : {
+          "id" : "6f7b410e-04eb-a957-c95f-0f97510cd716",
+          "alias" : "SUBFRIO",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+            }
           }
         }
       },
