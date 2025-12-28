@@ -6923,17 +6923,6 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0",
             "settings" : {
-              "background" : {
-                "type" : "color",
-                "imageUrl" : null,
-                "color" : "rgba(0,0,0,0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              },
-              "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/tenant/depóstico_producto_con_dosificadora.svg",
               "scadaSymbolObjectSettings" : {
                 "behavior" : {
@@ -6947,8 +6936,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
+                      "scope" : null,
+                      "key" : "state"
                     },
                     "getTimeSeries" : {
                       "key" : "conductividad"
@@ -6959,18 +6948,28 @@
                     },
                     "dataToValue" : {
                       "type" : "FUNCTION",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "// data = [[timestamp, value], ...]\r\nif (!data || !data.length) {\r\n    return null;\r\n}\r\n\r\nconst v = Number(data[data.length - 1][1]);\r\nreturn Number.isFinite(v) ? v : null;\r\n\r\n"
+                      "dataToValueFunction" : "// data = [[timestamp, value], ...]\r\nif (!data || !data.length) {\r\n    return null;\r\n}\r\n\r\nconst v = Number(data[data.length - 1][1]);\r\nreturn Number.isFinite(v) ? v : null;\r\n\r\n\r\n\r\n"
                     }
                   }
                 },
                 "properties" : {
                   "openColor" : "#8BC34A",
                   "closedColor" : "#F44336",
-                  "minUs" : 0,
-                  "maxUs" : 0
+                  "minUs" : 1800,
+                  "maxUs" : 2000
                 }
-              }
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                },
+                "imageUrl" : null
+              },
+              "padding" : "0"
             },
             "title" : "SCADA symbol",
             "dropShadow" : false,
@@ -6994,7 +6993,7 @@
             "titleIcon" : "mdi:lightbulb-outline",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
               "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
