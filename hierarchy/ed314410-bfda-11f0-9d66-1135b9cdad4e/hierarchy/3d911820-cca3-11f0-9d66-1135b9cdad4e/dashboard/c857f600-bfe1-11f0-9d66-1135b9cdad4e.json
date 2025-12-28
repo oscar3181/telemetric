@@ -7033,11 +7033,11 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
+                      "scope" : null,
+                      "key" : "state"
                     },
                     "getTimeSeries" : {
-                      "key" : "ph"
+                      "key" : "conductividad"
                     },
                     "getAlarmStatus" : {
                       "severityList" : null,
@@ -7045,7 +7045,6 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "compareToValue" : true,
                       "dataToValueFunction" : "// data = [[timestamp, value], ...]\r\nif (!data || !data.length) {\r\n    return null;\r\n}\r\n\r\nconst v = Number(data[data.length - 1][1]);\r\nreturn Number.isFinite(v) ? v : null;\r\n\r\n"
                     }
                   }
@@ -7094,7 +7093,7 @@
             "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "d9919ea0-bf30-11f0-9d66-1135b9cdad4e"
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
