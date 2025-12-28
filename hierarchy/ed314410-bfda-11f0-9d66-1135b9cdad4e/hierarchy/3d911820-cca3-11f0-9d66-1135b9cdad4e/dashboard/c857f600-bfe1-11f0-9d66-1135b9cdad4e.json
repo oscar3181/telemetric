@@ -6956,8 +6956,8 @@
                 "properties" : {
                   "openColor" : "#8BC34A",
                   "closedColor" : "#F44336",
-                  "minUs" : 0,
-                  "maxUs" : 0
+                  "minUs" : 1800,
+                  "maxUs" : 2000
                 }
               },
               "background" : {
