@@ -12453,8 +12453,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : "SHARED_SCOPE",
-                      "key" : "running"
+                      "key" : "running",
+                      "scope" : "SHARED_SCOPE"
                     },
                     "getTimeSeries" : {
                       "key" : "conductividad"
@@ -12465,13 +12465,14 @@
                     },
                     "dataToValue" : {
                       "type" : "FUNCTION",
+                      "compareToValue" : false,
                       "dataToValueFunction" : "// data es un array de puntos [ [ts, value], ... ]\r\nif (!data || !data.length) {\r\n    return null;\r\n}\r\n\r\n// devolver el último valor de la serie\r\nreturn Number(data[data.length - 1][1]);\r\n"
                     }
                   }
                 },
                 "properties" : {
-                  "openColor" : "#00C853",
-                  "closedColor" : "#FF4000",
+                  "openColor" : "#C6C800",
+                  "closedColor" : "#F44336",
                   "minUs" : 1800,
                   "maxUs" : 2000
                 }
