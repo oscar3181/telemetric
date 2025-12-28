@@ -6947,7 +6947,7 @@
                       "typeList" : null
                     },
                     "dataToValue" : {
-                      "type" : "FUNCTION",
+                      "type" : "NONE",
                       "dataToValueFunction" : "// data = [[timestamp, value], ...]\r\nif (!data || !data.length) {\r\n    return null;\r\n}\r\n\r\nconst v = Number(data[data.length - 1][1]);\r\nreturn Number.isFinite(v) ? v : null;\r\n\r\n\r\n\r\n"
                     }
                   }
