@@ -6947,8 +6947,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "conductividad"
@@ -6959,6 +6959,7 @@
                     },
                     "dataToValue" : {
                       "type" : "FUNCTION",
+                      "compareToValue" : true,
                       "dataToValueFunction" : "// data = [[timestamp, value], ...]\r\nif (!data || !data.length) {\r\n    return null;\r\n}\r\n\r\nconst v = Number(data[data.length - 1][1]);\r\nreturn Number.isFinite(v) ? v : null;\r\n\r\n"
                     }
                   }
@@ -6966,8 +6967,8 @@
                 "properties" : {
                   "openColor" : "#8BC34A",
                   "closedColor" : "#F44336",
-                  "minUs" : 1800,
-                  "maxUs" : 2000
+                  "minUs" : 0,
+                  "maxUs" : 0
                 }
               }
             },
