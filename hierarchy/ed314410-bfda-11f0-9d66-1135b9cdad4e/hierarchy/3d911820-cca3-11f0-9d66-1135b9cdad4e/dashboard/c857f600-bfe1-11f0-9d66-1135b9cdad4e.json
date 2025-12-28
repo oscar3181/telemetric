@@ -7949,7 +7949,7 @@
                 },
                 "properties" : {
                   "openColor" : "#4CAF50",
-                  "closedColor" : "#4CAF50",
+                  "closedColor" : "#F44336",
                   "minUs" : 1800,
                   "maxUs" : 2000
                 }
