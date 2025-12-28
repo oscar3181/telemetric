@@ -7038,24 +7038,23 @@
                       "key" : "state"
                     },
                     "getTimeSeries" : {
-                      "key" : "conductividad"
+                      "key" : "ph"
                     },
                     "getAlarmStatus" : {
                       "severityList" : null,
                       "typeList" : null
                     },
                     "dataToValue" : {
-                      "type" : "FUNCTION",
-                      "dataToValueFunction" : "// data = [[timestamp, value], ...]\r\nif (!data || !data.length) {\r\n    return null;\r\n}\r\n\r\nconst v = Number(data[data.length - 1][1]);\r\nreturn Number.isFinite(v) ? v : null;\r\n\r\n",
-                      "compareToValue" : 1.5
+                      "type" : "NONE",
+                      "dataToValueFunction" : "// data = [[timestamp, value], ...]\r\nif (!data || !data.length) {\r\n    return null;\r\n}\r\n\r\nconst v = Number(data[data.length - 1][1]);\r\nreturn Number.isFinite(v) ? v : null;\r\n\r\n"
                     }
                   }
                 },
                 "properties" : {
                   "openColor" : "#8BC34A",
                   "closedColor" : "#F44336",
-                  "minUs" : 1800,
-                  "maxUs" : 2000
+                  "minUs" : 7,
+                  "maxUs" : 8
                 }
               },
               "background" : {
@@ -7095,7 +7094,7 @@
             "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+              "deviceId" : "d9919ea0-bf30-11f0-9d66-1135b9cdad4e"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
