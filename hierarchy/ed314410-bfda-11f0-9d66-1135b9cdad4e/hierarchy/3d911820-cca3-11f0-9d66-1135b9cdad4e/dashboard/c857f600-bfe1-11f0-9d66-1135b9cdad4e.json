@@ -6171,16 +6171,16 @@
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 5,
-                  "col" : 169
+                  "row" : 7,
+                  "col" : 245
                 },
                 "3e4a1b8d-695c-fa67-5534-fb8ba3077a9b" : {
                   "sizeX" : 89,
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 5,
-                  "col" : 353
+                  "row" : 7,
+                  "col" : 427
                 },
                 "076018e4-95bb-c910-9a90-185b3c041273" : {
                   "sizeX" : 99,
@@ -6227,16 +6227,16 @@
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 5,
-                  "col" : 262
+                  "row" : 7,
+                  "col" : 336
                 },
                 "a8608af2-4f67-daf5-e844-b8b3e72c25c6" : {
-                  "sizeX" : 91,
+                  "sizeX" : 92,
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 5,
-                  "col" : 444
+                  "row" : 7,
+                  "col" : 518
                 },
                 "6713b7e9-e290-dec8-f602-e9f0a79c10b5" : {
                   "sizeX" : 24,
