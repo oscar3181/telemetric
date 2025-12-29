@@ -5007,104 +5007,6 @@
           "col" : 0,
           "id" : "b3446df8-fa35-9440-1aa7-306db690739c"
         },
-        "ba69bfa1-d430-d96a-922e-90802cb92723" : {
-          "typeFullFqn" : "system.scada_symbol",
-          "type" : "rpc",
-          "sizeX" : 3,
-          "sizeY" : 3,
-          "config" : {
-            "showTitle" : false,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0",
-            "settings" : {
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/válvula_2_vías.svg",
-              "scadaSymbolObjectSettings" : {
-                "behavior" : {
-                  "conductividad" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "condutividad"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  }
-                },
-                "properties" : {
-                  "openColor" : "#4CAF50",
-                  "closedColor" : "#F44336",
-                  "minUs" : 1800,
-                  "maxUs" : 2000
-                }
-              },
-              "background" : {
-                "type" : "color",
-                "color" : "rgba(0,0,0,0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                },
-                "imageUrl" : null
-              },
-              "padding" : "0"
-            },
-            "title" : "SCADA symbol",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "actions" : { },
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : null,
-              "lineHeight" : "1.6"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleStyle" : null,
-            "pageSize" : 1024,
-            "titleIcon" : "mdi:lightbulb-outline",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "configMode" : "advanced",
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
-            },
-            "titleColor" : null,
-            "borderRadius" : "0px",
-            "margin" : "0",
-            "datasources" : [ ],
-            "resizable" : true,
-            "preserveAspectRatio" : false
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "ba69bfa1-d430-d96a-922e-90802cb92723"
-        },
         "1870af3c-3643-d742-47e0-15e67ff69856" : {
           "typeFullFqn" : "system.horizontal_pipe",
           "type" : "rpc",
@@ -6058,11 +5960,11 @@
           "col" : 0,
           "id" : "84c12154-539b-4258-efdb-757d3cbba0dc"
         },
-        "4602aa8b-8411-19bf-a995-127e2061b4f4" : {
-          "typeFullFqn" : "system.left_bottom_elbow_pipe",
+        "41385469-c0ca-8238-5285-7d39e15508e7" : {
+          "typeFullFqn" : "system.scada_symbol",
           "type" : "rpc",
-          "sizeX" : 1,
-          "sizeY" : 1,
+          "sizeX" : 3,
+          "sizeY" : 3,
           "config" : {
             "showTitle" : false,
             "backgroundColor" : "rgba(0,0,0,0)",
@@ -6080,13 +5982,13 @@
                 }
               },
               "padding" : "0",
-              "scadaSymbolUrl" : "tb-image;/api/images/system/left-bottom-elbow-pipe.svg",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/válvula_2_vías_desagüe.svg",
               "scadaSymbolObjectSettings" : {
                 "behavior" : { },
                 "properties" : { }
               }
             },
-            "title" : "Left bottom elbow pipe",
+            "title" : "SCADA symbol",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "widgetStyle" : { },
@@ -6118,11 +6020,143 @@
             "margin" : "0",
             "datasources" : [ ],
             "resizable" : true,
+            "preserveAspectRatio" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "41385469-c0ca-8238-5285-7d39e15508e7"
+        },
+        "da724d95-d9f7-8f74-1c13-9927823dd599" : {
+          "typeFullFqn" : "system.horizontal_pipe",
+          "type" : "rpc",
+          "sizeX" : 1,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0",
+              "scadaSymbolUrl" : "tb-image;/api/images/system/horizontal-pipe.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "Horizontal pipe",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "d1a6f4c0-8da7-11f0-a183-ed93958ce7de"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0",
+            "datasources" : [ ],
+            "resizable" : true,
             "preserveAspectRatio" : true
           },
           "row" : 0,
           "col" : 0,
-          "id" : "4602aa8b-8411-19bf-a995-127e2061b4f4"
+          "id" : "da724d95-d9f7-8f74-1c13-9927823dd599"
+        },
+        "a58a0f45-19f7-141c-ca92-612f25068fdb" : {
+          "typeFullFqn" : "system.horizontal_pipe",
+          "type" : "rpc",
+          "sizeX" : 1,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0",
+              "scadaSymbolUrl" : "tb-image;/api/images/system/horizontal-pipe.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "Horizontal pipe",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "d1a6f4c0-8da7-11f0-a183-ed93958ce7de"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0",
+            "datasources" : [ ],
+            "resizable" : true,
+            "preserveAspectRatio" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a58a0f45-19f7-141c-ca92-612f25068fdb"
         }
       },
       "states" : {
@@ -6164,37 +6198,29 @@
                   "row" : 322,
                   "col" : 454
                 },
-                "ba69bfa1-d430-d96a-922e-90802cb92723" : {
-                  "sizeX" : 30,
-                  "sizeY" : 41,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 224,
-                  "col" : 275
-                },
                 "1870af3c-3643-d742-47e0-15e67ff69856" : {
                   "sizeX" : 23,
                   "sizeY" : 23,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 119,
-                  "col" : 273
+                  "row" : 122,
+                  "col" : 344
                 },
                 "1d6160e7-8e67-b9c8-bfd2-49afbe08295e" : {
                   "sizeX" : 23,
                   "sizeY" : 23,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 201,
-                  "col" : 603
+                  "row" : 122,
+                  "col" : 298
                 },
                 "26a56045-391c-df0f-f8e0-2845437ce606" : {
-                  "sizeX" : 37.5,
-                  "sizeY" : 25,
+                  "sizeX" : 57,
+                  "sizeY" : 38,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 142,
-                  "col" : 276
+                  "row" : 145,
+                  "col" : 332
                 },
                 "e8942bb4-0c23-7158-45c2-46a03e97913a" : {
                   "sizeX" : 89,
@@ -6213,52 +6239,68 @@
                   "col" : 444
                 },
                 "6713b7e9-e290-dec8-f602-e9f0a79c10b5" : {
-                  "sizeX" : 25.25,
-                  "sizeY" : 101,
+                  "sizeX" : 24,
+                  "sizeY" : 96,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 142,
-                  "col" : 249
+                  "row" : 145,
+                  "col" : 252
                 },
                 "b5cfd889-6bf4-6acf-5c2a-ca8d01b985ae" : {
                   "sizeX" : 162,
                   "sizeY" : 168,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 46,
-                  "col" : 322
+                  "row" : 59,
+                  "col" : 389
                 },
                 "9e27f156-4dbc-529d-2057-d0216cef1bde" : {
                   "sizeX" : 21,
                   "sizeY" : 22,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 120,
-                  "col" : 296
+                  "row" : 123,
+                  "col" : 367
                 },
                 "70f510b1-68f9-3ffd-3726-628640c86c1c" : {
                   "sizeX" : 23,
                   "sizeY" : 23,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 119,
-                  "col" : 250
+                  "row" : 122,
+                  "col" : 252
                 },
                 "84c12154-539b-4258-efdb-757d3cbba0dc" : {
-                  "sizeX" : 26,
-                  "sizeY" : 26,
+                  "sizeX" : 25,
+                  "sizeY" : 25,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 243,
-                  "col" : 249
+                  "row" : 241,
+                  "col" : 252
                 },
-                "4602aa8b-8411-19bf-a995-127e2061b4f4" : {
-                  "sizeX" : 21,
-                  "sizeY" : 22,
+                "41385469-c0ca-8238-5285-7d39e15508e7" : {
+                  "sizeX" : 41,
+                  "sizeY" : 47,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 246,
-                  "col" : 305
+                  "row" : 213,
+                  "col" : 277
+                },
+                "da724d95-d9f7-8f74-1c13-9927823dd599" : {
+                  "sizeX" : 23,
+                  "sizeY" : 23,
+                  "preserveAspectRatio" : true,
+                  "resizable" : true,
+                  "row" : 122,
+                  "col" : 321
+                },
+                "a58a0f45-19f7-141c-ca92-612f25068fdb" : {
+                  "sizeX" : 23,
+                  "sizeY" : 23,
+                  "preserveAspectRatio" : true,
+                  "resizable" : true,
+                  "row" : 122,
+                  "col" : 275
                 }
               },
               "gridSettings" : {
