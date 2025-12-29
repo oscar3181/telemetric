@@ -6091,6 +6091,72 @@
           "row" : 0,
           "col" : 0,
           "id" : "a58a0f45-19f7-141c-ca92-612f25068fdb"
+        },
+        "54cac04e-7d4a-974b-a11b-e4b4f36c53c1" : {
+          "typeFullFqn" : "system.scada_symbol",
+          "type" : "rpc",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/válvula_2_vías_desagüe.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "SCADA symbol",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0",
+            "datasources" : [ ],
+            "resizable" : true,
+            "preserveAspectRatio" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "54cac04e-7d4a-974b-a11b-e4b4f36c53c1"
         }
       },
       "states" : {
@@ -6227,6 +6293,14 @@
                   "resizable" : true,
                   "row" : 122,
                   "col" : 275
+                },
+                "54cac04e-7d4a-974b-a11b-e4b4f36c53c1" : {
+                  "sizeX" : 35,
+                  "sizeY" : 42,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 228,
+                  "col" : 277
                 }
               },
               "gridSettings" : {
