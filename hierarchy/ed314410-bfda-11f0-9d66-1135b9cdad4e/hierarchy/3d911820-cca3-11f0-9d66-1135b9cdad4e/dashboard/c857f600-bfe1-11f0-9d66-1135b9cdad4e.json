@@ -6750,7 +6750,7 @@
             },
             "title" : "descalcificador",
             "dropShadow" : false,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
@@ -6769,7 +6769,7 @@
             },
             "showTitleIcon" : false,
             "titleTooltip" : "",
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "widgetStyle" : { },
             "widgetCss" : "",
             "pageSize" : 1024,
@@ -7634,7 +7634,7 @@
             },
             "title" : "Multiparamétrico",
             "dropShadow" : false,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
@@ -7646,7 +7646,7 @@
             "displayTimewindow" : true,
             "showTitleIcon" : false,
             "titleTooltip" : "",
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "widgetStyle" : { },
             "widgetCss" : "",
             "pageSize" : 1024,
