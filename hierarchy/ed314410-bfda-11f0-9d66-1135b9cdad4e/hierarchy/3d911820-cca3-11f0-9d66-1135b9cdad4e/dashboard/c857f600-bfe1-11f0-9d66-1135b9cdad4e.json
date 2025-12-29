@@ -6187,16 +6187,16 @@
                   "sizeY" : 93,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 321,
-                  "col" : 337
+                  "row" : 181,
+                  "col" : 667
                 },
                 "b3446df8-fa35-9440-1aa7-306db690739c" : {
                   "sizeX" : 99,
                   "sizeY" : 93,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 322,
-                  "col" : 454
+                  "row" : 73,
+                  "col" : 667
                 },
                 "1870af3c-3643-d742-47e0-15e67ff69856" : {
                   "sizeX" : 23,
@@ -6247,11 +6247,11 @@
                   "col" : 252
                 },
                 "b5cfd889-6bf4-6acf-5c2a-ca8d01b985ae" : {
-                  "sizeX" : 162,
-                  "sizeY" : 168,
+                  "sizeX" : 181,
+                  "sizeY" : 185,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 59,
+                  "row" : 47,
                   "col" : 389
                 },
                 "9e27f156-4dbc-529d-2057-d0216cef1bde" : {
