@@ -10457,8 +10457,8 @@
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 1,
-                  "col" : 409
+                  "row" : 0,
+                  "col" : 406
                 },
                 "3e4a1b8d-695c-fa67-5534-fb8ba3077a9b" : {
                   "sizeX" : 89,
@@ -10976,14 +10976,14 @@
       },
       "settings" : {
         "stateControllerId" : "entity",
-        "showTitle" : true,
+        "showTitle" : false,
         "showDashboardsSelect" : true,
         "showEntitiesSelect" : true,
         "showDashboardTimewindow" : true,
         "showDashboardExport" : true,
         "toolbarAlwaysOpen" : true,
         "titleColor" : "rgba(0,0,0,0.870588)",
-        "showDashboardLogo" : true,
+        "showDashboardLogo" : false,
         "dashboardLogoUrl" : "tb-image;/api/images/tenant/aquafiltertelemetric cerca conlogo sinfondo PNG.png",
         "hideToolbar" : false,
         "showFilters" : true,
