@@ -10976,7 +10976,7 @@
       },
       "settings" : {
         "stateControllerId" : "entity",
-        "showTitle" : false,
+        "showTitle" : true,
         "showDashboardsSelect" : true,
         "showEntitiesSelect" : true,
         "showDashboardTimewindow" : true,
