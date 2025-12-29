@@ -10983,7 +10983,7 @@
         "showDashboardExport" : true,
         "toolbarAlwaysOpen" : true,
         "titleColor" : "rgba(0,0,0,0.870588)",
-        "showDashboardLogo" : false,
+        "showDashboardLogo" : true,
         "dashboardLogoUrl" : "tb-image;/api/images/tenant/aquafiltertelemetric cerca conlogo sinfondo PNG.png",
         "hideToolbar" : false,
         "showFilters" : true,
