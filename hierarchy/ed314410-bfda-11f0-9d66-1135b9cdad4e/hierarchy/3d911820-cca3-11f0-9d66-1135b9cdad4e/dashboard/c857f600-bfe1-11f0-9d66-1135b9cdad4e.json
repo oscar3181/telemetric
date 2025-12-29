@@ -7621,6 +7621,84 @@
           "row" : 0,
           "col" : 0,
           "id" : "9a91d765-ee7b-17e2-062f-82f5ae55ef78"
+        },
+        "5e442f6c-47b6-f56b-bd7c-65009d56bd41" : {
+          "typeFullFqn" : "system.cards.label_widget",
+          "type" : "latest",
+          "sizeX" : 4.5,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "dataKeys" : [ {
+                "name" : "conductividad",
+                "type" : "timeseries",
+                "label" : "conductividad",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.09864969506791743
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1766952311329,
+                  "endTimeMs" : 1767038711329
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "backgroundImageUrl" : "tb-image;/api/images/tenant/aquafilter_600_foto-Photoroom.png",
+              "labels" : [ ]
+            },
+            "title" : "Label widget",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "5e442f6c-47b6-f56b-bd7c-65009d56bd41"
         }
       },
       "states" : {
@@ -7941,6 +8019,14 @@
                   "resizable" : true,
                   "row" : 159,
                   "col" : 581
+                },
+                "5e442f6c-47b6-f56b-bd7c-65009d56bd41" : {
+                  "sizeX" : 56,
+                  "sizeY" : 60,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 302,
+                  "col" : 455
                 }
               },
               "gridSettings" : {
