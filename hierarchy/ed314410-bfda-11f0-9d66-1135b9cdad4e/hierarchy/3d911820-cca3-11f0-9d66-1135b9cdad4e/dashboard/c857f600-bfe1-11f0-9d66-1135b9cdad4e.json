@@ -8211,6 +8211,100 @@
           "row" : 0,
           "col" : 0,
           "id" : "85c80597-ffe5-1370-cfd1-f3d9553b6ecb"
+        },
+        "b7afe4d5-2e66-433c-6f50-7162280b539c" : {
+          "typeFullFqn" : "system.cards.label_widget",
+          "type" : "latest",
+          "sizeX" : 4.5,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "dataKeys" : [ {
+                "name" : "conductividad",
+                "type" : "timeseries",
+                "label" : "conductividad",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.09864969506791743
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1766952311329,
+                  "endTimeMs" : 1767038711329
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "backgroundImageUrl" : "tb-image;/api/images/tenant/frioCubit.png",
+              "labels" : [ ]
+            },
+            "title" : "SWA",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : null,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : null
+            },
+            "titleColor" : "#048AD3"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "b7afe4d5-2e66-433c-6f50-7162280b539c"
         }
       },
       "states" : {
@@ -8579,6 +8673,14 @@
                   "resizable" : true,
                   "row" : 273,
                   "col" : 284
+                },
+                "b7afe4d5-2e66-433c-6f50-7162280b539c" : {
+                  "sizeX" : 131,
+                  "sizeY" : 71,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 203,
+                  "col" : 104
                 }
               },
               "gridSettings" : {
