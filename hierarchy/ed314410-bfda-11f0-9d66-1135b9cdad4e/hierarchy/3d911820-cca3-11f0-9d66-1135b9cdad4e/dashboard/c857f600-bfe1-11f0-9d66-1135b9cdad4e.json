@@ -8611,7 +8611,7 @@
                   "col" : 605
                 },
                 "5e442f6c-47b6-f56b-bd7c-65009d56bd41" : {
-                  "sizeX" : 96,
+                  "sizeX" : 137,
                   "sizeY" : 60,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
@@ -8659,12 +8659,12 @@
                   "col" : 556
                 },
                 "19e435b0-7528-8e93-4170-e0860edcf5a9" : {
-                  "sizeX" : 382,
+                  "sizeX" : 646,
                   "sizeY" : 80,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
                   "row" : 391,
-                  "col" : 284
+                  "col" : 55
                 },
                 "85c80597-ffe5-1370-cfd1-f3d9553b6ecb" : {
                   "sizeX" : 56,
@@ -8679,8 +8679,8 @@
                   "sizeY" : 71,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 203,
-                  "col" : 104
+                  "row" : 82,
+                  "col" : 19
                 }
               },
               "gridSettings" : {
