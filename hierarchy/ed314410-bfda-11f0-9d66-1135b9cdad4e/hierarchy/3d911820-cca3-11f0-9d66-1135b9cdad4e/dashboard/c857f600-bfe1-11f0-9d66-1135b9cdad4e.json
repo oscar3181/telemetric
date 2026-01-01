@@ -8184,17 +8184,6 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0",
             "settings" : {
-              "background" : {
-                "type" : "color",
-                "imageUrl" : null,
-                "color" : "rgba(0,0,0,0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              },
-              "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/tenant/tablero.svg",
               "scadaSymbolObjectSettings" : {
                 "behavior" : {
@@ -8208,8 +8197,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "cloro"
@@ -8220,6 +8209,7 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
+                      "compareToValue" : true,
                       "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
@@ -8233,8 +8223,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "ph"
@@ -8245,6 +8235,7 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
+                      "compareToValue" : true,
                       "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
@@ -8258,8 +8249,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "conductividad"
@@ -8270,12 +8261,104 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "temperatura" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "temperatura"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "redox" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "redox"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "turbidez" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "turbidez"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
                       "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   }
                 },
-                "properties" : { }
-              }
+                "properties" : {
+                  "ph_fuera" : 9
+                }
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                },
+                "imageUrl" : null
+              },
+              "padding" : "0"
             },
             "title" : "SCADA symbol",
             "dropShadow" : false,
@@ -8299,7 +8382,7 @@
             "titleIcon" : "mdi:lightbulb-outline",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
               "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
