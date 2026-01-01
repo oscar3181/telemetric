@@ -5740,8 +5740,8 @@
                   }
                 },
                 "properties" : {
-                  "minUs" : 15,
-                  "maxUs" : 26
+                  "minUs" : 20,
+                  "maxUs" : 25
                 }
               },
               "background" : {
