@@ -8366,6 +8366,148 @@
           "row" : 0,
           "col" : 0,
           "id" : "b7afe4d5-2e66-433c-6f50-7162280b539c"
+        },
+        "218885ca-690a-8a46-6fe8-bcc6f1cc75a9" : {
+          "typeFullFqn" : "system.scada_symbol",
+          "type" : "rpc",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/tablero.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : {
+                  "cloro" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "cloro"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "ph" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "ph"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "conductividad" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "conductividad"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : { }
+              }
+            },
+            "title" : "SCADA symbol",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0",
+            "datasources" : [ ],
+            "resizable" : true,
+            "preserveAspectRatio" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "218885ca-690a-8a46-6fe8-bcc6f1cc75a9"
         }
       },
       "states" : {
@@ -8742,6 +8884,14 @@
                   "resizable" : true,
                   "row" : 82,
                   "col" : 19
+                },
+                "218885ca-690a-8a46-6fe8-bcc6f1cc75a9" : {
+                  "sizeX" : 673,
+                  "sizeY" : 95,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 486,
+                  "col" : 146
                 }
               },
               "gridSettings" : {
