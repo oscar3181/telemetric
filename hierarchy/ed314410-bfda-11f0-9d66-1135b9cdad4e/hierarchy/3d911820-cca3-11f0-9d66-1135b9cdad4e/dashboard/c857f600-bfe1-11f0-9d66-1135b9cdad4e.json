@@ -5709,22 +5709,52 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0",
             "settings" : {
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/torre.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : {
+                  "en_rango" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "temperatura"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "minUs" : 15,
+                  "maxUs" : 26
+                }
+              },
               "background" : {
                 "type" : "color",
-                "imageUrl" : null,
                 "color" : "rgba(0,0,0,0)",
                 "overlay" : {
                   "enabled" : false,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
-                }
+                },
+                "imageUrl" : null
               },
-              "padding" : "0",
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/torre.svg",
-              "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
-              }
+              "padding" : "0"
             },
             "title" : "Condesador evaporativo",
             "dropShadow" : false,
