@@ -8455,7 +8455,7 @@
                   "col" : 298
                 },
                 "26a56045-391c-df0f-f8e0-2845437ce606" : {
-                  "sizeX" : 52.5,
+                  "sizeX" : 53,
                   "sizeY" : 35,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
@@ -8777,7 +8777,7 @@
               },
               "gridSettings" : {
                 "layoutType" : "scada",
-                "backgroundColor" : "#A1ADB1",
+                "backgroundColor" : "rgb(249, 241, 231)",
                 "columns" : 1008,
                 "margin" : 10,
                 "outerMargin" : false,
