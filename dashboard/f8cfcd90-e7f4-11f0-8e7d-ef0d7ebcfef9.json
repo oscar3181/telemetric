@@ -8430,19 +8430,19 @@
                   "range" : [ {
                     "from" : null,
                     "to" : -85,
-                    "color" : "rgb(76, 175, 80)"
+                    "color" : "rgba(76, 175, 80, 0.13)"
                   }, {
                     "from" : -85,
                     "to" : -70,
-                    "color" : "rgb(165, 215, 167)"
+                    "color" : "rgba(165, 215, 167, 0.61)"
                   }, {
                     "from" : -70,
                     "to" : -55,
-                    "color" : "rgba(76, 175, 80, 0.51)"
+                    "color" : "rgb(165, 215, 167)"
                   }, {
                     "from" : -55,
                     "to" : null,
-                    "color" : "rgba(76, 175, 80, 0.17)"
+                    "color" : "rgb(76, 175, 80)"
                   } ],
                   "rangeAdvanced" : [ ]
                 },
@@ -8452,11 +8452,11 @@
               "showTooltip" : true,
               "showTooltipValue" : true,
               "tooltipValueFont" : {
+                "family" : "Roboto",
                 "size" : 40,
                 "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
                 "style" : "normal",
+                "weight" : "500",
                 "lineHeight" : "16px"
               },
               "tooltipValueColor" : "rgba(0,0,0,0.76)",
