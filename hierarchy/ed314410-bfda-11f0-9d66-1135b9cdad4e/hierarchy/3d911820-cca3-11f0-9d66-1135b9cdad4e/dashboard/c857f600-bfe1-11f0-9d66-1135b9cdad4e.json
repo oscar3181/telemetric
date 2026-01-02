@@ -8345,7 +8345,7 @@
                 "properties" : {
                   "minUs" : 24,
                   "maxUs" : 30,
-                  "targetUrl" : "https://telemetria.aquafilter.es/iframeView?stateId=Gestor%20password&iframeUrl=https:%2F%2Ftelemetria.aquafilter.es%2Fadmin%2Facceso.php&setAccessToken=false"
+                  "targetUrl" : "https://osmoaquasl.odoo.com/odoo/field-service-tasks/10"
                 }
               },
               "background" : {
