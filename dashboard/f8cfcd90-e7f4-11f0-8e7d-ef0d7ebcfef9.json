@@ -8406,30 +8406,8 @@
               },
               "dateColor" : "rgba(0, 0, 0, 0.38)",
               "activeBarsColor" : {
-                "color" : "rgba(92, 223, 144, 1)",
                 "type" : "range",
-                "rangeList" : {
-                  "range" : [ {
-                    "from" : null,
-                    "to" : -85,
-                    "color" : "rgb(76, 175, 80)"
-                  }, {
-                    "from" : -85,
-                    "to" : -70,
-                    "color" : "rgb(76, 175, 80)"
-                  }, {
-                    "from" : -70,
-                    "to" : -55,
-                    "color" : "rgb(76, 175, 80)"
-                  }, {
-                    "from" : -55,
-                    "to" : null,
-                    "color" : "rgb(76, 175, 80)"
-                  } ],
-                  "advancedMode" : false,
-                  "rangeAdvanced" : [ ]
-                },
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "color" : "rgba(92, 223, 144, 1)",
                 "gradient" : {
                   "advancedMode" : false,
                   "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
@@ -8446,17 +8424,39 @@
                   } ],
                   "minValue" : 0,
                   "maxValue" : 100
-                }
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ {
+                    "from" : null,
+                    "to" : -85,
+                    "color" : "rgb(76, 175, 80)"
+                  }, {
+                    "from" : -85,
+                    "to" : -70,
+                    "color" : "rgb(165, 215, 167)"
+                  }, {
+                    "from" : -70,
+                    "to" : -55,
+                    "color" : "rgba(76, 175, 80, 0.51)"
+                  }, {
+                    "from" : -55,
+                    "to" : null,
+                    "color" : "rgba(76, 175, 80, 0.17)"
+                  } ],
+                  "rangeAdvanced" : [ ]
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "inactiveBarsColor" : "rgba(224, 224, 224, 1)",
               "showTooltip" : true,
               "showTooltipValue" : true,
               "tooltipValueFont" : {
-                "family" : "Roboto",
-                "size" : 13,
+                "size" : 40,
                 "sizeUnit" : "px",
-                "style" : "normal",
+                "family" : "Roboto",
                 "weight" : "500",
+                "style" : "normal",
                 "lineHeight" : "16px"
               },
               "tooltipValueColor" : "rgba(0,0,0,0.76)",
