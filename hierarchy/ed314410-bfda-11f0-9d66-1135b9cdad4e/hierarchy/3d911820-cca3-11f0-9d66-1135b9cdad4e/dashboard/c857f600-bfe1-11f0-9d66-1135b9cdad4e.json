@@ -8703,12 +8703,12 @@
                   "col" : 605
                 },
                 "5e442f6c-47b6-f56b-bd7c-65009d56bd41" : {
-                  "sizeX" : 137,
-                  "sizeY" : 60,
+                  "sizeX" : 180,
+                  "sizeY" : 107,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 301,
-                  "col" : 426
+                  "row" : 255,
+                  "col" : 392
                 },
                 "b103928e-879a-8e4c-9ee4-bb8ec4942c7a" : {
                   "sizeX" : 99,
