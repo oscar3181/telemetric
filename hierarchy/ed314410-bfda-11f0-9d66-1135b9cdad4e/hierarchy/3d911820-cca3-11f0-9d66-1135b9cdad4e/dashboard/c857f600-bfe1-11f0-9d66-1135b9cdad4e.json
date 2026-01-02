@@ -8766,12 +8766,12 @@
                   "col" : 270
                 },
                 "76b2e479-e2a0-f8b4-a469-15173c306b35" : {
-                  "sizeX" : 155,
-                  "sizeY" : 153,
+                  "sizeX" : 157,
+                  "sizeY" : 190,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 71,
-                  "col" : 391
+                  "row" : 40,
+                  "col" : 390
                 }
               },
               "gridSettings" : {
