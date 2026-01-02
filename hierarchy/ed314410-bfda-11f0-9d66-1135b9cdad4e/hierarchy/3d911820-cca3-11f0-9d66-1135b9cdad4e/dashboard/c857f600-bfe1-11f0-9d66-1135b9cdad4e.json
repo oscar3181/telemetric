@@ -5698,103 +5698,6 @@
           "col" : 0,
           "id" : "6713b7e9-e290-dec8-f602-e9f0a79c10b5"
         },
-        "b5cfd889-6bf4-6acf-5c2a-ca8d01b985ae" : {
-          "typeFullFqn" : "system.scada_symbol",
-          "type" : "rpc",
-          "sizeX" : 3,
-          "sizeY" : 3,
-          "config" : {
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0",
-            "settings" : {
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/torre.svg",
-              "scadaSymbolObjectSettings" : {
-                "behavior" : {
-                  "en_rango" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "temperatura"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  }
-                },
-                "properties" : {
-                  "minUs" : 0,
-                  "maxUs" : 0
-                }
-              },
-              "background" : {
-                "type" : "color",
-                "color" : "rgba(0,0,0,0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                },
-                "imageUrl" : null
-              },
-              "padding" : "0"
-            },
-            "title" : "Condesador evaporativo",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "actions" : { },
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : null,
-              "lineHeight" : "1.6"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleStyle" : null,
-            "pageSize" : 1024,
-            "titleIcon" : "mdi:lightbulb-outline",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "configMode" : "advanced",
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
-            },
-            "titleColor" : null,
-            "borderRadius" : "0px",
-            "margin" : "0",
-            "datasources" : [ ],
-            "resizable" : true,
-            "preserveAspectRatio" : false,
-            "enableDataExport" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "b5cfd889-6bf4-6acf-5c2a-ca8d01b985ae"
-        },
         "9e27f156-4dbc-529d-2057-d0216cef1bde" : {
           "typeFullFqn" : "system.left_bottom_elbow_pipe",
           "type" : "rpc",
@@ -8397,6 +8300,102 @@
           "row" : 0,
           "col" : 0,
           "id" : "218885ca-690a-8a46-6fe8-bcc6f1cc75a9"
+        },
+        "76b2e479-e2a0-f8b4-a469-15173c306b35" : {
+          "typeFullFqn" : "system.scada_symbol",
+          "type" : "rpc",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/torre_(2).svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : {
+                  "en_rango" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "temperatura"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "minUs" : 10,
+                  "maxUs" : 30
+                }
+              }
+            },
+            "title" : "Condensador evaporativo",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0",
+            "datasources" : [ ],
+            "resizable" : true,
+            "preserveAspectRatio" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "76b2e479-e2a0-f8b4-a469-15173c306b35"
         }
       },
       "states" : {
@@ -8485,14 +8484,6 @@
                   "resizable" : true,
                   "row" : 145,
                   "col" : 252
-                },
-                "b5cfd889-6bf4-6acf-5c2a-ca8d01b985ae" : {
-                  "sizeX" : 159,
-                  "sizeY" : 185,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 38,
-                  "col" : 388
                 },
                 "9e27f156-4dbc-529d-2057-d0216cef1bde" : {
                   "sizeX" : 21,
@@ -8773,6 +8764,14 @@
                   "resizable" : true,
                   "row" : 409,
                   "col" : 270
+                },
+                "76b2e479-e2a0-f8b4-a469-15173c306b35" : {
+                  "sizeX" : 155,
+                  "sizeY" : 153,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 71,
+                  "col" : 391
                 }
               },
               "gridSettings" : {
