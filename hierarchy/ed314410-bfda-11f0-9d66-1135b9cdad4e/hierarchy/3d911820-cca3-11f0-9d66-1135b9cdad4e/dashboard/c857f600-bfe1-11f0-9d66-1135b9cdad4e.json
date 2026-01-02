@@ -8312,17 +8312,6 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0",
             "settings" : {
-              "background" : {
-                "type" : "color",
-                "imageUrl" : null,
-                "color" : "rgba(0,0,0,0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              },
-              "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/tenant/torre_(2).svg",
               "scadaSymbolObjectSettings" : {
                 "behavior" : {
@@ -8355,9 +8344,21 @@
                 },
                 "properties" : {
                   "minUs" : 24,
-                  "maxUs" : 30
+                  "maxUs" : 30,
+                  "targetUrl" : "https://www.aquafilter.es"
                 }
-              }
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                },
+                "imageUrl" : null
+              },
+              "padding" : "0"
             },
             "title" : "Condensador evaporativo",
             "dropShadow" : false,
@@ -8381,7 +8382,7 @@
             "titleIcon" : "mdi:lightbulb-outline",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
               "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
