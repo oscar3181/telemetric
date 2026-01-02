@@ -8451,7 +8451,7 @@
               }
             },
             "showTitle" : true,
-            "backgroundColor" : "rgb(255, 249, 249)",
+            "backgroundColor" : "rgba(255, 249, 249, 0)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
@@ -8559,8 +8559,8 @@
               "noSignalRssiValue" : -100
             },
             "title" : "Señal wifi",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
@@ -8607,7 +8607,7 @@
               "color" : null
             },
             "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "enableDataExport" : true
+            "enableDataExport" : false
           },
           "row" : 0,
           "col" : 0,
@@ -8910,7 +8910,7 @@
                   "col" : 605
                 },
                 "5e442f6c-47b6-f56b-bd7c-65009d56bd41" : {
-                  "sizeX" : 180,
+                  "sizeX" : 109,
                   "sizeY" : 107,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
@@ -8992,8 +8992,8 @@
                 "63a743ac-f6e3-3901-ed3b-9073428c173a" : {
                   "sizeX" : 100,
                   "sizeY" : 100,
-                  "row" : 267,
-                  "col" : 143
+                  "row" : 249,
+                  "col" : 548
                 }
               },
               "gridSettings" : {
