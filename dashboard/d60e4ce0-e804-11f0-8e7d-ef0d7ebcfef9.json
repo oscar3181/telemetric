@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "Frio Cubit Valladolid",
+    "title" : "DEMO CONDENSADOR EVAPORATIVO",
     "image" : "tb-image;/api/images/tenant/torre_(1).svg",
     "mobileHide" : false,
     "mobileOrder" : 1,
@@ -10169,7 +10169,7 @@
         "dashboardCss" : "\r\n\r\n"
       }
     },
-    "name" : "Frio Cubit Valladolid",
+    "name" : "DEMO CONDENSADOR EVAPORATIVO",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,
