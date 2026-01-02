@@ -8354,7 +8354,7 @@
                   }
                 },
                 "properties" : {
-                  "minUs" : 10,
+                  "minUs" : 24,
                   "maxUs" : 30
                 }
               }
