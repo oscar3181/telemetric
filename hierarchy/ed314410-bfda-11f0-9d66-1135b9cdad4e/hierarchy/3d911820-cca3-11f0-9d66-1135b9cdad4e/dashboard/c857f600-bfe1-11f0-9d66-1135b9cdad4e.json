@@ -8927,8 +8927,8 @@
                   "col" : 824
                 },
                 "facc6925-28b4-822a-7318-2d3dea2f66d7" : {
-                  "sizeX" : 131,
-                  "sizeY" : 71,
+                  "sizeX" : 200,
+                  "sizeY" : 108,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
                   "row" : 1,
@@ -8967,12 +8967,12 @@
                   "col" : 284
                 },
                 "b7afe4d5-2e66-433c-6f50-7162280b539c" : {
-                  "sizeX" : 131,
-                  "sizeY" : 71,
+                  "sizeX" : 78,
+                  "sizeY" : 44,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 82,
-                  "col" : 19
+                  "row" : 79,
+                  "col" : 557
                 },
                 "218885ca-690a-8a46-6fe8-bcc6f1cc75a9" : {
                   "sizeX" : 413,
