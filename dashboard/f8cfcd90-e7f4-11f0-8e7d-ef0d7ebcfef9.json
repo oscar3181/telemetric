@@ -8194,7 +8194,8 @@
                 },
                 "properties" : {
                   "minUs" : 24,
-                  "maxUs" : 30
+                  "maxUs" : 30,
+                  "targetUrl" : "https:\\\\www.aquafilter.es"
                 }
               }
             },
