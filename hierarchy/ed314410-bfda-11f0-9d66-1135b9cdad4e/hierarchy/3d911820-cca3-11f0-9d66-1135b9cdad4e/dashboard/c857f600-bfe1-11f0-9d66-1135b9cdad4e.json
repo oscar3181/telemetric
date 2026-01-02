@@ -8450,7 +8450,7 @@
                 "limit" : 25000
               }
             },
-            "showTitle" : true,
+            "showTitle" : false,
             "backgroundColor" : "rgba(255, 249, 249, 0)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
