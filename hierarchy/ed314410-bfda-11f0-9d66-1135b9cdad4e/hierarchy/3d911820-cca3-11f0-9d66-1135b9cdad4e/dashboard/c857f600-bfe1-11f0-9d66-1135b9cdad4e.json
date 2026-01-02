@@ -8345,7 +8345,7 @@
                 "properties" : {
                   "minUs" : 24,
                   "maxUs" : 30,
-                  "targetUrl" : "https://www.aquafilter.es"
+                  "targetUrl" : "https://telemetria.aquafilter.es/iframeView?stateId=Gestor%20password&iframeUrl=https:%2F%2Ftelemetria.aquafilter.es%2Fadmin%2Facceso.php&setAccessToken=false"
                 }
               },
               "background" : {
