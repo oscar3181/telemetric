@@ -1320,7 +1320,7 @@
               "timezone" : null
             },
             "showTitle" : true,
-            "backgroundColor" : "rgba(0, 0, 0, 0.01)",
+            "backgroundColor" : "rgba(255, 255, 255, 0)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
