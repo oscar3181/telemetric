@@ -1,0 +1,102 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "lastConnectedGateway" : "1184ded0-bfbd-11f0-9d66-1135b9cdad4e"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ed314410-bfda-11f0-9d66-1135b9cdad4e"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "c8aae4b0-c486-11f0-9d66-1135b9cdad4e"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "c3942250-d22a-11f0-9d66-1135b9cdad4e"
+    },
+    "label" : null,
+    "name" : "SUBFRIO2",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ed314410-bfda-11f0-9d66-1135b9cdad4e"
+    },
+    "softwareId" : null,
+    "type" : "panel cloro ph"
+  },
+  "credentials" : {
+    "credentialsId" : "dU1gkAoEimNbSmYqWfJ8",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "1184ded0-bfbd-11f0-9d66-1135b9cdad4e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "c3942250-d22a-11f0-9d66-1135b9cdad4e"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 1119
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1767541069315,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1764984642953,
+      "longValue" : 1764984642952,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1767542279607,
+      "longValue" : 1767542279470,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1767542279254,
+      "longValue" : 1767542279254,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1767542279732,
+      "longValue" : 1767542279732,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
