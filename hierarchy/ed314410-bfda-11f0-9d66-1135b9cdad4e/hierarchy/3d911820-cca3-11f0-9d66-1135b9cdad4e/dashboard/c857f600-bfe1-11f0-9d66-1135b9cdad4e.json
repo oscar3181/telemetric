@@ -8043,7 +8043,7 @@
           "sizeY" : 3,
           "config" : {
             "showTitle" : true,
-            "backgroundColor" : "rgba(0,0,0,0)",
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0",
             "settings" : {
@@ -8127,7 +8127,8 @@
             "margin" : "0",
             "datasources" : [ ],
             "resizable" : true,
-            "preserveAspectRatio" : false
+            "preserveAspectRatio" : false,
+            "enableDataExport" : true
           },
           "row" : 0,
           "col" : 0,
