@@ -8078,7 +8078,7 @@
                   }
                 },
                 "properties" : {
-                  "minUs" : 24,
+                  "minUs" : 20,
                   "maxUs" : 30,
                   "targetUrl" : "https://osmoaquasl.odoo.com/odoo/field-service-tasks/10"
                 }
