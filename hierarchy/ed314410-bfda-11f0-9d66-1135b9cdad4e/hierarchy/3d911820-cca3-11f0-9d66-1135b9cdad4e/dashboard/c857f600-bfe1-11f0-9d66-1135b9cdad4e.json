@@ -9408,7 +9408,7 @@
           "col" : 0,
           "id" : "86378ee0-b685-4d47-df08-48d66f2184bd"
         },
-        "3d8300e0-d9ec-9261-070f-ad9eb3a432d7" : {
+        "e67525a5-83c6-7d5b-928b-52436e3743e5" : {
           "typeFullFqn" : "system.action_button",
           "type" : "latest",
           "sizeX" : 3,
@@ -9546,7 +9546,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "3d8300e0-d9ec-9261-070f-ad9eb3a432d7"
+          "id" : "e67525a5-83c6-7d5b-928b-52436e3743e5"
         }
       },
       "states" : {
@@ -10025,12 +10025,6 @@
                   "resizable" : true,
                   "row" : 184,
                   "col" : 598
-                },
-                "3d8300e0-d9ec-9261-070f-ad9eb3a432d7" : {
-                  "sizeX" : 100,
-                  "sizeY" : 26,
-                  "row" : 8,
-                  "col" : 635
                 }
               },
               "gridSettings" : {
@@ -10221,6 +10215,12 @@
                   "resizable" : true,
                   "row" : 70,
                   "col" : 146
+                },
+                "e67525a5-83c6-7d5b-928b-52436e3743e5" : {
+                  "sizeX" : 26,
+                  "sizeY" : 10,
+                  "row" : 70,
+                  "col" : 176
                 }
               },
               "gridSettings" : {
