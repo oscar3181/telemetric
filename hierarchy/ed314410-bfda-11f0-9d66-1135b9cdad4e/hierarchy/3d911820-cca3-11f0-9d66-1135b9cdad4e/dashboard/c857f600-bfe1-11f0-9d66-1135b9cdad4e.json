@@ -8023,7 +8023,7 @@
             "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -9794,12 +9794,12 @@
                   "col" : 252
                 },
                 "84c12154-539b-4258-efdb-757d3cbba0dc" : {
-                  "sizeX" : 25,
-                  "sizeY" : 25,
+                  "sizeX" : 26,
+                  "sizeY" : 26,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
                   "row" : 241,
-                  "col" : 252
+                  "col" : 251
                 },
                 "da724d95-d9f7-8f74-1c13-9927823dd599" : {
                   "sizeX" : 23,
