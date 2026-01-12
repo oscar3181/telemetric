@@ -228,7 +228,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "ph",
                 "type" : "timeseries",
@@ -394,7 +394,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "cloro",
                 "type" : "timeseries",
@@ -553,7 +553,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "temperatura",
                 "type" : "timeseries",
@@ -711,7 +711,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "turbidez",
                 "type" : "timeseries",
@@ -871,7 +871,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "redox",
                 "type" : "timeseries",
@@ -1037,7 +1037,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "conductividad",
                 "type" : "timeseries",
@@ -1204,7 +1204,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "temperatura",
                 "type" : "timeseries",
@@ -1642,7 +1642,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "cloro",
                 "type" : "timeseries",
@@ -2047,7 +2047,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "ph",
                 "type" : "timeseries",
@@ -2452,7 +2452,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "turbidez",
                 "type" : "timeseries",
@@ -2857,7 +2857,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "redox",
                 "type" : "timeseries",
@@ -3295,7 +3295,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
               "dataKeys" : [ {
                 "name" : "conductividad",
                 "type" : "timeseries",
