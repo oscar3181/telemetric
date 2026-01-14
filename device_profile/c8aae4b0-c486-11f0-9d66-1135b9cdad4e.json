@@ -62,7 +62,7 @@
         "propagateRelationTypes" : null,
         "propagateToOwner" : false,
         "propagateToOwnerHierarchy" : false,
-        "propagateToTenant" : false
+        "propagateToTenant" : true
       } ],
       "configuration" : {
         "type" : "DEFAULT"
