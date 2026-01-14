@@ -27,6 +27,7 @@
     "title" : "control",
     "zip" : "47012"
   },
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },
