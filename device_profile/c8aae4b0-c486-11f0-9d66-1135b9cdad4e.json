@@ -50,10 +50,7 @@
                 "type" : "SIMPLE"
               }
             },
-            "dashboardId" : {
-              "entityType" : "DASHBOARD",
-              "id" : "c857f600-bfe1-11f0-9d66-1135b9cdad4e"
-            },
+            "dashboardId" : null,
             "schedule" : null
           }
         },
