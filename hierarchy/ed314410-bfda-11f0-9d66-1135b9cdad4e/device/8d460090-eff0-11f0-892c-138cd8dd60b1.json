@@ -18,9 +18,12 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "c8aae4b0-c486-11f0-9d66-1135b9cdad4e"
+      "id" : "9b631630-be87-11f0-9d66-1135b9cdad4e"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "8d460090-eff0-11f0-892c-138cd8dd60b1"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -33,7 +36,7 @@
       "id" : "ed314410-bfda-11f0-9d66-1135b9cdad4e"
     },
     "softwareId" : null,
-    "type" : "panel cloro ph"
+    "type" : "default"
   },
   "credentials" : {
     "credentialsId" : "177yBxK4NyGsmaJzMWOF",
@@ -68,24 +71,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1768247712539,
-      "longValue" : 1768247712539,
+      "lastUpdateTs" : 1768491378727,
+      "longValue" : 1768491378727,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1768247712539,
-      "longValue" : 1768247712539,
+      "lastUpdateTs" : 1768491378727,
+      "longValue" : 1768491378727,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1768247712539,
-      "longValue" : 1768247712539,
+      "lastUpdateTs" : 1768491378727,
+      "longValue" : 1768491378727,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
