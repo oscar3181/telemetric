@@ -36,6 +36,7 @@
     "title" : "Frio Cubit Valladolid",
     "zip" : null
   },
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },

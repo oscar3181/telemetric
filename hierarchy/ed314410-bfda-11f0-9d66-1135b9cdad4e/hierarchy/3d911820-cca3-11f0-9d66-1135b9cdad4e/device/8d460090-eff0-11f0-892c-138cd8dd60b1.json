@@ -1,0 +1,94 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "lastConnectedGateway" : "1184ded0-bfbd-11f0-9d66-1135b9cdad4e"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3d911820-cca3-11f0-9d66-1135b9cdad4e"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "9b631630-be87-11f0-9d66-1135b9cdad4e"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "8d460090-eff0-11f0-892c-138cd8dd60b1"
+    },
+    "label" : null,
+    "name" : "SUBFRIO",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "3d911820-cca3-11f0-9d66-1135b9cdad4e"
+    },
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "177yBxK4NyGsmaJzMWOF",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "1184ded0-bfbd-11f0-9d66-1135b9cdad4e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "8d460090-eff0-11f0-892c-138cd8dd60b1"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 1624
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1768247689083,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1768490992244,
+      "longValue" : 1768490992244,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1768490992244,
+      "longValue" : 1768490992244,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1768490992245,
+      "longValue" : 1768490992245,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
