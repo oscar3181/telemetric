@@ -30,13 +30,19 @@
         },
         "customWidth" : 100,
         "dataSources" : [ {
-          "alarmFilterConfig" : null,
+          "alarmFilterConfig" : {
+            "assigneeId" : null,
+            "searchPropagatedAlarms" : false,
+            "severityList" : null,
+            "statusList" : [ "ACTIVE" ],
+            "typeList" : null
+          },
           "dataKeys" : [ ],
-          "deviceId" : null,
+          "deviceId" : "979f4950-ef0c-11f0-892c-138cd8dd60b1",
           "entityAliasId" : null,
           "filterId" : null,
           "latestDataKeys" : null,
-          "type" : "entity"
+          "type" : "device"
         } ],
         "margins" : null,
         "paddings" : null,
@@ -142,7 +148,7 @@
             "units" : "NTU",
             "usePostProcessing" : false
           } ],
-          "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+          "deviceId" : "979f4950-ef0c-11f0-892c-138cd8dd60b1",
           "entityAliasId" : null,
           "filterId" : null,
           "latestDataKeys" : [ ],
