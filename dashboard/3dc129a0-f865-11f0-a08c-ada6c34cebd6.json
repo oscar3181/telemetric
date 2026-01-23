@@ -7429,7 +7429,7 @@
                 "properties" : {
                   "minUs" : 10,
                   "maxUs" : 12,
-                  "targetUrl" : "https://aquafiltertelemetric.odoo.com"
+                  "targetUrl" : "https://aquafiltertelemetric.odoo.com/odoo/contacts/9"
                 }
               },
               "background" : {
