@@ -193,11 +193,11 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "8d460090-eff0-11f0-892c-138cd8dd60b1",
+              "deviceId" : "30664610-f84b-11f0-862c-e5320376240c",
               "dataKeys" : [ {
-                "name" : "ph",
+                "name" : "conductividad",
                 "type" : "timeseries",
-                "label" : "ph",
+                "label" : "conductividad",
                 "color" : "#2196f3",
                 "settings" : { }
               } ],
