@@ -195,9 +195,9 @@
               "name" : "",
               "deviceId" : "30664610-f84b-11f0-862c-e5320376240c",
               "dataKeys" : [ {
-                "name" : "conductividad",
+                "name" : "ph",
                 "type" : "timeseries",
-                "label" : "conductividad",
+                "label" : "ph",
                 "color" : "#2196f3",
                 "settings" : { }
               } ],
