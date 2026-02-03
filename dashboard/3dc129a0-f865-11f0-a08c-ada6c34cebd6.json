@@ -9661,8 +9661,8 @@
                   "col" : 121
                 },
                 "0714ed50-eef5-18c1-b738-1920f78685f9" : {
-                  "sizeX" : 213,
-                  "sizeY" : 50,
+                  "sizeX" : 147,
+                  "sizeY" : 32,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
                   "row" : 195,
