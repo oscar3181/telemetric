@@ -9169,6 +9169,119 @@
           "row" : 0,
           "col" : 0,
           "id" : "0714ed50-eef5-18c1-b738-1920f78685f9"
+        },
+        "066f0438-d7b7-9286-4667-bc8dad757e35" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "outlined",
+                "showLabel" : true,
+                "label" : "Gestor",
+                "showIcon" : true,
+                "icon" : "open_in_new",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "#BC91A4",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "advanced",
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "actions" : {
+              "click" : [ {
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openURL",
+                "openNewBrowserTab" : false,
+                "url" : "https://aquafiltetelemetric.odoo.com",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "2f1fa0e8-f7a7-04d0-b0ad-633d148405d4"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "066f0438-d7b7-9286-4667-bc8dad757e35"
         }
       },
       "states" : {
@@ -9667,6 +9780,14 @@
                   "resizable" : true,
                   "row" : 195,
                   "col" : 17
+                },
+                "066f0438-d7b7-9286-4667-bc8dad757e35" : {
+                  "sizeX" : 89,
+                  "sizeY" : 27,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 7,
+                  "col" : 728
                 }
               },
               "gridSettings" : {
