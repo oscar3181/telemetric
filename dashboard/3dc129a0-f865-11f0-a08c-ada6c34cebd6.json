@@ -9272,7 +9272,7 @@
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openURL",
                 "openNewBrowserTab" : false,
-                "url" : "https://aquafiltetelemetric.odoo.com",
+                "url" : "https://aquafiltertelemetric.odoo.com",
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "2f1fa0e8-f7a7-04d0-b0ad-633d148405d4"
