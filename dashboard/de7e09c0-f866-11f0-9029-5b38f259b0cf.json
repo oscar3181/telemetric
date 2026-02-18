@@ -7368,8 +7368,8 @@
                 },
                 "properties" : {
                   "minUs" : 19,
-                  "maxUs" : 25,
-                  "targetUrl" : "https://osmoaquasl.odoo.com/odoo/field-service-tasks/10"
+                  "maxUs" : 23,
+                  "targetUrl" : "https://aquafiltertelemetric.odoo.com/odoo/contacts/9"
                 }
               },
               "background" : {
