@@ -17,7 +17,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "latitude",
