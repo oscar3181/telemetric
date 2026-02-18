@@ -1,0 +1,280 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "35e0c070-f896-11f0-a08c-ada6c34cebd6"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "c6cd37d0-0cc3-11f1-b6d0-133d513d174e"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "30664610-f84b-11f0-862c-e5320376240c"
+    },
+    "label" : "",
+    "name" : "Frío Cubit",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "35e0c070-f896-11f0-a08c-ada6c34cebd6"
+    },
+    "softwareId" : null,
+    "type" : "Demo"
+  },
+  "credentials" : {
+    "credentialsId" : "td90jfgfdicay2kz08w1",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1770414777195,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1770414777187,
+      "longValue" : 1770414777186,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1770414153965,
+      "longValue" : 1770414151761,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1769185400193,
+      "longValue" : 1769185400193,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1769525189194,
+      "longValue" : 1769525189194,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 40.98138838366699,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1769177509173,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -3.1359100341796875,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1769177509173,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : 0.01,
+      "jsonValue" : null,
+      "key" : "cloro",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 1382.1,
+      "jsonValue" : null,
+      "key" : "conductividad",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "flujo",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.038,
+      "jsonValue" : null,
+      "key" : "flujoInst",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ph",
+      "lastUpdateTs" : 1770414151992,
+      "longValue" : 5,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "purga",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "redox",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : 363,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendcloro",
+      "lastUpdateTs" : 1770414151919,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendph",
+      "lastUpdateTs" : 1770414151992,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 691.05,
+      "jsonValue" : null,
+      "key" : "tds",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 17.929,
+      "jsonValue" : null,
+      "key" : "temperatura",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.079,
+      "jsonValue" : null,
+      "key" : "turbidez",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "wifi",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : -23,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "ALARM",
+      "arguments" : {
+        "ph" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "30664610-f84b-11f0-862c-e5320376240c"
+          },
+          "refEntityKey" : {
+            "key" : "ph",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : null,
+      "createRules" : {
+        "CRITICAL" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "ph",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS_OR_EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 6.5
+                  }
+                }, {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER_OR_EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 8.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "output" : null,
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1770414726307,
+      "failuresEnabled" : true
+    },
+    "name" : "ph_fuera_rango",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "4570c860-f840-11f0-a24d-13b2783631c6"
+    },
+    "type" : "ALARM"
+  } ]
+}
