@@ -969,7 +969,7 @@
               "dataKeys" : [ {
                 "name" : "temperatura",
                 "type" : "timeseries",
-                "label" : "Temperature",
+                "label" : "Temperatura",
                 "color" : "#F44336",
                 "settings" : {
                   "yAxisId" : "default",
@@ -1041,7 +1041,11 @@
                   }
                 },
                 "units" : "°C",
-                "decimals" : 0
+                "decimals" : 0,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1049,35 +1053,15 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 3600000,
-                "timewindowMs" : 86400000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : null,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
+                "interval" : 30000,
+                "timewindowMs" : 300000
               },
               "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              },
-              "timezone" : null
+                "type" : "AVG"
+              }
             },
             "showTitle" : true,
             "backgroundColor" : "rgba(0, 0, 0, 0)",
