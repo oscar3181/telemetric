@@ -4447,7 +4447,7 @@
             "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4545,7 +4545,7 @@
             "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4863,7 +4863,7 @@
             "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -5597,7 +5597,7 @@
             "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -5950,7 +5950,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc",
               "dataKeys" : [ {
                 "name" : "conductividad",
                 "type" : "timeseries",
@@ -6734,7 +6734,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc",
               "dataKeys" : [ {
                 "name" : "conductividad",
                 "type" : "timeseries",
@@ -6851,7 +6851,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc",
               "dataKeys" : [ {
                 "name" : "conductividad",
                 "type" : "timeseries",
@@ -7312,7 +7312,7 @@
             "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e"
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -7409,7 +7409,7 @@
             "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
-              "deviceId" : "30664610-f84b-11f0-862c-e5320376240c"
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -7431,7 +7431,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc",
               "dataKeys" : [ {
                 "name" : "wifi",
                 "type" : "timeseries",
