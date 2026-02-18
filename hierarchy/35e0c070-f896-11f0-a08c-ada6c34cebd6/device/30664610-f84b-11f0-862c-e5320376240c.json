@@ -20,7 +20,7 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "45869a50-f840-11f0-a24d-13b2783631c6"
+      "id" : "c6cd37d0-0cc3-11f1-b6d0-133d513d174e"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -35,7 +35,7 @@
       "id" : "35e0c070-f896-11f0-a08c-ada6c34cebd6"
     },
     "softwareId" : null,
-    "type" : "default"
+    "type" : "Demo"
   },
   "credentials" : {
     "credentialsId" : "td90jfgfdicay2kz08w1",
