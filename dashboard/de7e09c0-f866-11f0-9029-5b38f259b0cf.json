@@ -8711,6 +8711,71 @@
           "row" : 0,
           "col" : 0,
           "id" : "4ca1e785-ea1b-99f1-0d8d-64603bae46e9"
+        },
+        "9ce9c1da-2415-e5a3-85f7-7028734e5c2e" : {
+          "typeFullFqn" : "system.scada_symbol",
+          "type" : "rpc",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(255, 255, 255, 0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/caldera2.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "Caldera",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "advanced",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0px",
+            "datasources" : [ ],
+            "enableDataExport" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "9ce9c1da-2415-e5a3-85f7-7028734e5c2e"
         }
       },
       "states" : {
@@ -9400,8 +9465,14 @@
                 "4ca1e785-ea1b-99f1-0d8d-64603bae46e9" : {
                   "sizeX" : 132,
                   "sizeY" : 128,
-                  "row" : 28,
-                  "col" : 32
+                  "row" : 21,
+                  "col" : 2
+                },
+                "9ce9c1da-2415-e5a3-85f7-7028734e5c2e" : {
+                  "sizeX" : 156,
+                  "sizeY" : 140,
+                  "row" : 5,
+                  "col" : 328
                 }
               },
               "gridSettings" : {
