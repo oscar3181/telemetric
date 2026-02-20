@@ -8647,7 +8647,7 @@
           "col" : 0,
           "id" : "86378ee0-b685-4d47-df08-48d66f2184bd"
         },
-        "a8ff8b5b-5990-9bc5-bd31-5b33da9e0705" : {
+        "4ca1e785-ea1b-99f1-0d8d-64603bae46e9" : {
           "typeFullFqn" : "system.scada_symbol",
           "type" : "rpc",
           "sizeX" : 3,
@@ -8658,7 +8658,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/caldera2.svg",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/torre_TB_clean.svg",
               "scadaSymbolObjectSettings" : {
                 "behavior" : { },
                 "properties" : { }
@@ -8675,7 +8675,7 @@
               },
               "padding" : "12px"
             },
-            "title" : "SCADA symbol",
+            "title" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
             "widgetStyle" : { },
@@ -8710,7 +8710,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "a8ff8b5b-5990-9bc5-bd31-5b33da9e0705"
+          "id" : "4ca1e785-ea1b-99f1-0d8d-64603bae46e9"
         }
       },
       "states" : {
@@ -9397,20 +9397,26 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "a8ff8b5b-5990-9bc5-bd31-5b33da9e0705" : {
-                  "sizeX" : 20,
-                  "sizeY" : 11,
-                  "row" : 0,
-                  "col" : 0
+                "4ca1e785-ea1b-99f1-0d8d-64603bae46e9" : {
+                  "sizeX" : 132,
+                  "sizeY" : 128,
+                  "row" : 28,
+                  "col" : 32
                 }
               },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
+                "columns" : 500,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 500,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
