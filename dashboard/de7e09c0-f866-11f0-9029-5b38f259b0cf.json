@@ -8891,6 +8891,70 @@
           "row" : 0,
           "col" : 0,
           "id" : "01c844fd-02fa-945d-6d2f-9e528ce815f9"
+        },
+        "7c72b10c-fac8-3388-9b46-4568bd38b023" : {
+          "typeFullFqn" : "system.scada_symbol",
+          "type" : "rpc",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgb(255, 255, 255)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/vecteezy_bar-screening-factory-wastewater-treatment-process-diagram_12994359.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "SCADA symbol",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7c72b10c-fac8-3388-9b46-4568bd38b023"
         }
       },
       "states" : {
@@ -9596,6 +9660,12 @@
                   "sizeY" : 140,
                   "row" : 5,
                   "col" : 328
+                },
+                "7c72b10c-fac8-3388-9b46-4568bd38b023" : {
+                  "sizeX" : 62,
+                  "sizeY" : 62,
+                  "row" : 149,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
