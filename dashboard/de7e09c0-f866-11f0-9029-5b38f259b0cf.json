@@ -8826,71 +8826,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "01c844fd-02fa-945d-6d2f-9e528ce815f9"
-        },
-        "7d8f3984-712f-8e60-0d84-e2ef9612df45" : {
-          "typeFullFqn" : "system.scada_symbol",
-          "type" : "rpc",
-          "sizeX" : 3,
-          "sizeY" : 3,
-          "config" : {
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0, 0, 0, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/deposito.svg",
-              "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
-              },
-              "background" : {
-                "type" : "color",
-                "imageUrl" : null,
-                "color" : "rgba(255, 255, 255, 0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              },
-              "padding" : "12px"
-            },
-            "title" : "SCADA symbol",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "actions" : { },
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : null,
-              "lineHeight" : "1.6"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleStyle" : null,
-            "pageSize" : 1024,
-            "titleIcon" : "mdi:lightbulb-outline",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "configMode" : "advanced",
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
-            },
-            "titleColor" : null,
-            "borderRadius" : "0px",
-            "margin" : "0px",
-            "datasources" : [ ],
-            "enableDataExport" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "7d8f3984-712f-8e60-0d84-e2ef9612df45"
         }
       },
       "states" : {
@@ -9590,12 +9525,6 @@
                   "sizeY" : 66,
                   "row" : 21,
                   "col" : 29
-                },
-                "7d8f3984-712f-8e60-0d84-e2ef9612df45" : {
-                  "sizeX" : 157,
-                  "sizeY" : 159,
-                  "row" : 0,
-                  "col" : 282
                 }
               },
               "gridSettings" : {
