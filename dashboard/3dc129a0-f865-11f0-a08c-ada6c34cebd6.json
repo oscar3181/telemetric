@@ -7420,8 +7420,8 @@
                   }
                 },
                 "properties" : {
-                  "minUs" : 10,
-                  "maxUs" : 12,
+                  "minUs" : 30,
+                  "maxUs" : 35,
                   "targetUrl" : "https://aquafiltertelemetric.odoo.com/odoo/contacts/9"
                 }
               },
