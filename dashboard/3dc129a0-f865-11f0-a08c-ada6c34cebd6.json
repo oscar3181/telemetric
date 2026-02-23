@@ -9230,7 +9230,7 @@
                 "icon" : "open_in_new",
                 "iconSize" : 24,
                 "iconSizeUnit" : "px",
-                "mainColor" : "#BC91A4",
+                "mainColor" : "var(--tb-primary-500)",
                 "backgroundColor" : "#FFFFFF",
                 "autoScale" : true,
                 "customStyle" : {
