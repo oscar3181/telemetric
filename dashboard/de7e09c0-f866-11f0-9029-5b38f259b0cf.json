@@ -9721,9 +9721,9 @@
               "widgets" : {
                 "351fb991-44f3-b3b0-7b31-9914fd6c66d5" : {
                   "sizeX" : 480,
-                  "sizeY" : 332,
-                  "row" : 97,
-                  "col" : 5
+                  "sizeY" : 275,
+                  "row" : 99,
+                  "col" : 3
                 },
                 "c039cc10-f6c0-2fc0-995a-de66c0e2e121" : {
                   "sizeX" : 99,
