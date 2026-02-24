@@ -29,7 +29,7 @@
       "id" : "6fa5f4b0-039a-11f1-ab3d-b9171825f6b6"
     },
     "label" : "",
-    "name" : "PLC14",
+    "name" : "PLC14_Frio Cubit Valladolid",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "default"
@@ -45,7 +45,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1770754612219,
+      "lastUpdateTs" : 1771941712465,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -53,32 +53,32 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1770754610531,
-      "longValue" : 1770754610531,
+      "lastUpdateTs" : 1771941711623,
+      "longValue" : 1771941711623,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1770765880224,
-      "longValue" : 1770765877204,
+      "lastUpdateTs" : 1771942249488,
+      "longValue" : 1771942248270,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1770754610531,
-      "longValue" : 1770754610531,
+      "lastUpdateTs" : 1771942071560,
+      "longValue" : 1771942071560,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1770765877218,
-      "longValue" : 1770765877218,
+      "lastUpdateTs" : 1771942045468,
+      "longValue" : 1771942045468,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
