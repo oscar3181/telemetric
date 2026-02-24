@@ -29,7 +29,7 @@
       "id" : "30664610-f84b-11f0-862c-e5320376240c"
     },
     "label" : "",
-    "name" : "Frío Cubit",
+    "name" : "PL19_Frío Cubit_En reserva",
     "ownerId" : {
       "entityType" : "CUSTOMER",
       "id" : "35e0c070-f896-11f0-a08c-ada6c34cebd6"
@@ -48,7 +48,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1770414777195,
+      "lastUpdateTs" : 1771942027017,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -56,32 +56,32 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1770414777187,
-      "longValue" : 1770414777186,
+      "lastUpdateTs" : 1771942026943,
+      "longValue" : 1771942026935,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1770414153965,
-      "longValue" : 1770414151761,
+      "lastUpdateTs" : 1771941424477,
+      "longValue" : 1771941424451,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1769185400193,
-      "longValue" : 1769185400193,
+      "lastUpdateTs" : 1771940951425,
+      "longValue" : 1771940951425,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1769525189194,
-      "longValue" : 1769525189194,
+      "lastUpdateTs" : 1771941424477,
+      "longValue" : 1771941424477,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -105,15 +105,15 @@
       "doubleValue" : 0.01,
       "jsonValue" : null,
       "key" : "cloro",
-      "lastUpdateTs" : 1769524887094,
+      "lastUpdateTs" : 1771941121918,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : 1382.1,
+      "doubleValue" : 1910.7,
       "jsonValue" : null,
       "key" : "conductividad",
-      "lastUpdateTs" : 1769524887094,
+      "lastUpdateTs" : 1771941121918,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -121,7 +121,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "flujo",
-      "lastUpdateTs" : 1769524887094,
+      "lastUpdateTs" : 1771941121918,
       "longValue" : 0,
       "strValue" : null
     }, {
@@ -134,18 +134,18 @@
       "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : null,
+      "doubleValue" : 8.862,
       "jsonValue" : null,
       "key" : "ph",
-      "lastUpdateTs" : 1770414151992,
-      "longValue" : 5,
+      "lastUpdateTs" : 1771941121918,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "purga",
-      "lastUpdateTs" : 1769524887094,
+      "lastUpdateTs" : 1771941121918,
       "longValue" : 0,
       "strValue" : null
     }, {
@@ -153,15 +153,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "redox",
-      "lastUpdateTs" : 1769524887094,
-      "longValue" : 363,
+      "lastUpdateTs" : 1771941121918,
+      "longValue" : -384,
       "strValue" : null
     }, {
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sendcloro",
-      "lastUpdateTs" : 1770414151919,
+      "lastUpdateTs" : 1771941121918,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -169,31 +169,31 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sendph",
-      "lastUpdateTs" : 1770414151992,
+      "lastUpdateTs" : 1771941121898,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : 691.05,
+      "doubleValue" : 955.36,
       "jsonValue" : null,
       "key" : "tds",
-      "lastUpdateTs" : 1769524887094,
+      "lastUpdateTs" : 1771941121918,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : 17.929,
+      "doubleValue" : 30.67,
       "jsonValue" : null,
       "key" : "temperatura",
-      "lastUpdateTs" : 1769524887094,
+      "lastUpdateTs" : 1771941121918,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : 0.079,
+      "doubleValue" : 0.685,
       "jsonValue" : null,
       "key" : "turbidez",
-      "lastUpdateTs" : 1769524887094,
+      "lastUpdateTs" : 1771941121918,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -201,8 +201,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "wifi",
-      "lastUpdateTs" : 1769524887094,
-      "longValue" : -23,
+      "lastUpdateTs" : 1771941121918,
+      "longValue" : -7,
       "strValue" : null
     } ]
   },
