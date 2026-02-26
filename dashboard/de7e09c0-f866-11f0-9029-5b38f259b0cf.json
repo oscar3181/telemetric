@@ -9054,7 +9054,7 @@
               }
             },
             "title" : "Depósito de agua",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : false,
             "widgetStyle" : { },
             "actions" : { },
@@ -9075,7 +9075,7 @@
             "titleIcon" : "mdi:lightbulb-outline",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
               "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
@@ -9083,7 +9083,8 @@
             "titleColor" : null,
             "borderRadius" : "0px",
             "margin" : "0px",
-            "datasources" : [ ]
+            "datasources" : [ ],
+            "enableDataExport" : true
           },
           "row" : 0,
           "col" : 0,
@@ -9791,10 +9792,10 @@
                   "col" : 13
                 },
                 "6633939f-e882-a24a-0e4c-3b589860077a" : {
-                  "sizeX" : 104,
-                  "sizeY" : 83,
-                  "row" : 97,
-                  "col" : 0
+                  "sizeX" : 127,
+                  "sizeY" : 105,
+                  "row" : 121,
+                  "col" : 166
                 }
               },
               "gridSettings" : {
