@@ -8867,17 +8867,6 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "background" : {
-                "type" : "color",
-                "imageUrl" : null,
-                "color" : "rgba(255, 255, 255, 0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              },
-              "padding" : "12px",
               "scadaSymbolUrl" : "tb-image;/api/images/system/stand-horizontal-tank.svg",
               "scadaSymbolObjectSettings" : {
                 "behavior" : {
@@ -8891,8 +8880,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : "SERVER_SCOPE",
-                      "key" : "tankCapacity"
+                      "key" : "tankCapacity",
+                      "scope" : "SERVER_SCOPE"
                     },
                     "getTimeSeries" : {
                       "key" : "temperatura"
@@ -8903,6 +8892,7 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
+                      "compareToValue" : true,
                       "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
@@ -8916,8 +8906,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "conductividad"
@@ -8928,6 +8918,7 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
+                      "compareToValue" : true,
                       "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
@@ -8941,8 +8932,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "state"
@@ -8953,8 +8944,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                      "compareToValue" : true
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
                   "critical" : {
@@ -8967,8 +8958,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "state"
@@ -8979,8 +8970,8 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                      "compareToValue" : true
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
                   "criticalAnimation" : {
@@ -9012,7 +9003,7 @@
                   "click" : {
                     "type" : "openURL",
                     "openNewBrowserTab" : false,
-                    "url" : "Https://gestor aquafilter.es",
+                    "url" : "https://gestor.aquafilter.es",
                     "openInSeparateDialog" : false,
                     "openInPopover" : false
                   }
@@ -9051,7 +9042,18 @@
                   "minorWarningColor" : "#FAA405",
                   "minorCriticalColor" : "#D12730"
                 }
-              }
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(255, 255, 255, 0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                },
+                "imageUrl" : null
+              },
+              "padding" : "12px"
             },
             "title" : "Depósito de agua",
             "dropShadow" : false,
