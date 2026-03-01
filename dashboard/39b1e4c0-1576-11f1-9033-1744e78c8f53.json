@@ -4381,104 +4381,6 @@
           "col" : 0,
           "id" : "3e4a1b8d-695c-fa67-5534-fb8ba3077a9b"
         },
-        "076018e4-95bb-c910-9a90-185b3c041273" : {
-          "typeFullFqn" : "system.scada_symbol",
-          "type" : "rpc",
-          "sizeX" : 3,
-          "sizeY" : 3,
-          "config" : {
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0",
-            "settings" : {
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/depóstico_producto_con_dosificadora.svg",
-              "scadaSymbolObjectSettings" : {
-                "behavior" : {
-                  "en_rango" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : false,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
-                    },
-                    "getTimeSeries" : {
-                      "key" : "ph"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "dataToValueFunction" : "// data = [[timestamp, value], ...]\r\nif (!data || !data.length) {\r\n    return null;\r\n}\r\n\r\nconst v = Number(data[data.length - 1][1]);\r\nreturn Number.isFinite(v) ? v : null;\r\n\r\n\r\n\r\n"
-                    }
-                  }
-                },
-                "properties" : {
-                  "openColor" : "#8BC34A",
-                  "closedColor" : "#F44336",
-                  "minUs" : 6,
-                  "maxUs" : 7
-                }
-              },
-              "background" : {
-                "type" : "color",
-                "color" : "rgba(0,0,0,0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                },
-                "imageUrl" : null
-              },
-              "padding" : "0"
-            },
-            "title" : "Dosificador ácido",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "actions" : { },
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : null,
-              "lineHeight" : "1.6"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleStyle" : null,
-            "pageSize" : 1024,
-            "titleIcon" : "mdi:lightbulb-outline",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "configMode" : "advanced",
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
-            },
-            "titleColor" : null,
-            "borderRadius" : "0px",
-            "margin" : "0",
-            "datasources" : [ ],
-            "resizable" : true,
-            "preserveAspectRatio" : false,
-            "enableDataExport" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "076018e4-95bb-c910-9a90-185b3c041273"
-        },
         "b3446df8-fa35-9440-1aa7-306db690739c" : {
           "typeFullFqn" : "system.scada_symbol",
           "type" : "rpc",
@@ -5959,64 +5861,6 @@
           "col" : 0,
           "id" : "b53d1c50-bee7-2cf8-eeb9-29e1a3fc10ec"
         },
-        "dbee5e28-cff6-27c7-1e2f-6129e8c47496" : {
-          "typeFullFqn" : "system.cards.label_widget",
-          "type" : "latest",
-          "sizeX" : 4.5,
-          "sizeY" : 5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "device",
-              "name" : "",
-              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc",
-              "dataKeys" : [ {
-                "name" : "conductividad",
-                "type" : "timeseries",
-                "label" : "conductividad",
-                "color" : "#2196f3",
-                "settings" : { }
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0",
-            "settings" : {
-              "backgroundImageUrl" : "tb-image;/api/images/tenant/descalcificador-Photoroom.png",
-              "labels" : [ ]
-            },
-            "title" : "Descalcificador",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "resizable" : true,
-            "preserveAspectRatio" : false,
-            "margin" : "0",
-            "titleFont" : {
-              "size" : 10,
-              "sizeUnit" : "px",
-              "family" : null,
-              "weight" : null,
-              "style" : null
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "enableDataExport" : false,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "dbee5e28-cff6-27c7-1e2f-6129e8c47496"
-        },
         "3340ef3f-768a-ebe9-6e86-4b33b2b4c55a" : {
           "typeFullFqn" : "system.bottom_right_elbow_pipe",
           "type" : "rpc",
@@ -7117,231 +6961,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "73d59fbe-4a0f-b866-f039-2c5d1a2b0c9c"
-        },
-        "218885ca-690a-8a46-6fe8-bcc6f1cc75a9" : {
-          "typeFullFqn" : "system.scada_symbol",
-          "type" : "rpc",
-          "sizeX" : 3,
-          "sizeY" : 3,
-          "config" : {
-            "showTitle" : false,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0",
-            "settings" : {
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/tablero.svg",
-              "scadaSymbolObjectSettings" : {
-                "behavior" : {
-                  "cloro" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "cloro"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  },
-                  "ph" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "ph"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  },
-                  "conductividad" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "conductividad"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  },
-                  "temperatura" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "temperatura"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  },
-                  "redox" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "redox"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  },
-                  "turbidez" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "turbidez"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  }
-                },
-                "properties" : {
-                  "ph_fuera" : 8.6
-                }
-              },
-              "background" : {
-                "type" : "color",
-                "color" : "rgba(0,0,0,0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                },
-                "imageUrl" : null
-              },
-              "padding" : "0"
-            },
-            "title" : "SCADA symbol",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "actions" : { },
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : null,
-              "lineHeight" : "1.6"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleStyle" : null,
-            "pageSize" : 1024,
-            "titleIcon" : "mdi:lightbulb-outline",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "configMode" : "advanced",
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
-            },
-            "titleColor" : null,
-            "borderRadius" : "0px",
-            "margin" : "0",
-            "datasources" : [ ],
-            "resizable" : true,
-            "preserveAspectRatio" : false
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "218885ca-690a-8a46-6fe8-bcc6f1cc75a9"
         },
         "76b2e479-e2a0-f8b4-a469-15173c306b35" : {
           "typeFullFqn" : "system.scada_symbol",
@@ -9275,6 +8894,72 @@
           "row" : 0,
           "col" : 0,
           "id" : "645a45fd-7d45-5a3d-eb94-42742d188473"
+        },
+        "a192a692-6fe5-1913-8c5d-28e60f3281bf" : {
+          "typeFullFqn" : "system.scada_symbol",
+          "type" : "rpc",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/tablero2.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "SCADA symbol",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0",
+            "datasources" : [ ],
+            "resizable" : true,
+            "preserveAspectRatio" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a192a692-6fe5-1913-8c5d-28e60f3281bf"
         }
       },
       "states" : {
@@ -9300,21 +8985,13 @@
                   "row" : 7,
                   "col" : 452
                 },
-                "076018e4-95bb-c910-9a90-185b3c041273" : {
-                  "sizeX" : 99,
-                  "sizeY" : 93,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 213,
-                  "col" : 704
-                },
                 "b3446df8-fa35-9440-1aa7-306db690739c" : {
                   "sizeX" : 99,
                   "sizeY" : 93,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 313,
-                  "col" : 702
+                  "row" : 271,
+                  "col" : 708
                 },
                 "1870af3c-3643-d742-47e0-15e67ff69856" : {
                   "sizeX" : 23,
@@ -9452,14 +9129,6 @@
                   "row" : 363,
                   "col" : 672
                 },
-                "dbee5e28-cff6-27c7-1e2f-6129e8c47496" : {
-                  "sizeX" : 57,
-                  "sizeY" : 153,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 46,
-                  "col" : 767
-                },
                 "3340ef3f-768a-ebe9-6e86-4b33b2b4c55a" : {
                   "sizeX" : 23,
                   "sizeY" : 23,
@@ -9595,14 +9264,6 @@
                   "resizable" : true,
                   "row" : 159,
                   "col" : 556
-                },
-                "218885ca-690a-8a46-6fe8-bcc6f1cc75a9" : {
-                  "sizeX" : 413,
-                  "sizeY" : 95,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 409,
-                  "col" : 270
                 },
                 "76b2e479-e2a0-f8b4-a469-15173c306b35" : {
                   "sizeX" : 157,
@@ -9753,6 +9414,14 @@
                   "resizable" : true,
                   "row" : 7,
                   "col" : 636
+                },
+                "a192a692-6fe5-1913-8c5d-28e60f3281bf" : {
+                  "sizeX" : 417,
+                  "sizeY" : 126,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 400,
+                  "col" : 272
                 }
               },
               "gridSettings" : {
