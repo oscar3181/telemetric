@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "DEMO CONDENSADOR EVAPORATIVO",
+    "title" : "DEMO DEPÓSITO AGUA SANITARIA",
     "image" : "tb-image;/api/images/tenant/torre.svg",
     "mobileHide" : false,
     "mobileOrder" : 1,
@@ -10061,7 +10061,7 @@
         "dashboardCss" : "\r\n\r\n"
       }
     },
-    "name" : "DEMO CONDENSADOR EVAPORATIVO",
+    "name" : "DEMO DEPÓSITO AGUA SANITARIA",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,
