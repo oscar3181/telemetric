@@ -7460,6 +7460,138 @@
           "row" : 0,
           "col" : 0,
           "id" : "e1ee1255-2651-06ac-fb7d-336267f16ef5"
+        },
+        "a1421239-5b08-af2e-77e9-a9b60a5ff6ef" : {
+          "typeFullFqn" : "system.top_flow_meter",
+          "type" : "rpc",
+          "sizeX" : 2,
+          "sizeY" : 2,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0",
+              "scadaSymbolUrl" : "tb-image;/api/images/system/top-flow-meter.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "Top flow meter",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0",
+            "datasources" : [ ],
+            "resizable" : true,
+            "preserveAspectRatio" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a1421239-5b08-af2e-77e9-a9b60a5ff6ef"
+        },
+        "46ccd4e0-64a3-db02-89c5-50660a62bfc0" : {
+          "typeFullFqn" : "system.horizontal_ball_valve",
+          "type" : "rpc",
+          "sizeX" : 1,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0",
+              "scadaSymbolUrl" : "tb-image;/api/images/system/horizontal-ball-valve.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "Horizontal ball valve",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0",
+            "datasources" : [ ],
+            "resizable" : true,
+            "preserveAspectRatio" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "46ccd4e0-64a3-db02-89c5-50660a62bfc0"
         }
       },
       "states" : {
@@ -7538,8 +7670,8 @@
                   "sizeY" : 26,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 58,
-                  "col" : 534
+                  "row" : 282,
+                  "col" : 113
                 },
                 "cad876a7-c80b-02af-308e-9a3fcadddb47" : {
                   "sizeX" : 99,
@@ -7626,8 +7758,8 @@
                   "sizeY" : 26,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 58,
-                  "col" : 633
+                  "row" : 59,
+                  "col" : 605
                 },
                 "facc6925-28b4-822a-7318-2d3dea2f66d7" : {
                   "sizeX" : 200,
@@ -7802,6 +7934,22 @@
                   "resizable" : true,
                   "row" : 372,
                   "col" : 244
+                },
+                "a1421239-5b08-af2e-77e9-a9b60a5ff6ef" : {
+                  "sizeX" : 45,
+                  "sizeY" : 45,
+                  "preserveAspectRatio" : true,
+                  "resizable" : true,
+                  "row" : 38,
+                  "col" : 534
+                },
+                "46ccd4e0-64a3-db02-89c5-50660a62bfc0" : {
+                  "sizeX" : 26,
+                  "sizeY" : 26,
+                  "preserveAspectRatio" : true,
+                  "resizable" : true,
+                  "row" : 58,
+                  "col" : 579
                 }
               },
               "gridSettings" : {
