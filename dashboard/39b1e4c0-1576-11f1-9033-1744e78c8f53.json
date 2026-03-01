@@ -5197,7 +5197,7 @@
             "datasources" : [ {
               "type" : "device",
               "name" : "",
-              "deviceId" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc",
+              "deviceId" : "30664610-f84b-11f0-862c-e5320376240c",
               "dataKeys" : [ {
                 "name" : "wifi",
                 "type" : "timeseries",
@@ -6579,8 +6579,8 @@
                     }
                   },
                   "temperatura" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : 14.72,
                     "executeRpc" : {
                       "method" : "getState",
                       "requestTimeout" : 5000,
@@ -6588,8 +6588,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
+                      "scope" : null,
+                      "key" : "state"
                     },
                     "getTimeSeries" : {
                       "key" : "temperatura"
@@ -6600,7 +6600,6 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "compareToValue" : true,
                       "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
@@ -6640,8 +6639,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "turbidez"
@@ -6652,6 +6651,7 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
+                      "compareToValue" : true,
                       "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   }
