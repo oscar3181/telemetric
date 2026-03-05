@@ -929,7 +929,7 @@
               "realtime" : {
                 "realtimeType" : 0,
                 "interval" : 1800000,
-                "timewindowMs" : 604800000
+                "timewindowMs" : 86400000
               },
               "aggregation" : {
                 "type" : "AVG"
