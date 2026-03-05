@@ -658,12 +658,16 @@
               "highlightsWidth" : 20,
               "highlights" : [ {
                 "from" : 0,
-                "to" : 15,
+                "to" : 5,
                 "color" : "rgb(129, 196, 233)"
+              }, {
+                "from" : 5,
+                "to" : 15,
+                "color" : "rgb(4, 99, 211)"
               }, {
                 "from" : 15,
                 "to" : 20,
-                "color" : "rgb(4, 99, 211)"
+                "color" : "rgb(183, 58, 183)"
               } ],
               "animation" : true,
               "animationDuration" : 1000,
@@ -909,7 +913,7 @@
                   "tooltipValueFormatter" : null
                 },
                 "units" : "°C",
-                "decimals" : 0,
+                "decimals" : 2,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
@@ -924,8 +928,8 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 300000,
-                "timewindowMs" : 86400000
+                "interval" : 1800000,
+                "timewindowMs" : 604800000
               },
               "aggregation" : {
                 "type" : "AVG"
