@@ -844,9 +844,9 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : null,
-                  "decimals" : 0,
-                  "show" : false,
+                  "units" : "°C",
+                  "decimals" : 2,
+                  "show" : true,
                   "label" : "",
                   "labelFont" : {
                     "family" : "Roboto",
@@ -879,13 +879,21 @@
                   "order" : 0,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 30,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 }
               },
@@ -1294,7 +1302,10 @@
               },
               "yAxes" : {
                 "default" : {
-                  "show" : false,
+                  "units" : "mg/L",
+                  "decimals" : 2,
+                  "show" : true,
+                  "label" : "",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -1304,6 +1315,7 @@
                     "lineHeight" : "1"
                   },
                   "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
                     "family" : "Roboto",
@@ -1322,7 +1334,25 @@
                   "showSplitLines" : true,
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "default",
-                  "order" : 0
+                  "order" : 0,
+                  "min" : {
+                    "type" : "constant",
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  },
+                  "max" : {
+                    "type" : "constant",
+                    "value" : 5,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  }
                 }
               },
               "thresholds" : [ ],
@@ -1678,9 +1708,9 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : null,
-                  "decimals" : 0,
-                  "show" : false,
+                  "units" : "pH",
+                  "decimals" : 2,
+                  "show" : true,
                   "label" : "",
                   "labelFont" : {
                     "family" : "Roboto",
@@ -2104,7 +2134,10 @@
               },
               "yAxes" : {
                 "default" : {
-                  "show" : false,
+                  "units" : "NTU",
+                  "decimals" : 2,
+                  "show" : true,
+                  "label" : "",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -2114,6 +2147,7 @@
                     "lineHeight" : "1"
                   },
                   "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
                     "family" : "Roboto",
@@ -2132,7 +2166,25 @@
                   "showSplitLines" : true,
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "default",
-                  "order" : 0
+                  "order" : 0,
+                  "min" : {
+                    "type" : "constant",
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  },
+                  "max" : {
+                    "type" : "constant",
+                    "value" : 4,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  }
                 }
               },
               "thresholds" : [ ],
