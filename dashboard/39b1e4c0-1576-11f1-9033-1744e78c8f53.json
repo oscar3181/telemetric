@@ -888,7 +888,7 @@
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : 30,
+                    "value" : 25,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
@@ -897,59 +897,7 @@
                   }
                 }
               },
-              "thresholds" : [ {
-                "type" : "constant",
-                "yAxisId" : "default",
-                "units" : null,
-                "decimals" : 0,
-                "lineColor" : "rgba(0, 0, 0, 0.76)",
-                "lineType" : "solid",
-                "lineWidth" : 1,
-                "startSymbol" : "none",
-                "startSymbolSize" : 5,
-                "endSymbol" : "arrow",
-                "endSymbolSize" : 5,
-                "showLabel" : true,
-                "labelPosition" : "end",
-                "labelFont" : {
-                  "family" : "Roboto",
-                  "size" : 12,
-                  "sizeUnit" : "px",
-                  "style" : "normal",
-                  "weight" : "normal",
-                  "lineHeight" : "1"
-                },
-                "labelColor" : "rgba(0, 0, 0, 0.76)",
-                "enableLabelBackground" : false,
-                "labelBackground" : "rgba(255,255,255,0.56)",
-                "value" : 30
-              }, {
-                "type" : "constant",
-                "yAxisId" : "default",
-                "units" : null,
-                "decimals" : 0,
-                "lineColor" : "rgba(0, 0, 0, 0.76)",
-                "lineType" : "solid",
-                "lineWidth" : 1,
-                "startSymbol" : "none",
-                "startSymbolSize" : 5,
-                "endSymbol" : "arrow",
-                "endSymbolSize" : 5,
-                "showLabel" : true,
-                "labelPosition" : "end",
-                "labelFont" : {
-                  "family" : "Roboto",
-                  "size" : 12,
-                  "sizeUnit" : "px",
-                  "style" : "normal",
-                  "weight" : "normal",
-                  "lineHeight" : "1"
-                },
-                "labelColor" : "rgba(0, 0, 0, 0.76)",
-                "enableLabelBackground" : false,
-                "labelBackground" : "rgba(255,255,255,0.56)",
-                "value" : 10
-              } ],
+              "thresholds" : [ ],
               "dataZoom" : true,
               "stack" : false,
               "grid" : {
