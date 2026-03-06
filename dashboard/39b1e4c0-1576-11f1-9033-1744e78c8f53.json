@@ -658,10 +658,10 @@
               "highlightsWidth" : 20,
               "highlights" : [ {
                 "from" : 0,
-                "to" : 5,
+                "to" : 4,
                 "color" : "rgb(129, 196, 233)"
               }, {
-                "from" : 5,
+                "from" : 4,
                 "to" : 15,
                 "color" : "rgb(4, 99, 211)"
               }, {
