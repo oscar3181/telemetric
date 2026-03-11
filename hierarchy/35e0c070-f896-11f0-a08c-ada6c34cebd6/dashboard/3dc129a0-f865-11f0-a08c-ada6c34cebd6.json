@@ -2350,7 +2350,10 @@
               },
               "yAxes" : {
                 "default" : {
-                  "show" : false,
+                  "units" : "NTU",
+                  "decimals" : 2,
+                  "show" : true,
+                  "label" : "Turbidez",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -2360,6 +2363,7 @@
                     "lineHeight" : "1"
                   },
                   "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
                     "family" : "Roboto",
@@ -2378,7 +2382,18 @@
                   "showSplitLines" : true,
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "default",
-                  "order" : 0
+                  "order" : 0,
+                  "min" : {
+                    "type" : "constant",
+                    "value" : 0
+                  },
+                  "max" : {
+                    "type" : "constant",
+                    "value" : 15
+                  },
+                  "ticksGenerator" : null,
+                  "interval" : null,
+                  "splitNumber" : null
                 }
               },
               "thresholds" : [ ],
