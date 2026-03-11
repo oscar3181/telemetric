@@ -1451,35 +1451,15 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideAggregation" : false,
-              "hideAggInterval" : false,
-              "hideTimezone" : false,
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "interval" : 3600000,
-                "timewindowMs" : 86400000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : null,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
+                "timewindowMs" : 7200000
               },
               "aggregation" : {
-                "type" : "AVG",
+                "type" : "NONE",
                 "limit" : 25000
-              },
-              "timezone" : null
+              }
             },
             "showTitle" : true,
             "backgroundColor" : "rgba(0, 0, 0, 0)",
@@ -1926,7 +1906,10 @@
               },
               "yAxes" : {
                 "default" : {
-                  "show" : false,
+                  "units" : "mg/L",
+                  "decimals" : 2,
+                  "show" : true,
+                  "label" : "",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -1936,6 +1919,7 @@
                     "lineHeight" : "1"
                   },
                   "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
                     "family" : "Roboto",
@@ -1954,7 +1938,28 @@
                   "showSplitLines" : true,
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "default",
-                  "order" : 0
+                  "order" : 0,
+                  "min" : {
+                    "type" : "constant",
+                    "value" : null,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  },
+                  "max" : {
+                    "type" : "constant",
+                    "value" : null,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  },
+                  "ticksGenerator" : null,
+                  "interval" : null,
+                  "splitNumber" : null
                 }
               },
               "thresholds" : [ ],
