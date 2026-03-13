@@ -1454,7 +1454,7 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "timewindowMs" : 3600000
+                "timewindowMs" : 900000
               },
               "aggregation" : {
                 "type" : "NONE",
@@ -1541,7 +1541,7 @@
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : 5
+                    "value" : 15
                   },
                   "ticksGenerator" : null,
                   "interval" : null,
