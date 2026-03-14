@@ -9231,13 +9231,15 @@
             "settings" : {
               "showLegend" : true,
               "legendConfig" : {
+                "direction" : "column",
                 "position" : "top",
                 "sortDataKeys" : false,
                 "showMin" : false,
                 "showMax" : false,
                 "showAvg" : false,
                 "showTotal" : false,
-                "showLatest" : true
+                "showLatest" : true,
+                "valueFormat" : null
               },
               "thresholds" : [ ],
               "dataZoom" : true,
@@ -9590,7 +9592,7 @@
                 "animationDelayUpdate" : 0
               },
               "padding" : "12px",
-              "comparisonEnabled" : false,
+              "comparisonEnabled" : true,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
               "comparisonXAxis" : {
@@ -9665,12 +9667,12 @@
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
             "iconColor" : "#1F6BDD",
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "titleFont" : {
               "size" : 16,
               "sizeUnit" : "px",
@@ -9706,7 +9708,19 @@
               "color" : "rgba(0, 0, 0, 0.38)",
               "displayTypePrefix" : true
             },
-            "enableDataExport" : true
+            "enableDataExport" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "interval" : 60000,
+                "timewindowMs" : 3600000
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "displayTimewindow" : true
           },
           "row" : 0,
           "col" : 0,
