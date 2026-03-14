@@ -9476,7 +9476,7 @@
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : 2200,
+                    "value" : 2500,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
@@ -9529,7 +9529,7 @@
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : 9.5,
+                    "value" : 10,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
