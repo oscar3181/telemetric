@@ -9922,6 +9922,66 @@
           "row" : 0,
           "col" : 0,
           "id" : "31d8f315-c24e-a74f-ae3a-01bbb268658d"
+        },
+        "bf6e9a4f-2e43-55c9-cea0-0c227b2e143d" : {
+          "typeFullFqn" : "system.cards.label_widget",
+          "type" : "latest",
+          "sizeX" : 4.5,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "30664610-f84b-11f0-862c-e5320376240c",
+              "dataKeys" : [ {
+                "name" : "wifi",
+                "type" : "timeseries",
+                "label" : "wifi",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "backgroundImageUrl" : "tb-image;/api/images/tenant/frioCubit.png",
+              "labels" : [ ]
+            },
+            "title" : "SWA",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : null,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : null
+            },
+            "titleColor" : "#048AD3"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "bf6e9a4f-2e43-55c9-cea0-0c227b2e143d"
         }
       },
       "states" : {
@@ -10640,6 +10700,14 @@
                   "sizeY" : 58,
                   "row" : 21,
                   "col" : 0
+                },
+                "bf6e9a4f-2e43-55c9-cea0-0c227b2e143d" : {
+                  "sizeX" : 18,
+                  "sizeY" : 12,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 8,
+                  "col" : 88
                 }
               },
               "gridSettings" : {
