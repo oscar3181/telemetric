@@ -9886,7 +9886,7 @@
                 "properties" : { }
               }
             },
-            "title" : "SCADA symbol",
+            "title" : "Sinóptico general Frio Cubit Valladolid",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "widgetStyle" : { },
@@ -9916,7 +9916,8 @@
             "titleColor" : null,
             "borderRadius" : "0px",
             "margin" : "0px",
-            "datasources" : [ ]
+            "datasources" : [ ],
+            "enableDataExport" : true
           },
           "row" : 0,
           "col" : 0,
@@ -10635,19 +10636,25 @@
             "main" : {
               "widgets" : {
                 "31d8f315-c24e-a74f-ae3a-01bbb268658d" : {
-                  "sizeX" : 25,
-                  "sizeY" : 12,
-                  "row" : 0,
+                  "sizeX" : 108,
+                  "sizeY" : 58,
+                  "row" : 21,
                   "col" : 0
                 }
               },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
+                "columns" : 100,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 100,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
