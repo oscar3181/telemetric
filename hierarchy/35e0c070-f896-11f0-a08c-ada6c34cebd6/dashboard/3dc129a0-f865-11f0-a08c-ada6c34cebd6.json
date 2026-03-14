@@ -10941,18 +10941,18 @@
             "main" : {
               "widgets" : {
                 "31d8f315-c24e-a74f-ae3a-01bbb268658d" : {
-                  "sizeX" : 108,
-                  "sizeY" : 58,
-                  "row" : 14,
+                  "sizeX" : 96,
+                  "sizeY" : 51,
+                  "row" : 7,
                   "col" : 0
                 },
                 "bf6e9a4f-2e43-55c9-cea0-0c227b2e143d" : {
-                  "sizeX" : 17,
-                  "sizeY" : 10,
+                  "sizeX" : 15,
+                  "sizeY" : 6,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 0,
-                  "col" : 17
+                  "row" : 1,
+                  "col" : 78
                 },
                 "5f8336b0-dd24-9dfd-55a8-b72563fcdabc" : {
                   "sizeX" : 15,
