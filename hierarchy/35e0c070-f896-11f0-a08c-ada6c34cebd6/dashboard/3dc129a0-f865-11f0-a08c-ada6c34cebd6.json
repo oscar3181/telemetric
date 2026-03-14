@@ -9804,7 +9804,7 @@
             "showTitleIcon" : true,
             "titleIcon" : "timeline",
             "iconColor" : "#1FB4DD",
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "titleFont" : {
               "size" : 16,
               "sizeUnit" : "px",
@@ -9840,7 +9840,19 @@
               "color" : "rgba(0, 0, 0, 0.38)",
               "displayTypePrefix" : true
             },
-            "enableDataExport" : true
+            "enableDataExport" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 86400000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 25000
+              }
+            },
+            "displayTimewindow" : true
           },
           "row" : 0,
           "col" : 0,
