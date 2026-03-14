@@ -9861,7 +9861,7 @@
       },
       "states" : {
         "default" : {
-          "name" : "Estado Servidor",
+          "name" : "Principal",
           "root" : true,
           "layouts" : {
             "main" : {
@@ -10386,7 +10386,7 @@
           }
         },
         "alarmas" : {
-          "name" : "alarmas",
+          "name" : "Alarmas",
           "root" : false,
           "layouts" : {
             "main" : {
@@ -10417,7 +10417,7 @@
           }
         },
         "graficos" : {
-          "name" : "graficos",
+          "name" : "Gráficas",
           "root" : false,
           "layouts" : {
             "main" : {
@@ -10560,6 +10560,23 @@
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "sin_ptico" : {
+          "name" : "Sinóptico",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
               }
             }
           }
