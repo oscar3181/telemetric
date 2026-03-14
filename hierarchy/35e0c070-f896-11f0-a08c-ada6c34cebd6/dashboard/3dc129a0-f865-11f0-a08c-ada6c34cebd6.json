@@ -9139,7 +9139,8 @@
                     "comparisonValuesLabel" : "",
                     "color" : ""
                   }
-                }
+                },
+                "units" : "°C"
               }, {
                 "name" : "conductividad",
                 "type" : "timeseries",
@@ -9213,7 +9214,13 @@
                     "comparisonValuesLabel" : "",
                     "color" : ""
                   }
-                }
+                },
+                "units" : "µS/cm",
+                "decimals" : 2,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -9225,7 +9232,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "comparisonEnabled" : true,
+              "comparisonEnabled" : false,
               "timeForComparison" : "previousInterval",
               "comparisonCustomIntervalValue" : 7200000,
               "comparisonXAxis" : {
@@ -9260,6 +9267,59 @@
                 "splitLinesColor" : "rgba(0, 0, 0, 0.12)"
               },
               "yAxes" : {
+                "axis3" : {
+                  "units" : "µS/cm",
+                  "decimals" : 2,
+                  "show" : true,
+                  "label" : "",
+                  "labelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "600",
+                    "lineHeight" : "1"
+                  },
+                  "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "left",
+                  "showTickLabels" : true,
+                  "tickLabelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "400",
+                    "lineHeight" : "1"
+                  },
+                  "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                  "ticksFormatter" : null,
+                  "showTicks" : true,
+                  "ticksColor" : "rgba(0, 0, 0, 0.54)",
+                  "showLine" : true,
+                  "lineColor" : "rgba(0, 0, 0, 0.54)",
+                  "showSplitLines" : true,
+                  "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
+                  "id" : "axis3",
+                  "order" : 0,
+                  "min" : {
+                    "type" : "constant",
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  },
+                  "max" : {
+                    "type" : "constant",
+                    "value" : 2500,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  }
+                },
                 "default" : {
                   "units" : "°C",
                   "decimals" : 2,
@@ -9293,7 +9353,7 @@
                   "showSplitLines" : true,
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "default",
-                  "order" : 0,
+                  "order" : 1,
                   "min" : {
                     "type" : "constant",
                     "value" : 0,
@@ -9346,10 +9406,10 @@
                   "showSplitLines" : true,
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "axis1",
-                  "order" : 1,
+                  "order" : 2,
                   "min" : {
                     "type" : "constant",
-                    "value" : 7,
+                    "value" : 8,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
@@ -9399,59 +9459,6 @@
                   "showSplitLines" : true,
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "axis2",
-                  "order" : 2,
-                  "min" : {
-                    "type" : "constant",
-                    "value" : 0,
-                    "latestKey" : null,
-                    "latestKeyType" : null,
-                    "entityAlias" : null,
-                    "entityKey" : null,
-                    "entityKeyType" : null
-                  },
-                  "max" : {
-                    "type" : "constant",
-                    "value" : 12,
-                    "latestKey" : null,
-                    "latestKeyType" : null,
-                    "entityAlias" : null,
-                    "entityKey" : null,
-                    "entityKeyType" : null
-                  }
-                },
-                "axis3" : {
-                  "units" : "µS/cm",
-                  "decimals" : 2,
-                  "show" : true,
-                  "label" : "",
-                  "labelFont" : {
-                    "family" : "Roboto",
-                    "size" : 12,
-                    "sizeUnit" : "px",
-                    "style" : "normal",
-                    "weight" : "600",
-                    "lineHeight" : "1"
-                  },
-                  "labelColor" : "rgba(0, 0, 0, 0.54)",
-                  "position" : "left",
-                  "showTickLabels" : true,
-                  "tickLabelFont" : {
-                    "family" : "Roboto",
-                    "size" : 12,
-                    "sizeUnit" : "px",
-                    "style" : "normal",
-                    "weight" : "400",
-                    "lineHeight" : "1"
-                  },
-                  "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
-                  "ticksFormatter" : null,
-                  "showTicks" : true,
-                  "ticksColor" : "rgba(0, 0, 0, 0.54)",
-                  "showLine" : true,
-                  "lineColor" : "rgba(0, 0, 0, 0.54)",
-                  "showSplitLines" : true,
-                  "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
-                  "id" : "axis3",
                   "order" : 3,
                   "min" : {
                     "type" : "constant",
@@ -9464,7 +9471,7 @@
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : 5000,
+                    "value" : 12,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
@@ -9634,7 +9641,7 @@
             "enableFullscreen" : true,
             "titleStyle" : null,
             "mobileHeight" : null,
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
