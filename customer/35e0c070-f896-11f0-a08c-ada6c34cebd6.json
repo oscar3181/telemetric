@@ -4,7 +4,7 @@
     "additionalInfo" : {
       "description" : "",
       "allowWhiteLabeling" : true,
-      "homeDashboardId" : null,
+      "homeDashboardId" : "3dc129a0-f865-11f0-a08c-ada6c34cebd6",
       "homeDashboardHideToolbar" : true
     },
     "address" : null,
@@ -13,7 +13,7 @@
     "country" : null,
     "customMenuId" : null,
     "customerId" : null,
-    "email" : "friocubit@gmail.com",
+    "email" : "friocubitsl@gmail.com",
     "externalId" : null,
     "id" : {
       "entityType" : "CUSTOMER",
