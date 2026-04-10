@@ -5493,7 +5493,7 @@
               "scadaSymbolUrl" : "tb-image;/api/images/tenant/válvula_2_vías_desagüe.svg",
               "scadaSymbolObjectSettings" : {
                 "behavior" : {
-                  "valvula" : {
+                  "en_rango" : {
                     "action" : "GET_TIME_SERIES",
                     "defaultValue" : null,
                     "executeRpc" : {
@@ -5503,8 +5503,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
+                      "key" : "state",
+                      "scope" : null
                     },
                     "getTimeSeries" : {
                       "key" : "conductividad"
@@ -5515,6 +5515,7 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
+                      "compareToValue" : true,
                       "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   }
@@ -5523,7 +5524,7 @@
                   "closedColor" : "#F44336",
                   "openColor" : "#4CAF50",
                   "minUs" : 1800,
-                  "maxUs" : 2000
+                  "maxUs" : 2200
                 }
               },
               "background" : {
