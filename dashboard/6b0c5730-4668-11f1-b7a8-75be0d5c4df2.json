@@ -983,74 +983,74 @@
             "main" : {
               "widgets" : {
                 "3f275cdb-065f-773c-9fce-7b137cd7e4b4" : {
-                  "sizeX" : 64,
-                  "sizeY" : 60,
-                  "row" : 30,
-                  "col" : 160
+                  "sizeX" : 269,
+                  "sizeY" : 252,
+                  "row" : 126,
+                  "col" : 672
                 },
                 "4b3ddef3-b21a-ad4a-0612-9a0017465f17" : {
-                  "sizeX" : 27,
-                  "sizeY" : 49,
-                  "row" : 1,
-                  "col" : 10
+                  "sizeX" : 113,
+                  "sizeY" : 206,
+                  "row" : 4,
+                  "col" : 42
                 },
                 "7f0b5545-86ba-7134-1b3f-2c5a39cf3b7e" : {
-                  "sizeX" : 27,
-                  "sizeY" : 29,
-                  "row" : 21,
-                  "col" : 37,
+                  "sizeX" : 113,
+                  "sizeY" : 122,
+                  "row" : 88,
+                  "col" : 155,
                   "resizable" : true,
                   "preserveAspectRatio" : false
                 },
                 "612d6f4b-4cd8-4c73-b5ca-6e57378a35ce" : {
-                  "sizeX" : 29,
-                  "sizeY" : 27,
-                  "row" : 61,
-                  "col" : 269
+                  "sizeX" : 122,
+                  "sizeY" : 113,
+                  "row" : 256,
+                  "col" : 1130
                 },
                 "392fb5ca-e8cc-02af-0fb0-b7d31f16dcd9" : {
-                  "sizeX" : 34,
-                  "sizeY" : 40,
-                  "row" : 92,
-                  "col" : 158
+                  "sizeX" : 143,
+                  "sizeY" : 168,
+                  "row" : 386,
+                  "col" : 664
                 },
                 "dc7cc054-a567-4a84-a0a9-fa16d731c714" : {
-                  "sizeX" : 37,
-                  "sizeY" : 39,
-                  "row" : 93,
-                  "col" : 195
+                  "sizeX" : 155,
+                  "sizeY" : 164,
+                  "row" : 391,
+                  "col" : 819
                 },
                 "51ce6133-6fa8-ca97-b4e5-146954509d5a" : {
-                  "sizeX" : 23,
-                  "sizeY" : 31,
+                  "sizeX" : 97,
+                  "sizeY" : 130,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 98,
-                  "col" : 124
+                  "row" : 412,
+                  "col" : 521
                 },
                 "317a495d-4f68-60bb-8f20-89a653bd368e" : {
-                  "sizeX" : 34,
-                  "sizeY" : 29,
-                  "row" : 61,
-                  "col" : 120
+                  "sizeX" : 143,
+                  "sizeY" : 122,
+                  "row" : 256,
+                  "col" : 504
                 },
                 "ef2f1ba3-e9bf-38a5-736b-fc4b046c463f" : {
-                  "sizeX" : 26,
-                  "sizeY" : 43,
+                  "sizeX" : 109,
+                  "sizeY" : 181,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 7,
-                  "col" : 87
+                  "row" : 29,
+                  "col" : 365
                 }
               },
               "gridSettings" : {
-                "layoutType" : "default",
+                "layoutType" : "scada",
                 "backgroundColor" : "#eeeeee",
-                "columns" : 240,
+                "columns" : 1008,
                 "margin" : 1,
                 "outerMargin" : false,
-                "backgroundSizeMode" : "100%",
-                "minColumns" : 240,
+                "backgroundSizeMode" : "cover",
+                "minColumns" : 1008,
                 "viewFormat" : "grid",
                 "autoFillHeight" : false,
                 "rowHeight" : 70,
