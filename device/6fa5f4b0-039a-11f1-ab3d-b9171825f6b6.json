@@ -29,7 +29,7 @@
       "id" : "6fa5f4b0-039a-11f1-ab3d-b9171825f6b6"
     },
     "label" : "",
-    "name" : "PLC14",
+    "name" : "San Miguel Dioxido de Cloro",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "default"
@@ -41,11 +41,11 @@
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1772020314349,
+      "lastUpdateTs" : 1777752673076,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -53,32 +53,32 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1772009549030,
-      "longValue" : 1772009549030,
+      "lastUpdateTs" : 1773271934372,
+      "longValue" : 1773271934368,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1772016100504,
-      "longValue" : 1772016097479,
+      "lastUpdateTs" : 1777754079574,
+      "longValue" : 1777754078812,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1772009549030,
-      "longValue" : 1772009549030,
+      "lastUpdateTs" : 1777754053511,
+      "longValue" : 1777754053511,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1772016097493,
-      "longValue" : 1772016097493,
+      "lastUpdateTs" : 1777754053395,
+      "longValue" : 1777754053395,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
