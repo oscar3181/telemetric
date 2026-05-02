@@ -1294,10 +1294,10 @@
                   "preserveAspectRatio" : false
                 },
                 "612d6f4b-4cd8-4c73-b5ca-6e57378a35ce" : {
-                  "sizeX" : 122,
-                  "sizeY" : 113,
-                  "row" : 256,
-                  "col" : 1130
+                  "sizeX" : 182,
+                  "sizeY" : 181,
+                  "row" : 313,
+                  "col" : 1562
                 },
                 "392fb5ca-e8cc-02af-0fb0-b7d31f16dcd9" : {
                   "sizeX" : 143,
@@ -1320,10 +1320,10 @@
                   "col" : 521
                 },
                 "317a495d-4f68-60bb-8f20-89a653bd368e" : {
-                  "sizeX" : 139,
-                  "sizeY" : 135,
-                  "row" : 174,
-                  "col" : 478
+                  "sizeX" : 142,
+                  "sizeY" : 175,
+                  "row" : 100,
+                  "col" : 512
                 },
                 "ef2f1ba3-e9bf-38a5-736b-fc4b046c463f" : {
                   "sizeX" : 109,
@@ -1342,8 +1342,8 @@
                   "col" : 28
                 },
                 "5bfa70e0-0c7f-5d0a-9007-c5f38657f9aa" : {
-                  "sizeX" : 168,
-                  "sizeY" : 42,
+                  "sizeX" : 170,
+                  "sizeY" : 42.5,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
                   "row" : 202,
@@ -1351,12 +1351,12 @@
                 }
               },
               "gridSettings" : {
-                "layoutType" : "scada",
+                "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
                 "columns" : 1008,
-                "margin" : 1,
+                "margin" : 0,
                 "outerMargin" : false,
-                "backgroundSizeMode" : "cover",
+                "backgroundSizeMode" : "100%",
                 "minColumns" : 1008,
                 "viewFormat" : "grid",
                 "autoFillHeight" : false,
