@@ -309,11 +309,11 @@
               "widgets" : {
                 "67439487-6cfa-f98d-8770-135ddf5f7948" : {
                   "sizeX" : 456,
-                  "sizeY" : 140,
+                  "sizeY" : 97,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 389,
-                  "col" : 132
+                  "row" : 379,
+                  "col" : 131
                 },
                 "17a3ccda-806c-8ca7-5b50-b9c3f8b7013f" : {
                   "sizeX" : 773,
