@@ -8,71 +8,6 @@
     "configuration" : {
       "description" : "",
       "widgets" : {
-        "612d6f4b-4cd8-4c73-b5ca-6e57378a35ce" : {
-          "typeFullFqn" : "system.small_right_motor_pump",
-          "type" : "rpc",
-          "sizeX" : 3,
-          "sizeY" : 2,
-          "config" : {
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0, 0, 0, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "background" : {
-                "type" : "color",
-                "imageUrl" : null,
-                "color" : "rgba(255, 255, 255, 0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              },
-              "padding" : "12px",
-              "scadaSymbolUrl" : "tb-image;/api/images/system/small-right-motor-pump.svg",
-              "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
-              }
-            },
-            "title" : "Small right motor pump",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "actions" : { },
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : null,
-              "lineHeight" : "1.6"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleStyle" : null,
-            "pageSize" : 1024,
-            "titleIcon" : "mdi:lightbulb-outline",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "configMode" : "advanced",
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "6fa5f4b0-039a-11f1-ab3d-b9171825f6b6"
-            },
-            "titleColor" : null,
-            "borderRadius" : "0px",
-            "margin" : "0px",
-            "datasources" : [ ],
-            "enableDataExport" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "612d6f4b-4cd8-4c73-b5ca-6e57378a35ce"
-        },
         "67439487-6cfa-f98d-8770-135ddf5f7948" : {
           "typeFullFqn" : "system.scada_symbol",
           "type" : "rpc",
@@ -298,7 +233,7 @@
           "col" : 0,
           "id" : "67439487-6cfa-f98d-8770-135ddf5f7948"
         },
-        "19dab60d-e1f2-fb9b-0d2b-85ca35c6a07f" : {
+        "43bbd2a8-c822-73a3-bb1d-712cba27528f" : {
           "typeFullFqn" : "system.scada_symbol",
           "type" : "rpc",
           "sizeX" : 3,
@@ -320,7 +255,7 @@
                 }
               },
               "padding" : "0",
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/SanMiguel_thingsboard_1000x1000.svg",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/SanMiguel_thingsboard_sin_margenes_1000x420.svg",
               "scadaSymbolObjectSettings" : {
                 "behavior" : { },
                 "properties" : { }
@@ -362,7 +297,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "19dab60d-e1f2-fb9b-0d2b-85ca35c6a07f"
+          "id" : "43bbd2a8-c822-73a3-bb1d-712cba27528f"
         }
       },
       "states" : {
@@ -372,27 +307,21 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "612d6f4b-4cd8-4c73-b5ca-6e57378a35ce" : {
-                  "sizeX" : 182,
-                  "sizeY" : 181,
-                  "row" : 1126,
-                  "col" : 1549
-                },
                 "67439487-6cfa-f98d-8770-135ddf5f7948" : {
                   "sizeX" : 456,
                   "sizeY" : 140,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 1169,
-                  "col" : 1030
+                  "row" : 1125,
+                  "col" : 86
                 },
-                "19dab60d-e1f2-fb9b-0d2b-85ca35c6a07f" : {
-                  "sizeX" : 997,
-                  "sizeY" : 994,
+                "43bbd2a8-c822-73a3-bb1d-712cba27528f" : {
+                  "sizeX" : 862,
+                  "sizeY" : 699,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 133,
-                  "col" : 132
+                  "row" : 422,
+                  "col" : 22
                 }
               },
               "gridSettings" : {
