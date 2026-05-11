@@ -233,7 +233,7 @@
           "col" : 0,
           "id" : "67439487-6cfa-f98d-8770-135ddf5f7948"
         },
-        "43bbd2a8-c822-73a3-bb1d-712cba27528f" : {
+        "4456de8f-02ab-53e8-8bad-9f1d7221dc68" : {
           "typeFullFqn" : "system.scada_symbol",
           "type" : "rpc",
           "sizeX" : 3,
@@ -255,7 +255,7 @@
                 }
               },
               "padding" : "0",
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/SanMiguel_thingsboard_sin_margenes_1000x420.svg",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/SanMiguel_thingsboard_1000x1000.svg",
               "scadaSymbolObjectSettings" : {
                 "behavior" : { },
                 "properties" : { }
@@ -283,7 +283,7 @@
             "titleIcon" : "mdi:lightbulb-outline",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "targetDevice" : {
               "type" : "device",
               "deviceId" : "6fa5f4b0-039a-11f1-ab3d-b9171825f6b6"
@@ -297,7 +297,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "43bbd2a8-c822-73a3-bb1d-712cba27528f"
+          "id" : "4456de8f-02ab-53e8-8bad-9f1d7221dc68"
         }
       },
       "states" : {
@@ -312,16 +312,16 @@
                   "sizeY" : 140,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 1125,
-                  "col" : 86
+                  "row" : 1347,
+                  "col" : 172
                 },
-                "43bbd2a8-c822-73a3-bb1d-712cba27528f" : {
-                  "sizeX" : 862,
-                  "sizeY" : 699,
+                "4456de8f-02ab-53e8-8bad-9f1d7221dc68" : {
+                  "sizeX" : 933,
+                  "sizeY" : 450,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 422,
-                  "col" : 22
+                  "row" : 546,
+                  "col" : 29
                 }
               },
               "gridSettings" : {
