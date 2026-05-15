@@ -915,7 +915,7 @@
                   "order" : 1,
                   "min" : {
                     "type" : "constant",
-                    "value" : 8,
+                    "value" : 0,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
@@ -924,7 +924,7 @@
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : 10,
+                    "value" : 5,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
