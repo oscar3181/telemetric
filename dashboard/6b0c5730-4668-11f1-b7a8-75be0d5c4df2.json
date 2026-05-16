@@ -1240,7 +1240,7 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "timewindowMs" : 43200000
+                "timewindowMs" : 86400000
               },
               "aggregation" : {
                 "type" : "NONE",
@@ -1266,11 +1266,11 @@
                   "sizeY" : 97,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 379,
-                  "col" : 131
+                  "row" : 50,
+                  "col" : 1059
                 },
                 "17a3ccda-806c-8ca7-5b50-b9c3f8b7013f" : {
-                  "sizeX" : 773,
+                  "sizeX" : 991,
                   "sizeY" : 368,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
