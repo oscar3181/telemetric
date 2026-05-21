@@ -393,13 +393,12 @@
                 "settings" : {
                   "yAxisId" : "axis2",
                   "showInLegend" : true,
-                  "dataHiddenByDefault" : false,
                   "type" : "line",
                   "lineSettings" : {
                     "showLine" : true,
                     "step" : false,
                     "stepType" : "start",
-                    "smooth" : false,
+                    "smooth" : true,
                     "lineType" : "solid",
                     "lineWidth" : 2,
                     "showPoints" : false,
@@ -457,10 +456,16 @@
                     "showValuesForComparison" : false,
                     "comparisonValuesLabel" : "",
                     "color" : ""
-                  }
+                  },
+                  "dataHiddenByDefault" : false,
+                  "tooltipValueFormatter" : null
                 },
                 "units" : "mg/L",
-                "decimals" : 2
+                "decimals" : 2,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "ph",
                 "type" : "timeseries",
