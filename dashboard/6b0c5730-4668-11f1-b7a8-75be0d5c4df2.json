@@ -1470,11 +1470,11 @@
             "actions" : {
               "click" : [ {
                 "name" : "onClick",
-                "icon" : "multiline_chart",
+                "icon" : "pin_drop",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "graficos",
+                "targetDashboardStateId" : "ubicaci_n",
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
