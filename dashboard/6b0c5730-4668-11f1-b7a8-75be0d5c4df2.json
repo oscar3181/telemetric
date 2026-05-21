@@ -1761,11 +1761,11 @@
             "actions" : {
               "click" : [ {
                 "name" : "onClick",
-                "icon" : "home",
+                "icon" : "multiline_chart",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "default",
+                "targetDashboardStateId" : "graficos",
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
