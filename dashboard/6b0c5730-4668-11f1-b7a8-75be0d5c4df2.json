@@ -924,7 +924,7 @@
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : 1,
+                    "value" : 0.5,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
