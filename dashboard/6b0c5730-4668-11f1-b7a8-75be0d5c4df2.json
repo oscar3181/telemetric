@@ -2119,36 +2119,36 @@
             "main" : {
               "widgets" : {
                 "67439487-6cfa-f98d-8770-135ddf5f7948" : {
-                  "sizeX" : 712,
+                  "sizeX" : 530,
                   "sizeY" : 97,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 442,
-                  "col" : 119
+                  "row" : 446,
+                  "col" : 159
                 },
                 "8edab1e5-ad8b-acb7-26c2-246511246895" : {
                   "sizeX" : 89,
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 389,
-                  "col" : 210
+                  "row" : 28,
+                  "col" : 268
                 },
                 "476a3be5-81ed-3c4f-becb-5e81b5c95ff6" : {
                   "sizeX" : 824,
                   "sizeY" : 380,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 2,
-                  "col" : 1
+                  "row" : 57,
+                  "col" : 4
                 },
                 "ce49eb5a-e272-9090-152e-6ac74888e4d0" : {
                   "sizeX" : 89,
                   "sizeY" : 27,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 389,
-                  "col" : 301
+                  "row" : 28,
+                  "col" : 177
                 }
               },
               "gridSettings" : {
