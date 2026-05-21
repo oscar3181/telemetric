@@ -1761,11 +1761,11 @@
             "actions" : {
               "click" : [ {
                 "name" : "onClick",
-                "icon" : "multiline_chart",
+                "icon" : "pin_drop",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "graficos",
+                "targetDashboardStateId" : "ubicaci_n",
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
@@ -1962,7 +1962,7 @@
                   "sizeX" : 24,
                   "sizeY" : 10,
                   "mobileHeight" : null,
-                  "row" : 3,
+                  "row" : 1,
                   "col" : 0
                 },
                 "4537a346-0b0f-f5bc-9727-264d22ef84fd" : {
@@ -1970,7 +1970,7 @@
                   "sizeY" : 1,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 1,
+                  "row" : 0,
                   "col" : 5
                 },
                 "e73dceb7-b1ce-0a5f-5260-590526d3cebc" : {
@@ -1978,7 +1978,7 @@
                   "sizeY" : 1,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 1,
+                  "row" : 0,
                   "col" : 8
                 }
               },
