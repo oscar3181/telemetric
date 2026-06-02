@@ -1,0 +1,710 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "a70a2860-5e88-11f1-b18f-730fe01d1a05"
+    },
+    "customerId" : null,
+    "ownerId" : null,
+    "title" : "PL19_Frío Cubit Dashboard",
+    "name" : "PL19_Frío Cubit Dashboard",
+    "image" : null,
+    "assignedCustomers" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "timewindow" : {
+        "selectedTab" : 1,
+        "history" : {
+          "timewindowMs" : 3600000,
+          "historyType" : 0
+        },
+        "aggregation" : {
+          "type" : "NONE"
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      },
+      "widgets" : {
+        "4548da39-3649-42b4-af40-141ca3cd788d" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Water pH Level",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "",
+            "decimals" : 2,
+            "actions" : { },
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 14,
+              "gaugeType" : "arc",
+              "showTitle" : true,
+              "title" : "Water pH Level",
+              "titleFont" : {
+                "color" : "#000000DE"
+              },
+              "labelFont" : { },
+              "valueFont" : { },
+              "minMaxFont" : { },
+              "showMinMax" : false,
+              "barColor" : {
+                "type" : "function",
+                "colorFunction" : "if (value < 6.5) return '#F44336'; if (value > 8.5) return '#FF9800'; return '#4CAF50';"
+              },
+              "showValue" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "ph",
+                "label" : "pH",
+                "type" : "timeseries",
+                "color" : "#000000DE",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "4cffcfd6-1b9c-4c24-8653-ef27573bd9e9"
+            } ]
+          },
+          "id" : "4548da39-3649-42b4-af40-141ca3cd788d",
+          "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
+          "type" : "latest"
+        },
+        "65679c07-bcfc-4853-8e37-153bc470a4e5" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Network Signal",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "dBm",
+            "decimals" : 0,
+            "actions" : { },
+            "settings" : {
+              "layout" : "wifi",
+              "activeBarsColor" : {
+                "type" : "range",
+                "color" : "rgba(92, 223, 144, 1)",
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ {
+                    "from" : null,
+                    "to" : -85,
+                    "color" : "rgba(227, 71, 71, 1)"
+                  }, {
+                    "from" : -85,
+                    "to" : -70,
+                    "color" : "rgba(255, 122, 0, 1)"
+                  }, {
+                    "from" : -70,
+                    "to" : -55,
+                    "color" : "rgba(246, 206, 67, 1)"
+                  }, {
+                    "from" : -55,
+                    "to" : null,
+                    "color" : "rgba(92, 223, 144, 1)"
+                  } ]
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "wifi",
+                "label" : "WiFi RSSI",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "4cffcfd6-1b9c-4c24-8653-ef27573bd9e9"
+            } ]
+          },
+          "id" : "65679c07-bcfc-4853-8e37-153bc470a4e5",
+          "typeFullFqn" : "system.signal_strength",
+          "type" : "latest"
+        },
+        "80ab20f5-390b-4e6f-8aa1-357de0353fb6" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Current Temperature",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "°C",
+            "decimals" : 1,
+            "actions" : { },
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "temperatura",
+                "label" : "Temperature",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "latestDataKeys" : [ {
+                "name" : "temperatura",
+                "label" : "Temperature",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "4cffcfd6-1b9c-4c24-8653-ef27573bd9e9"
+            } ]
+          },
+          "id" : "80ab20f5-390b-4e6f-8aa1-357de0353fb6",
+          "typeFullFqn" : "system.simple_value_and_chart_card",
+          "type" : "timeseries"
+        },
+        "e167f36a-b5b1-41c0-a89a-84c3976438cd" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Device Information",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "10px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"value-block flex flex-col justify-between gap-2\"><div class=\"flex flex-1\"><span class=\"title\">Device Information</span></div><div class=\"flex flex-col justify-between gap-1\"><div class=\"flex flex-row justify-between\"><span class=\"label\">Connection Status</span><span class=\"value\" [ngClass]=\"${Connection Status} ? 'active' : 'inactive'\" [innerText]=\"${Connection Status} ? 'Online' : 'Offline'\"></span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Support Email</span><span class=\"value\">${Support Email}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Last Activity</span><span class=\"value\">${Last Activity}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Last Connected</span><span class=\"value\">${Last Connected}</span></div></div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ".label { font-weight: 400; font-size: 16px; line-height: 21px; letter-spacing: 0.2px; color: #424242; } .value { padding: 4px; font-weight: 500; font-size: 16px; line-height: 21px; letter-spacing: 0.2px; color: #212121; } .title { font-weight: 600; font-size: 18px; line-height: 21px; letter-spacing: 0.2px; color: #212121; } .value-block { height: 100%; } .active { border-radius: 6px; background: #303F9F; color: #E8EAF6; } .inactive { border-radius: 6px; background: #F5F5F5; color: #757575; }"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "active",
+                "label" : "Connection Status",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "alarm_email",
+                "label" : "Support Email",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "lastActivityTime",
+                "label" : "Last Activity",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "lastConnectTime",
+                "label" : "Last Connected",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "4cffcfd6-1b9c-4c24-8653-ef27573bd9e9"
+            } ]
+          },
+          "id" : "e167f36a-b5b1-41c0-a89a-84c3976438cd",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
+        },
+        "fb09b610-6775-4f7c-8b11-1b636b430d1c" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Water Chemistry & Quality",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "legendConfig" : {
+                "position" : "top",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "xAxis" : {
+                "show" : true,
+                "position" : "bottom"
+              },
+              "yAxis" : {
+                "show" : true,
+                "position" : "left"
+              },
+              "yAxes" : {
+                "quality" : {
+                  "id" : "quality",
+                  "label" : "Chemistry",
+                  "position" : "left",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 1,
+                  "order" : 0
+                },
+                "redox" : {
+                  "id" : "redox",
+                  "label" : "Redox",
+                  "position" : "right",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "mV",
+                  "decimals" : 0,
+                  "order" : 1
+                },
+                "solids" : {
+                  "id" : "solids",
+                  "label" : "Solids",
+                  "position" : "right",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 0,
+                  "order" : 2
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "cloro",
+                "label" : "Chlorine",
+                "type" : "timeseries",
+                "units" : "ppm",
+                "decimals" : 2,
+                "color" : "#2196F3",
+                "settings" : {
+                  "yAxisId" : "quality",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "turbidez",
+                "label" : "Turbidity",
+                "type" : "timeseries",
+                "units" : "NTU",
+                "decimals" : 2,
+                "color" : "#4CAF50",
+                "settings" : {
+                  "yAxisId" : "quality",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "redox",
+                "label" : "ORP / Redox",
+                "type" : "timeseries",
+                "units" : "mV",
+                "decimals" : 0,
+                "color" : "#FF9800",
+                "settings" : {
+                  "yAxisId" : "redox",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "conductividad",
+                "label" : "Conductivity",
+                "type" : "timeseries",
+                "units" : "µS/cm",
+                "decimals" : 1,
+                "color" : "#F44336",
+                "settings" : {
+                  "yAxisId" : "solids",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "tds",
+                "label" : "TDS",
+                "type" : "timeseries",
+                "units" : "ppm",
+                "decimals" : 1,
+                "color" : "#9C27B0",
+                "settings" : {
+                  "yAxisId" : "solids",
+                  "showLegend" : true
+                }
+              } ],
+              "entityAliasId" : "4cffcfd6-1b9c-4c24-8653-ef27573bd9e9"
+            } ]
+          },
+          "id" : "fb09b610-6775-4f7c-8b11-1b636b430d1c",
+          "typeFullFqn" : "system.time_series_chart",
+          "type" : "timeseries"
+        },
+        "924a8e42-94d7-47c9-9fc1-a399eeb67758" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Alarms",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "4px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "alarmsTitle" : "Alarms",
+              "enableSelection" : true,
+              "enableSearch" : true
+            },
+            "alarmSource" : {
+              "type" : "entity",
+              "name" : "alarms",
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "label" : "Created Time",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "originator",
+                "label" : "Originator",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "type",
+                "label" : "Type",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "severity",
+                "label" : "Severity",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "status",
+                "label" : "Status",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "4cffcfd6-1b9c-4c24-8653-ef27573bd9e9"
+            },
+            "alarmFilterConfig" : {
+              "typeList" : [ ],
+              "statusList" : [ "ACTIVE" ],
+              "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
+              "searchPropagatedAlarms" : true
+            },
+            "datasources" : [ ]
+          },
+          "id" : "924a8e42-94d7-47c9-9fc1-a399eeb67758",
+          "typeFullFqn" : "system.alarm_widgets.alarms_table",
+          "type" : "alarm"
+        },
+        "292c273b-7ad2-4c11-b97e-5c29033f658b" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Location",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "mapType" : "geoMap",
+              "layers" : [ {
+                "label" : "{i18n:widgets.maps.layer.roadmap}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldStreetMap",
+                "referenceLayer" : null
+              }, {
+                "label" : "{i18n:widgets.maps.layer.satellite}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery"
+              }, {
+                "label" : "{i18n:widgets.maps.layer.hybrid}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery",
+                "referenceLayer" : "openstreetmap_hybrid"
+              } ],
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsEntityAliasId" : "4cffcfd6-1b9c-4c24-8653-ef27573bd9e9",
+                "additionalDataKeys" : [ {
+                  "name" : "name",
+                  "label" : "Device Name",
+                  "type" : "entityField",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                } ],
+                "xKey" : {
+                  "name" : "latitude",
+                  "label" : "Latitude",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                },
+                "yKey" : {
+                  "name" : "longitude",
+                  "label" : "Longitude",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                },
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "${Device Name}"
+                },
+                "markerType" : "icon",
+                "markerIcon" : {
+                  "icon" : "place",
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "type" : "pattern",
+                  "pattern" : "<b>${Device Name}</b>"
+                }
+              } ],
+              "polygons" : [ ],
+              "circles" : [ ],
+              "fitMapBounds" : true,
+              "mapActionButtons" : [ ]
+            },
+            "datasources" : [ ]
+          },
+          "id" : "292c273b-7ad2-4c11-b97e-5c29033f658b",
+          "typeFullFqn" : "system.map",
+          "type" : "latest"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "PL19_Frío Cubit Dashboard",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "4548da39-3649-42b4-af40-141ca3cd788d" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 12,
+                  "row" : 3
+                },
+                "65679c07-bcfc-4853-8e37-153bc470a4e5" : {
+                  "sizeX" : 6,
+                  "sizeY" : 3,
+                  "col" : 12,
+                  "row" : 0
+                },
+                "80ab20f5-390b-4e6f-8aa1-357de0353fb6" : {
+                  "sizeX" : 6,
+                  "sizeY" : 3,
+                  "col" : 18,
+                  "row" : 0
+                },
+                "e167f36a-b5b1-41c0-a89a-84c3976438cd" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 0,
+                  "row" : 0
+                },
+                "fb09b610-6775-4f7c-8b11-1b636b430d1c" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 12,
+                  "row" : 6
+                },
+                "924a8e42-94d7-47c9-9fc1-a399eeb67758" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 12,
+                  "row" : 9
+                },
+                "292c273b-7ad2-4c11-b97e-5c29033f658b" : {
+                  "sizeX" : 12,
+                  "sizeY" : 9,
+                  "col" : 0,
+                  "row" : 3
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "4cffcfd6-1b9c-4c24-8653-ef27573bd9e9" : {
+          "id" : "4cffcfd6-1b9c-4c24-8653-ef27573bd9e9",
+          "alias" : "Device",
+          "filter" : {
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "30664610-f84b-11f0-862c-e5320376240c"
+            },
+            "type" : "singleEntity"
+          }
+        }
+      },
+      "additionalInfo" : {
+        "aiGenerated" : true
+      }
+    },
+    "resources" : null,
+    "externalId" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
