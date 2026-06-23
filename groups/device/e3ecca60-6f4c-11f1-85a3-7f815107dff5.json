@@ -1,0 +1,47 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "A professional coffee machine profile tracking real-time ingredient levels, brewing temperatures, and sales performance via drink counts and revenue aggregation.",
+      "aiGenerated" : true
+    },
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "device_profile",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "label",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : { }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : null,
+    "groupAll" : false,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "e3ecca60-6f4c-11f1-85a3-7f815107dff5"
+    },
+    "name" : "CoffeeMachine",
+    "ownerId" : {
+      "entityType" : "TENANT",
+      "id" : "4570c860-f840-11f0-a24d-13b2783631c6"
+    },
+    "type" : "DEVICE"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : false
+}
