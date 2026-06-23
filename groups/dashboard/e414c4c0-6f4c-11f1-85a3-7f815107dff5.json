@@ -1,0 +1,39 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Tenant-level dashboard for real-time monitoring of coffee machine inventory, brewing temperature, and daily sales performance.",
+      "aiGenerated" : true
+    },
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "title",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : { }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : null,
+    "groupAll" : false,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "e414c4c0-6f4c-11f1-85a3-7f815107dff5"
+    },
+    "name" : "Dashboards for Coffee Operations Manager",
+    "ownerId" : {
+      "entityType" : "TENANT",
+      "id" : "4570c860-f840-11f0-a24d-13b2783631c6"
+    },
+    "type" : "DASHBOARD"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : false
+}
