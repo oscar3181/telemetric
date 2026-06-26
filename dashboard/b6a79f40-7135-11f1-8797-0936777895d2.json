@@ -1,0 +1,2411 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "b6a79f40-7135-11f1-8797-0936777895d2"
+    },
+    "customerId" : null,
+    "ownerId" : null,
+    "title" : "Plant SCADA & Operations",
+    "name" : "Plant SCADA & Operations",
+    "image" : null,
+    "assignedCustomers" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "timewindow" : {
+        "selectedTab" : 1,
+        "history" : {
+          "timewindowMs" : 604800000,
+          "historyType" : 0
+        },
+        "aggregation" : {
+          "type" : "NONE"
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      },
+      "widgets" : {
+        "9ebc2a92-abad-4581-bda0-b71350ace35d" : {
+          "sizeX" : 12,
+          "sizeY" : 4,
+          "row" : 2,
+          "col" : 12,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Motor Performance Chart",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "legendConfig" : {
+                "position" : "top",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "xAxis" : {
+                "show" : true,
+                "position" : "bottom"
+              },
+              "yAxis" : {
+                "show" : true,
+                "position" : "left"
+              },
+              "yAxes" : {
+                "default" : {
+                  "id" : "default",
+                  "label" : "Flow Rate",
+                  "position" : "left",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 1,
+                  "order" : 0
+                },
+                "powerAxis" : {
+                  "id" : "powerAxis",
+                  "label" : "Power",
+                  "position" : "right",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 1,
+                  "order" : 1
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "flowRate",
+                "label" : "Flow Rate",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 1,
+                "color" : "#2196F3",
+                "settings" : {
+                  "yAxisId" : "default",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "power",
+                "label" : "Power",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 1,
+                "color" : "#FF9800",
+                "settings" : {
+                  "yAxisId" : "powerAxis",
+                  "showLegend" : true
+                }
+              } ],
+              "entityAliasId" : "da98600d-c0b8-4aba-aeaf-352c87b8562c"
+            } ]
+          },
+          "id" : "9ebc2a92-abad-4581-bda0-b71350ace35d",
+          "typeFullFqn" : "system.time_series_chart",
+          "type" : "timeseries"
+        },
+        "1947d2b7-2d73-4add-a871-1d83b0e2fbfc" : {
+          "sizeX" : 8,
+          "sizeY" : 1,
+          "row" : 1,
+          "col" : 8,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Motor Flow Rate",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
+            "units" : "m³/h",
+            "decimals" : 2,
+            "actions" : { },
+            "settings" : {
+              "layout" : "horizontal",
+              "showLabel" : true,
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "showIcon" : true,
+              "icon" : "mdi:waves",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              },
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "valueFont" : {
+                "size" : 30
+              },
+              "labelFont" : {
+                "size" : 20
+              },
+              "showDate" : false,
+              "autoScale" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "flowRate",
+                "label" : "Flow Rate",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "da98600d-c0b8-4aba-aeaf-352c87b8562c"
+            } ]
+          },
+          "id" : "1947d2b7-2d73-4add-a871-1d83b0e2fbfc",
+          "typeFullFqn" : "system.cards.horizontal_value_card",
+          "type" : "latest"
+        },
+        "e1e2501d-58ad-44b4-8431-71be85e9a243" : {
+          "sizeX" : 12,
+          "sizeY" : 3,
+          "row" : 9,
+          "col" : 12,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Alarms",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "4px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "alarmsTitle" : "Alarms",
+              "enableSelection" : true,
+              "enableSearch" : true
+            },
+            "alarmSource" : {
+              "type" : "entity",
+              "name" : "alarms",
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "label" : "Created Time",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "originator",
+                "label" : "Originator",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "type",
+                "label" : "Type",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "severity",
+                "label" : "Severity",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "status",
+                "label" : "Status",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "315dacb2-0826-434a-b84e-84053c8eb60e"
+            },
+            "alarmFilterConfig" : {
+              "typeList" : [ ],
+              "statusList" : [ "ACTIVE" ],
+              "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
+              "searchPropagatedAlarms" : true
+            },
+            "datasources" : [ ]
+          },
+          "id" : "e1e2501d-58ad-44b4-8431-71be85e9a243",
+          "typeFullFqn" : "system.alarm_widgets.alarms_table",
+          "type" : "alarm"
+        },
+        "a597c515-d3c7-4a93-9af5-a1b8614c54e8" : {
+          "sizeX" : 24,
+          "sizeY" : 1,
+          "row" : 1,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Total Flow Rate",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
+            "units" : "L/min",
+            "decimals" : 2,
+            "actions" : { },
+            "settings" : {
+              "layout" : "horizontal",
+              "showLabel" : true,
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "showIcon" : true,
+              "icon" : "water_drop",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              },
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "valueFont" : {
+                "size" : 30
+              },
+              "labelFont" : {
+                "size" : 20
+              },
+              "showDate" : false,
+              "autoScale" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "totalFlowRate",
+                "label" : "Total Flow Rate",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "315dacb2-0826-434a-b84e-84053c8eb60e"
+            } ]
+          },
+          "id" : "a597c515-d3c7-4a93-9af5-a1b8614c54e8",
+          "typeFullFqn" : "system.cards.horizontal_value_card",
+          "type" : "latest"
+        },
+        "a6269e93-6028-4d35-a398-c4a45eeba196" : {
+          "sizeX" : 12,
+          "sizeY" : 3,
+          "row" : 6,
+          "col" : 12,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Level Sensors",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "4px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : {
+              "rowClick" : [ {
+                "id" : "d5ab14a2-d9bf-4048-80ff-f13ec6165ab4",
+                "name" : "View Details",
+                "icon" : "arrow_forward",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "level-sensor-details",
+                "setEntityId" : true,
+                "stateEntityParamName" : "selectedLevelSensor"
+              } ],
+              "headerButton" : [ {
+                "id" : "bf749ae7-75e2-40ee-b43b-8d8f27f41026",
+                "name" : "Add Level Sensor",
+                "icon" : "add",
+                "type" : "customPretty",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n\nlet dialogTitle = \"Create Level Sensor\";\nlet createEntity = true;\n\nlet attributeKeys = [];\nlet additionalAttributes = [ ];\nlet additionalTelemetry = [ ];\n\nopenEntityDialog();\n\nfunction openEntityDialog() {\n  customDialog.customDialog(htmlTemplate, EntityDialogController).subscribe();\n}\n\nfunction EntityDialogController(instance) {\n  let vm = instance;\n\n  const currentUser = widgetContext.currentUser;\n\n  if (createEntity) {\n    vm.dialogTitle = dialogTitle;\n  } else {\n    vm.dialogTitle = dialogTitle.replaceAll('${entityName}', entityName);\n  }\n\n  vm.submitTitle = createEntity ? 'Create' : 'Save';\n\n  vm.entityFormGroup = vm.fb.group({\n    entityFields: vm.fb.group({\n      name: [null, [vm.validators.required]]\n    }),\n    \n  });\n\n  \n\n  if (attributeKeys.length) {\n    vm.entityFormGroup.addControl('attributes',\n      vm.fb.group({\n        \n      })\n    );\n  }\n\n  vm.save = function() {\n    vm.entityFormGroup.markAsPristine();\n    saveEntity().subscribe(\n      function (entity) {\n        widgetContext.rxjs.forkJoin([\n          saveAttributes(entity.id),\n          saveTelemetry(entity.id),\n          createRelations(entity.id),\n          addToEntityGroups(entity.id)\n        ]).subscribe(\n          function () {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n          }\n        );\n      }\n    );\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  if (!createEntity) {\n    loadEntity();\n  }\n\n  function saveEntity() {\n    const entityFields = vm.entityFormGroup.get('entityFields').value;\n    let entity;\n    if (createEntity) {\n      entity = entityFields;\n      let entityType = \"DEVICE\";\n      let entitySubType = \"LevelSensor\";\n      let entityOwner = \"\";\n      entity.id = {\n        entityType: entityType\n      };\n      \n      \n      if (entitySubType) {\n        entity.type = entitySubType;\n      }\n      \n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n          stateParams = stateParams[entityOwner];\n        }\n        let ownerId = stateParams.entityId;\n        if (ownerId && ownerId.entityType === 'CUSTOMER') {\n          entity.customerId = ownerId;\n        }\n      }\n      if (!entity.customerId && widgetContext.currentUser.authority === 'CUSTOMER_USER') {\n        entity.customerId = {id: widgetContext.currentUser.customerId, entityType: 'CUSTOMER'};\n      }\n      if (entityType === 'USER') {\n        if (entity.customerId) {\n          entity.authority = 'CUSTOMER_USER';\n        } else {\n          entity.authority = 'TENANT_ADMIN';\n        }\n      }\n    } else {\n      entity = {...vm.entity, ...entityFields};\n    }\n    return entityService.saveEntity(entity);\n  }\n\n  function saveAttributes(entityId) {\n    if (attributeKeys.length || additionalAttributes.length) {\n      let attributes = attributeKeys.length ? vm.entityFormGroup.get('attributes').value : [];\n      let attributesArray = [];\n      for (let key in attributes) {\n        if (attributes[key] !== null) {\n          attributesArray.push({key: key, value: attributes[key]});\n        }\n      }\n      if (additionalAttributes.length) {\n        additionalAttributes.forEach(attribute => {\n          attributesArray.push({key: attribute.key, value: attribute.value});\n        })\n      }\n      if (attributesArray.length > 0) {\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n    function saveTelemetry(entityId) {\n      if (additionalTelemetry.length) {\n        let telemetryArray = [];\n        additionalTelemetry.forEach(telemetry => {\n          telemetryArray.push({key: telemetry.key, value: telemetry.value});\n        })\n        return attributeService.saveEntityTimeseries(entityId, \"LATEST_TELEMETRY\", telemetryArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    }\n\n  function createRelations(entityId) {\n    let singleEntityId;\n    for (const value of Object.values(widgetContext.aliasController.entityAliases)) {\n      if (value.filter.type === 'singleEntity') {\n        singleEntityId = value.filter.singleEntity ?? null;\n      }\n    }\n\n    if (createEntity) {\n      let createRelationsObservables = [];\n      \n      let createRelations = [{\"fromStateEntity\":\"singleEntity\",\"type\":\"WaterTankToLevelSensor\"}];\n      if (createRelations && createRelations.length) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        for (let createRelation of createRelations) {\n          let fromEntityId = null;\n          if (createRelation.fromStateEntity === 'singleEntity' && singleEntityId) {\n            fromEntityId = singleEntityId;\n          } else if (createRelation.fromStateEntity && stateParams[createRelation.fromStateEntity]) {\n            fromEntityId = stateParams[createRelation.fromStateEntity].entityId;\n          } else {\n            fromEntityId = stateParams.entityId;\n          }\n          if (!fromEntityId && createRelation.fromStateEntity === 'currentCustomer') {\n            fromEntityId = {id: currentUser.customerId, entityType: \"CUSTOMER\" };\n          }\n          if (fromEntityId && fromEntityId.id && fromEntityId.entityType) {\n            let relation = {\n              type: createRelation.type,\n              typeGroup: 'COMMON',\n              from: fromEntityId,\n              to: entityId\n            };\n            createRelationsObservables.push(entityRelationService.saveRelation(relation));\n          }\n        }\n      }\n      \n      \n      if (createRelationsObservables.length) {\n        return widgetContext.rxjs.forkJoin(createRelationsObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function addToEntityGroups(entityId) {\n    if (createEntity) {\n      let addToGroupObservables = [];\n      let targetEntityGroups = [\"LevelSensor\"];\n      \n      let entityOwner = \"\";\n      let ownerId;\n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n            stateParams = stateParams[entityOwner];\n        }\n        ownerId = stateParams.entityId;\n      }\n      if (targetEntityGroups && targetEntityGroups.length) {\n        for (let targetEntityGroup of targetEntityGroups) {\n          addToGroupObservables.push(getOrCreateEntityGroupByName(targetEntityGroup, entityId.entityType, ownerId).pipe(\n            widgetContext.rxjs.switchMap((group) => {\n              if (group) {\n                return entityGroupService.addEntityToEntityGroup(group.id.id, entityId.id);\n              } else {\n                return widgetContext.rxjs.of(null);\n              }\n            })\n          ));\n        }\n      }\n      if (addToGroupObservables.length) {\n        return widgetContext.rxjs.forkJoin(addToGroupObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function loadEntity() {\n    entityService.getEntity(entityId.entityType, entityId.id).subscribe(\n      function(entity) {\n        vm.entity = entity;\n        vm.entityFormGroup.get('entityFields').patchValue(entity);\n        if (attributeKeys.length) {\n          attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', attributeKeys).subscribe(\n            function (attributes) {\n              let entityAttributes = {};\n              for (var i = 0; i < attributes.length; i++) {\n                entityAttributes[attributes[i].key] = attributes[i].value;\n              }\n              vm.entityFormGroup.get('attributes').patchValue(entityAttributes);\n            }\n          );\n        }\n      }\n    );\n  }\n\n  function getOrCreateEntityGroupByName(groupName, groupType, ownerId) {\n    var entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n    let findEntyGroup$;\n    if (ownerId) {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByOwnerIdAndPageLink(ownerId.entityType, ownerId.id, groupType, entityGroupsPageLink, {ignoreLoading: true});\n    } else {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType, {ignoreLoading: true});\n    }\n    return findEntyGroup$.pipe(\n      widgetContext.rxjs.switchMap((data) => {\n        if (data.data.length) {\n          const findGroup = data.data.find((group) => group.name === groupName);\n          if (findGroup) {\n            return widgetContext.rxjs.of(findGroup);\n          }\n        }\n        const entityGroup = {\n          name: groupName,\n          type: groupType,\n        }\n        if (ownerId) {\n          entityGroup.ownerId = ownerId;\n        }\n        return entityGroupService.saveEntityGroup(entityGroup, {ignoreLoading: true}).pipe(\n          widgetContext.rxjs.catchError(() => widgetContext.rxjs.of(null))\n        );\n      })\n    );\n  }\n}",
+                "customHtml" : "<form #entityForm=\"ngForm\" [formGroup]=\"entityFormGroup\"\n      (ngSubmit)=\"save()\" class=\"entity-form\" style=\"width: 600px;\">\n  <mat-toolbar color=\"primary\">\n    <h2>{{ dialogTitle }}</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n    <fieldset formGroupName=\"entityFields\" class=\"tb-form-panel outlined\" [disabled]=\"isLoading$ | async\"><mat-form-field appearance=\"outline\">\n  <mat-label>Sensor Name</mat-label>\n  <input matInput formControlName=\"name\" required=\"required\">\n  @if(entityFormGroup.get(\"entityFields\").get(\"name\").hasError(\"required\")) {\n    <mat-error>Sensor name is required.</mat-error>\n  }\n</mat-form-field>\n</fieldset>\n    \n    \n    \n  </div>\n  <div mat-dialog-actions class=\"flex items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || entityForm.invalid || !entityForm.dirty\">\n      {{ submitTitle }}\n    </button>\n  </div>\n</form>\n"
+              } ],
+              "actionCellButton" : [ {
+                "id" : "f01e05f1-7b5c-427f-8571-a12407d6e38b",
+                "name" : "Edit Level Sensor",
+                "icon" : "edit",
+                "type" : "customPretty",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n\nlet dialogTitle = \"Edit Level Sensor '${entityName}'\";\nlet createEntity = false;\n\nlet attributeKeys = [];\nlet additionalAttributes = [ ];\nlet additionalTelemetry = [ ];\n\nopenEntityDialog();\n\nfunction openEntityDialog() {\n  customDialog.customDialog(htmlTemplate, EntityDialogController).subscribe();\n}\n\nfunction EntityDialogController(instance) {\n  let vm = instance;\n\n  const currentUser = widgetContext.currentUser;\n\n  if (createEntity) {\n    vm.dialogTitle = dialogTitle;\n  } else {\n    vm.dialogTitle = dialogTitle.replaceAll('${entityName}', entityName);\n  }\n\n  vm.submitTitle = createEntity ? 'Create' : 'Save';\n\n  vm.entityFormGroup = vm.fb.group({\n    entityFields: vm.fb.group({\n      name: [null, [vm.validators.required]]\n    }),\n    \n  });\n\n  \n\n  if (attributeKeys.length) {\n    vm.entityFormGroup.addControl('attributes',\n      vm.fb.group({\n        \n      })\n    );\n  }\n\n  vm.save = function() {\n    vm.entityFormGroup.markAsPristine();\n    saveEntity().subscribe(\n      function (entity) {\n        widgetContext.rxjs.forkJoin([\n          saveAttributes(entity.id),\n          saveTelemetry(entity.id),\n          createRelations(entity.id),\n          addToEntityGroups(entity.id)\n        ]).subscribe(\n          function () {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n          }\n        );\n      }\n    );\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  if (!createEntity) {\n    loadEntity();\n  }\n\n  function saveEntity() {\n    const entityFields = vm.entityFormGroup.get('entityFields').value;\n    let entity;\n    if (createEntity) {\n      entity = entityFields;\n      let entityType = null;\n      let entitySubType = null;\n      let entityOwner = null;\n      entity.id = {\n        entityType: entityType\n      };\n      \n      \n      if (entitySubType) {\n        entity.type = entitySubType;\n      }\n      \n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n          stateParams = stateParams[entityOwner];\n        }\n        let ownerId = stateParams.entityId;\n        if (ownerId && ownerId.entityType === 'CUSTOMER') {\n          entity.customerId = ownerId;\n        }\n      }\n      if (!entity.customerId && widgetContext.currentUser.authority === 'CUSTOMER_USER') {\n        entity.customerId = {id: widgetContext.currentUser.customerId, entityType: 'CUSTOMER'};\n      }\n      if (entityType === 'USER') {\n        if (entity.customerId) {\n          entity.authority = 'CUSTOMER_USER';\n        } else {\n          entity.authority = 'TENANT_ADMIN';\n        }\n      }\n    } else {\n      entity = {...vm.entity, ...entityFields};\n    }\n    return entityService.saveEntity(entity);\n  }\n\n  function saveAttributes(entityId) {\n    if (attributeKeys.length || additionalAttributes.length) {\n      let attributes = attributeKeys.length ? vm.entityFormGroup.get('attributes').value : [];\n      let attributesArray = [];\n      for (let key in attributes) {\n        if (attributes[key] !== null) {\n          attributesArray.push({key: key, value: attributes[key]});\n        }\n      }\n      if (additionalAttributes.length) {\n        additionalAttributes.forEach(attribute => {\n          attributesArray.push({key: attribute.key, value: attribute.value});\n        })\n      }\n      if (attributesArray.length > 0) {\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n    function saveTelemetry(entityId) {\n      if (additionalTelemetry.length) {\n        let telemetryArray = [];\n        additionalTelemetry.forEach(telemetry => {\n          telemetryArray.push({key: telemetry.key, value: telemetry.value});\n        })\n        return attributeService.saveEntityTimeseries(entityId, \"LATEST_TELEMETRY\", telemetryArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    }\n\n  function createRelations(entityId) {\n    let singleEntityId;\n    for (const value of Object.values(widgetContext.aliasController.entityAliases)) {\n      if (value.filter.type === 'singleEntity') {\n        singleEntityId = value.filter.singleEntity ?? null;\n      }\n    }\n\n    if (createEntity) {\n      let createRelationsObservables = [];\n      \n      \n      if (createRelationsObservables.length) {\n        return widgetContext.rxjs.forkJoin(createRelationsObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function addToEntityGroups(entityId) {\n    if (createEntity) {\n      let addToGroupObservables = [];\n      let targetEntityGroups = null;\n      \n      let entityOwner = null;\n      let ownerId;\n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n            stateParams = stateParams[entityOwner];\n        }\n        ownerId = stateParams.entityId;\n      }\n      if (targetEntityGroups && targetEntityGroups.length) {\n        for (let targetEntityGroup of targetEntityGroups) {\n          addToGroupObservables.push(getOrCreateEntityGroupByName(targetEntityGroup, entityId.entityType, ownerId).pipe(\n            widgetContext.rxjs.switchMap((group) => {\n              if (group) {\n                return entityGroupService.addEntityToEntityGroup(group.id.id, entityId.id);\n              } else {\n                return widgetContext.rxjs.of(null);\n              }\n            })\n          ));\n        }\n      }\n      if (addToGroupObservables.length) {\n        return widgetContext.rxjs.forkJoin(addToGroupObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function loadEntity() {\n    entityService.getEntity(entityId.entityType, entityId.id).subscribe(\n      function(entity) {\n        vm.entity = entity;\n        vm.entityFormGroup.get('entityFields').patchValue(entity);\n        if (attributeKeys.length) {\n          attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', attributeKeys).subscribe(\n            function (attributes) {\n              let entityAttributes = {};\n              for (var i = 0; i < attributes.length; i++) {\n                entityAttributes[attributes[i].key] = attributes[i].value;\n              }\n              vm.entityFormGroup.get('attributes').patchValue(entityAttributes);\n            }\n          );\n        }\n      }\n    );\n  }\n\n  function getOrCreateEntityGroupByName(groupName, groupType, ownerId) {\n    var entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n    let findEntyGroup$;\n    if (ownerId) {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByOwnerIdAndPageLink(ownerId.entityType, ownerId.id, groupType, entityGroupsPageLink, {ignoreLoading: true});\n    } else {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType, {ignoreLoading: true});\n    }\n    return findEntyGroup$.pipe(\n      widgetContext.rxjs.switchMap((data) => {\n        if (data.data.length) {\n          const findGroup = data.data.find((group) => group.name === groupName);\n          if (findGroup) {\n            return widgetContext.rxjs.of(findGroup);\n          }\n        }\n        const entityGroup = {\n          name: groupName,\n          type: groupType,\n        }\n        if (ownerId) {\n          entityGroup.ownerId = ownerId;\n        }\n        return entityGroupService.saveEntityGroup(entityGroup, {ignoreLoading: true}).pipe(\n          widgetContext.rxjs.catchError(() => widgetContext.rxjs.of(null))\n        );\n      })\n    );\n  }\n}",
+                "customHtml" : "<form #entityForm=\"ngForm\" [formGroup]=\"entityFormGroup\"\n      (ngSubmit)=\"save()\" class=\"entity-form\" style=\"width: 600px;\">\n  <mat-toolbar color=\"primary\">\n    <h2>{{ dialogTitle }}</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n    <fieldset formGroupName=\"entityFields\" class=\"tb-form-panel outlined\" [disabled]=\"isLoading$ | async\"><mat-form-field appearance=\"outline\">\n  <mat-label>Sensor Name</mat-label>\n  <input matInput formControlName=\"name\" required=\"required\">\n  @if(entityFormGroup.get(\"entityFields\").get(\"name\").hasError(\"required\")) {\n    <mat-error>Sensor name is required.</mat-error>\n  }\n</mat-form-field>\n</fieldset>\n    \n    \n    \n  </div>\n  <div mat-dialog-actions class=\"flex items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || entityForm.invalid || !entityForm.dirty\">\n      {{ submitTitle }}\n    </button>\n  </div>\n</form>\n"
+              }, {
+                "id" : "76ffc810-233b-4cf3-b592-8591add0d642",
+                "name" : "Delete Level Sensor",
+                "icon" : "delete",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nlet deleteEntityTitle = \"Delete Level Sensor '${entityName}'\";\nlet deleteEntityPrompt = \"Are you sure you want to delete the level sensor '${entityName}'?\";\n\ndeleteEntityTitle = deleteEntityTitle.replaceAll('${entityName}', entityName);\ndeleteEntityPrompt = deleteEntityPrompt.replaceAll('${entityName}', entityName);\n\nopenDeleteEntityDialog();\n\nfunction openDeleteEntityDialog() {\n  dialogs.confirm(deleteEntityTitle, deleteEntityPrompt, 'Cancel', 'Delete').subscribe(\n    function(result) {\n      if (result) {\n        deleteEntity(entityId);\n      }\n    }\n  );\n}\n\nfunction deleteEntity(entityId) {\n  let deleteObservable = null;\n  switch (entityId.entityType) {\n    case 'DEVICE':\n      let deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\n      deleteObservable = deviceService.deleteDevice(entityId.id);\n      break;\n    case 'ASSET':\n      let assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\n      deleteObservable = assetService.deleteAsset(entityId.id);\n      break;\n    case 'ENTITY_VIEW':\n      let entityViewService = $injector.get(widgetContext.servicesMap.get('entityViewService'));\n      deleteObservable = entityViewService.deleteEntityView(entityId.id);\n      break;\n    case 'EDGE':\n      let edgeService = $injector.get(widgetContext.servicesMap.get('edgeService'));\n      deleteObservable = edgeService.deleteEdge(entityId.id);\n      break;\n    case 'TENANT':\n      let tenantService = $injector.get(widgetContext.servicesMap.get('tenantService'));\n      deleteObservable = tenantService.deleteTenant(entityId.id);\n      break;\n    case 'CUSTOMER':\n      let customerService = $injector.get(widgetContext.servicesMap.get('customerService'));\n      deleteObservable = customerService.deleteCustomer(entityId.id);\n      break;\n    case 'DASHBOARD':\n      let dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\n      deleteObservable = dashboardService.deleteDashboard(entityId.id);\n      break;\n    case 'USER':\n      let userService = $injector.get(widgetContext.servicesMap.get('userService'));\n      deleteObservable = userService.deleteUser(entityId.id);\n      break;\n    case 'SCHEDULER_EVENT':\n      let schedulerEventService = $injector.get(widgetContext.servicesMap.get('schedulerEventService'));\n      deleteObservable = schedulerEventService.deleteSchedulerEvent(entityId.id);\n      break;\n    case 'ROLE':\n      let roleService = $injector.get(widgetContext.servicesMap.get('roleService'));\n      deleteObservable = roleService.deleteRole(entityId.id);\n      break;\n    case 'ENTITY_GROUP':\n      let entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n      deleteObservable = entityGroupService.deleteEntityGroup(entityId.id);\n      break;\n    default:\n      showErrorDialog(`Unsupported entity type '${entityId.entityType}'`);\n      break;\n  }\n  if (deleteObservable) {\n    deleteObservable.subscribe(\n      function success() {\n        widgetContext.updateAliases();\n      },\n      function fail() {\n        showErrorDialog();\n      }\n    );\n  }\n}\n\nfunction showErrorDialog(error) {\n  let title = 'Error';\n  error = error || 'Please try again.';\n  let content = `An error occurred while deleting '${entityName}'. ${error}`;\n  dialogs.alert(title, content, 'CLOSE').subscribe(\n    function(result) {}\n  );\n}\n"
+              } ]
+            },
+            "settings" : {
+              "entitiesTitle" : "Level Sensors",
+              "displayEntityName" : false,
+              "displayEntityType" : false
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "name",
+                "label" : "Name",
+                "type" : "entityField",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "label" : "Status",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : {
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "let color = (value === 'true' || value === true) ? '#303F9F' : '#757575'; let backColor = (value === 'true' || value === true) ? '#E8EAF6' : '#F5F5F5'; let text = (value === 'true' || value === true) ? 'Active' : 'Inactive'; return `<span style=\"font-size:14px;width:fit-content;font-weight:500;color:${color};background:${backColor};padding:8px;border-radius:6px;\">${text}</span>`;"
+                }
+              }, {
+                "name" : "waterLevel",
+                "label" : "Water Level",
+                "type" : "timeseries",
+                "decimals" : 1,
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "levelPercentage",
+                "label" : "Level (%)",
+                "type" : "timeseries",
+                "decimals" : 1,
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "battery",
+                "label" : "Battery",
+                "type" : "timeseries",
+                "decimals" : 0,
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "8662c88f-32f1-4991-b440-d9d58068e576"
+            } ]
+          },
+          "id" : "a6269e93-6028-4d35-a398-c4a45eeba196",
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest"
+        },
+        "a0fd41c1-dca7-4af0-9b93-acb2410bc4a5" : {
+          "sizeX" : 24,
+          "sizeY" : 6,
+          "row" : 6,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Alarms",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "4px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "alarmsTitle" : "Alarms",
+              "enableSelection" : true,
+              "enableSearch" : true
+            },
+            "alarmSource" : {
+              "type" : "entity",
+              "name" : "alarms",
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "label" : "Created Time",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "originator",
+                "label" : "Originator",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "type",
+                "label" : "Type",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "severity",
+                "label" : "Severity",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "status",
+                "label" : "Status",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "da98600d-c0b8-4aba-aeaf-352c87b8562c"
+            },
+            "alarmFilterConfig" : {
+              "typeList" : [ ],
+              "statusList" : [ "ACTIVE" ],
+              "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
+              "searchPropagatedAlarms" : true
+            },
+            "datasources" : [ ]
+          },
+          "id" : "a0fd41c1-dca7-4af0-9b93-acb2410bc4a5",
+          "typeFullFqn" : "system.alarm_widgets.alarms_table",
+          "type" : "alarm"
+        },
+        "6b1c99cf-9fbd-4158-897c-8c07f4b6b331" : {
+          "sizeX" : 12,
+          "sizeY" : 7,
+          "row" : 5,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Water Level History",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "legendConfig" : {
+                "position" : "top",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "xAxis" : {
+                "show" : true,
+                "position" : "bottom"
+              },
+              "yAxis" : {
+                "show" : true,
+                "position" : "left"
+              },
+              "yAxes" : {
+                "default" : {
+                  "id" : "default",
+                  "label" : "Water Level",
+                  "position" : "left",
+                  "min" : 0,
+                  "max" : 3000,
+                  "units" : "",
+                  "decimals" : 1,
+                  "order" : 0
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "waterLevel",
+                "label" : "Water Level",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 1,
+                "color" : "#2196F3",
+                "settings" : {
+                  "yAxisId" : "default",
+                  "showLegend" : true
+                }
+              } ],
+              "entityAliasId" : "ffc3bbd5-a1dc-4afb-83c9-d98f4e321f36"
+            } ]
+          },
+          "id" : "6b1c99cf-9fbd-4158-897c-8c07f4b6b331",
+          "typeFullFqn" : "system.time_series_chart",
+          "type" : "timeseries"
+        },
+        "5917e515-3394-4719-b58f-e3ed3f011adc" : {
+          "sizeX" : 12,
+          "sizeY" : 4,
+          "row" : 2,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Motor Information",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "10px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"value-block flex flex-col justify-between gap-2\"><div class=\"flex flex-1\"><span class=\"title\">Motor Information</span></div><div class=\"flex flex-col justify-between gap-1\"><div class=\"flex flex-row justify-between\"><span class=\"label\">Name</span><span class=\"value\">${Name}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Label</span><span class=\"value\">${Label}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Connectivity</span><span [ngClass]=\"${Active} == true ? 'active' : 'inactive'\" class=\"value\">{{${Active} ? 'Online' : 'Offline'}}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Status</span><span class=\"value\">${Status}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Power</span><span class=\"value\">${Power:1}</span></div></div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ".label {\n    font-weight: 400;\n    font-size: 16px;\n    line-height: 21px;\n    letter-spacing: 0.2px;\n    color: #424242;\n}\n\n.value {\n    padding: 4px;\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 21px;\n    letter-spacing: 0.2px;\n    color: #212121;\n}\n\n.title {\n    font-weight: 600;\n    font-size: 18px;\n    line-height: 21px;\n    letter-spacing: 0.2px;\n    color: #212121;\n}\n\n.value-block {\n    height: 100%;\n}\n\n.active {\n    border-radius: 6px;\n    background: #303F9F;\n    color: #E8EAF6;\n}\n\n.inactive {\n    border-radius: 6px;\n    background: #F5F5F5;\n    color: #757575;\n}"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "name",
+                "label" : "Name",
+                "type" : "entityField",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "label",
+                "label" : "Label",
+                "type" : "entityField",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "label" : "Active",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "status",
+                "label" : "Status",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "power",
+                "label" : "Power",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "da98600d-c0b8-4aba-aeaf-352c87b8562c"
+            } ]
+          },
+          "id" : "5917e515-3394-4719-b58f-e3ed3f011adc",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
+        },
+        "b8be4157-bce8-47b2-9386-f19863bf2d0a" : {
+          "sizeX" : 8,
+          "sizeY" : 1,
+          "row" : 1,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Motor Status",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
+            "units" : "",
+            "decimals" : 0,
+            "actions" : { },
+            "settings" : {
+              "layout" : "horizontal",
+              "showLabel" : true,
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "showIcon" : true,
+              "icon" : "precision_manufacturing",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              },
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "valueFont" : {
+                "size" : 30
+              },
+              "labelFont" : {
+                "size" : 20
+              },
+              "showDate" : false,
+              "autoScale" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "status",
+                "label" : "Status",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "da98600d-c0b8-4aba-aeaf-352c87b8562c"
+            } ]
+          },
+          "id" : "b8be4157-bce8-47b2-9386-f19863bf2d0a",
+          "typeFullFqn" : "system.cards.horizontal_value_card",
+          "type" : "latest"
+        },
+        "669c702e-755f-4728-9e0c-cf1ce22f47bd" : {
+          "sizeX" : 1,
+          "sizeY" : 1,
+          "row" : 0,
+          "col" : 23,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Edit Tank Configuration",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "borderRadius" : "8px",
+            "actions" : {
+              "click" : [ {
+                "id" : "0e092758-896e-4315-8d85-72d918c8287f",
+                "name" : "Edit Water Tank",
+                "icon" : "edit",
+                "type" : "customPretty",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n\nlet dialogTitle = \"Edit Tank '${entityName}'\";\nlet createEntity = false;\n\nlet attributeKeys = [\"tankDiagram\"];\nlet additionalAttributes = [ ];\nlet additionalTelemetry = [ ];\n\nopenEntityDialog();\n\nfunction openEntityDialog() {\n  customDialog.customDialog(htmlTemplate, EntityDialogController).subscribe();\n}\n\nfunction EntityDialogController(instance) {\n  let vm = instance;\n\n  const currentUser = widgetContext.currentUser;\n\n  if (createEntity) {\n    vm.dialogTitle = dialogTitle;\n  } else {\n    vm.dialogTitle = dialogTitle.replaceAll('${entityName}', entityName);\n  }\n\n  vm.submitTitle = createEntity ? 'Create' : 'Save';\n\n  vm.entityFormGroup = vm.fb.group({\n    entityFields: vm.fb.group({\n      name: [null, [vm.validators.required]]\n    }),\n    \n  });\n\n  \n\n  if (attributeKeys.length) {\n    vm.entityFormGroup.addControl('attributes',\n      vm.fb.group({\n        tankDiagram: [null, []]\n      })\n    );\n  }\n\n  vm.save = function() {\n    vm.entityFormGroup.markAsPristine();\n    saveEntity().subscribe(\n      function (entity) {\n        widgetContext.rxjs.forkJoin([\n          saveAttributes(entity.id),\n          saveTelemetry(entity.id),\n          createRelations(entity.id),\n          addToEntityGroups(entity.id)\n        ]).subscribe(\n          function () {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n          }\n        );\n      }\n    );\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  if (!createEntity) {\n    loadEntity();\n  }\n\n  function saveEntity() {\n    const entityFields = vm.entityFormGroup.get('entityFields').value;\n    let entity;\n    if (createEntity) {\n      entity = entityFields;\n      let entityType = null;\n      let entitySubType = null;\n      let entityOwner = null;\n      entity.id = {\n        entityType: entityType\n      };\n      \n      \n      if (entitySubType) {\n        entity.type = entitySubType;\n      }\n      \n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n          stateParams = stateParams[entityOwner];\n        }\n        let ownerId = stateParams.entityId;\n        if (ownerId && ownerId.entityType === 'CUSTOMER') {\n          entity.customerId = ownerId;\n        }\n      }\n      if (!entity.customerId && widgetContext.currentUser.authority === 'CUSTOMER_USER') {\n        entity.customerId = {id: widgetContext.currentUser.customerId, entityType: 'CUSTOMER'};\n      }\n      if (entityType === 'USER') {\n        if (entity.customerId) {\n          entity.authority = 'CUSTOMER_USER';\n        } else {\n          entity.authority = 'TENANT_ADMIN';\n        }\n      }\n    } else {\n      entity = {...vm.entity, ...entityFields};\n    }\n    return entityService.saveEntity(entity);\n  }\n\n  function saveAttributes(entityId) {\n    if (attributeKeys.length || additionalAttributes.length) {\n      let attributes = attributeKeys.length ? vm.entityFormGroup.get('attributes').value : [];\n      let attributesArray = [];\n      for (let key in attributes) {\n        if (attributes[key] !== null) {\n          attributesArray.push({key: key, value: attributes[key]});\n        }\n      }\n      if (additionalAttributes.length) {\n        additionalAttributes.forEach(attribute => {\n          attributesArray.push({key: attribute.key, value: attribute.value});\n        })\n      }\n      if (attributesArray.length > 0) {\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n    function saveTelemetry(entityId) {\n      if (additionalTelemetry.length) {\n        let telemetryArray = [];\n        additionalTelemetry.forEach(telemetry => {\n          telemetryArray.push({key: telemetry.key, value: telemetry.value});\n        })\n        return attributeService.saveEntityTimeseries(entityId, \"LATEST_TELEMETRY\", telemetryArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    }\n\n  function createRelations(entityId) {\n    let singleEntityId;\n    for (const value of Object.values(widgetContext.aliasController.entityAliases)) {\n      if (value.filter.type === 'singleEntity') {\n        singleEntityId = value.filter.singleEntity ?? null;\n      }\n    }\n\n    if (createEntity) {\n      let createRelationsObservables = [];\n      \n      \n      if (createRelationsObservables.length) {\n        return widgetContext.rxjs.forkJoin(createRelationsObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function addToEntityGroups(entityId) {\n    if (createEntity) {\n      let addToGroupObservables = [];\n      let targetEntityGroups = null;\n      \n      let entityOwner = null;\n      let ownerId;\n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n            stateParams = stateParams[entityOwner];\n        }\n        ownerId = stateParams.entityId;\n      }\n      if (targetEntityGroups && targetEntityGroups.length) {\n        for (let targetEntityGroup of targetEntityGroups) {\n          addToGroupObservables.push(getOrCreateEntityGroupByName(targetEntityGroup, entityId.entityType, ownerId).pipe(\n            widgetContext.rxjs.switchMap((group) => {\n              if (group) {\n                return entityGroupService.addEntityToEntityGroup(group.id.id, entityId.id);\n              } else {\n                return widgetContext.rxjs.of(null);\n              }\n            })\n          ));\n        }\n      }\n      if (addToGroupObservables.length) {\n        return widgetContext.rxjs.forkJoin(addToGroupObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function loadEntity() {\n    entityService.getEntity(entityId.entityType, entityId.id).subscribe(\n      function(entity) {\n        vm.entity = entity;\n        vm.entityFormGroup.get('entityFields').patchValue(entity);\n        if (attributeKeys.length) {\n          attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', attributeKeys).subscribe(\n            function (attributes) {\n              let entityAttributes = {};\n              for (var i = 0; i < attributes.length; i++) {\n                entityAttributes[attributes[i].key] = attributes[i].value;\n              }\n              vm.entityFormGroup.get('attributes').patchValue(entityAttributes);\n            }\n          );\n        }\n      }\n    );\n  }\n\n  function getOrCreateEntityGroupByName(groupName, groupType, ownerId) {\n    var entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n    let findEntyGroup$;\n    if (ownerId) {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByOwnerIdAndPageLink(ownerId.entityType, ownerId.id, groupType, entityGroupsPageLink, {ignoreLoading: true});\n    } else {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType, {ignoreLoading: true});\n    }\n    return findEntyGroup$.pipe(\n      widgetContext.rxjs.switchMap((data) => {\n        if (data.data.length) {\n          const findGroup = data.data.find((group) => group.name === groupName);\n          if (findGroup) {\n            return widgetContext.rxjs.of(findGroup);\n          }\n        }\n        const entityGroup = {\n          name: groupName,\n          type: groupType,\n        }\n        if (ownerId) {\n          entityGroup.ownerId = ownerId;\n        }\n        return entityGroupService.saveEntityGroup(entityGroup, {ignoreLoading: true}).pipe(\n          widgetContext.rxjs.catchError(() => widgetContext.rxjs.of(null))\n        );\n      })\n    );\n  }\n}",
+                "customHtml" : "<form #entityForm=\"ngForm\" [formGroup]=\"entityFormGroup\"\n      (ngSubmit)=\"save()\" class=\"entity-form\" style=\"width: 600px;\">\n  <mat-toolbar color=\"primary\">\n    <h2>{{ dialogTitle }}</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n    <fieldset formGroupName=\"entityFields\" class=\"tb-form-panel outlined\" [disabled]=\"isLoading$ | async\"><mat-form-field appearance=\"outline\">\n  <mat-label>Tank Name</mat-label>\n  <input matInput formControlName=\"name\" required=\"required\">\n  @if(entityFormGroup.get(\"entityFields\").get(\"name\").hasError(\"required\")) {\n    <mat-error>Tank name is required.</mat-error>\n  }\n</mat-form-field>\n</fieldset>\n    \n    \n    <fieldset formGroupName=\"attributes\" class=\"tb-form-panel outlined\" [disabled]=\"isLoading$ | async\"><tb-gallery-image-input class=\"flex-1\" formControlName=\"tankDiagram\" label=\"Tank Diagram\">\n</tb-gallery-image-input></fieldset>\n  </div>\n  <div mat-dialog-actions class=\"flex items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || entityForm.invalid || !entityForm.dirty\">\n      {{ submitTitle }}\n    </button>\n  </div>\n</form>\n"
+              } ]
+            },
+            "settings" : {
+              "appearance" : {
+                "type" : "filled",
+                "showLabel" : false,
+                "label" : "Edit Tank Configuration",
+                "showIcon" : true,
+                "icon" : "edit",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "customStyle" : { }
+              },
+              "activatedState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ ],
+              "entityAliasId" : "315dacb2-0826-434a-b84e-84053c8eb60e"
+            } ]
+          },
+          "id" : "669c702e-755f-4728-9e0c-cf1ce22f47bd",
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest"
+        },
+        "0e0094cd-bdcb-4c79-a036-26195e444cb6" : {
+          "sizeX" : 6,
+          "sizeY" : 2,
+          "row" : 3,
+          "col" : 6,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Battery Level",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "%",
+            "decimals" : 0,
+            "actions" : { },
+            "settings" : {
+              "layout" : "horizontal_solid",
+              "batteryLevelColor" : {
+                "type" : "range",
+                "color" : "rgb(224, 224, 224)",
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ {
+                    "from" : null,
+                    "to" : 25,
+                    "color" : "rgba(227, 71, 71, 1)"
+                  }, {
+                    "from" : 25,
+                    "to" : 50,
+                    "color" : "rgba(246, 206, 67, 1)"
+                  }, {
+                    "from" : 50,
+                    "to" : null,
+                    "color" : "rgba(92, 223, 144, 1)"
+                  } ]
+                }
+              },
+              "batteryShapeColor" : {
+                "type" : "range",
+                "color" : "rgba(224, 224, 224, 0.32)",
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ {
+                    "from" : null,
+                    "to" : 25,
+                    "color" : "rgba(227, 71, 71, 0.32)"
+                  }, {
+                    "from" : 25,
+                    "to" : 50,
+                    "color" : "rgba(246, 206, 67, 0.32)"
+                  }, {
+                    "from" : 50,
+                    "to" : null,
+                    "color" : "rgba(92, 223, 144, 0.32)"
+                  } ]
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "battery",
+                "label" : "Battery Level",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "ffc3bbd5-a1dc-4afb-83c9-d98f4e321f36"
+            } ]
+          },
+          "id" : "0e0094cd-bdcb-4c79-a036-26195e444cb6",
+          "typeFullFqn" : "system.battery_level",
+          "type" : "latest"
+        },
+        "0e9a0537-9d6f-4d97-865e-653d74ec059f" : {
+          "sizeX" : 6,
+          "sizeY" : 2,
+          "row" : 3,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Water Level Percentage",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "titleColor" : "#000000DE",
+            "showTitle" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "%",
+            "decimals" : 1,
+            "actions" : { },
+            "settings" : {
+              "layout" : "simplified",
+              "tickMin" : 0,
+              "tickMax" : 100,
+              "autoScale" : true,
+              "showTicks" : false,
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#2196F3"
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "levelPercentage",
+                "label" : "Water Level",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "ffc3bbd5-a1dc-4afb-83c9-d98f4e321f36"
+            } ]
+          },
+          "id" : "0e9a0537-9d6f-4d97-865e-653d74ec059f",
+          "typeFullFqn" : "system.progress_bar",
+          "type" : "latest"
+        },
+        "e740e833-a5d9-40fe-abfe-c98e2932b804" : {
+          "sizeX" : 6,
+          "sizeY" : 4,
+          "row" : 2,
+          "col" : 18,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Water Tank Level",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "L",
+            "decimals" : 0,
+            "actions" : { },
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 3000,
+              "gaugeType" : "arc",
+              "showTitle" : true,
+              "title" : "Water Tank Level",
+              "titleFont" : {
+                "color" : "#000000DE"
+              },
+              "labelFont" : { },
+              "valueFont" : { },
+              "minMaxFont" : { },
+              "showMinMax" : false,
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#2196F3"
+              },
+              "showValue" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "waterLevel",
+                "label" : "Water Level",
+                "type" : "timeseries",
+                "color" : "#000000DE",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "315dacb2-0826-434a-b84e-84053c8eb60e"
+            } ]
+          },
+          "id" : "e740e833-a5d9-40fe-abfe-c98e2932b804",
+          "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
+          "type" : "latest"
+        },
+        "38206a79-fc67-4826-acc8-075265090114" : {
+          "sizeX" : 12,
+          "sizeY" : 3,
+          "row" : 6,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Pump Motors",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "4px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : {
+              "rowClick" : [ {
+                "id" : "6f924ddb-e704-4ef6-a641-92c0a89077af",
+                "name" : "View Pump Motor Details",
+                "icon" : "arrow_forward",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "pump-motor-details",
+                "setEntityId" : true,
+                "stateEntityParamName" : "selectedPumpMotor"
+              } ],
+              "headerButton" : [ {
+                "id" : "395bdaf0-33d0-4695-988d-7bfbae07270d",
+                "name" : "Create Pump Motor",
+                "icon" : "add",
+                "type" : "customPretty",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n\nlet dialogTitle = \"Create New Pump Motor\";\nlet createEntity = true;\n\nlet attributeKeys = [];\nlet additionalAttributes = [ ];\nlet additionalTelemetry = [ ];\n\nopenEntityDialog();\n\nfunction openEntityDialog() {\n  customDialog.customDialog(htmlTemplate, EntityDialogController).subscribe();\n}\n\nfunction EntityDialogController(instance) {\n  let vm = instance;\n\n  const currentUser = widgetContext.currentUser;\n\n  if (createEntity) {\n    vm.dialogTitle = dialogTitle;\n  } else {\n    vm.dialogTitle = dialogTitle.replaceAll('${entityName}', entityName);\n  }\n\n  vm.submitTitle = createEntity ? 'Create' : 'Save';\n\n  vm.entityFormGroup = vm.fb.group({\n    entityFields: vm.fb.group({\n      name: [null, [vm.validators.required]]\n    }),\n    \n  });\n\n  \n\n  if (attributeKeys.length) {\n    vm.entityFormGroup.addControl('attributes',\n      vm.fb.group({\n        \n      })\n    );\n  }\n\n  vm.save = function() {\n    vm.entityFormGroup.markAsPristine();\n    saveEntity().subscribe(\n      function (entity) {\n        widgetContext.rxjs.forkJoin([\n          saveAttributes(entity.id),\n          saveTelemetry(entity.id),\n          createRelations(entity.id),\n          addToEntityGroups(entity.id)\n        ]).subscribe(\n          function () {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n          }\n        );\n      }\n    );\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  if (!createEntity) {\n    loadEntity();\n  }\n\n  function saveEntity() {\n    const entityFields = vm.entityFormGroup.get('entityFields').value;\n    let entity;\n    if (createEntity) {\n      entity = entityFields;\n      let entityType = \"DEVICE\";\n      let entitySubType = \"PumpMotor\";\n      let entityOwner = \"\";\n      entity.id = {\n        entityType: entityType\n      };\n      \n      \n      if (entitySubType) {\n        entity.type = entitySubType;\n      }\n      \n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n          stateParams = stateParams[entityOwner];\n        }\n        let ownerId = stateParams.entityId;\n        if (ownerId && ownerId.entityType === 'CUSTOMER') {\n          entity.customerId = ownerId;\n        }\n      }\n      if (!entity.customerId && widgetContext.currentUser.authority === 'CUSTOMER_USER') {\n        entity.customerId = {id: widgetContext.currentUser.customerId, entityType: 'CUSTOMER'};\n      }\n      if (entityType === 'USER') {\n        if (entity.customerId) {\n          entity.authority = 'CUSTOMER_USER';\n        } else {\n          entity.authority = 'TENANT_ADMIN';\n        }\n      }\n    } else {\n      entity = {...vm.entity, ...entityFields};\n    }\n    return entityService.saveEntity(entity);\n  }\n\n  function saveAttributes(entityId) {\n    if (attributeKeys.length || additionalAttributes.length) {\n      let attributes = attributeKeys.length ? vm.entityFormGroup.get('attributes').value : [];\n      let attributesArray = [];\n      for (let key in attributes) {\n        if (attributes[key] !== null) {\n          attributesArray.push({key: key, value: attributes[key]});\n        }\n      }\n      if (additionalAttributes.length) {\n        additionalAttributes.forEach(attribute => {\n          attributesArray.push({key: attribute.key, value: attribute.value});\n        })\n      }\n      if (attributesArray.length > 0) {\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n    function saveTelemetry(entityId) {\n      if (additionalTelemetry.length) {\n        let telemetryArray = [];\n        additionalTelemetry.forEach(telemetry => {\n          telemetryArray.push({key: telemetry.key, value: telemetry.value});\n        })\n        return attributeService.saveEntityTimeseries(entityId, \"LATEST_TELEMETRY\", telemetryArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    }\n\n  function createRelations(entityId) {\n    let singleEntityId;\n    for (const value of Object.values(widgetContext.aliasController.entityAliases)) {\n      if (value.filter.type === 'singleEntity') {\n        singleEntityId = value.filter.singleEntity ?? null;\n      }\n    }\n\n    if (createEntity) {\n      let createRelationsObservables = [];\n      \n      let createRelations = [{\"fromStateEntity\":\"singleEntity\",\"type\":\"WaterTankToPumpMotor\"}];\n      if (createRelations && createRelations.length) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        for (let createRelation of createRelations) {\n          let fromEntityId = null;\n          if (createRelation.fromStateEntity === 'singleEntity' && singleEntityId) {\n            fromEntityId = singleEntityId;\n          } else if (createRelation.fromStateEntity && stateParams[createRelation.fromStateEntity]) {\n            fromEntityId = stateParams[createRelation.fromStateEntity].entityId;\n          } else {\n            fromEntityId = stateParams.entityId;\n          }\n          if (!fromEntityId && createRelation.fromStateEntity === 'currentCustomer') {\n            fromEntityId = {id: currentUser.customerId, entityType: \"CUSTOMER\" };\n          }\n          if (fromEntityId && fromEntityId.id && fromEntityId.entityType) {\n            let relation = {\n              type: createRelation.type,\n              typeGroup: 'COMMON',\n              from: fromEntityId,\n              to: entityId\n            };\n            createRelationsObservables.push(entityRelationService.saveRelation(relation));\n          }\n        }\n      }\n      \n      \n      if (createRelationsObservables.length) {\n        return widgetContext.rxjs.forkJoin(createRelationsObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function addToEntityGroups(entityId) {\n    if (createEntity) {\n      let addToGroupObservables = [];\n      let targetEntityGroups = [\"PumpMotor\"];\n      \n      let entityOwner = \"\";\n      let ownerId;\n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n            stateParams = stateParams[entityOwner];\n        }\n        ownerId = stateParams.entityId;\n      }\n      if (targetEntityGroups && targetEntityGroups.length) {\n        for (let targetEntityGroup of targetEntityGroups) {\n          addToGroupObservables.push(getOrCreateEntityGroupByName(targetEntityGroup, entityId.entityType, ownerId).pipe(\n            widgetContext.rxjs.switchMap((group) => {\n              if (group) {\n                return entityGroupService.addEntityToEntityGroup(group.id.id, entityId.id);\n              } else {\n                return widgetContext.rxjs.of(null);\n              }\n            })\n          ));\n        }\n      }\n      if (addToGroupObservables.length) {\n        return widgetContext.rxjs.forkJoin(addToGroupObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function loadEntity() {\n    entityService.getEntity(entityId.entityType, entityId.id).subscribe(\n      function(entity) {\n        vm.entity = entity;\n        vm.entityFormGroup.get('entityFields').patchValue(entity);\n        if (attributeKeys.length) {\n          attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', attributeKeys).subscribe(\n            function (attributes) {\n              let entityAttributes = {};\n              for (var i = 0; i < attributes.length; i++) {\n                entityAttributes[attributes[i].key] = attributes[i].value;\n              }\n              vm.entityFormGroup.get('attributes').patchValue(entityAttributes);\n            }\n          );\n        }\n      }\n    );\n  }\n\n  function getOrCreateEntityGroupByName(groupName, groupType, ownerId) {\n    var entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n    let findEntyGroup$;\n    if (ownerId) {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByOwnerIdAndPageLink(ownerId.entityType, ownerId.id, groupType, entityGroupsPageLink, {ignoreLoading: true});\n    } else {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType, {ignoreLoading: true});\n    }\n    return findEntyGroup$.pipe(\n      widgetContext.rxjs.switchMap((data) => {\n        if (data.data.length) {\n          const findGroup = data.data.find((group) => group.name === groupName);\n          if (findGroup) {\n            return widgetContext.rxjs.of(findGroup);\n          }\n        }\n        const entityGroup = {\n          name: groupName,\n          type: groupType,\n        }\n        if (ownerId) {\n          entityGroup.ownerId = ownerId;\n        }\n        return entityGroupService.saveEntityGroup(entityGroup, {ignoreLoading: true}).pipe(\n          widgetContext.rxjs.catchError(() => widgetContext.rxjs.of(null))\n        );\n      })\n    );\n  }\n}",
+                "customHtml" : "<form #entityForm=\"ngForm\" [formGroup]=\"entityFormGroup\"\n      (ngSubmit)=\"save()\" class=\"entity-form\" style=\"width: 600px;\">\n  <mat-toolbar color=\"primary\">\n    <h2>{{ dialogTitle }}</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n    <fieldset formGroupName=\"entityFields\" class=\"tb-form-panel outlined\" [disabled]=\"isLoading$ | async\"><mat-form-field appearance=\"outline\">\n  <mat-label>Motor Name</mat-label>\n  <input matInput formControlName=\"name\" required=\"required\">\n  @if(entityFormGroup.get(\"entityFields\").get(\"name\").hasError(\"required\")) {\n    <mat-error>Motor name is required.</mat-error>\n  }\n</mat-form-field>\n</fieldset>\n    \n    \n    \n  </div>\n  <div mat-dialog-actions class=\"flex items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || entityForm.invalid || !entityForm.dirty\">\n      {{ submitTitle }}\n    </button>\n  </div>\n</form>\n"
+              } ],
+              "actionCellButton" : [ {
+                "id" : "ab840609-1152-477a-9bfe-c0fb7a3329fb",
+                "name" : "Edit Pump Motor",
+                "icon" : "edit",
+                "type" : "customPretty",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n\nlet dialogTitle = \"Edit Pump Motor '${entityName}'\";\nlet createEntity = false;\n\nlet attributeKeys = [];\nlet additionalAttributes = [ ];\nlet additionalTelemetry = [ ];\n\nopenEntityDialog();\n\nfunction openEntityDialog() {\n  customDialog.customDialog(htmlTemplate, EntityDialogController).subscribe();\n}\n\nfunction EntityDialogController(instance) {\n  let vm = instance;\n\n  const currentUser = widgetContext.currentUser;\n\n  if (createEntity) {\n    vm.dialogTitle = dialogTitle;\n  } else {\n    vm.dialogTitle = dialogTitle.replaceAll('${entityName}', entityName);\n  }\n\n  vm.submitTitle = createEntity ? 'Create' : 'Save';\n\n  vm.entityFormGroup = vm.fb.group({\n    entityFields: vm.fb.group({\n      name: [null, [vm.validators.required]]\n    }),\n    \n  });\n\n  \n\n  if (attributeKeys.length) {\n    vm.entityFormGroup.addControl('attributes',\n      vm.fb.group({\n        \n      })\n    );\n  }\n\n  vm.save = function() {\n    vm.entityFormGroup.markAsPristine();\n    saveEntity().subscribe(\n      function (entity) {\n        widgetContext.rxjs.forkJoin([\n          saveAttributes(entity.id),\n          saveTelemetry(entity.id),\n          createRelations(entity.id),\n          addToEntityGroups(entity.id)\n        ]).subscribe(\n          function () {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n          }\n        );\n      }\n    );\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  if (!createEntity) {\n    loadEntity();\n  }\n\n  function saveEntity() {\n    const entityFields = vm.entityFormGroup.get('entityFields').value;\n    let entity;\n    if (createEntity) {\n      entity = entityFields;\n      let entityType = null;\n      let entitySubType = null;\n      let entityOwner = null;\n      entity.id = {\n        entityType: entityType\n      };\n      \n      \n      if (entitySubType) {\n        entity.type = entitySubType;\n      }\n      \n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n          stateParams = stateParams[entityOwner];\n        }\n        let ownerId = stateParams.entityId;\n        if (ownerId && ownerId.entityType === 'CUSTOMER') {\n          entity.customerId = ownerId;\n        }\n      }\n      if (!entity.customerId && widgetContext.currentUser.authority === 'CUSTOMER_USER') {\n        entity.customerId = {id: widgetContext.currentUser.customerId, entityType: 'CUSTOMER'};\n      }\n      if (entityType === 'USER') {\n        if (entity.customerId) {\n          entity.authority = 'CUSTOMER_USER';\n        } else {\n          entity.authority = 'TENANT_ADMIN';\n        }\n      }\n    } else {\n      entity = {...vm.entity, ...entityFields};\n    }\n    return entityService.saveEntity(entity);\n  }\n\n  function saveAttributes(entityId) {\n    if (attributeKeys.length || additionalAttributes.length) {\n      let attributes = attributeKeys.length ? vm.entityFormGroup.get('attributes').value : [];\n      let attributesArray = [];\n      for (let key in attributes) {\n        if (attributes[key] !== null) {\n          attributesArray.push({key: key, value: attributes[key]});\n        }\n      }\n      if (additionalAttributes.length) {\n        additionalAttributes.forEach(attribute => {\n          attributesArray.push({key: attribute.key, value: attribute.value});\n        })\n      }\n      if (attributesArray.length > 0) {\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n    function saveTelemetry(entityId) {\n      if (additionalTelemetry.length) {\n        let telemetryArray = [];\n        additionalTelemetry.forEach(telemetry => {\n          telemetryArray.push({key: telemetry.key, value: telemetry.value});\n        })\n        return attributeService.saveEntityTimeseries(entityId, \"LATEST_TELEMETRY\", telemetryArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    }\n\n  function createRelations(entityId) {\n    let singleEntityId;\n    for (const value of Object.values(widgetContext.aliasController.entityAliases)) {\n      if (value.filter.type === 'singleEntity') {\n        singleEntityId = value.filter.singleEntity ?? null;\n      }\n    }\n\n    if (createEntity) {\n      let createRelationsObservables = [];\n      \n      \n      if (createRelationsObservables.length) {\n        return widgetContext.rxjs.forkJoin(createRelationsObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function addToEntityGroups(entityId) {\n    if (createEntity) {\n      let addToGroupObservables = [];\n      let targetEntityGroups = null;\n      \n      let entityOwner = null;\n      let ownerId;\n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n            stateParams = stateParams[entityOwner];\n        }\n        ownerId = stateParams.entityId;\n      }\n      if (targetEntityGroups && targetEntityGroups.length) {\n        for (let targetEntityGroup of targetEntityGroups) {\n          addToGroupObservables.push(getOrCreateEntityGroupByName(targetEntityGroup, entityId.entityType, ownerId).pipe(\n            widgetContext.rxjs.switchMap((group) => {\n              if (group) {\n                return entityGroupService.addEntityToEntityGroup(group.id.id, entityId.id);\n              } else {\n                return widgetContext.rxjs.of(null);\n              }\n            })\n          ));\n        }\n      }\n      if (addToGroupObservables.length) {\n        return widgetContext.rxjs.forkJoin(addToGroupObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function loadEntity() {\n    entityService.getEntity(entityId.entityType, entityId.id).subscribe(\n      function(entity) {\n        vm.entity = entity;\n        vm.entityFormGroup.get('entityFields').patchValue(entity);\n        if (attributeKeys.length) {\n          attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', attributeKeys).subscribe(\n            function (attributes) {\n              let entityAttributes = {};\n              for (var i = 0; i < attributes.length; i++) {\n                entityAttributes[attributes[i].key] = attributes[i].value;\n              }\n              vm.entityFormGroup.get('attributes').patchValue(entityAttributes);\n            }\n          );\n        }\n      }\n    );\n  }\n\n  function getOrCreateEntityGroupByName(groupName, groupType, ownerId) {\n    var entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n    let findEntyGroup$;\n    if (ownerId) {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByOwnerIdAndPageLink(ownerId.entityType, ownerId.id, groupType, entityGroupsPageLink, {ignoreLoading: true});\n    } else {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType, {ignoreLoading: true});\n    }\n    return findEntyGroup$.pipe(\n      widgetContext.rxjs.switchMap((data) => {\n        if (data.data.length) {\n          const findGroup = data.data.find((group) => group.name === groupName);\n          if (findGroup) {\n            return widgetContext.rxjs.of(findGroup);\n          }\n        }\n        const entityGroup = {\n          name: groupName,\n          type: groupType,\n        }\n        if (ownerId) {\n          entityGroup.ownerId = ownerId;\n        }\n        return entityGroupService.saveEntityGroup(entityGroup, {ignoreLoading: true}).pipe(\n          widgetContext.rxjs.catchError(() => widgetContext.rxjs.of(null))\n        );\n      })\n    );\n  }\n}",
+                "customHtml" : "<form #entityForm=\"ngForm\" [formGroup]=\"entityFormGroup\"\n      (ngSubmit)=\"save()\" class=\"entity-form\" style=\"width: 600px;\">\n  <mat-toolbar color=\"primary\">\n    <h2>{{ dialogTitle }}</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n    <fieldset formGroupName=\"entityFields\" class=\"tb-form-panel outlined\" [disabled]=\"isLoading$ | async\"><mat-form-field appearance=\"outline\">\n  <mat-label>Motor Name</mat-label>\n  <input matInput formControlName=\"name\" required=\"required\">\n  @if(entityFormGroup.get(\"entityFields\").get(\"name\").hasError(\"required\")) {\n    <mat-error>Motor name is required.</mat-error>\n  }\n</mat-form-field>\n</fieldset>\n    \n    \n    \n  </div>\n  <div mat-dialog-actions class=\"flex items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || entityForm.invalid || !entityForm.dirty\">\n      {{ submitTitle }}\n    </button>\n  </div>\n</form>\n"
+              }, {
+                "id" : "bdd52e5e-635d-4688-88cc-2dcdeb3b6f60",
+                "name" : "Delete Pump Motor",
+                "icon" : "delete",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nlet deleteEntityTitle = \"Delete Pump Motor '${entityName}'\";\nlet deleteEntityPrompt = \"Are you sure you want to delete the Pump Motor '${entityName}'?\";\n\ndeleteEntityTitle = deleteEntityTitle.replaceAll('${entityName}', entityName);\ndeleteEntityPrompt = deleteEntityPrompt.replaceAll('${entityName}', entityName);\n\nopenDeleteEntityDialog();\n\nfunction openDeleteEntityDialog() {\n  dialogs.confirm(deleteEntityTitle, deleteEntityPrompt, 'Cancel', 'Delete').subscribe(\n    function(result) {\n      if (result) {\n        deleteEntity(entityId);\n      }\n    }\n  );\n}\n\nfunction deleteEntity(entityId) {\n  let deleteObservable = null;\n  switch (entityId.entityType) {\n    case 'DEVICE':\n      let deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\n      deleteObservable = deviceService.deleteDevice(entityId.id);\n      break;\n    case 'ASSET':\n      let assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\n      deleteObservable = assetService.deleteAsset(entityId.id);\n      break;\n    case 'ENTITY_VIEW':\n      let entityViewService = $injector.get(widgetContext.servicesMap.get('entityViewService'));\n      deleteObservable = entityViewService.deleteEntityView(entityId.id);\n      break;\n    case 'EDGE':\n      let edgeService = $injector.get(widgetContext.servicesMap.get('edgeService'));\n      deleteObservable = edgeService.deleteEdge(entityId.id);\n      break;\n    case 'TENANT':\n      let tenantService = $injector.get(widgetContext.servicesMap.get('tenantService'));\n      deleteObservable = tenantService.deleteTenant(entityId.id);\n      break;\n    case 'CUSTOMER':\n      let customerService = $injector.get(widgetContext.servicesMap.get('customerService'));\n      deleteObservable = customerService.deleteCustomer(entityId.id);\n      break;\n    case 'DASHBOARD':\n      let dashboardService = $injector.get(widgetContext.servicesMap.get('dashboardService'));\n      deleteObservable = dashboardService.deleteDashboard(entityId.id);\n      break;\n    case 'USER':\n      let userService = $injector.get(widgetContext.servicesMap.get('userService'));\n      deleteObservable = userService.deleteUser(entityId.id);\n      break;\n    case 'SCHEDULER_EVENT':\n      let schedulerEventService = $injector.get(widgetContext.servicesMap.get('schedulerEventService'));\n      deleteObservable = schedulerEventService.deleteSchedulerEvent(entityId.id);\n      break;\n    case 'ROLE':\n      let roleService = $injector.get(widgetContext.servicesMap.get('roleService'));\n      deleteObservable = roleService.deleteRole(entityId.id);\n      break;\n    case 'ENTITY_GROUP':\n      let entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n      deleteObservable = entityGroupService.deleteEntityGroup(entityId.id);\n      break;\n    default:\n      showErrorDialog(`Unsupported entity type '${entityId.entityType}'`);\n      break;\n  }\n  if (deleteObservable) {\n    deleteObservable.subscribe(\n      function success() {\n        widgetContext.updateAliases();\n      },\n      function fail() {\n        showErrorDialog();\n      }\n    );\n  }\n}\n\nfunction showErrorDialog(error) {\n  let title = 'Error';\n  error = error || 'Please try again.';\n  let content = `An error occurred while deleting '${entityName}'. ${error}`;\n  dialogs.alert(title, content, 'CLOSE').subscribe(\n    function(result) {}\n  );\n}\n"
+              } ]
+            },
+            "settings" : {
+              "entitiesTitle" : "Pump Motors",
+              "displayEntityName" : false,
+              "displayEntityType" : false
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "name",
+                "label" : "Name",
+                "type" : "entityField",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "status",
+                "label" : "Status",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : {
+                  "useCellContentFunction" : true,
+                  "useCellContentFunctionOnExport" : true,
+                  "cellContentFunction" : "let color = '#757575'; let backColor = '#F5F5F5'; let text = value; if (value === 'running') { color = '#E8F5E9'; backColor = '#2E7D32'; text = 'Running'; } else if (value === 'stopped') { color = '#757575'; backColor = '#E0E0E0'; text = 'Stopped'; } else if (value === 'fault') { color = '#FFEBEE'; backColor = '#D32F2F'; text = 'Fault'; } return `<span style=\"font-size:12px;font-weight:500;color:${color};background:${backColor};padding:6px 10px;border-radius:4px;text-transform:uppercase;\">${text}</span>`;"
+                }
+              }, {
+                "name" : "flowRate",
+                "label" : "Flow Rate",
+                "type" : "timeseries",
+                "decimals" : 1,
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "power",
+                "label" : "Power",
+                "type" : "timeseries",
+                "decimals" : 1,
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "8ff02eee-acf5-47d3-900e-184e290278a5"
+            } ]
+          },
+          "id" : "38206a79-fc67-4826-acc8-075265090114",
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest"
+        },
+        "cca69008-fb85-494b-a5c0-3efbc261cf6d" : {
+          "sizeX" : 12,
+          "sizeY" : 4,
+          "row" : 1,
+          "col" : 12,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Sensor Information",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "10px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"value-block flex flex-col justify-between gap-2\">\n    <div class=\"flex flex-1\">\n        <span class=\"title\">Sensor Information</span>\n    </div>\n    <div class=\"flex flex-col justify-between gap-1\">\n        <div class=\"flex flex-row justify-between\">\n            <span class=\"label\">Name</span>\n            <span class=\"value\">${Name}</span>\n        </div>\n        <div class=\"flex flex-row justify-between\">\n            <span class=\"label\">Label</span>\n            <span class=\"value\">${Label}</span>\n        </div>\n        <div class=\"flex flex-row justify-between\">\n            <span class=\"label\">Status</span>\n            <span [ngClass]=\"${Status} == true ? 'active' : 'inactive'\" class=\"value\">{{${Status} ? 'Online' : 'Offline'}}</span>\n        </div>\n        <div class=\"flex flex-row justify-between\">\n            <span class=\"label\">Battery</span>\n            <span class=\"value\">${Battery:0} %</span>\n        </div>\n    </div>\n</div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ".label {\n    font-weight: 400;\n    font-size: 16px;\n    line-height: 21px;\n    letter-spacing: 0.2px;\n    color: #424242;\n}\n\n.value {\n    padding: 4px;\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 21px;\n    letter-spacing: 0.2px;\n    color: #212121;\n}\n\n.title {\n    font-weight: 600;\n    font-size: 18px;\n    line-height: 21px;\n    letter-spacing: 0.2px;\n    color: #212121;\n}\n\n.value-block {\n    height: 100%;\n}\n\n.active {\n    border-radius: 6px;\n    background: #303F9F;\n    color: #E8EAF6;\n}\n\n.inactive {\n    border-radius: 6px;\n    background: #F5F5F5;\n    color: #757575;\n}"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "name",
+                "label" : "Name",
+                "type" : "entityField",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "label",
+                "label" : "Label",
+                "type" : "entityField",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "label" : "Status",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "battery",
+                "label" : "Battery",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "ffc3bbd5-a1dc-4afb-83c9-d98f4e321f36"
+            } ]
+          },
+          "id" : "cca69008-fb85-494b-a5c0-3efbc261cf6d",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
+        },
+        "4f966c9d-0484-4f25-b355-d6902bd2a98a" : {
+          "sizeX" : 4,
+          "sizeY" : 1,
+          "row" : 0,
+          "col" : 19,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "connect-motor-device",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "backgroundColor" : "#FFFFFF00",
+            "padding" : "0px",
+            "borderRadius" : "8px",
+            "actions" : {
+              "click" : [ {
+                "id" : null,
+                "name" : "Open connectivity documentation",
+                "icon" : null,
+                "openNewBrowserTab" : true,
+                "url" : "https://thingsboard.io/docs/paas/getting-started-guides/connectivity/",
+                "type" : "openURL"
+              } ]
+            },
+            "settings" : {
+              "appearance" : {
+                "type" : "filled",
+                "showLabel" : true,
+                "label" : "How to connect real devices?",
+                "showIcon" : true,
+                "icon" : "help_outline",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "customStyle" : { }
+              },
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false
+              }
+            },
+            "datasources" : [ ]
+          },
+          "id" : "4f966c9d-0484-4f25-b355-d6902bd2a98a",
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest"
+        },
+        "b001b3cc-2daf-4bb2-b061-44d49a448aaf" : {
+          "sizeX" : 12,
+          "sizeY" : 3,
+          "row" : 9,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Tank Level and Flow Trends",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "legendConfig" : {
+                "position" : "top",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "xAxis" : {
+                "show" : true,
+                "position" : "bottom"
+              },
+              "yAxis" : {
+                "show" : true,
+                "position" : "left"
+              },
+              "yAxes" : {
+                "levelAxis" : {
+                  "id" : "levelAxis",
+                  "label" : "Water Level",
+                  "position" : "left",
+                  "min" : 0,
+                  "max" : 3000,
+                  "units" : "",
+                  "decimals" : 1,
+                  "order" : 0
+                },
+                "flowAxis" : {
+                  "id" : "flowAxis",
+                  "label" : "Total Flow Rate",
+                  "position" : "right",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 1,
+                  "order" : 1
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "waterLevel",
+                "label" : "Water Level",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 1,
+                "color" : "#2196F3",
+                "settings" : {
+                  "yAxisId" : "levelAxis",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "totalFlowRate",
+                "label" : "Total Flow Rate",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 1,
+                "color" : "#4CAF50",
+                "settings" : {
+                  "yAxisId" : "flowAxis",
+                  "showLegend" : true
+                }
+              } ],
+              "entityAliasId" : "315dacb2-0826-434a-b84e-84053c8eb60e"
+            } ]
+          },
+          "id" : "b001b3cc-2daf-4bb2-b061-44d49a448aaf",
+          "typeFullFqn" : "system.time_series_chart",
+          "type" : "timeseries"
+        },
+        "b0cdc816-a865-4bda-bc35-99e304fe9e2a" : {
+          "sizeX" : 8,
+          "sizeY" : 1,
+          "row" : 1,
+          "col" : 16,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Motor Power",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
+            "units" : "W",
+            "decimals" : 2,
+            "actions" : { },
+            "settings" : {
+              "layout" : "horizontal",
+              "showLabel" : true,
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "showIcon" : true,
+              "icon" : "bolt",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              },
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "valueFont" : {
+                "size" : 30
+              },
+              "labelFont" : {
+                "size" : 20
+              },
+              "showDate" : false,
+              "autoScale" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "power",
+                "label" : "Power",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "da98600d-c0b8-4aba-aeaf-352c87b8562c"
+            } ]
+          },
+          "id" : "b0cdc816-a865-4bda-bc35-99e304fe9e2a",
+          "typeFullFqn" : "system.cards.horizontal_value_card",
+          "type" : "latest"
+        },
+        "59c64f4d-9598-4954-acb6-eecad1b7eb7d" : {
+          "sizeX" : 19,
+          "sizeY" : 1,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Level Sensor Header",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "backgroundColor" : "#FFFFFF00",
+            "padding" : "0px",
+            "borderRadius" : "8px",
+            "actions" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "**${Name}**",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-markdown-view p {\n    display: flex;\n    margin: 0;\n    align-items: center;\n    height: 100%;\n    font-size: 28px;\n    font-weight: 500;\n    color: #212121;\n    padding: 0;\n}\n"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "name",
+                "label" : "Name",
+                "type" : "entityField",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "ffc3bbd5-a1dc-4afb-83c9-d98f4e321f36"
+            } ]
+          },
+          "id" : "59c64f4d-9598-4954-acb6-eecad1b7eb7d",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
+        },
+        "d409628f-796d-4112-ac05-88bb9114d25f" : {
+          "sizeX" : 1,
+          "sizeY" : 1,
+          "row" : 0,
+          "col" : 23,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Edit Motor Settings",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "borderRadius" : "8px",
+            "actions" : {
+              "click" : [ {
+                "id" : "cb5caceb-4af2-48cf-bcb6-91620b1b0d56",
+                "name" : "Edit Pump Motor",
+                "icon" : "edit",
+                "type" : "customPretty",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n\nlet dialogTitle = \"Edit '${entityName}'\";\nlet createEntity = false;\n\nlet attributeKeys = [];\nlet additionalAttributes = [ ];\nlet additionalTelemetry = [ ];\n\nopenEntityDialog();\n\nfunction openEntityDialog() {\n  customDialog.customDialog(htmlTemplate, EntityDialogController).subscribe();\n}\n\nfunction EntityDialogController(instance) {\n  let vm = instance;\n\n  const currentUser = widgetContext.currentUser;\n\n  if (createEntity) {\n    vm.dialogTitle = dialogTitle;\n  } else {\n    vm.dialogTitle = dialogTitle.replaceAll('${entityName}', entityName);\n  }\n\n  vm.submitTitle = createEntity ? 'Create' : 'Save';\n\n  vm.entityFormGroup = vm.fb.group({\n    entityFields: vm.fb.group({\n      name: [null, [vm.validators.required]]\n    }),\n    \n  });\n\n  \n\n  if (attributeKeys.length) {\n    vm.entityFormGroup.addControl('attributes',\n      vm.fb.group({\n        \n      })\n    );\n  }\n\n  vm.save = function() {\n    vm.entityFormGroup.markAsPristine();\n    saveEntity().subscribe(\n      function (entity) {\n        widgetContext.rxjs.forkJoin([\n          saveAttributes(entity.id),\n          saveTelemetry(entity.id),\n          createRelations(entity.id),\n          addToEntityGroups(entity.id)\n        ]).subscribe(\n          function () {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n          }\n        );\n      }\n    );\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  if (!createEntity) {\n    loadEntity();\n  }\n\n  function saveEntity() {\n    const entityFields = vm.entityFormGroup.get('entityFields').value;\n    let entity;\n    if (createEntity) {\n      entity = entityFields;\n      let entityType = null;\n      let entitySubType = null;\n      let entityOwner = null;\n      entity.id = {\n        entityType: entityType\n      };\n      \n      \n      if (entitySubType) {\n        entity.type = entitySubType;\n      }\n      \n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n          stateParams = stateParams[entityOwner];\n        }\n        let ownerId = stateParams.entityId;\n        if (ownerId && ownerId.entityType === 'CUSTOMER') {\n          entity.customerId = ownerId;\n        }\n      }\n      if (!entity.customerId && widgetContext.currentUser.authority === 'CUSTOMER_USER') {\n        entity.customerId = {id: widgetContext.currentUser.customerId, entityType: 'CUSTOMER'};\n      }\n      if (entityType === 'USER') {\n        if (entity.customerId) {\n          entity.authority = 'CUSTOMER_USER';\n        } else {\n          entity.authority = 'TENANT_ADMIN';\n        }\n      }\n    } else {\n      entity = {...vm.entity, ...entityFields};\n    }\n    return entityService.saveEntity(entity);\n  }\n\n  function saveAttributes(entityId) {\n    if (attributeKeys.length || additionalAttributes.length) {\n      let attributes = attributeKeys.length ? vm.entityFormGroup.get('attributes').value : [];\n      let attributesArray = [];\n      for (let key in attributes) {\n        if (attributes[key] !== null) {\n          attributesArray.push({key: key, value: attributes[key]});\n        }\n      }\n      if (additionalAttributes.length) {\n        additionalAttributes.forEach(attribute => {\n          attributesArray.push({key: attribute.key, value: attribute.value});\n        })\n      }\n      if (attributesArray.length > 0) {\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n    function saveTelemetry(entityId) {\n      if (additionalTelemetry.length) {\n        let telemetryArray = [];\n        additionalTelemetry.forEach(telemetry => {\n          telemetryArray.push({key: telemetry.key, value: telemetry.value});\n        })\n        return attributeService.saveEntityTimeseries(entityId, \"LATEST_TELEMETRY\", telemetryArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    }\n\n  function createRelations(entityId) {\n    let singleEntityId;\n    for (const value of Object.values(widgetContext.aliasController.entityAliases)) {\n      if (value.filter.type === 'singleEntity') {\n        singleEntityId = value.filter.singleEntity ?? null;\n      }\n    }\n\n    if (createEntity) {\n      let createRelationsObservables = [];\n      \n      \n      if (createRelationsObservables.length) {\n        return widgetContext.rxjs.forkJoin(createRelationsObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function addToEntityGroups(entityId) {\n    if (createEntity) {\n      let addToGroupObservables = [];\n      let targetEntityGroups = null;\n      \n      let entityOwner = null;\n      let ownerId;\n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n            stateParams = stateParams[entityOwner];\n        }\n        ownerId = stateParams.entityId;\n      }\n      if (targetEntityGroups && targetEntityGroups.length) {\n        for (let targetEntityGroup of targetEntityGroups) {\n          addToGroupObservables.push(getOrCreateEntityGroupByName(targetEntityGroup, entityId.entityType, ownerId).pipe(\n            widgetContext.rxjs.switchMap((group) => {\n              if (group) {\n                return entityGroupService.addEntityToEntityGroup(group.id.id, entityId.id);\n              } else {\n                return widgetContext.rxjs.of(null);\n              }\n            })\n          ));\n        }\n      }\n      if (addToGroupObservables.length) {\n        return widgetContext.rxjs.forkJoin(addToGroupObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function loadEntity() {\n    entityService.getEntity(entityId.entityType, entityId.id).subscribe(\n      function(entity) {\n        vm.entity = entity;\n        vm.entityFormGroup.get('entityFields').patchValue(entity);\n        if (attributeKeys.length) {\n          attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', attributeKeys).subscribe(\n            function (attributes) {\n              let entityAttributes = {};\n              for (var i = 0; i < attributes.length; i++) {\n                entityAttributes[attributes[i].key] = attributes[i].value;\n              }\n              vm.entityFormGroup.get('attributes').patchValue(entityAttributes);\n            }\n          );\n        }\n      }\n    );\n  }\n\n  function getOrCreateEntityGroupByName(groupName, groupType, ownerId) {\n    var entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n    let findEntyGroup$;\n    if (ownerId) {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByOwnerIdAndPageLink(ownerId.entityType, ownerId.id, groupType, entityGroupsPageLink, {ignoreLoading: true});\n    } else {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType, {ignoreLoading: true});\n    }\n    return findEntyGroup$.pipe(\n      widgetContext.rxjs.switchMap((data) => {\n        if (data.data.length) {\n          const findGroup = data.data.find((group) => group.name === groupName);\n          if (findGroup) {\n            return widgetContext.rxjs.of(findGroup);\n          }\n        }\n        const entityGroup = {\n          name: groupName,\n          type: groupType,\n        }\n        if (ownerId) {\n          entityGroup.ownerId = ownerId;\n        }\n        return entityGroupService.saveEntityGroup(entityGroup, {ignoreLoading: true}).pipe(\n          widgetContext.rxjs.catchError(() => widgetContext.rxjs.of(null))\n        );\n      })\n    );\n  }\n}",
+                "customHtml" : "<form #entityForm=\"ngForm\" [formGroup]=\"entityFormGroup\"\n      (ngSubmit)=\"save()\" class=\"entity-form\" style=\"width: 600px;\">\n  <mat-toolbar color=\"primary\">\n    <h2>{{ dialogTitle }}</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n    <fieldset formGroupName=\"entityFields\" class=\"tb-form-panel outlined\" [disabled]=\"isLoading$ | async\"><mat-form-field appearance=\"outline\">\n  <mat-label>Motor Name</mat-label>\n  <input matInput formControlName=\"name\" required=\"required\">\n  @if(entityFormGroup.get(\"entityFields\").get(\"name\").hasError(\"required\")) {\n    <mat-error>Motor name is required.</mat-error>\n  }\n</mat-form-field>\n</fieldset>\n    \n    \n    \n  </div>\n  <div mat-dialog-actions class=\"flex items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || entityForm.invalid || !entityForm.dirty\">\n      {{ submitTitle }}\n    </button>\n  </div>\n</form>\n"
+              } ]
+            },
+            "settings" : {
+              "appearance" : {
+                "type" : "filled",
+                "showLabel" : false,
+                "label" : "Edit Motor Settings",
+                "showIcon" : true,
+                "icon" : "edit",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "customStyle" : { }
+              },
+              "activatedState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ ],
+              "entityAliasId" : "da98600d-c0b8-4aba-aeaf-352c87b8562c"
+            } ]
+          },
+          "id" : "d409628f-796d-4112-ac05-88bb9114d25f",
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest"
+        },
+        "8c2e1a2b-7a75-40fd-9a06-e15fb162990d" : {
+          "sizeX" : 4,
+          "sizeY" : 1,
+          "row" : 0,
+          "col" : 19,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "connect-sensor-device",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "backgroundColor" : "#FFFFFF00",
+            "padding" : "0px",
+            "borderRadius" : "8px",
+            "actions" : {
+              "click" : [ {
+                "id" : null,
+                "name" : "Open connectivity documentation",
+                "icon" : null,
+                "openNewBrowserTab" : true,
+                "url" : "https://thingsboard.io/docs/paas/getting-started-guides/connectivity/",
+                "type" : "openURL"
+              } ]
+            },
+            "settings" : {
+              "appearance" : {
+                "type" : "filled",
+                "showLabel" : true,
+                "label" : "How to connect real devices?",
+                "showIcon" : true,
+                "icon" : "help_outline",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "customStyle" : { }
+              },
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false
+              }
+            },
+            "datasources" : [ ]
+          },
+          "id" : "8c2e1a2b-7a75-40fd-9a06-e15fb162990d",
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest"
+        },
+        "c5d2baf3-a846-49b5-b366-fc2777597900" : {
+          "sizeX" : 18,
+          "sizeY" : 4,
+          "row" : 2,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Water Tank SCADA Diagram",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "imageSource" : {
+                "entityAliasId" : "315dacb2-0826-434a-b84e-84053c8eb60e",
+                "sourceType" : "entityKey",
+                "entityKey" : {
+                  "name" : "tankDiagram",
+                  "label" : "Tank Diagram",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                }
+              },
+              "mapType" : "image",
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsEntityAliasId" : "8ff02eee-acf5-47d3-900e-184e290278a5",
+                "additionalDataKeys" : [ {
+                  "name" : "name",
+                  "label" : "Name",
+                  "type" : "entityField",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                }, {
+                  "name" : "status",
+                  "label" : "Status",
+                  "type" : "timeseries",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                }, {
+                  "name" : "active",
+                  "label" : "Active",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                } ],
+                "xKey" : {
+                  "name" : "xPos",
+                  "label" : "X Position",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                },
+                "yKey" : {
+                  "name" : "yPos",
+                  "label" : "Y Position",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                },
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "${Name}"
+                },
+                "edit" : {
+                  "enabledActions" : [ "add", "move", "remove" ]
+                },
+                "markerType" : "icon",
+                "markerIcon" : {
+                  "icon" : "precision_manufacturing",
+                  "color" : {
+                    "type" : "function",
+                    "colorFunction" : "if (data.Status === 'running') { return '#4CAF50'; } else if (data.Status === 'fault') { return '#F44336'; } return '#9E9E9E';"
+                  }
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "type" : "pattern",
+                  "pattern" : "<b>${Name}</b><br/>Status: ${Status}<br/>Active: ${Active}<br/><link-act name='navigate-to-pump-motor-details-from-map'>View Details</link-act>",
+                  "tagActions" : [ {
+                    "id" : "9a92cc2e-d98f-43cb-9f85-caef9d754bbe",
+                    "name" : "navigate-to-pump-motor-details-from-map",
+                    "icon" : "arrow_forward",
+                    "type" : "openDashboardState",
+                    "targetDashboardStateId" : "pump-motor-details",
+                    "setEntityId" : true,
+                    "stateEntityParamName" : "selectedPumpMotor"
+                  } ]
+                }
+              }, {
+                "dsType" : "entity",
+                "dsEntityAliasId" : "8662c88f-32f1-4991-b440-d9d58068e576",
+                "additionalDataKeys" : [ {
+                  "name" : "name",
+                  "label" : "Name",
+                  "type" : "entityField",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                }, {
+                  "name" : "levelPercentage",
+                  "label" : "Level Percentage",
+                  "type" : "timeseries",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                }, {
+                  "name" : "active",
+                  "label" : "Active",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                } ],
+                "xKey" : {
+                  "name" : "xPos",
+                  "label" : "X Position",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                },
+                "yKey" : {
+                  "name" : "yPos",
+                  "label" : "Y Position",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                },
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "${Name}"
+                },
+                "edit" : {
+                  "enabledActions" : [ "add", "move", "remove" ]
+                },
+                "markerType" : "icon",
+                "markerIcon" : {
+                  "icon" : "water_drop",
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "type" : "pattern",
+                  "pattern" : "<b>${Name}</b><br/>Level: ${Level Percentage:1}%<br/>Active: ${Active}<br/><link-act name='navigate-to-level-sensor-details-from-map'>View Details</link-act>",
+                  "tagActions" : [ {
+                    "id" : "948d7071-603d-40fd-abb8-a3b0c5910763",
+                    "name" : "navigate-to-level-sensor-details-from-map",
+                    "icon" : "info",
+                    "type" : "openDashboardState",
+                    "targetDashboardStateId" : "level-sensor-details",
+                    "setEntityId" : true,
+                    "stateEntityParamName" : "selectedLevelSensor"
+                  } ]
+                }
+              } ],
+              "polygons" : [ ],
+              "circles" : [ ],
+              "fitMapBounds" : false,
+              "mapActionButtons" : [ {
+                "action" : {
+                  "id" : "815b25db-1a8c-4d75-b3b0-5feb67ae4f36",
+                  "name" : "Create Pump Motor",
+                  "icon" : "add_location",
+                  "mapItemType" : "marker",
+                  "mapItemTooltips" : { },
+                  "type" : "placeMapItem",
+                  "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n\nlet dialogTitle = \"Create and Place Pump Motor\";\nlet createEntity = true;\n\nlet attributeKeys = [];\nlet additionalAttributes = [ {key: 'xPos', value: additionalParams.coordinates.x}, {key: 'yPos', value: additionalParams.coordinates.y}];\nlet additionalTelemetry = [ ];\n\nopenEntityDialog();\n\nfunction openEntityDialog() {\n  customDialog.customDialog(htmlTemplate, EntityDialogController).subscribe();\n}\n\nfunction EntityDialogController(instance) {\n  let vm = instance;\n\n  const currentUser = widgetContext.currentUser;\n\n  if (createEntity) {\n    vm.dialogTitle = dialogTitle;\n  } else {\n    vm.dialogTitle = dialogTitle.replaceAll('${entityName}', entityName);\n  }\n\n  vm.submitTitle = createEntity ? 'Create' : 'Save';\n\n  vm.entityFormGroup = vm.fb.group({\n    entityFields: vm.fb.group({\n      name: [null, [vm.validators.required]]\n    }),\n    \n  });\n\n  \n\n  if (attributeKeys.length) {\n    vm.entityFormGroup.addControl('attributes',\n      vm.fb.group({\n        \n      })\n    );\n  }\n\n  vm.save = function() {\n    vm.entityFormGroup.markAsPristine();\n    saveEntity().subscribe(\n      function (entity) {\n        widgetContext.rxjs.forkJoin([\n          saveAttributes(entity.id),\n          saveTelemetry(entity.id),\n          createRelations(entity.id),\n          addToEntityGroups(entity.id)\n        ]).subscribe(\n          function () {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n          }\n        );\n      }\n    );\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  if (!createEntity) {\n    loadEntity();\n  }\n\n  function saveEntity() {\n    const entityFields = vm.entityFormGroup.get('entityFields').value;\n    let entity;\n    if (createEntity) {\n      entity = entityFields;\n      let entityType = \"DEVICE\";\n      let entitySubType = \"PumpMotor\";\n      let entityOwner = \"\";\n      entity.id = {\n        entityType: entityType\n      };\n      \n      \n      if (entitySubType) {\n        entity.type = entitySubType;\n      }\n      \n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n          stateParams = stateParams[entityOwner];\n        }\n        let ownerId = stateParams.entityId;\n        if (ownerId && ownerId.entityType === 'CUSTOMER') {\n          entity.customerId = ownerId;\n        }\n      }\n      if (!entity.customerId && widgetContext.currentUser.authority === 'CUSTOMER_USER') {\n        entity.customerId = {id: widgetContext.currentUser.customerId, entityType: 'CUSTOMER'};\n      }\n      if (entityType === 'USER') {\n        if (entity.customerId) {\n          entity.authority = 'CUSTOMER_USER';\n        } else {\n          entity.authority = 'TENANT_ADMIN';\n        }\n      }\n    } else {\n      entity = {...vm.entity, ...entityFields};\n    }\n    return entityService.saveEntity(entity);\n  }\n\n  function saveAttributes(entityId) {\n    if (attributeKeys.length || additionalAttributes.length) {\n      let attributes = attributeKeys.length ? vm.entityFormGroup.get('attributes').value : [];\n      let attributesArray = [];\n      for (let key in attributes) {\n        if (attributes[key] !== null) {\n          attributesArray.push({key: key, value: attributes[key]});\n        }\n      }\n      if (additionalAttributes.length) {\n        additionalAttributes.forEach(attribute => {\n          attributesArray.push({key: attribute.key, value: attribute.value});\n        })\n      }\n      if (attributesArray.length > 0) {\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n    function saveTelemetry(entityId) {\n      if (additionalTelemetry.length) {\n        let telemetryArray = [];\n        additionalTelemetry.forEach(telemetry => {\n          telemetryArray.push({key: telemetry.key, value: telemetry.value});\n        })\n        return attributeService.saveEntityTimeseries(entityId, \"LATEST_TELEMETRY\", telemetryArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    }\n\n  function createRelations(entityId) {\n    let singleEntityId;\n    for (const value of Object.values(widgetContext.aliasController.entityAliases)) {\n      if (value.filter.type === 'singleEntity') {\n        singleEntityId = value.filter.singleEntity ?? null;\n      }\n    }\n\n    if (createEntity) {\n      let createRelationsObservables = [];\n      \n      let createRelations = [{\"fromStateEntity\":\"singleEntity\",\"type\":\"WaterTankToPumpMotor\"}];\n      if (createRelations && createRelations.length) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        for (let createRelation of createRelations) {\n          let fromEntityId = null;\n          if (createRelation.fromStateEntity === 'singleEntity' && singleEntityId) {\n            fromEntityId = singleEntityId;\n          } else if (createRelation.fromStateEntity && stateParams[createRelation.fromStateEntity]) {\n            fromEntityId = stateParams[createRelation.fromStateEntity].entityId;\n          } else {\n            fromEntityId = stateParams.entityId;\n          }\n          if (!fromEntityId && createRelation.fromStateEntity === 'currentCustomer') {\n            fromEntityId = {id: currentUser.customerId, entityType: \"CUSTOMER\" };\n          }\n          if (fromEntityId && fromEntityId.id && fromEntityId.entityType) {\n            let relation = {\n              type: createRelation.type,\n              typeGroup: 'COMMON',\n              from: fromEntityId,\n              to: entityId\n            };\n            createRelationsObservables.push(entityRelationService.saveRelation(relation));\n          }\n        }\n      }\n      \n      \n      if (createRelationsObservables.length) {\n        return widgetContext.rxjs.forkJoin(createRelationsObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function addToEntityGroups(entityId) {\n    if (createEntity) {\n      let addToGroupObservables = [];\n      let targetEntityGroups = [\"PumpMotor\"];\n      \n      let entityOwner = \"\";\n      let ownerId;\n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n            stateParams = stateParams[entityOwner];\n        }\n        ownerId = stateParams.entityId;\n      }\n      if (targetEntityGroups && targetEntityGroups.length) {\n        for (let targetEntityGroup of targetEntityGroups) {\n          addToGroupObservables.push(getOrCreateEntityGroupByName(targetEntityGroup, entityId.entityType, ownerId).pipe(\n            widgetContext.rxjs.switchMap((group) => {\n              if (group) {\n                return entityGroupService.addEntityToEntityGroup(group.id.id, entityId.id);\n              } else {\n                return widgetContext.rxjs.of(null);\n              }\n            })\n          ));\n        }\n      }\n      if (addToGroupObservables.length) {\n        return widgetContext.rxjs.forkJoin(addToGroupObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function loadEntity() {\n    entityService.getEntity(entityId.entityType, entityId.id).subscribe(\n      function(entity) {\n        vm.entity = entity;\n        vm.entityFormGroup.get('entityFields').patchValue(entity);\n        if (attributeKeys.length) {\n          attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', attributeKeys).subscribe(\n            function (attributes) {\n              let entityAttributes = {};\n              for (var i = 0; i < attributes.length; i++) {\n                entityAttributes[attributes[i].key] = attributes[i].value;\n              }\n              vm.entityFormGroup.get('attributes').patchValue(entityAttributes);\n            }\n          );\n        }\n      }\n    );\n  }\n\n  function getOrCreateEntityGroupByName(groupName, groupType, ownerId) {\n    var entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n    let findEntyGroup$;\n    if (ownerId) {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByOwnerIdAndPageLink(ownerId.entityType, ownerId.id, groupType, entityGroupsPageLink, {ignoreLoading: true});\n    } else {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType, {ignoreLoading: true});\n    }\n    return findEntyGroup$.pipe(\n      widgetContext.rxjs.switchMap((data) => {\n        if (data.data.length) {\n          const findGroup = data.data.find((group) => group.name === groupName);\n          if (findGroup) {\n            return widgetContext.rxjs.of(findGroup);\n          }\n        }\n        const entityGroup = {\n          name: groupName,\n          type: groupType,\n        }\n        if (ownerId) {\n          entityGroup.ownerId = ownerId;\n        }\n        return entityGroupService.saveEntityGroup(entityGroup, {ignoreLoading: true}).pipe(\n          widgetContext.rxjs.catchError(() => widgetContext.rxjs.of(null))\n        );\n      })\n    );\n  }\n}",
+                  "customHtml" : "<form #entityForm=\"ngForm\" [formGroup]=\"entityFormGroup\"\n      (ngSubmit)=\"save()\" class=\"entity-form\" style=\"width: 600px;\">\n  <mat-toolbar color=\"primary\">\n    <h2>{{ dialogTitle }}</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n    <fieldset formGroupName=\"entityFields\" class=\"tb-form-panel outlined\" [disabled]=\"isLoading$ | async\"><mat-form-field appearance=\"outline\">\n  <mat-label>Motor Name</mat-label>\n  <input matInput formControlName=\"name\" required=\"required\">\n  @if(entityFormGroup.get(\"entityFields\").get(\"name\").hasError(\"required\")) {\n    <mat-error>Name is required.</mat-error>\n  }\n</mat-form-field>\n</fieldset>\n    \n    \n    \n  </div>\n  <div mat-dialog-actions class=\"flex items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || entityForm.invalid || !entityForm.dirty\">\n      {{ submitTitle }}\n    </button>\n  </div>\n</form>\n"
+                },
+                "color" : "#0000008a",
+                "icon" : "add_location",
+                "label" : "Create Pump Motor"
+              }, {
+                "action" : {
+                  "id" : "e8fd9051-f9a0-4788-bf1c-6160ffe406a4",
+                  "name" : "Place Level Sensor",
+                  "icon" : "add_location",
+                  "mapItemType" : "marker",
+                  "mapItemTooltips" : { },
+                  "type" : "placeMapItem",
+                  "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n\nlet dialogTitle = \"Create Level Sensor\";\nlet createEntity = true;\n\nlet attributeKeys = [];\nlet additionalAttributes = [ {key: 'xPos', value: additionalParams.coordinates.x}, {key: 'yPos', value: additionalParams.coordinates.y}];\nlet additionalTelemetry = [ ];\n\nopenEntityDialog();\n\nfunction openEntityDialog() {\n  customDialog.customDialog(htmlTemplate, EntityDialogController).subscribe();\n}\n\nfunction EntityDialogController(instance) {\n  let vm = instance;\n\n  const currentUser = widgetContext.currentUser;\n\n  if (createEntity) {\n    vm.dialogTitle = dialogTitle;\n  } else {\n    vm.dialogTitle = dialogTitle.replaceAll('${entityName}', entityName);\n  }\n\n  vm.submitTitle = createEntity ? 'Create' : 'Save';\n\n  vm.entityFormGroup = vm.fb.group({\n    entityFields: vm.fb.group({\n      name: [null, [vm.validators.required]]\n    }),\n    \n  });\n\n  \n\n  if (attributeKeys.length) {\n    vm.entityFormGroup.addControl('attributes',\n      vm.fb.group({\n        \n      })\n    );\n  }\n\n  vm.save = function() {\n    vm.entityFormGroup.markAsPristine();\n    saveEntity().subscribe(\n      function (entity) {\n        widgetContext.rxjs.forkJoin([\n          saveAttributes(entity.id),\n          saveTelemetry(entity.id),\n          createRelations(entity.id),\n          addToEntityGroups(entity.id)\n        ]).subscribe(\n          function () {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n          }\n        );\n      }\n    );\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  if (!createEntity) {\n    loadEntity();\n  }\n\n  function saveEntity() {\n    const entityFields = vm.entityFormGroup.get('entityFields').value;\n    let entity;\n    if (createEntity) {\n      entity = entityFields;\n      let entityType = \"DEVICE\";\n      let entitySubType = \"LevelSensor\";\n      let entityOwner = \"\";\n      entity.id = {\n        entityType: entityType\n      };\n      \n      \n      if (entitySubType) {\n        entity.type = entitySubType;\n      }\n      \n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n          stateParams = stateParams[entityOwner];\n        }\n        let ownerId = stateParams.entityId;\n        if (ownerId && ownerId.entityType === 'CUSTOMER') {\n          entity.customerId = ownerId;\n        }\n      }\n      if (!entity.customerId && widgetContext.currentUser.authority === 'CUSTOMER_USER') {\n        entity.customerId = {id: widgetContext.currentUser.customerId, entityType: 'CUSTOMER'};\n      }\n      if (entityType === 'USER') {\n        if (entity.customerId) {\n          entity.authority = 'CUSTOMER_USER';\n        } else {\n          entity.authority = 'TENANT_ADMIN';\n        }\n      }\n    } else {\n      entity = {...vm.entity, ...entityFields};\n    }\n    return entityService.saveEntity(entity);\n  }\n\n  function saveAttributes(entityId) {\n    if (attributeKeys.length || additionalAttributes.length) {\n      let attributes = attributeKeys.length ? vm.entityFormGroup.get('attributes').value : [];\n      let attributesArray = [];\n      for (let key in attributes) {\n        if (attributes[key] !== null) {\n          attributesArray.push({key: key, value: attributes[key]});\n        }\n      }\n      if (additionalAttributes.length) {\n        additionalAttributes.forEach(attribute => {\n          attributesArray.push({key: attribute.key, value: attribute.value});\n        })\n      }\n      if (attributesArray.length > 0) {\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n    function saveTelemetry(entityId) {\n      if (additionalTelemetry.length) {\n        let telemetryArray = [];\n        additionalTelemetry.forEach(telemetry => {\n          telemetryArray.push({key: telemetry.key, value: telemetry.value});\n        })\n        return attributeService.saveEntityTimeseries(entityId, \"LATEST_TELEMETRY\", telemetryArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    }\n\n  function createRelations(entityId) {\n    let singleEntityId;\n    for (const value of Object.values(widgetContext.aliasController.entityAliases)) {\n      if (value.filter.type === 'singleEntity') {\n        singleEntityId = value.filter.singleEntity ?? null;\n      }\n    }\n\n    if (createEntity) {\n      let createRelationsObservables = [];\n      \n      let createRelations = [{\"fromStateEntity\":\"singleEntity\",\"type\":\"WaterTankToLevelSensor\"}];\n      if (createRelations && createRelations.length) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        for (let createRelation of createRelations) {\n          let fromEntityId = null;\n          if (createRelation.fromStateEntity === 'singleEntity' && singleEntityId) {\n            fromEntityId = singleEntityId;\n          } else if (createRelation.fromStateEntity && stateParams[createRelation.fromStateEntity]) {\n            fromEntityId = stateParams[createRelation.fromStateEntity].entityId;\n          } else {\n            fromEntityId = stateParams.entityId;\n          }\n          if (!fromEntityId && createRelation.fromStateEntity === 'currentCustomer') {\n            fromEntityId = {id: currentUser.customerId, entityType: \"CUSTOMER\" };\n          }\n          if (fromEntityId && fromEntityId.id && fromEntityId.entityType) {\n            let relation = {\n              type: createRelation.type,\n              typeGroup: 'COMMON',\n              from: fromEntityId,\n              to: entityId\n            };\n            createRelationsObservables.push(entityRelationService.saveRelation(relation));\n          }\n        }\n      }\n      \n      \n      if (createRelationsObservables.length) {\n        return widgetContext.rxjs.forkJoin(createRelationsObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function addToEntityGroups(entityId) {\n    if (createEntity) {\n      let addToGroupObservables = [];\n      let targetEntityGroups = [\"LevelSensor\"];\n      \n      let entityOwner = \"\";\n      let ownerId;\n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n            stateParams = stateParams[entityOwner];\n        }\n        ownerId = stateParams.entityId;\n      }\n      if (targetEntityGroups && targetEntityGroups.length) {\n        for (let targetEntityGroup of targetEntityGroups) {\n          addToGroupObservables.push(getOrCreateEntityGroupByName(targetEntityGroup, entityId.entityType, ownerId).pipe(\n            widgetContext.rxjs.switchMap((group) => {\n              if (group) {\n                return entityGroupService.addEntityToEntityGroup(group.id.id, entityId.id);\n              } else {\n                return widgetContext.rxjs.of(null);\n              }\n            })\n          ));\n        }\n      }\n      if (addToGroupObservables.length) {\n        return widgetContext.rxjs.forkJoin(addToGroupObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function loadEntity() {\n    entityService.getEntity(entityId.entityType, entityId.id).subscribe(\n      function(entity) {\n        vm.entity = entity;\n        vm.entityFormGroup.get('entityFields').patchValue(entity);\n        if (attributeKeys.length) {\n          attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', attributeKeys).subscribe(\n            function (attributes) {\n              let entityAttributes = {};\n              for (var i = 0; i < attributes.length; i++) {\n                entityAttributes[attributes[i].key] = attributes[i].value;\n              }\n              vm.entityFormGroup.get('attributes').patchValue(entityAttributes);\n            }\n          );\n        }\n      }\n    );\n  }\n\n  function getOrCreateEntityGroupByName(groupName, groupType, ownerId) {\n    var entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n    let findEntyGroup$;\n    if (ownerId) {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByOwnerIdAndPageLink(ownerId.entityType, ownerId.id, groupType, entityGroupsPageLink, {ignoreLoading: true});\n    } else {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType, {ignoreLoading: true});\n    }\n    return findEntyGroup$.pipe(\n      widgetContext.rxjs.switchMap((data) => {\n        if (data.data.length) {\n          const findGroup = data.data.find((group) => group.name === groupName);\n          if (findGroup) {\n            return widgetContext.rxjs.of(findGroup);\n          }\n        }\n        const entityGroup = {\n          name: groupName,\n          type: groupType,\n        }\n        if (ownerId) {\n          entityGroup.ownerId = ownerId;\n        }\n        return entityGroupService.saveEntityGroup(entityGroup, {ignoreLoading: true}).pipe(\n          widgetContext.rxjs.catchError(() => widgetContext.rxjs.of(null))\n        );\n      })\n    );\n  }\n}",
+                  "customHtml" : "<form #entityForm=\"ngForm\" [formGroup]=\"entityFormGroup\"\n      (ngSubmit)=\"save()\" class=\"entity-form\" style=\"width: 600px;\">\n  <mat-toolbar color=\"primary\">\n    <h2>{{ dialogTitle }}</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n    <fieldset formGroupName=\"entityFields\" class=\"tb-form-panel outlined\" [disabled]=\"isLoading$ | async\"><mat-form-field appearance=\"outline\">\n  <mat-label>Sensor Name</mat-label>\n  <input matInput formControlName=\"name\" required=\"required\">\n  @if(entityFormGroup.get(\"entityFields\").get(\"name\").hasError(\"required\")) {\n    <mat-error>Sensor name is required.</mat-error>\n  }\n</mat-form-field>\n</fieldset>\n    \n    \n    \n  </div>\n  <div mat-dialog-actions class=\"flex items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || entityForm.invalid || !entityForm.dirty\">\n      {{ submitTitle }}\n    </button>\n  </div>\n</form>\n"
+                },
+                "color" : "#0000008a",
+                "icon" : "add_location",
+                "label" : "Place Level Sensor"
+              } ]
+            },
+            "datasources" : [ ]
+          },
+          "id" : "c5d2baf3-a846-49b5-b366-fc2777597900",
+          "typeFullFqn" : "system.image_map",
+          "type" : "latest"
+        },
+        "03df7e65-6416-4339-9b42-54fd6a25127a" : {
+          "sizeX" : 1,
+          "sizeY" : 1,
+          "row" : 0,
+          "col" : 23,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Edit Sensor Settings",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "borderRadius" : "8px",
+            "actions" : {
+              "click" : [ {
+                "id" : "fbe5bbe2-21cd-4e23-a6c1-d75adceebee6",
+                "name" : "Edit Level Sensor",
+                "icon" : "edit",
+                "type" : "customPretty",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet entityService = $injector.get(widgetContext.servicesMap.get('entityService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet entityRelationService = $injector.get(widgetContext.servicesMap.get('entityRelationService'));\nlet entityGroupService = $injector.get(widgetContext.servicesMap.get('entityGroupService'));\n\nlet dialogTitle = \"Edit Level Sensor '${entityName}'\";\nlet createEntity = false;\n\nlet attributeKeys = [];\nlet additionalAttributes = [ ];\nlet additionalTelemetry = [ ];\n\nopenEntityDialog();\n\nfunction openEntityDialog() {\n  customDialog.customDialog(htmlTemplate, EntityDialogController).subscribe();\n}\n\nfunction EntityDialogController(instance) {\n  let vm = instance;\n\n  const currentUser = widgetContext.currentUser;\n\n  if (createEntity) {\n    vm.dialogTitle = dialogTitle;\n  } else {\n    vm.dialogTitle = dialogTitle.replaceAll('${entityName}', entityName);\n  }\n\n  vm.submitTitle = createEntity ? 'Create' : 'Save';\n\n  vm.entityFormGroup = vm.fb.group({\n    entityFields: vm.fb.group({\n      name: [null, [vm.validators.required]]\n    }),\n    \n  });\n\n  \n\n  if (attributeKeys.length) {\n    vm.entityFormGroup.addControl('attributes',\n      vm.fb.group({\n        \n      })\n    );\n  }\n\n  vm.save = function() {\n    vm.entityFormGroup.markAsPristine();\n    saveEntity().subscribe(\n      function (entity) {\n        widgetContext.rxjs.forkJoin([\n          saveAttributes(entity.id),\n          saveTelemetry(entity.id),\n          createRelations(entity.id),\n          addToEntityGroups(entity.id)\n        ]).subscribe(\n          function () {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n          }\n        );\n      }\n    );\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  if (!createEntity) {\n    loadEntity();\n  }\n\n  function saveEntity() {\n    const entityFields = vm.entityFormGroup.get('entityFields').value;\n    let entity;\n    if (createEntity) {\n      entity = entityFields;\n      let entityType = null;\n      let entitySubType = null;\n      let entityOwner = null;\n      entity.id = {\n        entityType: entityType\n      };\n      \n      \n      if (entitySubType) {\n        entity.type = entitySubType;\n      }\n      \n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n          stateParams = stateParams[entityOwner];\n        }\n        let ownerId = stateParams.entityId;\n        if (ownerId && ownerId.entityType === 'CUSTOMER') {\n          entity.customerId = ownerId;\n        }\n      }\n      if (!entity.customerId && widgetContext.currentUser.authority === 'CUSTOMER_USER') {\n        entity.customerId = {id: widgetContext.currentUser.customerId, entityType: 'CUSTOMER'};\n      }\n      if (entityType === 'USER') {\n        if (entity.customerId) {\n          entity.authority = 'CUSTOMER_USER';\n        } else {\n          entity.authority = 'TENANT_ADMIN';\n        }\n      }\n    } else {\n      entity = {...vm.entity, ...entityFields};\n    }\n    return entityService.saveEntity(entity);\n  }\n\n  function saveAttributes(entityId) {\n    if (attributeKeys.length || additionalAttributes.length) {\n      let attributes = attributeKeys.length ? vm.entityFormGroup.get('attributes').value : [];\n      let attributesArray = [];\n      for (let key in attributes) {\n        if (attributes[key] !== null) {\n          attributesArray.push({key: key, value: attributes[key]});\n        }\n      }\n      if (additionalAttributes.length) {\n        additionalAttributes.forEach(attribute => {\n          attributesArray.push({key: attribute.key, value: attribute.value});\n        })\n      }\n      if (attributesArray.length > 0) {\n        return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n    function saveTelemetry(entityId) {\n      if (additionalTelemetry.length) {\n        let telemetryArray = [];\n        additionalTelemetry.forEach(telemetry => {\n          telemetryArray.push({key: telemetry.key, value: telemetry.value});\n        })\n        return attributeService.saveEntityTimeseries(entityId, \"LATEST_TELEMETRY\", telemetryArray);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    }\n\n  function createRelations(entityId) {\n    let singleEntityId;\n    for (const value of Object.values(widgetContext.aliasController.entityAliases)) {\n      if (value.filter.type === 'singleEntity') {\n        singleEntityId = value.filter.singleEntity ?? null;\n      }\n    }\n\n    if (createEntity) {\n      let createRelationsObservables = [];\n      \n      \n      if (createRelationsObservables.length) {\n        return widgetContext.rxjs.forkJoin(createRelationsObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function addToEntityGroups(entityId) {\n    if (createEntity) {\n      let addToGroupObservables = [];\n      let targetEntityGroups = null;\n      \n      let entityOwner = null;\n      let ownerId;\n      if (entityOwner) {\n        let stateParams = widgetContext.stateController.getStateParams();\n        if (stateParams[entityOwner]) {\n            stateParams = stateParams[entityOwner];\n        }\n        ownerId = stateParams.entityId;\n      }\n      if (targetEntityGroups && targetEntityGroups.length) {\n        for (let targetEntityGroup of targetEntityGroups) {\n          addToGroupObservables.push(getOrCreateEntityGroupByName(targetEntityGroup, entityId.entityType, ownerId).pipe(\n            widgetContext.rxjs.switchMap((group) => {\n              if (group) {\n                return entityGroupService.addEntityToEntityGroup(group.id.id, entityId.id);\n              } else {\n                return widgetContext.rxjs.of(null);\n              }\n            })\n          ));\n        }\n      }\n      if (addToGroupObservables.length) {\n        return widgetContext.rxjs.forkJoin(addToGroupObservables);\n      } else {\n        return widgetContext.rxjs.of([]);\n      }\n    } else {\n      return widgetContext.rxjs.of([]);\n    }\n  }\n\n  function loadEntity() {\n    entityService.getEntity(entityId.entityType, entityId.id).subscribe(\n      function(entity) {\n        vm.entity = entity;\n        vm.entityFormGroup.get('entityFields').patchValue(entity);\n        if (attributeKeys.length) {\n          attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE', attributeKeys).subscribe(\n            function (attributes) {\n              let entityAttributes = {};\n              for (var i = 0; i < attributes.length; i++) {\n                entityAttributes[attributes[i].key] = attributes[i].value;\n              }\n              vm.entityFormGroup.get('attributes').patchValue(entityAttributes);\n            }\n          );\n        }\n      }\n    );\n  }\n\n  function getOrCreateEntityGroupByName(groupName, groupType, ownerId) {\n    var entityGroupsPageLink = widgetContext.pageLink(10, 0, groupName);\n    let findEntyGroup$;\n    if (ownerId) {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByOwnerIdAndPageLink(ownerId.entityType, ownerId.id, groupType, entityGroupsPageLink, {ignoreLoading: true});\n    } else {\n      findEntyGroup$ = entityGroupService.getEntityGroupsByPageLink(entityGroupsPageLink, groupType, {ignoreLoading: true});\n    }\n    return findEntyGroup$.pipe(\n      widgetContext.rxjs.switchMap((data) => {\n        if (data.data.length) {\n          const findGroup = data.data.find((group) => group.name === groupName);\n          if (findGroup) {\n            return widgetContext.rxjs.of(findGroup);\n          }\n        }\n        const entityGroup = {\n          name: groupName,\n          type: groupType,\n        }\n        if (ownerId) {\n          entityGroup.ownerId = ownerId;\n        }\n        return entityGroupService.saveEntityGroup(entityGroup, {ignoreLoading: true}).pipe(\n          widgetContext.rxjs.catchError(() => widgetContext.rxjs.of(null))\n        );\n      })\n    );\n  }\n}",
+                "customHtml" : "<form #entityForm=\"ngForm\" [formGroup]=\"entityFormGroup\"\n      (ngSubmit)=\"save()\" class=\"entity-form\" style=\"width: 600px;\">\n  <mat-toolbar color=\"primary\">\n    <h2>{{ dialogTitle }}</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n    <fieldset formGroupName=\"entityFields\" class=\"tb-form-panel outlined\" [disabled]=\"isLoading$ | async\"><mat-form-field appearance=\"outline\">\n  <mat-label>Sensor Name</mat-label>\n  <input matInput formControlName=\"name\" required=\"required\">\n  @if(entityFormGroup.get(\"entityFields\").get(\"name\").hasError(\"required\")) {\n    <mat-error>Sensor name is required.</mat-error>\n  }\n</mat-form-field>\n</fieldset>\n    \n    \n    \n  </div>\n  <div mat-dialog-actions class=\"flex items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || entityForm.invalid || !entityForm.dirty\">\n      {{ submitTitle }}\n    </button>\n  </div>\n</form>\n"
+              } ]
+            },
+            "settings" : {
+              "appearance" : {
+                "type" : "filled",
+                "showLabel" : false,
+                "label" : "Edit Sensor Settings",
+                "showIcon" : true,
+                "icon" : "settings",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "customStyle" : { }
+              },
+              "activatedState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ ],
+              "entityAliasId" : "ffc3bbd5-a1dc-4afb-83c9-d98f4e321f36"
+            } ]
+          },
+          "id" : "03df7e65-6416-4339-9b42-54fd6a25127a",
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest"
+        },
+        "c8b529d2-3a4c-4d11-a476-060be888c7e4" : {
+          "sizeX" : 19,
+          "sizeY" : 1,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Motor Header",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "backgroundColor" : "#FFFFFF00",
+            "padding" : "0px",
+            "borderRadius" : "8px",
+            "actions" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "**${Name}**",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-markdown-view p {\n    display: flex;\n    margin: 0;\n    align-items: center;\n    height: 100%;\n    font-size: 28px;\n    font-weight: 500;\n    color: #212121;\n    padding: 0;\n}\n"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "name",
+                "label" : "Name",
+                "type" : "entityField",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "da98600d-c0b8-4aba-aeaf-352c87b8562c"
+            } ]
+          },
+          "id" : "c8b529d2-3a4c-4d11-a476-060be888c7e4",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
+        },
+        "5116312b-c9bb-496a-84fb-f6386730a354" : {
+          "sizeX" : 23,
+          "sizeY" : 1,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Tank Header",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "backgroundColor" : "#FFFFFF00",
+            "padding" : "0px",
+            "borderRadius" : "8px",
+            "actions" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "**${Name}**",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-markdown-view p {\n    display: flex;\n    margin: 0;\n    align-items: center;\n    height: 100%;\n    font-size: 28px;\n    font-weight: 500;\n    color: #212121;\n    padding: 0;\n}\n"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "name",
+                "label" : "Name",
+                "type" : "entityField",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "315dacb2-0826-434a-b84e-84053c8eb60e"
+            } ]
+          },
+          "id" : "5116312b-c9bb-496a-84fb-f6386730a354",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
+        },
+        "8b17ada2-9154-40e3-b683-a3a8eba6332f" : {
+          "sizeX" : 12,
+          "sizeY" : 7,
+          "row" : 5,
+          "col" : 12,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Alarms",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "4px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "alarmsTitle" : "Alarms",
+              "enableSelection" : true,
+              "enableSearch" : true
+            },
+            "alarmSource" : {
+              "type" : "entity",
+              "name" : "alarms",
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "label" : "Created Time",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "originator",
+                "label" : "Originator",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "type",
+                "label" : "Type",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "severity",
+                "label" : "Severity",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "status",
+                "label" : "Status",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "ffc3bbd5-a1dc-4afb-83c9-d98f4e321f36"
+            },
+            "alarmFilterConfig" : {
+              "typeList" : [ ],
+              "statusList" : [ "ACTIVE" ],
+              "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
+              "searchPropagatedAlarms" : true
+            },
+            "datasources" : [ ]
+          },
+          "id" : "8b17ada2-9154-40e3-b683-a3a8eba6332f",
+          "typeFullFqn" : "system.alarm_widgets.alarms_table",
+          "type" : "alarm"
+        },
+        "2e126473-a074-4f37-9a3f-f8c120f4c864" : {
+          "sizeX" : 12,
+          "sizeY" : 2,
+          "row" : 1,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Water Level",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
+            "units" : "mm",
+            "decimals" : 1,
+            "actions" : { },
+            "settings" : {
+              "layout" : "horizontal",
+              "showLabel" : true,
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "showIcon" : true,
+              "icon" : "water_drop",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              },
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "valueFont" : {
+                "size" : 30
+              },
+              "labelFont" : {
+                "size" : 20
+              },
+              "showDate" : false,
+              "autoScale" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "waterLevel",
+                "label" : "Water Level",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "ffc3bbd5-a1dc-4afb-83c9-d98f4e321f36"
+            } ]
+          },
+          "id" : "2e126473-a074-4f37-9a3f-f8c120f4c864",
+          "typeFullFqn" : "system.cards.horizontal_value_card",
+          "type" : "latest"
+        }
+      },
+      "states" : {
+        "root" : {
+          "name" : "Water Tank SCADA",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "b001b3cc-2daf-4bb2-b061-44d49a448aaf" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 0,
+                  "row" : 9
+                },
+                "669c702e-755f-4728-9e0c-cf1ce22f47bd" : {
+                  "sizeX" : 1,
+                  "sizeY" : 1,
+                  "col" : 23,
+                  "row" : 0
+                },
+                "e1e2501d-58ad-44b4-8431-71be85e9a243" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 12,
+                  "row" : 9
+                },
+                "e740e833-a5d9-40fe-abfe-c98e2932b804" : {
+                  "sizeX" : 6,
+                  "sizeY" : 4,
+                  "col" : 18,
+                  "row" : 2
+                },
+                "5116312b-c9bb-496a-84fb-f6386730a354" : {
+                  "sizeX" : 23,
+                  "sizeY" : 1,
+                  "col" : 0,
+                  "row" : 0
+                },
+                "38206a79-fc67-4826-acc8-075265090114" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 0,
+                  "row" : 6
+                },
+                "a597c515-d3c7-4a93-9af5-a1b8614c54e8" : {
+                  "sizeX" : 24,
+                  "sizeY" : 1,
+                  "col" : 0,
+                  "row" : 1
+                },
+                "a6269e93-6028-4d35-a398-c4a45eeba196" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 12,
+                  "row" : 6
+                },
+                "c5d2baf3-a846-49b5-b366-fc2777597900" : {
+                  "sizeX" : 18,
+                  "sizeY" : 4,
+                  "col" : 0,
+                  "row" : 2
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#EEEEEE",
+                "columns" : "24",
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "marginBetweenWidgets" : "10",
+                "applyMarginToSides" : "true",
+                "autoFillHeight" : "true",
+                "mobileAutoFillHeight" : "false",
+                "mobileRowHeight" : "70"
+              }
+            }
+          }
+        },
+        "level-sensor-details" : {
+          "name" : "Level Sensor Details",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "0e0094cd-bdcb-4c79-a036-26195e444cb6" : {
+                  "sizeX" : 6,
+                  "sizeY" : 2,
+                  "col" : 6,
+                  "row" : 3
+                },
+                "0e9a0537-9d6f-4d97-865e-653d74ec059f" : {
+                  "sizeX" : 6,
+                  "sizeY" : 2,
+                  "col" : 0,
+                  "row" : 3
+                },
+                "59c64f4d-9598-4954-acb6-eecad1b7eb7d" : {
+                  "sizeX" : 19,
+                  "sizeY" : 1,
+                  "col" : 0,
+                  "row" : 0
+                },
+                "8b17ada2-9154-40e3-b683-a3a8eba6332f" : {
+                  "sizeX" : 12,
+                  "sizeY" : 7,
+                  "col" : 12,
+                  "row" : 5
+                },
+                "2e126473-a074-4f37-9a3f-f8c120f4c864" : {
+                  "sizeX" : 12,
+                  "sizeY" : 2,
+                  "col" : 0,
+                  "row" : 1
+                },
+                "cca69008-fb85-494b-a5c0-3efbc261cf6d" : {
+                  "sizeX" : 12,
+                  "sizeY" : 4,
+                  "col" : 12,
+                  "row" : 1
+                },
+                "6b1c99cf-9fbd-4158-897c-8c07f4b6b331" : {
+                  "sizeX" : 12,
+                  "sizeY" : 7,
+                  "col" : 0,
+                  "row" : 5
+                },
+                "8c2e1a2b-7a75-40fd-9a06-e15fb162990d" : {
+                  "sizeX" : 4,
+                  "sizeY" : 1,
+                  "col" : 19,
+                  "row" : 0
+                },
+                "03df7e65-6416-4339-9b42-54fd6a25127a" : {
+                  "sizeX" : 1,
+                  "sizeY" : 1,
+                  "col" : 23,
+                  "row" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#EEEEEE",
+                "columns" : "24",
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "marginBetweenWidgets" : "10",
+                "applyMarginToSides" : "true",
+                "autoFillHeight" : "true",
+                "mobileAutoFillHeight" : "false",
+                "mobileRowHeight" : "70"
+              }
+            }
+          }
+        },
+        "pump-motor-details" : {
+          "name" : "Pump Motor Details",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "5917e515-3394-4719-b58f-e3ed3f011adc" : {
+                  "sizeX" : 12,
+                  "sizeY" : 4,
+                  "col" : 0,
+                  "row" : 2
+                },
+                "9ebc2a92-abad-4581-bda0-b71350ace35d" : {
+                  "sizeX" : 12,
+                  "sizeY" : 4,
+                  "col" : 12,
+                  "row" : 2
+                },
+                "1947d2b7-2d73-4add-a871-1d83b0e2fbfc" : {
+                  "sizeX" : 8,
+                  "sizeY" : 1,
+                  "col" : 8,
+                  "row" : 1
+                },
+                "b8be4157-bce8-47b2-9386-f19863bf2d0a" : {
+                  "sizeX" : 8,
+                  "sizeY" : 1,
+                  "col" : 0,
+                  "row" : 1
+                },
+                "c8b529d2-3a4c-4d11-a476-060be888c7e4" : {
+                  "sizeX" : 19,
+                  "sizeY" : 1,
+                  "col" : 0,
+                  "row" : 0
+                },
+                "b0cdc816-a865-4bda-bc35-99e304fe9e2a" : {
+                  "sizeX" : 8,
+                  "sizeY" : 1,
+                  "col" : 16,
+                  "row" : 1
+                },
+                "d409628f-796d-4112-ac05-88bb9114d25f" : {
+                  "sizeX" : 1,
+                  "sizeY" : 1,
+                  "col" : 23,
+                  "row" : 0
+                },
+                "a0fd41c1-dca7-4af0-9b93-acb2410bc4a5" : {
+                  "sizeX" : 24,
+                  "sizeY" : 6,
+                  "col" : 0,
+                  "row" : 6
+                },
+                "4f966c9d-0484-4f25-b355-d6902bd2a98a" : {
+                  "sizeX" : 4,
+                  "sizeY" : 1,
+                  "col" : 19,
+                  "row" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#EEEEEE",
+                "columns" : "24",
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "marginBetweenWidgets" : "10",
+                "applyMarginToSides" : "true",
+                "autoFillHeight" : "true",
+                "mobileAutoFillHeight" : "false",
+                "mobileRowHeight" : "70"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "315dacb2-0826-434a-b84e-84053c8eb60e" : {
+          "id" : "315dacb2-0826-434a-b84e-84053c8eb60e",
+          "alias" : "Selected Water Tank",
+          "filter" : {
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "ASSET",
+              "id" : "b6370320-7135-11f1-8797-0936777895d2"
+            },
+            "type" : "singleEntity"
+          }
+        },
+        "ffc3bbd5-a1dc-4afb-83c9-d98f4e321f36" : {
+          "id" : "ffc3bbd5-a1dc-4afb-83c9-d98f4e321f36",
+          "alias" : "Selected Level Sensor",
+          "filter" : {
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "selectedLevelSensor",
+            "defaultStateEntity" : null,
+            "type" : "stateEntity"
+          }
+        },
+        "8ff02eee-acf5-47d3-900e-184e290278a5" : {
+          "id" : "8ff02eee-acf5-47d3-900e-184e290278a5",
+          "alias" : "Pump Motors",
+          "filter" : {
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "singleAsset",
+            "defaultStateEntity" : {
+              "entityType" : "ASSET",
+              "id" : "b6370320-7135-11f1-8797-0936777895d2"
+            },
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "WaterTankToPumpMotor",
+            "deviceTypes" : [ "PumpMotor" ],
+            "type" : "deviceSearchQuery"
+          }
+        },
+        "8662c88f-32f1-4991-b440-d9d58068e576" : {
+          "id" : "8662c88f-32f1-4991-b440-d9d58068e576",
+          "alias" : "Level Sensors",
+          "filter" : {
+            "resolveMultiple" : true,
+            "rootStateEntity" : true,
+            "stateEntityParamName" : "singleAsset",
+            "defaultStateEntity" : {
+              "entityType" : "ASSET",
+              "id" : "b6370320-7135-11f1-8797-0936777895d2"
+            },
+            "rootEntity" : null,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : "WaterTankToLevelSensor",
+            "deviceTypes" : [ "LevelSensor" ],
+            "type" : "deviceSearchQuery"
+          }
+        },
+        "da98600d-c0b8-4aba-aeaf-352c87b8562c" : {
+          "id" : "da98600d-c0b8-4aba-aeaf-352c87b8562c",
+          "alias" : "Selected Pump Motor",
+          "filter" : {
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "selectedPumpMotor",
+            "defaultStateEntity" : null,
+            "type" : "stateEntity"
+          }
+        }
+      },
+      "additionalInfo" : {
+        "description" : "Tenant-level SCADA dashboard for monitoring tank levels, pump performance, and equipment status with integrated alarm management and spatial visualization.",
+        "aiGenerated" : true
+      }
+    },
+    "resources" : null,
+    "externalId" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
