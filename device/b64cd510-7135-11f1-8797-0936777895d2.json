@@ -1,0 +1,46 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "aiGenerated" : true
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT",
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "b646ba90-7135-11f1-8797-0936777895d2"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "b64cd510-7135-11f1-8797-0936777895d2"
+    },
+    "label" : "Pump 01",
+    "name" : "Pump Motor 01",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "PumpMotor"
+  },
+  "credentials" : {
+    "credentialsId" : "889aUcGWsYKX6cv16Cnb",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
