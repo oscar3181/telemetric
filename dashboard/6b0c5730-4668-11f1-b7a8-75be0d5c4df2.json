@@ -92,8 +92,8 @@
                       "persistentPollingInterval" : 1000
                     },
                     "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
+                      "scope" : null,
+                      "key" : "state"
                     },
                     "getTimeSeries" : {
                       "key" : "conductividad"
@@ -104,7 +104,6 @@
                     },
                     "dataToValue" : {
                       "type" : "NONE",
-                      "compareToValue" : true,
                       "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
                     }
                   },
