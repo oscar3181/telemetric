@@ -7,8 +7,8 @@
     },
     "customerId" : null,
     "ownerId" : null,
-    "title" : "New Dashboard",
-    "name" : "New Dashboard",
+    "title" : "Control de Depósito - Hotel Only You",
+    "name" : "Control de Depósito - Hotel Only You",
     "image" : null,
     "assignedCustomers" : null,
     "mobileHide" : false,
@@ -41,11 +41,11 @@
         "selectedTab" : 0,
         "realtime" : {
           "realtimeType" : 0,
-          "timewindowMs" : 3600000
+          "timewindowMs" : 86400000
         },
         "aggregation" : {
           "type" : "NONE",
-          "limit" : 50000
+          "limit" : 25000
         }
       },
       "settings" : {
