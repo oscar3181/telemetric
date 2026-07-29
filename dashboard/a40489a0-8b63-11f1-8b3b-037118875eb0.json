@@ -29,14 +29,788 @@
         }
       },
       "filters" : { },
-      "widgets" : { },
+      "widgets" : {
+        "f849e62c-f779-4f5e-b152-8a2bf4e05d9a" : {
+          "id" : "f849e62c-f779-4f5e-b152-8a2bf4e05d9a",
+          "type" : "latest",
+          "typeFullFqn" : "system.action_button",
+          "config" : {
+            "title" : "Navegación",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "padding" : "0px",
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+              "dataKeys" : [ ]
+            } ],
+            "enableFullscreen" : false,
+            "settings" : {
+              "appearance" : {
+                "type" : "filled",
+                "autoScale" : true,
+                "showLabel" : true,
+                "label" : "Ver Gráficas y Tiempo Real",
+                "showIcon" : true,
+                "icon" : "show_chart",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              },
+              "activatedState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              }
+            },
+            "actions" : {
+              "click" : [ {
+                "name" : "Navigate",
+                "icon" : "subdirectory_arrow_right",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "gr_ficas_y_tiempo_real",
+                "setEntityId" : false,
+                "openRightLayout" : false,
+                "stateEntityParamName" : null,
+                "id" : "17ef288c-1b08-40e4-b8f0-c632311fae7e"
+              } ]
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 6,
+          "sizeY" : 1
+        },
+        "1a3af775-88c8-4637-bf50-14011d03ebee" : {
+          "id" : "1a3af775-88c8-4637-bf50-14011d03ebee",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "config" : {
+            "title" : "Esquema SCADA - Depósito y Recirculación",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+              "dataKeys" : [ {
+                "name" : "cloro",
+                "type" : "timeseries",
+                "label" : "cloro",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "ph",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "temperatura",
+                "type" : "timeseries",
+                "label" : "temperatura",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "redox",
+                "type" : "timeseries",
+                "label" : "redox",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "turbidez",
+                "type" : "timeseries",
+                "label" : "turbidez",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"scada-container\">\n  <div class=\"scada-visual\">\n    <svg viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\">\n      <!-- Definitions and Styles -->\n      <style>\n        @keyframes flow {\n          to { stroke-dashoffset: -20; }\n        }\n        @keyframes spin {\n          from { transform: rotate(0deg); }\n          to { transform: rotate(360deg); }\n        }\n        .pipe-bg {\n          stroke: #1e1e2f;\n          stroke-width: 14;\n          fill: none;\n          stroke-linecap: round;\n          stroke-linejoin: round;\n        }\n        .pipe-water {\n          stroke: #00bcd4;\n          stroke-width: 8;\n          fill: none;\n          stroke-linecap: round;\n          stroke-linejoin: round;\n          stroke-dasharray: 10 15;\n          animation: flow 1.5s linear infinite;\n        }\n        .pump-propeller {\n          transform-origin: 130px 330px;\n          animation: spin 1s linear infinite;\n          stroke: #ff9800;\n          stroke-width: 4;\n        }\n        .tank-border {\n          fill: none;\n          stroke: #888;\n          stroke-width: 6;\n        }\n        .tank-water {\n          fill: #0288d1;\n          opacity: 0.7;\n        }\n      </style>\n      \n      <!-- Pipes Background -->\n      <path class=\"pipe-bg\" d=\"M 130 240 L 130 330 L 280 330 L 280 80 L 180 80\" />\n      \n      <!-- Water Flow in Pipes -->\n      <path class=\"pipe-water\" d=\"M 130 240 L 130 330 L 280 330 L 280 80 L 180 80\" />\n      \n      <!-- Water Tank -->\n      <rect x=\"60\" y=\"50\" width=\"140\" height=\"200\" rx=\"10\" ry=\"10\" fill=\"#1b1b24\" stroke=\"#555\" stroke-width=\"2\" />\n      <!-- Water Level Inside -->\n      <rect class=\"tank-water\" x=\"63\" y=\"100\" width=\"134\" height=\"147\" rx=\"5\" ry=\"5\" />\n      \n      <!-- Tank Outline -->\n      <rect class=\"tank-border\" x=\"60\" y=\"50\" width=\"140\" height=\"200\" rx=\"10\" ry=\"10\" />\n      \n      <!-- Pump Body -->\n      <circle cx=\"130\" cy=\"330\" r=\"25\" fill=\"#333\" stroke=\"#ff9800\" stroke-width=\"3\" />\n      <!-- Pump propeller -->\n      <line class=\"pump-propeller\" x1=\"130\" y1=\"315\" x2=\"130\" y2=\"345\" />\n      <line class=\"pump-propeller\" x1=\"115\" y1=\"330\" x2=\"145\" y2=\"330\" />\n      <circle cx=\"130\" cy=\"330\" r=\"5\" fill=\"#fff\" />\n      \n      <!-- Labels inside SVG -->\n      <text x=\"130\" y=\"160\" fill=\"#fff\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\">DEPÓSITO</text>\n      <text x=\"130\" y=\"380\" fill=\"#ff9800\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">BOMBA RECIRCULACIÓN</text>\n    </svg>\n  </div>\n  \n  <div class=\"scada-panel\">\n    <div class=\"panel-header\">PANEL DE CONTROL</div>\n    <div class=\"panel-grid\">\n      <div class=\"panel-card green\">\n        <div class=\"card-label\">Cloro</div>\n        <div class=\"card-value\">${cloro:2} <span class=\"card-unit\">mg/L</span></div>\n      </div>\n      <div class=\"panel-card blue\">\n        <div class=\"card-label\">pH</div>\n        <div class=\"card-value\">${ph:2}</div>\n      </div>\n      <div class=\"panel-card orange\">\n        <div class=\"card-label\">Temperatura</div>\n        <div class=\"card-value\">${temperatura:1} <span class=\"card-unit\">°C</span></div>\n      </div>\n      <div class=\"panel-card cyan\">\n        <div class=\"card-label\">Redox</div>\n        <div class=\"card-value\">${redox:0} <span class=\"card-unit\">mV</span></div>\n      </div>\n      <div class=\"panel-card purple\">\n        <div class=\"card-label\">Turbidez</div>\n        <div class=\"card-value\">${turbidez:2} <span class=\"card-unit\">NTU</span></div>\n      </div>\n      <div class=\"panel-card teal\">\n        <div class=\"card-label\">Conductividad (TDS)</div>\n        <div class=\"card-value\">${tds:2} <span class=\"card-unit\">mS/cm</span></div>\n      </div>\n    </div>\n  </div>\n</div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ".scada-container {\n  display: flex;\n  flex-direction: row;\n  background-color: #111118;\n  border-radius: 8px;\n  padding: 15px;\n  gap: 20px;\n  height: 100%;\n  color: #fff;\n  font-family: 'Roboto', sans-serif;\n  box-sizing: border-box;\n}\n.scada-visual {\n  flex: 1.2;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #181824;\n  border-radius: 8px;\n  border: 1px solid #2e2e42;\n  padding: 10px;\n}\n.scada-panel {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  gap: 15px;\n  background-color: #181824;\n  border-radius: 8px;\n  border: 1px solid #2e2e42;\n  padding: 20px;\n  justify-content: center;\n}\n.panel-header {\n  font-size: 18px;\n  font-weight: bold;\n  letter-spacing: 1px;\n  color: #ff9800;\n  text-align: center;\n  border-bottom: 2px solid #2e2e42;\n  padding-bottom: 10px;\n}\n.panel-grid {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 12px;\n}\n.panel-card {\n  background-color: #212130;\n  border-radius: 6px;\n  padding: 12px;\n  border-left: 4px solid #fff;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.panel-card.green { border-left-color: #4caf50; }\n.panel-card.blue { border-left-color: #2196f3; }\n.panel-card.orange { border-left-color: #ff9800; }\n.panel-card.cyan { border-left-color: #00bcd4; }\n.panel-card.purple { border-left-color: #9c27b0; }\n.panel-card.teal { border-left-color: #009688; }\n\n.card-label {\n  font-size: 11px;\n  text-transform: uppercase;\n  color: #8f8fbc;\n  margin-bottom: 4px;\n  font-weight: 500;\n}\n.card-value {\n  font-size: 20px;\n  font-weight: bold;\n}\n.card-unit {\n  font-size: 12px;\n  color: #8f8fbc;\n  font-weight: normal;\n}"
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 24,
+          "sizeY" : 12
+        },
+        "f69ed37a-79b7-4c19-a5d0-577cc1fa330b" : {
+          "id" : "f69ed37a-79b7-4c19-a5d0-577cc1fa330b",
+          "type" : "latest",
+          "typeFullFqn" : "system.action_button",
+          "config" : {
+            "title" : "Navegación",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "padding" : "0px",
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+              "dataKeys" : [ ]
+            } ],
+            "enableFullscreen" : false,
+            "settings" : {
+              "appearance" : {
+                "type" : "filled",
+                "autoScale" : true,
+                "showLabel" : true,
+                "label" : "Ir a Vista SCADA",
+                "showIcon" : true,
+                "icon" : "dashboard",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              },
+              "activatedState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              },
+              "disabledState" : {
+                "defaultValue" : false,
+                "action" : "DO_NOTHING",
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true
+                }
+              }
+            },
+            "actions" : {
+              "click" : [ {
+                "name" : "Navigate",
+                "icon" : "subdirectory_arrow_right",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "default",
+                "setEntityId" : false,
+                "openRightLayout" : false,
+                "stateEntityParamName" : null,
+                "id" : "acaedd33-62c0-40b9-8a16-ef85e5ece0f6"
+              } ]
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 6,
+          "sizeY" : 1
+        },
+        "ce5389d9-da1f-41a4-81e7-7241a8c880e2" : {
+          "id" : "ce5389d9-da1f-41a4-81e7-7241a8c880e2",
+          "type" : "latest",
+          "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
+          "config" : {
+            "title" : "Cloro Real",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+              "dataKeys" : [ {
+                "name" : "cloro",
+                "type" : "timeseries",
+                "label" : "cloro",
+                "color" : "#000000DE",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "units" : "mg/L",
+            "decimals" : 2,
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 5,
+              "gaugeType" : "donut",
+              "showTitle" : true,
+              "title" : "Cloro Real",
+              "titleFont" : {
+                "color" : "#000000DE"
+              },
+              "labelFont" : { },
+              "valueFont" : { },
+              "minMaxFont" : { },
+              "showMinMax" : false,
+              "showValue" : true,
+              "levelColors" : [ ]
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 4,
+          "sizeY" : 3
+        },
+        "9025be5f-1022-4c3e-bdcb-3eacbee40467" : {
+          "id" : "9025be5f-1022-4c3e-bdcb-3eacbee40467",
+          "type" : "latest",
+          "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
+          "config" : {
+            "title" : "pH Real",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+              "dataKeys" : [ {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "ph",
+                "color" : "#000000DE",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "decimals" : 2,
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 14,
+              "gaugeType" : "donut",
+              "showTitle" : true,
+              "title" : "pH Real",
+              "titleFont" : {
+                "color" : "#000000DE"
+              },
+              "labelFont" : { },
+              "valueFont" : { },
+              "minMaxFont" : { },
+              "showMinMax" : false,
+              "showValue" : true,
+              "levelColors" : [ ]
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 4,
+          "sizeY" : 3
+        },
+        "06766b85-d055-489c-ab4d-3c3b6d251ece" : {
+          "id" : "06766b85-d055-489c-ab4d-3c3b6d251ece",
+          "type" : "latest",
+          "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
+          "config" : {
+            "title" : "Temperatura Real",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+              "dataKeys" : [ {
+                "name" : "temperatura",
+                "type" : "timeseries",
+                "label" : "temperatura",
+                "color" : "#000000DE",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "units" : "°C",
+            "decimals" : 1,
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 60,
+              "gaugeType" : "donut",
+              "showTitle" : true,
+              "title" : "Temperatura Real",
+              "titleFont" : {
+                "color" : "#000000DE"
+              },
+              "labelFont" : { },
+              "valueFont" : { },
+              "minMaxFont" : { },
+              "showMinMax" : false,
+              "showValue" : true,
+              "levelColors" : [ ]
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 4,
+          "sizeY" : 3
+        },
+        "ad19feb9-9f1d-4d85-88a3-6e83921bf3d6" : {
+          "id" : "ad19feb9-9f1d-4d85-88a3-6e83921bf3d6",
+          "type" : "latest",
+          "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
+          "config" : {
+            "title" : "Redox Real",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+              "dataKeys" : [ {
+                "name" : "redox",
+                "type" : "timeseries",
+                "label" : "redox",
+                "color" : "#000000DE",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "units" : "mV",
+            "decimals" : 0,
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 1000,
+              "gaugeType" : "donut",
+              "showTitle" : true,
+              "title" : "Redox Real",
+              "titleFont" : {
+                "color" : "#000000DE"
+              },
+              "labelFont" : { },
+              "valueFont" : { },
+              "minMaxFont" : { },
+              "showMinMax" : false,
+              "showValue" : true,
+              "levelColors" : [ ]
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 4,
+          "sizeY" : 3
+        },
+        "b338da72-3d2b-45b3-af61-49af22f91d08" : {
+          "id" : "b338da72-3d2b-45b3-af61-49af22f91d08",
+          "type" : "latest",
+          "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
+          "config" : {
+            "title" : "Turbidez Real",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+              "dataKeys" : [ {
+                "name" : "turbidez",
+                "type" : "timeseries",
+                "label" : "turbidez",
+                "color" : "#000000DE",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "units" : "NTU",
+            "decimals" : 2,
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 10,
+              "gaugeType" : "donut",
+              "showTitle" : true,
+              "title" : "Turbidez Real",
+              "titleFont" : {
+                "color" : "#000000DE"
+              },
+              "labelFont" : { },
+              "valueFont" : { },
+              "minMaxFont" : { },
+              "showMinMax" : false,
+              "showValue" : true,
+              "levelColors" : [ ]
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 4,
+          "sizeY" : 3
+        },
+        "fb8cac78-a713-4bdd-aed3-6f6e3b18cfa5" : {
+          "id" : "fb8cac78-a713-4bdd-aed3-6f6e3b18cfa5",
+          "type" : "latest",
+          "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
+          "config" : {
+            "title" : "Conductividad Real",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+              "dataKeys" : [ {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#000000DE",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "units" : "mS/cm",
+            "decimals" : 2,
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 5,
+              "gaugeType" : "donut",
+              "showTitle" : true,
+              "title" : "Conductividad Real",
+              "titleFont" : {
+                "color" : "#000000DE"
+              },
+              "labelFont" : { },
+              "valueFont" : { },
+              "minMaxFont" : { },
+              "showMinMax" : false,
+              "showValue" : true,
+              "levelColors" : [ ]
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 4,
+          "sizeY" : 3
+        },
+        "f3745495-4077-4980-83e9-38ca6bbd1371" : {
+          "id" : "f3745495-4077-4980-83e9-38ca6bbd1371",
+          "type" : "timeseries",
+          "typeFullFqn" : "system.time_series_chart",
+          "config" : {
+            "title" : "Histórico de Parámetros",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+              "dataKeys" : [ {
+                "name" : "cloro",
+                "type" : "timeseries",
+                "label" : "Cloro",
+                "color" : "#4caf50",
+                "settings" : {
+                  "yAxisId" : "default"
+                },
+                "units" : "mg/L",
+                "decimals" : 2
+              }, {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "pH",
+                "color" : "#2196f3",
+                "settings" : {
+                  "yAxisId" : "phAxis"
+                },
+                "decimals" : 2
+              }, {
+                "name" : "temperatura",
+                "type" : "timeseries",
+                "label" : "Temperatura",
+                "color" : "#ff9800",
+                "settings" : {
+                  "yAxisId" : "tempAxis"
+                },
+                "units" : "°C",
+                "decimals" : 1
+              }, {
+                "name" : "redox",
+                "type" : "timeseries",
+                "label" : "Redox",
+                "color" : "#00bcd4",
+                "settings" : {
+                  "yAxisId" : "redoxAxis"
+                },
+                "units" : "mV",
+                "decimals" : 0
+              }, {
+                "name" : "turbidez",
+                "type" : "timeseries",
+                "label" : "Turbidez",
+                "color" : "#9c27b0",
+                "settings" : {
+                  "yAxisId" : "turbAxis"
+                },
+                "units" : "NTU",
+                "decimals" : 2
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "Conductividad (TDS)",
+                "color" : "#009688",
+                "settings" : {
+                  "yAxisId" : "tdsAxis"
+                },
+                "units" : "mS/cm",
+                "decimals" : 2
+              } ]
+            } ],
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 86400000,
+                "interval" : 300000
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "top",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "yAxes" : {
+                "default" : {
+                  "id" : "default",
+                  "order" : 0,
+                  "position" : "left",
+                  "show" : true,
+                  "label" : "Cloro (mg/L)",
+                  "units" : "mg/L",
+                  "decimals" : 2
+                },
+                "phAxis" : {
+                  "id" : "phAxis",
+                  "order" : 1,
+                  "position" : "right",
+                  "show" : true,
+                  "label" : "pH",
+                  "decimals" : 2
+                },
+                "tempAxis" : {
+                  "id" : "tempAxis",
+                  "order" : 2,
+                  "position" : "left",
+                  "show" : true,
+                  "label" : "Temp (°C)",
+                  "units" : "°C",
+                  "decimals" : 1
+                },
+                "redoxAxis" : {
+                  "id" : "redoxAxis",
+                  "order" : 3,
+                  "position" : "right",
+                  "show" : true,
+                  "label" : "Redox (mV)",
+                  "units" : "mV",
+                  "decimals" : 0
+                },
+                "turbAxis" : {
+                  "id" : "turbAxis",
+                  "order" : 4,
+                  "position" : "left",
+                  "show" : true,
+                  "label" : "Turbidez (NTU)",
+                  "units" : "NTU",
+                  "decimals" : 2
+                },
+                "tdsAxis" : {
+                  "id" : "tdsAxis",
+                  "order" : 5,
+                  "position" : "right",
+                  "show" : true,
+                  "label" : "Conductividad",
+                  "units" : "mS/cm",
+                  "decimals" : 2
+                }
+              }
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 24,
+          "sizeY" : 6
+        }
+      },
       "states" : {
         "default" : {
           "name" : "Vista SCADA",
           "root" : true,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "f849e62c-f779-4f5e-b152-8a2bf4e05d9a" : {
+                  "sizeX" : 6,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "1a3af775-88c8-4637-bf50-14011d03ebee" : {
+                  "sizeX" : 24,
+                  "sizeY" : 12,
+                  "row" : 1,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
@@ -54,7 +828,56 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "f69ed37a-79b7-4c19-a5d0-577cc1fa330b" : {
+                  "sizeX" : 6,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "ce5389d9-da1f-41a4-81e7-7241a8c880e2" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "9025be5f-1022-4c3e-bdcb-3eacbee40467" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "row" : 1,
+                  "col" : 4
+                },
+                "06766b85-d055-489c-ab4d-3c3b6d251ece" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "row" : 1,
+                  "col" : 8
+                },
+                "ad19feb9-9f1d-4d85-88a3-6e83921bf3d6" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "row" : 1,
+                  "col" : 12
+                },
+                "b338da72-3d2b-45b3-af61-49af22f91d08" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "row" : 1,
+                  "col" : 16
+                },
+                "fb8cac78-a713-4bdd-aed3-6f6e3b18cfa5" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "row" : 1,
+                  "col" : 20
+                },
+                "f3745495-4077-4980-83e9-38ca6bbd1371" : {
+                  "sizeX" : 24,
+                  "sizeY" : 6,
+                  "row" : 4,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
