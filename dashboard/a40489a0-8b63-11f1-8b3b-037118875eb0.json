@@ -110,79 +110,6 @@
           "sizeX" : 6,
           "sizeY" : 1
         },
-        "1a3af775-88c8-4637-bf50-14011d03ebee" : {
-          "id" : "1a3af775-88c8-4637-bf50-14011d03ebee",
-          "type" : "latest",
-          "typeFullFqn" : "system.cards.markdown_card",
-          "config" : {
-            "title" : "Esquema SCADA - Depósito y Recirculación",
-            "showTitle" : false,
-            "configMode" : "basic",
-            "dropShadow" : false,
-            "borderRadius" : "8px",
-            "widgetStyle" : {
-              "box-shadow" : "0px 2px 4px 0px #00000024;"
-            },
-            "titleFont" : {
-              "size" : 21,
-              "sizeUnit" : "px",
-              "weight" : "500",
-              "lineHeight" : "22px"
-            },
-            "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "5975d659-1dce-4476-b7af-6e81f5700b81",
-              "dataKeys" : [ {
-                "name" : "cloro",
-                "type" : "timeseries",
-                "label" : "cloro",
-                "color" : "#2196f3",
-                "settings" : { }
-              }, {
-                "name" : "ph",
-                "type" : "timeseries",
-                "label" : "ph",
-                "color" : "#4caf50",
-                "settings" : { }
-              }, {
-                "name" : "temperatura",
-                "type" : "timeseries",
-                "label" : "temperatura",
-                "color" : "#f44336",
-                "settings" : { }
-              }, {
-                "name" : "redox",
-                "type" : "timeseries",
-                "label" : "redox",
-                "color" : "#ffc107",
-                "settings" : { }
-              }, {
-                "name" : "turbidez",
-                "type" : "timeseries",
-                "label" : "turbidez",
-                "color" : "#9c27b0",
-                "settings" : { }
-              }, {
-                "name" : "tds",
-                "type" : "timeseries",
-                "label" : "tds",
-                "color" : "#00bcd4",
-                "settings" : { }
-              } ]
-            } ],
-            "enableFullscreen" : false,
-            "settings" : {
-              "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<div class=\"scada-container\">\n<div class=\"scada-visual\">\n<svg viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\">\n<style>\n@keyframes flow {\nto { stroke-dashoffset: -20; }\n}\n@keyframes spin {\nfrom { transform: rotate(0deg); }\nto { transform: rotate(360deg); }\n}\n.pipe-bg {\nstroke: #1e1e2f;\nstroke-width: 14;\nfill: none;\nstroke-linecap: round;\nstroke-linejoin: round;\n}\n.pipe-water {\nstroke: #00bcd4;\nstroke-width: 8;\nfill: none;\nstroke-linecap: round;\nstroke-linejoin: round;\nstroke-dasharray: 10 15;\nanimation: flow 1.5s linear infinite;\n}\n.pump-propeller {\ntransform-origin: 130px 330px;\nanimation: spin 1s linear infinite;\nstroke: #ff9800;\nstroke-width: 4;\n}\n.tank-border {\nfill: none;\nstroke: #888;\nstroke-width: 6;\n}\n.tank-water {\nfill: #0288d1;\nopacity: 0.7;\n}\n</style>\n<path class=\"pipe-bg\" d=\"M 130 240 L 130 330 L 280 330 L 280 80 L 180 80\" />\n<path class=\"pipe-water\" d=\"M 130 240 L 130 330 L 280 330 L 280 80 L 180 80\" />\n<rect x=\"60\" y=\"50\" width=\"140\" height=\"200\" rx=\"10\" ry=\"10\" fill=\"#1b1b24\" stroke=\"#555\" stroke-width=\"2\" />\n<rect class=\"tank-water\" x=\"63\" y=\"100\" width=\"134\" height=\"147\" rx=\"5\" ry=\"5\" />\n<rect class=\"tank-border\" x=\"60\" y=\"50\" width=\"140\" height=\"200\" rx=\"10\" ry=\"10\" />\n<circle cx=\"130\" cy=\"330\" r=\"25\" fill=\"#333\" stroke=\"#ff9800\" stroke-width=\"3\" />\n<line class=\"pump-propeller\" x1=\"130\" y1=\"315\" x2=\"130\" y2=\"345\" />\n<line class=\"pump-propeller\" x1=\"115\" y1=\"330\" x2=\"145\" y2=\"330\" />\n<circle cx=\"130\" cy=\"330\" r=\"5\" fill=\"#fff\" />\n<text x=\"130\" y=\"160\" fill=\"#fff\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\">DEPÓSITO</text>\n<text x=\"130\" y=\"380\" fill=\"#ff9800\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">BOMBA RECIRCULACIÓN</text>\n</svg>\n</div>\n<div class=\"scada-panel\">\n<div class=\"panel-header\">PANEL DE CONTROL</div>\n<div class=\"panel-grid\">\n<div class=\"panel-card green\">\n<div class=\"card-label\">Cloro</div>\n<div class=\"card-value\">${cloro:2} <span class=\"card-unit\">mg/L</span></div>\n</div>\n<div class=\"panel-card blue\">\n<div class=\"card-label\">pH</div>\n<div class=\"card-value\">${ph:2}</div>\n</div>\n<div class=\"panel-card orange\">\n<div class=\"card-label\">Temperatura</div>\n<div class=\"card-value\">${temperatura:1} <span class=\"card-unit\">°C</span></div>\n</div>\n<div class=\"panel-card cyan\">\n<div class=\"card-label\">Redox</div>\n<div class=\"card-value\">${redox:0} <span class=\"card-unit\">mV</span></div>\n</div>\n<div class=\"panel-card purple\">\n<div class=\"card-label\">Turbidez</div>\n<div class=\"card-value\">${turbidez:2} <span class=\"card-unit\">NTU</span></div>\n</div>\n<div class=\"panel-card teal\">\n<div class=\"card-label\">Conductividad</div>\n<div class=\"card-value\">${Conductividad:2} <span class=\"card-unit\">mS/cm</span></div>\n</div>\n</div>\n</div>\n</div>",
-              "markdownTextFunction" : "return '# Some title\\\\n - Entity name: ' + data[0]['entityName'];",
-              "applyDefaultMarkdownStyle" : false,
-              "markdownCss" : ".scada-container {\n  display: flex;\n  flex-direction: row;\n  background-color: #111118;\n  border-radius: 8px;\n  padding: 15px;\n  gap: 20px;\n  height: 100%;\n  color: #fff;\n  font-family: 'Roboto', sans-serif;\n  box-sizing: border-box;\n}\n.scada-visual {\n  flex: 1.2;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #181824;\n  border-radius: 8px;\n  border: 1px solid #2e2e42;\n  padding: 10px;\n}\n.scada-panel {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  gap: 15px;\n  background-color: #181824;\n  border-radius: 8px;\n  border: 1px solid #2e2e42;\n  padding: 20px;\n  justify-content: center;\n}\n.panel-header {\n  font-size: 18px;\n  font-weight: bold;\n  letter-spacing: 1px;\n  color: #ff9800;\n  text-align: center;\n  border-bottom: 2px solid #2e2e42;\n  padding-bottom: 10px;\n}\n.panel-grid {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 12px;\n}\n.panel-card {\n  background-color: #212130;\n  border-radius: 6px;\n  padding: 12px;\n  border-left: 4px solid #fff;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.panel-card.green { border-left-color: #4caf50; }\n.panel-card.blue { border-left-color: #2196f3; }\n.panel-card.orange { border-left-color: #ff9800; }\n.panel-card.cyan { border-left-color: #00bcd4; }\n.panel-card.purple { border-left-color: #9c27b0; }\n.panel-card.teal { border-left-color: #009688; }\n\n.card-label {\n  font-size: 11px;\n  text-transform: uppercase;\n  color: #8f8fbc;\n  margin-bottom: 4px;\n  font-weight: 500;\n}\n.card-value {\n  font-size: 20px;\n  font-weight: bold;\n}\n.card-unit {\n  font-size: 12px;\n  color: #8f8fbc;\n  font-weight: normal;\n}"
-            },
-            "enableDataExport" : false
-          },
-          "sizeX" : 24,
-          "sizeY" : 12
-        },
         "f69ed37a-79b7-4c19-a5d0-577cc1fa330b" : {
           "id" : "f69ed37a-79b7-4c19-a5d0-577cc1fa330b",
           "type" : "latest",
@@ -960,6 +887,70 @@
           },
           "sizeX" : 24,
           "sizeY" : 6
+        },
+        "5a62428c-9ae1-03d0-87b4-0d0f74d1a749" : {
+          "typeFullFqn" : "system.scada_symbol",
+          "type" : "rpc",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgb(255, 255, 255)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/tablero.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "SCADA symbol",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "979d9340-8b5a-11f1-a40e-2ba7ae4918b3"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "5a62428c-9ae1-03d0-87b4-0d0f74d1a749"
         }
       },
       "states" : {
@@ -975,9 +966,9 @@
                   "row" : 0,
                   "col" : 0
                 },
-                "1a3af775-88c8-4637-bf50-14011d03ebee" : {
-                  "sizeX" : 24,
-                  "sizeY" : 12,
+                "5a62428c-9ae1-03d0-87b4-0d0f74d1a749" : {
+                  "sizeX" : 3,
+                  "sizeY" : 3,
                   "row" : 1,
                   "col" : 0
                 }
