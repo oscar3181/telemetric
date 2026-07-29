@@ -14,7 +14,20 @@
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
-      "entityAliases" : { },
+      "entityAliases" : {
+        "5975d659-1dce-4476-b7af-6e81f5700b81" : {
+          "id" : "5975d659-1dce-4476-b7af-6e81f5700b81",
+          "alias" : "Hotel Only You",
+          "filter" : {
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "979d9340-8b5a-11f1-a40e-2ba7ae4918b3"
+            },
+            "type" : "singleEntity"
+          }
+        }
+      },
       "filters" : { },
       "widgets" : { },
       "states" : {
