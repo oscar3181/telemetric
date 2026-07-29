@@ -2127,12 +2127,12 @@
             "main" : {
               "widgets" : {
                 "67439487-6cfa-f98d-8770-135ddf5f7948" : {
-                  "sizeX" : 383,
-                  "sizeY" : 393,
+                  "sizeX" : 452,
+                  "sizeY" : 375,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 45,
-                  "col" : 575
+                  "row" : 36,
+                  "col" : 570
                 },
                 "8edab1e5-ad8b-acb7-26c2-246511246895" : {
                   "sizeX" : 89,
@@ -2144,7 +2144,7 @@
                 },
                 "476a3be5-81ed-3c4f-becb-5e81b5c95ff6" : {
                   "sizeX" : 564,
-                  "sizeY" : 380,
+                  "sizeY" : 361,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
                   "row" : 57,
@@ -2161,7 +2161,7 @@
               },
               "gridSettings" : {
                 "layoutType" : "scada",
-                "backgroundColor" : "#A1ADB1",
+                "backgroundColor" : "#93BCEB",
                 "columns" : 1008,
                 "margin" : 0,
                 "outerMargin" : false,
