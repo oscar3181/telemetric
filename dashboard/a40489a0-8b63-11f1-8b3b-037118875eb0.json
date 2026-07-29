@@ -293,12 +293,6 @@
               } ]
             } ],
             "enableFullscreen" : false,
-            "useDashboardTimewindow" : false,
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
             "units" : "mg/L",
             "decimals" : 2,
             "settings" : {
@@ -353,12 +347,6 @@
               } ]
             } ],
             "enableFullscreen" : false,
-            "useDashboardTimewindow" : false,
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
             "decimals" : 2,
             "settings" : {
               "minValue" : 0,
@@ -412,12 +400,6 @@
               } ]
             } ],
             "enableFullscreen" : false,
-            "useDashboardTimewindow" : false,
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
             "units" : "°C",
             "decimals" : 1,
             "settings" : {
@@ -472,12 +454,6 @@
               } ]
             } ],
             "enableFullscreen" : false,
-            "useDashboardTimewindow" : false,
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
             "units" : "mV",
             "decimals" : 0,
             "settings" : {
@@ -532,12 +508,6 @@
               } ]
             } ],
             "enableFullscreen" : false,
-            "useDashboardTimewindow" : false,
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
             "units" : "NTU",
             "decimals" : 2,
             "settings" : {
@@ -592,12 +562,6 @@
               } ]
             } ],
             "enableFullscreen" : false,
-            "useDashboardTimewindow" : false,
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
             "units" : "mS/cm",
             "decimals" : 2,
             "settings" : {
@@ -705,17 +669,6 @@
               } ]
             } ],
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "realtime" : {
-                "realtimeType" : 0,
-                "timewindowMs" : 86400000,
-                "interval" : 300000
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
             "settings" : {
               "dataZoom" : false,
               "showLegend" : true,
