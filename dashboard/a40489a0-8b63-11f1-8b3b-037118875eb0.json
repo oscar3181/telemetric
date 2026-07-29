@@ -305,13 +305,49 @@
                 "color" : "#000000DE"
               },
               "labelFont" : { },
-              "valueFont" : { },
-              "minMaxFont" : { },
+              "valueFont" : {
+                "color" : null
+              },
+              "minMaxFont" : {
+                "color" : null
+              },
               "showMinMax" : false,
               "showValue" : true,
-              "levelColors" : [ ]
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#9C27B0",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 5
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "donutStartAngle" : null,
+              "gaugeColor" : null,
+              "useFixedLevelColor" : false
             },
-            "enableDataExport" : false
+            "enableDataExport" : false,
+            "actions" : { },
+            "backgroundColor" : null
           },
           "sizeX" : 4,
           "sizeY" : 3
@@ -358,13 +394,50 @@
                 "color" : "#000000DE"
               },
               "labelFont" : { },
-              "valueFont" : { },
-              "minMaxFont" : { },
+              "valueFont" : {
+                "color" : null
+              },
+              "minMaxFont" : {
+                "color" : null
+              },
               "showMinMax" : false,
               "showValue" : true,
-              "levelColors" : [ ]
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#048AD3",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 14
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "donutStartAngle" : null,
+              "gaugeColor" : null,
+              "useFixedLevelColor" : false
             },
-            "enableDataExport" : false
+            "enableDataExport" : false,
+            "actions" : { },
+            "backgroundColor" : null,
+            "units" : null
           },
           "sizeX" : 4,
           "sizeY" : 3
@@ -412,13 +485,49 @@
                 "color" : "#000000DE"
               },
               "labelFont" : { },
-              "valueFont" : { },
-              "minMaxFont" : { },
+              "valueFont" : {
+                "color" : null
+              },
+              "minMaxFont" : {
+                "color" : null
+              },
               "showMinMax" : false,
               "showValue" : true,
-              "levelColors" : [ ]
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#E89623",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 60
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "donutStartAngle" : null,
+              "gaugeColor" : null,
+              "useFixedLevelColor" : false
             },
-            "enableDataExport" : false
+            "enableDataExport" : false,
+            "actions" : { },
+            "backgroundColor" : null
           },
           "sizeX" : 4,
           "sizeY" : 3
@@ -466,13 +575,49 @@
                 "color" : "#000000DE"
               },
               "labelFont" : { },
-              "valueFont" : { },
-              "minMaxFont" : { },
+              "valueFont" : {
+                "color" : null
+              },
+              "minMaxFont" : {
+                "color" : null
+              },
               "showMinMax" : false,
               "showValue" : true,
-              "levelColors" : [ ]
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#6F113A",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 1000
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "donutStartAngle" : null,
+              "gaugeColor" : null,
+              "useFixedLevelColor" : false
             },
-            "enableDataExport" : false
+            "enableDataExport" : false,
+            "actions" : { },
+            "backgroundColor" : null
           },
           "sizeX" : 4,
           "sizeY" : 3
@@ -520,13 +665,49 @@
                 "color" : "#000000DE"
               },
               "labelFont" : { },
-              "valueFont" : { },
-              "minMaxFont" : { },
+              "valueFont" : {
+                "color" : null
+              },
+              "minMaxFont" : {
+                "color" : null
+              },
               "showMinMax" : false,
               "showValue" : true,
-              "levelColors" : [ ]
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#009688",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 10
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "donutStartAngle" : null,
+              "gaugeColor" : null,
+              "useFixedLevelColor" : false
             },
-            "enableDataExport" : false
+            "enableDataExport" : false,
+            "actions" : { },
+            "backgroundColor" : null
           },
           "sizeX" : 4,
           "sizeY" : 3
@@ -574,13 +755,49 @@
                 "color" : "#000000DE"
               },
               "labelFont" : { },
-              "valueFont" : { },
-              "minMaxFont" : { },
+              "valueFont" : {
+                "color" : null
+              },
+              "minMaxFont" : {
+                "color" : null
+              },
               "showMinMax" : false,
               "showValue" : true,
-              "levelColors" : [ ]
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#F5DD00",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 5
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                },
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "donutStartAngle" : null,
+              "gaugeColor" : null,
+              "useFixedLevelColor" : false
             },
-            "enableDataExport" : false
+            "enableDataExport" : false,
+            "actions" : { },
+            "backgroundColor" : null
           },
           "sizeX" : 4,
           "sizeY" : 3
