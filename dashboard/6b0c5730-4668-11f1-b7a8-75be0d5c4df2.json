@@ -1,8 +1,16 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "6b0c5730-4668-11f1-b7a8-75be0d5c4df2"
+    },
+    "customerId" : null,
+    "ownerId" : null,
     "title" : "San Miguel Dióxido de cloro",
+    "name" : "San Miguel Dióxido de cloro",
     "image" : null,
+    "assignedCustomers" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
@@ -2119,12 +2127,12 @@
             "main" : {
               "widgets" : {
                 "67439487-6cfa-f98d-8770-135ddf5f7948" : {
-                  "sizeX" : 530,
-                  "sizeY" : 97,
+                  "sizeX" : 383,
+                  "sizeY" : 393,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 446,
-                  "col" : 159
+                  "row" : 45,
+                  "col" : 575
                 },
                 "8edab1e5-ad8b-acb7-26c2-246511246895" : {
                   "sizeX" : 89,
@@ -2135,7 +2143,7 @@
                   "col" : 268
                 },
                 "476a3be5-81ed-3c4f-becb-5e81b5c95ff6" : {
-                  "sizeX" : 824,
+                  "sizeX" : 564,
                   "sizeY" : 380,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
@@ -2273,16 +2281,8 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "name" : "San Miguel Dióxido de cloro",
     "resources" : null,
-    "assignedCustomers" : null,
-    "customerId" : null,
-    "externalId" : null,
-    "id" : {
-      "entityType" : "DASHBOARD",
-      "id" : "6b0c5730-4668-11f1-b7a8-75be0d5c4df2"
-    },
-    "ownerId" : null
+    "externalId" : null
   },
   "attributes" : {
     "SERVER_SCOPE" : [ ]
