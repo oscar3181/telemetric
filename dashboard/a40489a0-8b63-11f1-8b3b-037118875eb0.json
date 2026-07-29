@@ -982,7 +982,7 @@
               "padding" : "12px"
             },
             "title" : "SCADA symbol",
-            "dropShadow" : true,
+            "dropShadow" : false,
             "enableFullscreen" : false,
             "widgetStyle" : { },
             "actions" : { },
@@ -1011,7 +1011,8 @@
             "titleColor" : null,
             "borderRadius" : "0px",
             "margin" : "0px",
-            "datasources" : [ ]
+            "datasources" : [ ],
+            "enableDataExport" : true
           },
           "row" : 0,
           "col" : 0,
