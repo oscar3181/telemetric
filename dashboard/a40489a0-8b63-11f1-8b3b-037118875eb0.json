@@ -1034,13 +1034,13 @@
                 },
                 "5a62428c-9ae1-03d0-87b4-0d0f74d1a749" : {
                   "sizeX" : 13,
-                  "sizeY" : 10,
-                  "row" : 1,
-                  "col" : 12
+                  "sizeY" : 11,
+                  "row" : 2,
+                  "col" : 16
                 },
                 "6ef7e682-65d7-33c3-c80c-9c54e4f720be" : {
-                  "sizeX" : 12,
-                  "sizeY" : 10,
+                  "sizeX" : 16,
+                  "sizeY" : 13,
                   "row" : 1,
                   "col" : 0
                 }
