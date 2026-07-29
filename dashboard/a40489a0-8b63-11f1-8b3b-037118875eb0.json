@@ -916,7 +916,7 @@
                 "properties" : { }
               }
             },
-            "title" : "SCADA symbol",
+            "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "widgetStyle" : { },
@@ -938,7 +938,7 @@
             "titleIcon" : "mdi:lightbulb-outline",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device",
               "deviceId" : "979d9340-8b5a-11f1-a40e-2ba7ae4918b3"
@@ -946,7 +946,8 @@
             "titleColor" : null,
             "borderRadius" : "0px",
             "margin" : "0px",
-            "datasources" : [ ]
+            "datasources" : [ ],
+            "enableDataExport" : true
           },
           "row" : 0,
           "col" : 0,
