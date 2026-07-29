@@ -19,7 +19,7 @@
       "widgets" : { },
       "states" : {
         "default" : {
-          "name" : "New Dashboard",
+          "name" : "Vista SCADA",
           "root" : true,
           "layouts" : {
             "main" : {
@@ -30,7 +30,8 @@
                 "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true
               }
             }
           }
