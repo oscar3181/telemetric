@@ -953,7 +953,7 @@
           "col" : 0,
           "id" : "5a62428c-9ae1-03d0-87b4-0d0f74d1a749"
         },
-        "0c9a3fef-3774-4eb9-bd5b-438f0eecc8b9" : {
+        "20fb3f21-e2f5-1e43-7229-6d836004760f" : {
           "typeFullFqn" : "system.scada_symbol",
           "type" : "rpc",
           "sizeX" : 3,
@@ -964,22 +964,22 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/onlyyoutb.svg",
-              "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
-              },
               "background" : {
                 "type" : "color",
                 "imageUrl" : null,
-                "color" : "rgba(255, 255, 255, 0)",
+                "color" : "rgba(255, 255, 255, 0.02)",
                 "overlay" : {
                   "enabled" : false,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
                 }
               },
-              "padding" : "12px"
+              "padding" : "12px",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/onlyyou_TB_calidad.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
             },
             "title" : "",
             "dropShadow" : false,
@@ -1016,7 +1016,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "0c9a3fef-3774-4eb9-bd5b-438f0eecc8b9"
+          "id" : "20fb3f21-e2f5-1e43-7229-6d836004760f"
         }
       },
       "states" : {
@@ -1033,14 +1033,14 @@
                   "col" : 0
                 },
                 "5a62428c-9ae1-03d0-87b4-0d0f74d1a749" : {
-                  "sizeX" : 13,
-                  "sizeY" : 11,
-                  "row" : 2,
-                  "col" : 16
+                  "sizeX" : 14,
+                  "sizeY" : 23,
+                  "row" : 0,
+                  "col" : 27
                 },
-                "0c9a3fef-3774-4eb9-bd5b-438f0eecc8b9" : {
-                  "sizeX" : 16,
-                  "sizeY" : 12,
+                "20fb3f21-e2f5-1e43-7229-6d836004760f" : {
+                  "sizeX" : 27,
+                  "sizeY" : 18,
                   "row" : 1,
                   "col" : 0
                 }
