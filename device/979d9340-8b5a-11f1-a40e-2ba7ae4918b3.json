@@ -1,0 +1,208 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT",
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "45869a50-f840-11f0-a24d-13b2783631c6"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "979d9340-8b5a-11f1-a40e-2ba7ae4918b3"
+    },
+    "label" : "",
+    "name" : "Only You",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "260g5tgb4fdazct6z4xy",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1786437029117,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1785547059931,
+      "longValue" : 1785547059928,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1786461254451,
+      "longValue" : 1786461252368,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1786441838083,
+      "longValue" : 1786441838083,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1786441204534,
+      "longValue" : 1786441204534,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_email",
+      "lastUpdateTs" : 1785339328495,
+      "longValue" : null,
+      "strValue" : "oscar3181@gmail.com"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.337,
+      "jsonValue" : null,
+      "key" : "cloro",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 129.3,
+      "jsonValue" : null,
+      "key" : "conductividad",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "flujo",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 1.495,
+      "jsonValue" : null,
+      "key" : "flujoInst",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 8.295,
+      "jsonValue" : null,
+      "key" : "ph",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "purga",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "redox",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : 369,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "releFlujo",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendcloro",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendph",
+      "lastUpdateTs" : 1786461252464,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 64.64,
+      "jsonValue" : null,
+      "key" : "tds",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 21.139,
+      "jsonValue" : null,
+      "key" : "temperatura",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.139,
+      "jsonValue" : null,
+      "key" : "turbidez",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "wifi",
+      "lastUpdateTs" : 1786461252473,
+      "longValue" : -5,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}
