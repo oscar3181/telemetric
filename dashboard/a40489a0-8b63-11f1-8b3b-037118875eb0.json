@@ -811,7 +811,8 @@
                 },
                 "units" : "mS/cm",
                 "decimals" : 2
-              } ]
+              } ],
+              "latestDataKeys" : [ ]
             } ],
             "useDashboardTimewindow" : false,
             "settings" : {
@@ -865,13 +866,21 @@
                   "order" : 0,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 2,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 },
                 "phAxis" : {
@@ -883,13 +892,21 @@
                   "decimals" : 2,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 14,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 },
                 "tempAxis" : {
@@ -902,13 +919,21 @@
                   "decimals" : 1,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 10,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 30,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 },
                 "redoxAxis" : {
@@ -921,13 +946,21 @@
                   "decimals" : 0,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 200,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 400,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 },
                 "turbAxis" : {
@@ -940,13 +973,21 @@
                   "decimals" : 2,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 4,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 },
                 "tdsAxis" : {
@@ -959,13 +1000,21 @@
                   "decimals" : 2,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : null,
-                    "entityAlias" : null
+                    "value" : 2000,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
                   }
                 }
               },
