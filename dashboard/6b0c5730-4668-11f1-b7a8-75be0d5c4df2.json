@@ -2127,11 +2127,11 @@
               "widgets" : {
                 "67439487-6cfa-f98d-8770-135ddf5f7948" : {
                   "sizeX" : 452,
-                  "sizeY" : 375,
+                  "sizeY" : 590,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 64,
-                  "col" : 672
+                  "row" : 59,
+                  "col" : 994
                 },
                 "8edab1e5-ad8b-acb7-26c2-246511246895" : {
                   "sizeX" : 89,
@@ -2142,8 +2142,8 @@
                   "col" : 268
                 },
                 "476a3be5-81ed-3c4f-becb-5e81b5c95ff6" : {
-                  "sizeX" : 650,
-                  "sizeY" : 455,
+                  "sizeX" : 965,
+                  "sizeY" : 569,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
                   "row" : 71,
