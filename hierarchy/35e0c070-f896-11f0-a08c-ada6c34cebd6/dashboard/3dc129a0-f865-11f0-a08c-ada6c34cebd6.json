@@ -1,8 +1,22 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "3dc129a0-f865-11f0-a08c-ada6c34cebd6"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "35e0c070-f896-11f0-a08c-ada6c34cebd6"
+    },
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "35e0c070-f896-11f0-a08c-ada6c34cebd6"
+    },
     "title" : "Frio Cubit Valladolid",
+    "name" : "Frio Cubit Valladolid",
     "image" : "tb-image;/api/images/tenant/torre.svg",
+    "assignedCustomers" : null,
     "mobileHide" : false,
     "mobileOrder" : 1,
     "configuration" : {
@@ -10550,12 +10564,12 @@
                   "col" : 557
                 },
                 "218885ca-690a-8a46-6fe8-bcc6f1cc75a9" : {
-                  "sizeX" : 413,
-                  "sizeY" : 95,
+                  "sizeX" : 604,
+                  "sizeY" : 338,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 409,
-                  "col" : 270
+                  "row" : 422,
+                  "col" : 181
                 },
                 "76b2e479-e2a0-f8b4-a469-15173c306b35" : {
                   "sizeX" : 157,
@@ -10568,8 +10582,8 @@
                 "63a743ac-f6e3-3901-ed3b-9073428c173a" : {
                   "sizeX" : 49,
                   "sizeY" : 44,
-                  "row" : 409,
-                  "col" : 216
+                  "row" : 403,
+                  "col" : 111
                 },
                 "f25dcd6c-566c-dc81-6c67-cc36b5f44f99" : {
                   "sizeX" : 24,
@@ -11035,22 +11049,8 @@
         "dashboardCss" : ".tb-widget-container > .tb-widget {\r\n    border-radius: 8px;\r\n}\r\n\r\ngridster-item:not(.tb-noselect) > .tb-widget-container > .tb-widget {\r\n    cursor: default !important;\r\n}\r\n\r\n.tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-row {\r\n    cursor: pointer;\r\n}\r\n\r\n.tb-widget-container > .tb-widget .tb-legend-keys {\r\n    cursor: pointer;\r\n}\r\n\r\n.tb-dashboard-page.dark tb-dashboard > div {\r\n    background-color: #0A1F36 !important; /* rgb(238, 238, 238)*/\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget {\r\n    background: #0D2743 !important;\r\n    color: rgba(255, 255, 255, 0.87) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget svg tspan {\r\n    fill: rgba(255, 255, 255, 0.87) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-latest-chart-legend-item-label div {\r\n    color: rgba(255, 255, 255, 0.38) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-latest-chart-legend-item-value {\r\n    color: rgba(255, 255, 255, 0.87) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-latest-chart-shape svg text {\r\n    fill: rgba(255, 255, 255, 0.87) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-time-series-chart-legend-type-label {\r\n    color: rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-time-series-chart-legend-item-label div {\r\n    color: rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-time-series-chart-legend-value {\r\n    color: rgba(255, 255, 255, 0.87) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .flot-text {\r\n    color: rgba(255, 255, 255, 0.87) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .flot-text > div > div {\r\n    color: rgba(255, 255, 255, 0.87) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-table .mat-mdc-header-row {\r\n    background-color: #0D2743 !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-table .mat-mdc-header-cell.mat-mdc-table-sticky {\r\n    background-color: #0D2743 !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-table .mat-mdc-row .mat-mdc-cell.mat-mdc-table-sticky {\r\n    background-color: #0D2743 !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-table .mat-mdc-header-cell {\r\n    color: rgba(255, 255, 255, 0.87) !important;\r\n    border-bottom-color: rgba(255, 255, 255, 0.2) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-table .mat-mdc-cell {\r\n    color: rgba(255, 255, 255, 0.87) !important;\r\n    border-bottom-color: rgba(255, 255, 255, 0.2) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-table .mat-mdc-header-cell .mat-sort-header-arrow {\r\n    color: rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-divider {\r\n    border-top-color: rgba(255, 255, 255, 0.2) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-input-element::placeholder {\r\n    color: rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-input-element::-moz-placeholder {\r\n    color: rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-input-element::-webkit-input-placeholder {\r\n    color: rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-input-element:-ms-input-placeholder {\r\n    color: rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-table .mat-mdc-cell .mdc-checkbox__background,.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-table .mat-mdc-header-cell .mdc-checkbox__background {\r\n    border-color : rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-table .mat-mdc-cell button.mat-mdc-icon-button mat-icon {\r\n    color : rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget mat-toolbar.mat-mdc-table-toolbar:not([color=\"primary\"]) button.mat-mdc-icon-button mat-icon {\r\n    color : rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-table .mat-mdc-cell button.mat-mdc-icon-button[disabled][disabled] mat-icon {\r\n    color : rgba(255, 255, 255, 0.2) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-paginator {\r\n    color: rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-paginator button.mat-mdc-icon-button {\r\n    color : rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-paginator button.mat-mdc-icon-button[disabled][disabled] {\r\n    color : rgba(255, 255, 255, 0.2) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .tb-table-widget .mat-mdc-paginator .mat-mdc-select-value {\r\n    color : rgba(255, 255, 255, 0.57) !important;\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .mat-mdc-select-arrow {\r\n    color : rgba(255, 255, 255, 0.57);\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple:before {\r\n    border-bottom-color: rgba(255, 255, 255, 0.4);\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading, \r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,\r\n.tb-dashboard-page.dark .tb-widget-container > .tb-widget .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {\r\n    border-color: rgba(255, 255, 255, 0.4);\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-markdown-view div,\r\n.tb-dashboard-page.dark .tb-markdown-view div.param,\r\n.tb-dashboard-page.dark .tb-markdown-view .header .title,\r\n.tb-dashboard-page.dark .tb-markdown-view p {\r\n    color : rgba(255, 255, 255, 0.87);\r\n}\r\n\r\n.tb-dashboard-page.dark .tb-markdown-view div.param-title,\r\n.tb-dashboard-page.dark .tb-markdown-view .header .subtitle {\r\n    color : rgba(255, 255, 255, 0.6);\r\n}\r\n\r\n\r\n.tb-dashboard-page.dark .tb-powered-by-footer {\r\n    color : rgba(255, 255, 255, 0.87) !important;\r\n}\r\n"
       }
     },
-    "name" : "Frio Cubit Valladolid",
     "resources" : null,
-    "assignedCustomers" : null,
-    "customerId" : {
-      "entityType" : "CUSTOMER",
-      "id" : "35e0c070-f896-11f0-a08c-ada6c34cebd6"
-    },
-    "externalId" : null,
-    "id" : {
-      "entityType" : "DASHBOARD",
-      "id" : "3dc129a0-f865-11f0-a08c-ada6c34cebd6"
-    },
-    "ownerId" : {
-      "entityType" : "CUSTOMER",
-      "id" : "35e0c070-f896-11f0-a08c-ada6c34cebd6"
-    }
+    "externalId" : null
   },
   "attributes" : {
     "SERVER_SCOPE" : [ ]
