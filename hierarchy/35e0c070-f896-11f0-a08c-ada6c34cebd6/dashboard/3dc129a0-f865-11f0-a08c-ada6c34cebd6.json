@@ -1935,7 +1935,7 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : "mg/L",
+                  "units" : "ph",
                   "decimals" : 2,
                   "show" : true,
                   "label" : "",
@@ -1970,7 +1970,7 @@
                   "order" : 0,
                   "min" : {
                     "type" : "constant",
-                    "value" : null,
+                    "value" : 0,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
@@ -1979,7 +1979,7 @@
                   },
                   "max" : {
                     "type" : "constant",
-                    "value" : null,
+                    "value" : 14,
                     "latestKey" : null,
                     "latestKeyType" : null,
                     "entityAlias" : null,
