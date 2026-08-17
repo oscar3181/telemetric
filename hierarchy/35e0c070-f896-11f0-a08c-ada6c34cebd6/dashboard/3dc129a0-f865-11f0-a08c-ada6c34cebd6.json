@@ -9348,7 +9348,7 @@
                 "label" : "redox",
                 "color" : "#3B011AE8",
                 "settings" : {
-                  "yAxisId" : "default",
+                  "yAxisId" : "axis5",
                   "showInLegend" : true,
                   "dataHiddenByDefault" : false,
                   "type" : "line",
