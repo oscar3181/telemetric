@@ -2783,7 +2783,10 @@
               },
               "yAxes" : {
                 "default" : {
-                  "show" : false,
+                  "units" : "mV",
+                  "decimals" : 0,
+                  "show" : true,
+                  "label" : "",
                   "labelFont" : {
                     "family" : "Roboto",
                     "size" : 12,
@@ -2793,6 +2796,7 @@
                     "lineHeight" : "1"
                   },
                   "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "left",
                   "showTickLabels" : true,
                   "tickLabelFont" : {
                     "family" : "Roboto",
@@ -2812,8 +2816,27 @@
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "default",
                   "order" : 0,
-                  "min" : 0,
-                  "max" : 1000
+                  "min" : {
+                    "type" : "constant",
+                    "value" : 0,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  },
+                  "max" : {
+                    "type" : "constant",
+                    "value" : 1000,
+                    "latestKey" : null,
+                    "latestKeyType" : null,
+                    "entityAlias" : null,
+                    "entityKey" : null,
+                    "entityKeyType" : null
+                  },
+                  "ticksGenerator" : null,
+                  "interval" : null,
+                  "splitNumber" : null
                 },
                 "axis1" : {
                   "show" : false,
@@ -2844,7 +2867,17 @@
                   "showSplitLines" : true,
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "axis1",
-                  "order" : 1
+                  "order" : 1,
+                  "min" : {
+                    "type" : "constant",
+                    "value" : null,
+                    "entityAlias" : null
+                  },
+                  "max" : {
+                    "type" : "constant",
+                    "value" : null,
+                    "entityAlias" : null
+                  }
                 }
               },
               "thresholds" : [ ],
