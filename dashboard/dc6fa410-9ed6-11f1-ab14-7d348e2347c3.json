@@ -321,7 +321,7 @@
           "col" : 0,
           "config" : {
             "configMode" : "basic",
-            "title" : "Chlorine Level",
+            "title" : "Nivel de Cloro",
             "titleFont" : {
               "size" : 21,
               "sizeUnit" : "px",
@@ -342,7 +342,7 @@
             "settings" : {
               "minValue" : 0,
               "maxValue" : 5,
-              "gaugeType" : "arc",
+              "gaugeType" : "donut",
               "showTitle" : true,
               "title" : "Chlorine Level",
               "titleFont" : {
@@ -354,7 +354,7 @@
               "showMinMax" : false,
               "barColor" : {
                 "type" : "constant",
-                "color" : "#2196F3"
+                "color" : "#E91E63"
               },
               "showValue" : true
             },
@@ -362,7 +362,7 @@
               "type" : "entity",
               "dataKeys" : [ {
                 "name" : "cloro",
-                "label" : "Chlorine",
+                "label" : "Cloro",
                 "type" : "timeseries",
                 "color" : "#000000DE",
                 "settings" : { }
@@ -560,7 +560,7 @@
         "aiGenerated" : true,
         "aiGeneratedBy" : "Device Dashboard Assistant",
         "aiUpdated" : true,
-        "aiUpdateTs" : 1787478399162,
+        "aiUpdateTs" : 1787478403577,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
