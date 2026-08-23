@@ -42,7 +42,7 @@
           "col" : 0,
           "config" : {
             "configMode" : "basic",
-            "title" : "pH Level",
+            "title" : "Nivel de pH",
             "titleFont" : {
               "size" : 21,
               "sizeUnit" : "px",
@@ -57,13 +57,12 @@
             "widgetStyle" : {
               "box-shadow" : "0px 2px 4px 0px #00000024;"
             },
-            "units" : "",
             "decimals" : 2,
             "actions" : { },
             "settings" : {
               "minValue" : 0,
               "maxValue" : 14,
-              "gaugeType" : "arc",
+              "gaugeType" : "donut",
               "showTitle" : true,
               "title" : "pH Level",
               "titleFont" : {
@@ -75,7 +74,7 @@
               "showMinMax" : false,
               "barColor" : {
                 "type" : "constant",
-                "color" : "#4CAF50"
+                "color" : "#2196F3"
               },
               "showValue" : true
             },
@@ -560,7 +559,7 @@
         "aiGenerated" : true,
         "aiGeneratedBy" : "Device Dashboard Assistant",
         "aiUpdated" : true,
-        "aiUpdateTs" : 1787478403577,
+        "aiUpdateTs" : 1787478411734,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
