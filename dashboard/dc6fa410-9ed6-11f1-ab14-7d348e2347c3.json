@@ -7,21 +7,22 @@
     },
     "customerId" : null,
     "ownerId" : null,
-    "title" : "Padre Toni Dashboard",
-    "name" : "Padre Toni Dashboard",
+    "title" : "Panel Padre Toni",
+    "name" : "Panel Padre Toni",
     "image" : null,
     "assignedCustomers" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
       "timewindow" : {
-        "selectedTab" : 1,
-        "history" : {
-          "timewindowMs" : 3600000,
-          "historyType" : 0
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "timewindowMs" : 86400000
         },
         "aggregation" : {
-          "type" : "NONE"
+          "type" : "NONE",
+          "limit" : 25000
         }
       },
       "settings" : {
@@ -557,7 +558,10 @@
       },
       "additionalInfo" : {
         "aiGenerated" : true,
-        "aiGeneratedBy" : "Device Dashboard Assistant"
+        "aiGeneratedBy" : "Device Dashboard Assistant",
+        "aiUpdated" : true,
+        "aiUpdateTs" : 1787478394650,
+        "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
     "resources" : null,
