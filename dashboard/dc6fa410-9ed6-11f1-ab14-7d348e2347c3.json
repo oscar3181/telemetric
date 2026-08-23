@@ -1,0 +1,570 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "dc6fa410-9ed6-11f1-ab14-7d348e2347c3"
+    },
+    "customerId" : null,
+    "ownerId" : null,
+    "title" : "Padre Toni Dashboard",
+    "name" : "Padre Toni Dashboard",
+    "image" : null,
+    "assignedCustomers" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "timewindow" : {
+        "selectedTab" : 1,
+        "history" : {
+          "timewindowMs" : 3600000,
+          "historyType" : 0
+        },
+        "aggregation" : {
+          "type" : "NONE"
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      },
+      "widgets" : {
+        "835cd189-d168-451c-aecb-9794ae1c4a15" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "pH Level",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "",
+            "decimals" : 2,
+            "actions" : { },
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 14,
+              "gaugeType" : "arc",
+              "showTitle" : true,
+              "title" : "pH Level",
+              "titleFont" : {
+                "color" : "#000000DE"
+              },
+              "labelFont" : { },
+              "valueFont" : { },
+              "minMaxFont" : { },
+              "showMinMax" : false,
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#4CAF50"
+              },
+              "showValue" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "ph",
+                "label" : "pH",
+                "type" : "timeseries",
+                "color" : "#000000DE",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "1d15cb6c-073d-43d9-9b8b-30777eec9093"
+            } ]
+          },
+          "id" : "835cd189-d168-451c-aecb-9794ae1c4a15",
+          "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
+          "type" : "latest"
+        },
+        "65006471-59f6-454d-b999-464d354b815b" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Signal Strength",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "dBm",
+            "decimals" : 0,
+            "actions" : { },
+            "settings" : {
+              "layout" : "wifi",
+              "activeBarsColor" : {
+                "type" : "range",
+                "color" : "rgba(92, 223, 144, 1)",
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ {
+                    "from" : null,
+                    "to" : -85,
+                    "color" : "rgba(227, 71, 71, 1)"
+                  }, {
+                    "from" : -85,
+                    "to" : -70,
+                    "color" : "rgba(255, 122, 0, 1)"
+                  }, {
+                    "from" : -70,
+                    "to" : -55,
+                    "color" : "rgba(246, 206, 67, 1)"
+                  }, {
+                    "from" : -55,
+                    "to" : null,
+                    "color" : "rgba(92, 223, 144, 1)"
+                  } ]
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "wifi",
+                "label" : "WiFi",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "1d15cb6c-073d-43d9-9b8b-30777eec9093"
+            } ]
+          },
+          "id" : "65006471-59f6-454d-b999-464d354b815b",
+          "typeFullFqn" : "system.signal_strength",
+          "type" : "latest"
+        },
+        "9cde5965-9137-4778-906e-5d9b320ca46b" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Alarms",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "4px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "alarmsTitle" : "Alarms",
+              "enableSelection" : true,
+              "enableSearch" : true
+            },
+            "alarmSource" : {
+              "type" : "entity",
+              "name" : "alarms",
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "label" : "Created Time",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "originator",
+                "label" : "Originator",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "type",
+                "label" : "Type",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "severity",
+                "label" : "Severity",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "status",
+                "label" : "Status",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "1d15cb6c-073d-43d9-9b8b-30777eec9093"
+            },
+            "alarmFilterConfig" : {
+              "typeList" : [ ],
+              "statusList" : [ "ACTIVE" ],
+              "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
+              "searchPropagatedAlarms" : true
+            },
+            "datasources" : [ ]
+          },
+          "id" : "9cde5965-9137-4778-906e-5d9b320ca46b",
+          "typeFullFqn" : "system.alarm_widgets.alarms_table",
+          "type" : "alarm"
+        },
+        "ed2a5cbc-b375-40ad-94eb-44d374a11dc7" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Device Information",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "10px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"value-block flex flex-col justify-between gap-2\"><div class=\"flex flex-1\"><span class=\"title\">Device Status</span></div><div class=\"flex flex-col justify-between gap-1\"><div class=\"flex flex-row justify-between\"><span class=\"label\">Activity Status</span><span class=\"value\" [ngClass]=\"${Status} ? 'active' : 'inactive'\" [innerText]=\"${Status} ? 'Online' : 'Offline'\"></span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Last Activity</span><span class=\"value\">${Last Activity}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Last Connect</span><span class=\"value\">${Last Connect}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Last Disconnect</span><span class=\"value\">${Last Disconnect}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Alarm Time</span><span class=\"value\">${Alarm Time}</span></div></div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ".label { font-weight: 400; font-size: 14px; line-height: 21px; letter-spacing: 0.2px; color: #424242; } .value { padding: 2px 4px; font-weight: 500; font-size: 14px; line-height: 21px; letter-spacing: 0.2px; color: #212121; } .title { font-weight: 600; font-size: 16px; line-height: 21px; letter-spacing: 0.2px; color: #212121; } .value-block { height: 100%; } .active { border-radius: 4px; background: #E8F5E9; color: #2E7D32; } .inactive { border-radius: 4px; background: #FFEBEE; color: #C62828; }"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "active",
+                "label" : "Status",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "lastActivityTime",
+                "label" : "Last Activity",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "lastConnectTime",
+                "label" : "Last Connect",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "lastDisconnectTime",
+                "label" : "Last Disconnect",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "inactivityAlarmTime",
+                "label" : "Alarm Time",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "1d15cb6c-073d-43d9-9b8b-30777eec9093"
+            } ]
+          },
+          "id" : "ed2a5cbc-b375-40ad-94eb-44d374a11dc7",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
+        },
+        "067f6550-c8d5-4de3-878b-abb0fd22dbbc" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Chlorine Level",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "mg/L",
+            "decimals" : 2,
+            "actions" : { },
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 5,
+              "gaugeType" : "arc",
+              "showTitle" : true,
+              "title" : "Chlorine Level",
+              "titleFont" : {
+                "color" : "#000000DE"
+              },
+              "labelFont" : { },
+              "valueFont" : { },
+              "minMaxFont" : { },
+              "showMinMax" : false,
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#2196F3"
+              },
+              "showValue" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "cloro",
+                "label" : "Chlorine",
+                "type" : "timeseries",
+                "color" : "#000000DE",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "1d15cb6c-073d-43d9-9b8b-30777eec9093"
+            } ]
+          },
+          "id" : "067f6550-c8d5-4de3-878b-abb0fd22dbbc",
+          "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
+          "type" : "latest"
+        },
+        "293b8e6e-1349-40d7-b2fa-4bb7efb59c1f" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Water Quality History",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "legendConfig" : {
+                "position" : "top",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "xAxis" : {
+                "show" : true,
+                "position" : "bottom"
+              },
+              "yAxis" : {
+                "show" : true,
+                "position" : "left"
+              },
+              "yAxes" : {
+                "cloroAxis" : {
+                  "id" : "cloroAxis",
+                  "label" : "Chlorine (mg/L)",
+                  "position" : "left",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "mg/L",
+                  "decimals" : 2,
+                  "order" : 0
+                },
+                "phAxis" : {
+                  "id" : "phAxis",
+                  "label" : "pH",
+                  "position" : "right",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 1,
+                  "order" : 1
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "cloro",
+                "label" : "Chlorine",
+                "type" : "timeseries",
+                "units" : "mg/L",
+                "decimals" : 2,
+                "color" : "#2196F3",
+                "settings" : {
+                  "yAxisId" : "cloroAxis",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "ph",
+                "label" : "pH",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 2,
+                "color" : "#4CAF50",
+                "settings" : {
+                  "yAxisId" : "phAxis",
+                  "showLegend" : true
+                }
+              } ],
+              "entityAliasId" : "1d15cb6c-073d-43d9-9b8b-30777eec9093"
+            } ]
+          },
+          "id" : "293b8e6e-1349-40d7-b2fa-4bb7efb59c1f",
+          "typeFullFqn" : "system.time_series_chart",
+          "type" : "timeseries"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Padre Toni Dashboard",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "835cd189-d168-451c-aecb-9794ae1c4a15" : {
+                  "sizeX" : 12,
+                  "sizeY" : 4,
+                  "col" : 12,
+                  "row" : 3
+                },
+                "65006471-59f6-454d-b999-464d354b815b" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 12,
+                  "row" : 0
+                },
+                "9cde5965-9137-4778-906e-5d9b320ca46b" : {
+                  "sizeX" : 12,
+                  "sizeY" : 5,
+                  "col" : 12,
+                  "row" : 7
+                },
+                "ed2a5cbc-b375-40ad-94eb-44d374a11dc7" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 0,
+                  "row" : 0
+                },
+                "067f6550-c8d5-4de3-878b-abb0fd22dbbc" : {
+                  "sizeX" : 12,
+                  "sizeY" : 4,
+                  "col" : 0,
+                  "row" : 3
+                },
+                "293b8e6e-1349-40d7-b2fa-4bb7efb59c1f" : {
+                  "sizeX" : 12,
+                  "sizeY" : 5,
+                  "col" : 0,
+                  "row" : 7
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "1d15cb6c-073d-43d9-9b8b-30777eec9093" : {
+          "id" : "1d15cb6c-073d-43d9-9b8b-30777eec9093",
+          "alias" : "Device",
+          "filter" : {
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "ba5db7b0-010e-11f1-b73f-d5302d04056a"
+            },
+            "type" : "singleEntity"
+          }
+        }
+      },
+      "additionalInfo" : {
+        "aiGenerated" : true,
+        "aiGeneratedBy" : "Device Dashboard Assistant"
+      }
+    },
+    "resources" : null,
+    "externalId" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
