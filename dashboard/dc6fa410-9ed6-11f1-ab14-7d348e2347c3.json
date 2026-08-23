@@ -256,7 +256,7 @@
           "col" : 0,
           "config" : {
             "configMode" : "basic",
-            "title" : "Device Information",
+            "title" : "Información del Dispositivo",
             "showTitle" : false,
             "dropShadow" : false,
             "enableFullscreen" : false,
@@ -559,7 +559,7 @@
         "aiGenerated" : true,
         "aiGeneratedBy" : "Device Dashboard Assistant",
         "aiUpdated" : true,
-        "aiUpdateTs" : 1787478435064,
+        "aiUpdateTs" : 1787478441519,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
