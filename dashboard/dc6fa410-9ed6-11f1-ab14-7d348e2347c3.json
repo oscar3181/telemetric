@@ -381,7 +381,7 @@
           "col" : 0,
           "config" : {
             "configMode" : "basic",
-            "title" : "Water Quality History",
+            "title" : "Historial de Calidad del Agua",
             "titleFont" : {
               "size" : 21,
               "sizeUnit" : "px",
@@ -430,25 +430,25 @@
                 "position" : "left"
               },
               "yAxes" : {
-                "cloroAxis" : {
-                  "id" : "cloroAxis",
-                  "label" : "Chlorine (mg/L)",
+                "default" : {
+                  "id" : "default",
+                  "order" : 0,
                   "position" : "left",
-                  "min" : null,
-                  "max" : null,
+                  "show" : true,
+                  "label" : "Cloro (mg/L)",
                   "units" : "mg/L",
-                  "decimals" : 2,
-                  "order" : 0
+                  "decimals" : 2
                 },
                 "phAxis" : {
                   "id" : "phAxis",
                   "label" : "pH",
                   "position" : "right",
-                  "min" : null,
-                  "max" : null,
+                  "min" : 0,
+                  "max" : 14,
                   "units" : "",
-                  "decimals" : 1,
-                  "order" : 1
+                  "decimals" : 2,
+                  "order" : 1,
+                  "show" : true
                 }
               }
             },
@@ -456,13 +456,13 @@
               "type" : "entity",
               "dataKeys" : [ {
                 "name" : "cloro",
-                "label" : "Chlorine",
+                "label" : "Cloro",
                 "type" : "timeseries",
                 "units" : "mg/L",
                 "decimals" : 2,
-                "color" : "#2196F3",
+                "color" : "#E91E63",
                 "settings" : {
-                  "yAxisId" : "cloroAxis",
+                  "yAxisId" : "default",
                   "showLegend" : true
                 }
               }, {
@@ -471,7 +471,7 @@
                 "type" : "timeseries",
                 "units" : "",
                 "decimals" : 2,
-                "color" : "#4CAF50",
+                "color" : "#2196F3",
                 "settings" : {
                   "yAxisId" : "phAxis",
                   "showLegend" : true
@@ -560,7 +560,7 @@
         "aiGenerated" : true,
         "aiGeneratedBy" : "Device Dashboard Assistant",
         "aiUpdated" : true,
-        "aiUpdateTs" : 1787478394650,
+        "aiUpdateTs" : 1787478399162,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
