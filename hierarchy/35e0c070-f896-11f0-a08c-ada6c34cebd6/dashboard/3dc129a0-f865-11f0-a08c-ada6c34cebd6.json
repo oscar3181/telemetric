@@ -10396,6 +10396,268 @@
           "row" : 0,
           "col" : 0,
           "id" : "50be3428-c1d2-e3bf-9290-6e727acd6d1c"
+        },
+        "6af0ddc6-f48b-42cb-b05d-0315f57ce4ca" : {
+          "id" : "6af0ddc6-f48b-42cb-b05d-0315f57ce4ca",
+          "type" : "timeseries",
+          "typeFullFqn" : "system.time_series_chart",
+          "config" : {
+            "title" : "Comportamiento de conductividad y purga",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "41857b37-d333-461e-a3fe-2894ff9c1737",
+              "dataKeys" : [ {
+                "name" : "conductividad",
+                "type" : "timeseries",
+                "label" : "Conductividad",
+                "color" : "#9C27B0",
+                "settings" : {
+                  "type" : "line",
+                  "yAxisId" : "default"
+                },
+                "units" : "µS/cm",
+                "decimals" : 1
+              }, {
+                "name" : "tiempo_purga_24h_min",
+                "type" : "timeseries",
+                "label" : "Tiempo purga 24h",
+                "color" : "#2196F3",
+                "settings" : {
+                  "type" : "line",
+                  "yAxisId" : "purgaAxis"
+                },
+                "units" : "min",
+                "decimals" : 2
+              }, {
+                "name" : "duracion_purga_actual_min",
+                "type" : "timeseries",
+                "label" : "Duración purga actual",
+                "color" : "#FF9800",
+                "settings" : {
+                  "type" : "line",
+                  "yAxisId" : "purgaAxis"
+                },
+                "units" : "min",
+                "decimals" : 2
+              } ]
+            } ],
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 86400000,
+                "interval" : 300000
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "yAxes" : {
+                "default" : {
+                  "id" : "default",
+                  "order" : 0,
+                  "position" : "left",
+                  "show" : true,
+                  "label" : "Conductividad",
+                  "units" : "µS/cm",
+                  "decimals" : 0
+                },
+                "purgaAxis" : {
+                  "id" : "purgaAxis",
+                  "order" : 1,
+                  "position" : "right",
+                  "show" : true,
+                  "label" : "Tiempo purga",
+                  "units" : "min",
+                  "decimals" : 2
+                }
+              }
+            },
+            "enableDataExport" : true
+          },
+          "sizeX" : 150,
+          "sizeY" : 50
+        },
+        "93e72e72-67dc-479c-b306-44aede54a917" : {
+          "id" : "93e72e72-67dc-479c-b306-44aede54a917",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.value_card",
+          "config" : {
+            "title" : "Tiempo de purga (24h)",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "41857b37-d333-461e-a3fe-2894ff9c1737",
+              "dataKeys" : [ {
+                "name" : "tiempo_purga_24h_min",
+                "type" : "timeseries",
+                "label" : "Tiempo purga 24h",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "settings" : {
+              "layout" : "square",
+              "showLabel" : true,
+              "showIcon" : true,
+              "showDate" : false,
+              "icon" : "timer",
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              }
+            },
+            "units" : "min",
+            "decimals" : 2,
+            "enableDataExport" : false
+          },
+          "sizeX" : 90,
+          "sizeY" : 16
+        },
+        "df39613a-bdf4-4dc9-a22a-ea2bb96e9172" : {
+          "id" : "df39613a-bdf4-4dc9-a22a-ea2bb96e9172",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.value_card",
+          "config" : {
+            "title" : "Duración purga actual",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "41857b37-d333-461e-a3fe-2894ff9c1737",
+              "dataKeys" : [ {
+                "name" : "duracion_purga_actual_min",
+                "type" : "timeseries",
+                "label" : "Duración actual",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "settings" : {
+              "layout" : "square",
+              "showLabel" : true,
+              "showIcon" : true,
+              "showDate" : false,
+              "icon" : "schedule",
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              }
+            },
+            "units" : "min",
+            "decimals" : 2,
+            "enableDataExport" : false
+          },
+          "sizeX" : 90,
+          "sizeY" : 16
+        },
+        "4203f45e-5687-4caf-94cd-325c61176cd4" : {
+          "id" : "4203f45e-5687-4caf-94cd-325c61176cd4",
+          "type" : "latest",
+          "typeFullFqn" : "system.cards.value_card",
+          "config" : {
+            "title" : "Estado de purga",
+            "showTitle" : false,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "41857b37-d333-461e-a3fe-2894ff9c1737",
+              "dataKeys" : [ {
+                "name" : "en_purga",
+                "type" : "timeseries",
+                "label" : "Estado",
+                "color" : "#2196f3",
+                "settings" : { },
+                "usePostProcessing" : true,
+                "postFuncBody" : "return (value === true || value === 'true') ? 'En purga' : 'Normal';"
+              } ]
+            } ],
+            "enableFullscreen" : false,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "settings" : {
+              "layout" : "square",
+              "showLabel" : true,
+              "showIcon" : false,
+              "showDate" : false
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 90,
+          "sizeY" : 16
         }
       },
       "states" : {
@@ -11091,6 +11353,30 @@
                   "mobileHeight" : null,
                   "row" : 80,
                   "col" : 0
+                },
+                "6af0ddc6-f48b-42cb-b05d-0315f57ce4ca" : {
+                  "sizeX" : 150,
+                  "sizeY" : 50,
+                  "row" : 130,
+                  "col" : 0
+                },
+                "93e72e72-67dc-479c-b306-44aede54a917" : {
+                  "sizeX" : 90,
+                  "sizeY" : 16,
+                  "row" : 130,
+                  "col" : 150
+                },
+                "df39613a-bdf4-4dc9-a22a-ea2bb96e9172" : {
+                  "sizeX" : 90,
+                  "sizeY" : 16,
+                  "row" : 147,
+                  "col" : 150
+                },
+                "4203f45e-5687-4caf-94cd-325c61176cd4" : {
+                  "sizeX" : 90,
+                  "sizeY" : 16,
+                  "row" : 164,
+                  "col" : 150
                 }
               },
               "gridSettings" : {
@@ -11224,7 +11510,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1788289863068,
+        "aiUpdateTs" : 1788289881859,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
