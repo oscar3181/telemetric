@@ -10763,6 +10763,54 @@
           "row" : 0,
           "col" : 0,
           "id" : "e98fae23-f4c4-b974-014f-ae2642f27d28"
+        },
+        "d3a9b790-c573-207d-7402-9b85f07b6ad8" : {
+          "typeFullFqn" : "system.control_widgets.led_indicator",
+          "type" : "rpc",
+          "sizeX" : 2.5,
+          "sizeY" : 2.5,
+          "config" : {
+            "targetDeviceAliases" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "title" : "Purgando",
+              "ledColor" : "#4caf50",
+              "initialValue" : false,
+              "performCheckStatus" : false,
+              "retrieveValueMethod" : "timeseries",
+              "checkStatusMethod" : "checkStatus",
+              "valueAttribute" : "en_purga",
+              "parseValueFunction" : "return data ? true : false;",
+              "requestTimeout" : 500,
+              "requestPersistent" : false,
+              "persistentPollingInterval" : 5000
+            },
+            "title" : "Led indicator",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "actions" : { },
+            "decimals" : 2,
+            "datasources" : [ ],
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "30664610-f84b-11f0-862c-e5320376240c"
+            },
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d3a9b790-c573-207d-7402-9b85f07b6ad8"
         }
       },
       "states" : {
@@ -11255,6 +11303,14 @@
                   "resizable" : true,
                   "row" : 7,
                   "col" : 636
+                },
+                "d3a9b790-c573-207d-7402-9b85f07b6ad8" : {
+                  "sizeX" : 124,
+                  "sizeY" : 153,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 448,
+                  "col" : 45
                 }
               },
               "gridSettings" : {
