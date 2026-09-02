@@ -10397,104 +10397,6 @@
           "col" : 0,
           "id" : "50be3428-c1d2-e3bf-9290-6e727acd6d1c"
         },
-        "6af0ddc6-f48b-42cb-b05d-0315f57ce4ca" : {
-          "id" : "6af0ddc6-f48b-42cb-b05d-0315f57ce4ca",
-          "type" : "timeseries",
-          "typeFullFqn" : "system.time_series_chart",
-          "config" : {
-            "title" : "Comportamiento de conductividad y purga",
-            "showTitle" : true,
-            "configMode" : "basic",
-            "dropShadow" : false,
-            "borderRadius" : "8px",
-            "widgetStyle" : {
-              "box-shadow" : "0px 2px 4px 0px #00000024;"
-            },
-            "titleFont" : {
-              "size" : 21,
-              "sizeUnit" : "px",
-              "weight" : "500",
-              "lineHeight" : "22px"
-            },
-            "datasources" : [ {
-              "type" : "entity",
-              "entityAliasId" : "41857b37-d333-461e-a3fe-2894ff9c1737",
-              "dataKeys" : [ {
-                "name" : "conductividad",
-                "type" : "timeseries",
-                "label" : "Conductividad",
-                "color" : "#9C27B0",
-                "settings" : {
-                  "type" : "line",
-                  "yAxisId" : "default"
-                },
-                "units" : "µS/cm",
-                "decimals" : 1
-              }, {
-                "name" : "tiempo_purga_24h_min",
-                "type" : "timeseries",
-                "label" : "Tiempo purga 24h",
-                "color" : "#2196F3",
-                "settings" : {
-                  "type" : "line",
-                  "yAxisId" : "purgaAxis"
-                },
-                "units" : "min",
-                "decimals" : 2
-              }, {
-                "name" : "duracion_purga_actual_min",
-                "type" : "timeseries",
-                "label" : "Duración purga actual",
-                "color" : "#FF9800",
-                "settings" : {
-                  "type" : "line",
-                  "yAxisId" : "purgaAxis"
-                },
-                "units" : "min",
-                "decimals" : 2
-              } ]
-            } ],
-            "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "realtime" : {
-                "realtimeType" : 0,
-                "timewindowMs" : 86400000,
-                "interval" : 300000
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "settings" : {
-              "dataZoom" : false,
-              "showLegend" : false,
-              "yAxes" : {
-                "default" : {
-                  "id" : "default",
-                  "order" : 0,
-                  "position" : "left",
-                  "show" : true,
-                  "label" : "Conductividad",
-                  "units" : "µS/cm",
-                  "decimals" : 0
-                },
-                "purgaAxis" : {
-                  "id" : "purgaAxis",
-                  "order" : 1,
-                  "position" : "right",
-                  "show" : true,
-                  "label" : "Tiempo purga",
-                  "units" : "min",
-                  "decimals" : 2
-                }
-              }
-            },
-            "enableDataExport" : true
-          },
-          "sizeX" : 150,
-          "sizeY" : 50
-        },
         "93e72e72-67dc-479c-b306-44aede54a917" : {
           "id" : "93e72e72-67dc-479c-b306-44aede54a917",
           "type" : "latest",
@@ -10526,12 +10428,6 @@
               } ]
             } ],
             "enableFullscreen" : false,
-            "useDashboardTimewindow" : false,
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
             "settings" : {
               "layout" : "square",
               "showLabel" : true,
@@ -10583,12 +10479,6 @@
               } ]
             } ],
             "enableFullscreen" : false,
-            "useDashboardTimewindow" : false,
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
             "settings" : {
               "layout" : "square",
               "showLabel" : true,
@@ -10642,12 +10532,6 @@
               } ]
             } ],
             "enableFullscreen" : false,
-            "useDashboardTimewindow" : false,
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
             "settings" : {
               "layout" : "square",
               "showLabel" : true,
@@ -10658,6 +10542,227 @@
           },
           "sizeX" : 90,
           "sizeY" : 16
+        },
+        "e98fae23-f4c4-b974-014f-ae2642f27d28" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 4.5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "30664610-f84b-11f0-862c-e5320376240c",
+              "dataKeys" : [ {
+                "name" : "tiempo_purga_24h_h",
+                "type" : "timeseries",
+                "label" : "tiempo_purga_24h_h",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "settings" : { },
+                "units" : "h",
+                "decimals" : 0,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "tiempo_purga_24h_h",
+                "type" : "timeseries",
+                "label" : "Latest",
+                "color" : "#4caf50",
+                "settings" : {
+                  "position" : "center",
+                  "font" : {
+                    "size" : 52,
+                    "sizeUnit" : "px",
+                    "family" : "Roboto",
+                    "weight" : "500",
+                    "style" : "normal",
+                    "lineHeight" : "1"
+                  },
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "rgba(0, 0, 0, 0.87)",
+                    "rangeList" : {
+                      "advancedMode" : false,
+                      "range" : [ ]
+                    },
+                    "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                  },
+                  "showArrow" : false
+                },
+                "units" : "h",
+                "decimals" : 2,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "timewindow" : {
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 2,
+                "quickInterval" : "CURRENT_MONTH_SO_FAR",
+                "interval" : 43200000
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 5000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : null,
+            "padding" : "0",
+            "settings" : {
+              "stack" : false,
+              "fontSize" : 10,
+              "fontColor" : "#545454",
+              "showTooltip" : true,
+              "tooltipIndividual" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "grid" : {
+                "verticalLines" : true,
+                "horizontalLines" : true,
+                "outlineWidth" : 1,
+                "color" : "#545454",
+                "backgroundColor" : null,
+                "tickColor" : "#DDDDDD"
+              },
+              "xaxis" : {
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454"
+              },
+              "yaxis" : {
+                "min" : null,
+                "max" : null,
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454",
+                "tickSize" : null,
+                "tickDecimals" : 0,
+                "ticksFormatter" : ""
+              },
+              "shadowSize" : 4,
+              "smoothLines" : false,
+              "comparisonEnabled" : false,
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "title" : null,
+                "showLabels" : true
+              },
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "customLegendEnabled" : false,
+              "showSubtitle" : true,
+              "subtitle" : "${entityName}",
+              "subtitleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "subtitleColor" : "rgba(0, 0, 0, 0.38)",
+              "showDate" : true,
+              "dateFormat" : {
+                "format" : null,
+                "lastUpdateAgo" : true,
+                "custom" : false
+              },
+              "dateFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "dateColor" : "rgba(0, 0, 0, 0.38)",
+              "showChart" : true,
+              "chartColor" : "rgba(0, 0, 0, 0.87)",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "autoScale" : true,
+              "padding" : "18px"
+            },
+            "title" : "Horas de purga en las últimas 24 horas",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileHeight" : null,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : true,
+            "titleIcon" : "water_drop",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "24px"
+            },
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : false,
+            "displayTimewindow" : true,
+            "decimals" : 0,
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "24px",
+              "icon" : null,
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : false
+            },
+            "titleColor" : "rgba(0, 0, 0, 0.87)",
+            "borderRadius" : null,
+            "enableDataExport" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e98fae23-f4c4-b974-014f-ae2642f27d28"
         }
       },
       "states" : {
@@ -11354,12 +11459,6 @@
                   "row" : 80,
                   "col" : 0
                 },
-                "6af0ddc6-f48b-42cb-b05d-0315f57ce4ca" : {
-                  "sizeX" : 150,
-                  "sizeY" : 50,
-                  "row" : 130,
-                  "col" : 0
-                },
                 "93e72e72-67dc-479c-b306-44aede54a917" : {
                   "sizeX" : 90,
                   "sizeY" : 16,
@@ -11377,6 +11476,13 @@
                   "sizeY" : 16,
                   "row" : 164,
                   "col" : 150
+                },
+                "e98fae23-f4c4-b974-014f-ae2642f27d28" : {
+                  "sizeX" : 45,
+                  "sizeY" : 35,
+                  "mobileHeight" : null,
+                  "row" : 180,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
