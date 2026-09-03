@@ -10712,7 +10712,7 @@
             },
             "title" : "Horas de purga en las últimas 24 horas",
             "dropShadow" : true,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
@@ -10758,7 +10758,7 @@
             },
             "titleColor" : "rgba(0, 0, 0, 0.87)",
             "borderRadius" : null,
-            "enableDataExport" : false
+            "enableDataExport" : true
           },
           "row" : 0,
           "col" : 0,
