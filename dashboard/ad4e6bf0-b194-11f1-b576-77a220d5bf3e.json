@@ -1,0 +1,1010 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "ad4e6bf0-b194-11f1-b576-77a220d5bf3e"
+    },
+    "customerId" : null,
+    "ownerId" : null,
+    "title" : "PL19_Frío Cubit Dashboard",
+    "name" : "PL19_Frío Cubit Dashboard",
+    "image" : null,
+    "assignedCustomers" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "timewindow" : {
+        "selectedTab" : 1,
+        "history" : {
+          "timewindowMs" : 3600000,
+          "historyType" : 0
+        },
+        "aggregation" : {
+          "type" : "NONE"
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      },
+      "widgets" : {
+        "f981c43b-dd09-4d1d-a03d-b53ac52f6da0" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "24h Purge Time",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
+            "units" : "",
+            "decimals" : 1,
+            "actions" : { },
+            "settings" : {
+              "layout" : "horizontal",
+              "showLabel" : true,
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "showIcon" : true,
+              "icon" : "schedule",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              },
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "valueFont" : {
+                "size" : 30
+              },
+              "labelFont" : {
+                "size" : 20
+              },
+              "showDate" : false,
+              "autoScale" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "tiempo_purga_24h_min",
+                "label" : "24h Purge Time",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "5cc46d64-fa8e-4265-b259-6c97a5991000"
+            } ]
+          },
+          "id" : "f981c43b-dd09-4d1d-a03d-b53ac52f6da0",
+          "typeFullFqn" : "system.cards.horizontal_value_card",
+          "type" : "latest"
+        },
+        "520051b1-5222-42bc-ae2c-6f96dd4e92a9" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Current Purge Duration",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
+            "units" : "",
+            "decimals" : 1,
+            "actions" : { },
+            "settings" : {
+              "layout" : "horizontal",
+              "showLabel" : true,
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "showIcon" : true,
+              "icon" : "timer",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              },
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "valueFont" : {
+                "size" : 30
+              },
+              "labelFont" : {
+                "size" : 20
+              },
+              "showDate" : false,
+              "autoScale" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "duracion_purga_actual_min",
+                "label" : "Current Purge Duration",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "5cc46d64-fa8e-4265-b259-6c97a5991000"
+            } ]
+          },
+          "id" : "520051b1-5222-42bc-ae2c-6f96dd4e92a9",
+          "typeFullFqn" : "system.cards.horizontal_value_card",
+          "type" : "latest"
+        },
+        "a7476493-058a-4fbb-8e1a-ff16fb59cb8e" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "WiFi Signal",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "dBm",
+            "decimals" : 0,
+            "actions" : { },
+            "settings" : {
+              "layout" : "wifi",
+              "activeBarsColor" : {
+                "type" : "range",
+                "color" : "rgba(92, 223, 144, 1)",
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ {
+                    "from" : null,
+                    "to" : -85,
+                    "color" : "rgba(227, 71, 71, 1)"
+                  }, {
+                    "from" : -85,
+                    "to" : -70,
+                    "color" : "rgba(255, 122, 0, 1)"
+                  }, {
+                    "from" : -70,
+                    "to" : -55,
+                    "color" : "rgba(246, 206, 67, 1)"
+                  }, {
+                    "from" : -55,
+                    "to" : null,
+                    "color" : "rgba(92, 223, 144, 1)"
+                  } ]
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "wifi",
+                "label" : "WiFi",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "5cc46d64-fa8e-4265-b259-6c97a5991000"
+            } ]
+          },
+          "id" : "a7476493-058a-4fbb-8e1a-ff16fb59cb8e",
+          "typeFullFqn" : "system.signal_strength",
+          "type" : "latest"
+        },
+        "50efea88-3654-4306-89b4-6c8eb7ebd6ec" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Device Location",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "mapType" : "geoMap",
+              "layers" : [ {
+                "label" : "{i18n:widgets.maps.layer.roadmap}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldStreetMap",
+                "referenceLayer" : null
+              }, {
+                "label" : "{i18n:widgets.maps.layer.satellite}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery"
+              }, {
+                "label" : "{i18n:widgets.maps.layer.hybrid}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery",
+                "referenceLayer" : "openstreetmap_hybrid"
+              } ],
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsEntityAliasId" : "5cc46d64-fa8e-4265-b259-6c97a5991000",
+                "additionalDataKeys" : [ {
+                  "name" : "name",
+                  "label" : "Device Name",
+                  "type" : "entityField",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                } ],
+                "xKey" : {
+                  "name" : "latitude",
+                  "label" : "Latitude",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                },
+                "yKey" : {
+                  "name" : "longitude",
+                  "label" : "Longitude",
+                  "type" : "attribute",
+                  "color" : "var(--tb-primary-500)",
+                  "settings" : { }
+                },
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "${Device Name}"
+                },
+                "markerType" : "icon",
+                "markerIcon" : {
+                  "icon" : "place",
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "type" : "pattern",
+                  "pattern" : "<b>${Device Name}</b>"
+                }
+              } ],
+              "polygons" : [ ],
+              "circles" : [ ],
+              "fitMapBounds" : true,
+              "mapActionButtons" : [ ]
+            },
+            "datasources" : [ ]
+          },
+          "id" : "50efea88-3654-4306-89b4-6c8eb7ebd6ec",
+          "typeFullFqn" : "system.map",
+          "type" : "latest"
+        },
+        "900f514f-d6e3-49fb-9ac1-070e91511675" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Water Quality Metrics",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "dataZoom" : false,
+              "showLegend" : false,
+              "legendConfig" : {
+                "position" : "top",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "xAxis" : {
+                "show" : true,
+                "position" : "bottom"
+              },
+              "yAxis" : {
+                "show" : true,
+                "position" : "left"
+              },
+              "yAxes" : {
+                "default" : {
+                  "id" : "default",
+                  "label" : "Conductivity / TDS",
+                  "position" : "left",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 1,
+                  "order" : 0
+                },
+                "phAxis" : {
+                  "id" : "phAxis",
+                  "label" : "pH",
+                  "position" : "right",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 2,
+                  "order" : 1
+                },
+                "redoxAxis" : {
+                  "id" : "redoxAxis",
+                  "label" : "Redox",
+                  "position" : "right",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 0,
+                  "order" : 2
+                },
+                "cloroAxis" : {
+                  "id" : "cloroAxis",
+                  "label" : "Chlorine",
+                  "position" : "left",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 2,
+                  "order" : 3
+                },
+                "turbAxis" : {
+                  "id" : "turbAxis",
+                  "label" : "Turbidity",
+                  "position" : "right",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 2,
+                  "order" : 4
+                },
+                "purgaAxis" : {
+                  "id" : "purgaAxis",
+                  "label" : "Purge",
+                  "position" : "left",
+                  "min" : null,
+                  "max" : null,
+                  "units" : "",
+                  "decimals" : 0,
+                  "order" : 5
+                }
+              }
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "conductividad",
+                "label" : "Conductivity",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 1,
+                "color" : "#2196F3",
+                "settings" : {
+                  "yAxisId" : "default",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "tds",
+                "label" : "TDS",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 1,
+                "color" : "#9C27B0",
+                "settings" : {
+                  "yAxisId" : "default",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "ph",
+                "label" : "pH",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 2,
+                "color" : "#4CAF50",
+                "settings" : {
+                  "yAxisId" : "phAxis",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "redox",
+                "label" : "Redox",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 0,
+                "color" : "#FF9800",
+                "settings" : {
+                  "yAxisId" : "redoxAxis",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "cloro",
+                "label" : "Chlorine",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 2,
+                "color" : "#00BCD4",
+                "settings" : {
+                  "yAxisId" : "cloroAxis",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "turbidez",
+                "label" : "Turbidity",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 2,
+                "color" : "#795548",
+                "settings" : {
+                  "yAxisId" : "turbAxis",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "purga",
+                "label" : "Purge",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 0,
+                "color" : "#E91E63",
+                "settings" : {
+                  "yAxisId" : "purgaAxis",
+                  "showLegend" : true
+                }
+              }, {
+                "name" : "tiempo_purga_24h_h",
+                "label" : "24h Purge Hours",
+                "type" : "timeseries",
+                "units" : "",
+                "decimals" : 1,
+                "color" : "#607D8B",
+                "settings" : {
+                  "yAxisId" : "purgaAxis",
+                  "showLegend" : true
+                }
+              } ],
+              "entityAliasId" : "5cc46d64-fa8e-4265-b259-6c97a5991000"
+            } ]
+          },
+          "id" : "900f514f-d6e3-49fb-9ac1-070e91511675",
+          "typeFullFqn" : "system.time_series_chart",
+          "type" : "timeseries"
+        },
+        "d32c3b73-b0a2-44cd-8b13-1bfd5176b818" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Purge Status",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
+            "units" : "",
+            "decimals" : 0,
+            "actions" : { },
+            "settings" : {
+              "layout" : "horizontal",
+              "showLabel" : true,
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "showIcon" : true,
+              "icon" : "autorenew",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              },
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "valueFont" : {
+                "size" : 30
+              },
+              "labelFont" : {
+                "size" : 20
+              },
+              "showDate" : false,
+              "autoScale" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "en_purga",
+                "label" : "Purge Status",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { },
+                "usePostProcessing" : true,
+                "postFuncBody" : "var boolVal = (value === true || value === 'true'); return boolVal ? 'Purging' : 'Idle';"
+              } ],
+              "entityAliasId" : "5cc46d64-fa8e-4265-b259-6c97a5991000"
+            } ]
+          },
+          "id" : "d32c3b73-b0a2-44cd-8b13-1bfd5176b818",
+          "typeFullFqn" : "system.cards.horizontal_value_card",
+          "type" : "latest"
+        },
+        "d9119cf4-0d47-4652-a23b-28f876719c6f" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Flow",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "0px",
+            "margin" : "0px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "widgetCss" : "tb-icon {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  width: 40px!important;\n  height: 40px!important;\n  background-color: var(--tb-primary-50);\n}\n\n.tb-value-card-icon-row {\n    width: 50%;\n    justify-content: space-between;\n}\n",
+            "units" : "",
+            "decimals" : 0,
+            "actions" : { },
+            "settings" : {
+              "layout" : "horizontal",
+              "showLabel" : true,
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "showIcon" : true,
+              "icon" : "water",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "var(--tb-primary-500)"
+              },
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "#000000DE"
+              },
+              "valueFont" : {
+                "size" : 30
+              },
+              "labelFont" : {
+                "size" : 20
+              },
+              "showDate" : false,
+              "autoScale" : true
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "flujo",
+                "label" : "Flow",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "5cc46d64-fa8e-4265-b259-6c97a5991000"
+            } ]
+          },
+          "id" : "d9119cf4-0d47-4652-a23b-28f876719c6f",
+          "typeFullFqn" : "system.cards.horizontal_value_card",
+          "type" : "latest"
+        },
+        "bbefc103-a33c-42f4-aa56-fbc359cadde1" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Alarms",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "padding" : "4px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "alarmsTitle" : "Alarms",
+              "enableSelection" : true,
+              "enableSearch" : true
+            },
+            "alarmSource" : {
+              "type" : "entity",
+              "name" : "alarms",
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "label" : "Created Time",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "originator",
+                "label" : "Originator",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "type",
+                "label" : "Type",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "severity",
+                "label" : "Severity",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "status",
+                "label" : "Status",
+                "type" : "alarm",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "5cc46d64-fa8e-4265-b259-6c97a5991000"
+            },
+            "alarmFilterConfig" : {
+              "typeList" : [ ],
+              "statusList" : [ "ACTIVE" ],
+              "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
+              "searchPropagatedAlarms" : true
+            },
+            "datasources" : [ ]
+          },
+          "id" : "bbefc103-a33c-42f4-aa56-fbc359cadde1",
+          "typeFullFqn" : "system.alarm_widgets.alarms_table",
+          "type" : "alarm"
+        },
+        "fa453d80-150a-47a6-9bfd-f7e259b819db" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Temperature",
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "showTitle" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "useDashboardTimewindow" : true,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "AVG"
+              }
+            },
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "units" : "",
+            "decimals" : 1,
+            "actions" : { },
+            "settings" : { },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "temperatura",
+                "label" : "Temperature",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "latestDataKeys" : [ {
+                "name" : "temperatura",
+                "label" : "Temperature",
+                "type" : "timeseries",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              } ],
+              "entityAliasId" : "5cc46d64-fa8e-4265-b259-6c97a5991000"
+            } ]
+          },
+          "id" : "fa453d80-150a-47a6-9bfd-f7e259b819db",
+          "typeFullFqn" : "system.simple_value_and_chart_card",
+          "type" : "timeseries"
+        },
+        "6890e680-b390-4795-b8c6-ded6f3f8bf43" : {
+          "sizeX" : 0,
+          "sizeY" : 0,
+          "row" : 0,
+          "col" : 0,
+          "config" : {
+            "configMode" : "basic",
+            "title" : "Device Information",
+            "showTitle" : false,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "padding" : "10px",
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "actions" : { },
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"value-block flex flex-col justify-between gap-2\"><div class=\"flex flex-1\"><span class=\"title\">Device Information</span></div><div class=\"flex flex-col justify-between gap-1\"><div class=\"flex flex-row justify-between\"><span class=\"label\">Status</span><span class=\"value\" [ngClass]=\"${Status} ? 'active' : 'inactive'\" [innerText]=\"${Status} ? 'Active' : 'Inactive'\"></span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Alarm Email</span><span class=\"value\">${Alarm Email}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Last Activity</span><span class=\"value\">${Last Activity}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Last Connect</span><span class=\"value\">${Last Connect}</span></div><div class=\"flex flex-row justify-between\"><span class=\"label\">Last Disconnect</span><span class=\"value\">${Last Disconnect}</span></div></div></div>",
+              "applyDefaultMarkdownStyle" : false,
+              "markdownCss" : ".label { font-weight: 400; font-size: 16px; line-height: 21px; letter-spacing: 0.2px; color: #424242; } .value { padding: 4px; font-weight: 500; font-size: 16px; line-height: 21px; letter-spacing: 0.2px; color: #212121; } .title { font-weight: 600; font-size: 18px; line-height: 21px; letter-spacing: 0.2px; color: #212121; } .value-block { height: 100%; } .active { border-radius: 6px; background: #303F9F; color: #E8EAF6; } .inactive { border-radius: 6px; background: #F5F5F5; color: #757575; }"
+            },
+            "datasources" : [ {
+              "type" : "entity",
+              "dataKeys" : [ {
+                "name" : "active",
+                "label" : "Status",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "alarm_email",
+                "label" : "Alarm Email",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { }
+              }, {
+                "name" : "lastActivityTime",
+                "label" : "Last Activity",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { },
+                "usePostProcessing" : true,
+                "postFuncBody" : "var friendlyTime = moment(value).format('DD.MM.YYYY HH:mm'); return friendlyTime;"
+              }, {
+                "name" : "lastConnectTime",
+                "label" : "Last Connect",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { },
+                "usePostProcessing" : true,
+                "postFuncBody" : "var friendlyTime = moment(value).format('DD.MM.YYYY HH:mm'); return friendlyTime;"
+              }, {
+                "name" : "lastDisconnectTime",
+                "label" : "Last Disconnect",
+                "type" : "attribute",
+                "color" : "var(--tb-primary-500)",
+                "settings" : { },
+                "usePostProcessing" : true,
+                "postFuncBody" : "var friendlyTime = moment(value).format('DD.MM.YYYY HH:mm'); return friendlyTime;"
+              } ],
+              "entityAliasId" : "5cc46d64-fa8e-4265-b259-6c97a5991000"
+            } ]
+          },
+          "id" : "6890e680-b390-4795-b8c6-ded6f3f8bf43",
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "PL19_Frío Cubit Dashboard",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "f981c43b-dd09-4d1d-a03d-b53ac52f6da0" : {
+                  "sizeX" : 6,
+                  "sizeY" : 1,
+                  "col" : 18,
+                  "row" : 0
+                },
+                "520051b1-5222-42bc-ae2c-6f96dd4e92a9" : {
+                  "sizeX" : 6,
+                  "sizeY" : 1,
+                  "col" : 12,
+                  "row" : 0
+                },
+                "a7476493-058a-4fbb-8e1a-ff16fb59cb8e" : {
+                  "sizeX" : 6,
+                  "sizeY" : 3,
+                  "col" : 12,
+                  "row" : 1
+                },
+                "50efea88-3654-4306-89b4-6c8eb7ebd6ec" : {
+                  "sizeX" : 12,
+                  "sizeY" : 8,
+                  "col" : 0,
+                  "row" : 4
+                },
+                "900f514f-d6e3-49fb-9ac1-070e91511675" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 12,
+                  "row" : 4
+                },
+                "d32c3b73-b0a2-44cd-8b13-1bfd5176b818" : {
+                  "sizeX" : 6,
+                  "sizeY" : 1,
+                  "col" : 0,
+                  "row" : 0
+                },
+                "d9119cf4-0d47-4652-a23b-28f876719c6f" : {
+                  "sizeX" : 6,
+                  "sizeY" : 1,
+                  "col" : 6,
+                  "row" : 0
+                },
+                "bbefc103-a33c-42f4-aa56-fbc359cadde1" : {
+                  "sizeX" : 12,
+                  "sizeY" : 5,
+                  "col" : 12,
+                  "row" : 7
+                },
+                "fa453d80-150a-47a6-9bfd-f7e259b819db" : {
+                  "sizeX" : 6,
+                  "sizeY" : 3,
+                  "col" : 18,
+                  "row" : 1
+                },
+                "6890e680-b390-4795-b8c6-ded6f3f8bf43" : {
+                  "sizeX" : 12,
+                  "sizeY" : 3,
+                  "col" : 0,
+                  "row" : 1
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "5cc46d64-fa8e-4265-b259-6c97a5991000" : {
+          "id" : "5cc46d64-fa8e-4265-b259-6c97a5991000",
+          "alias" : "Device",
+          "filter" : {
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "30664610-f84b-11f0-862c-e5320376240c"
+            },
+            "type" : "singleEntity"
+          }
+        }
+      },
+      "additionalInfo" : {
+        "aiGenerated" : true,
+        "aiGeneratedBy" : "Device Dashboard Assistant"
+      }
+    },
+    "resources" : null,
+    "externalId" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
