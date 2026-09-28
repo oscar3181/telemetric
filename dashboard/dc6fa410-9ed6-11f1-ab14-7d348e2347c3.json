@@ -64,19 +64,44 @@
               "maxValue" : 14,
               "gaugeType" : "donut",
               "showTitle" : true,
-              "title" : "pH Level",
+              "title" : "Ph",
               "titleFont" : {
                 "color" : "#000000DE"
               },
               "labelFont" : { },
-              "valueFont" : { },
-              "minMaxFont" : { },
+              "valueFont" : {
+                "color" : null
+              },
+              "minMaxFont" : {
+                "color" : null
+              },
               "showMinMax" : false,
               "barColor" : {
                 "type" : "constant",
-                "color" : "#2196F3"
+                "color" : "#2196F3",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 14
+                }
               },
-              "showValue" : true
+              "showValue" : true,
+              "donutStartAngle" : null,
+              "gaugeColor" : null,
+              "useFixedLevelColor" : false,
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ]
             },
             "datasources" : [ {
               "type" : "entity",
@@ -88,7 +113,9 @@
                 "settings" : { }
               } ],
               "entityAliasId" : "1d15cb6c-073d-43d9-9b8b-30777eec9093"
-            } ]
+            } ],
+            "backgroundColor" : null,
+            "units" : null
           },
           "id" : "835cd189-d168-451c-aecb-9794ae1c4a15",
           "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
@@ -179,17 +206,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "4px",
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -343,31 +359,60 @@
               "maxValue" : 5,
               "gaugeType" : "donut",
               "showTitle" : true,
-              "title" : "Chlorine Level",
+              "title" : "Cloro Libre",
               "titleFont" : {
                 "color" : "#000000DE"
               },
               "labelFont" : { },
-              "valueFont" : { },
-              "minMaxFont" : { },
+              "valueFont" : {
+                "color" : null
+              },
+              "minMaxFont" : {
+                "color" : null
+              },
               "showMinMax" : false,
               "barColor" : {
                 "type" : "constant",
-                "color" : "#E91E63"
+                "color" : "#E91E63",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 5
+                }
               },
-              "showValue" : true
+              "showValue" : true,
+              "donutStartAngle" : null,
+              "gaugeColor" : null,
+              "useFixedLevelColor" : false,
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ]
             },
             "datasources" : [ {
-              "type" : "entity",
+              "type" : "device",
+              "deviceId" : "ba5db7b0-010e-11f1-b73f-d5302d04056a",
               "dataKeys" : [ {
                 "name" : "cloro",
-                "label" : "Cloro",
                 "type" : "timeseries",
-                "color" : "#000000DE",
+                "label" : "cloro",
+                "color" : "#2196f3",
                 "settings" : { }
               } ],
-              "entityAliasId" : "1d15cb6c-073d-43d9-9b8b-30777eec9093"
-            } ]
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "backgroundColor" : null
           },
           "id" : "067f6550-c8d5-4de3-878b-abb0fd22dbbc",
           "typeFullFqn" : "system.digital_gauges.simple_gauge_justgage",
@@ -390,17 +435,6 @@
             "showTitle" : true,
             "dropShadow" : false,
             "useDashboardTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 0,
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "realtimeType" : 0
-              },
-              "aggregation" : {
-                "type" : "AVG"
-              }
-            },
             "padding" : "0px",
             "margin" : "0px",
             "borderRadius" : "8px",
@@ -561,7 +595,8 @@
         "aiUpdated" : true,
         "aiUpdateTs" : 1787478441519,
         "aiUpdatedBy" : [ "AI Assistant" ]
-      }
+      },
+      "filters" : { }
     },
     "resources" : null,
     "externalId" : null
