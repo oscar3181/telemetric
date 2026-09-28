@@ -10992,8 +10992,8 @@
                 "63a743ac-f6e3-3901-ed3b-9073428c173a" : {
                   "sizeX" : 49,
                   "sizeY" : 44,
-                  "row" : 403,
-                  "col" : 111
+                  "row" : 418,
+                  "col" : 231
                 },
                 "f25dcd6c-566c-dc81-6c67-cc36b5f44f99" : {
                   "sizeX" : 24,
@@ -11138,15 +11138,15 @@
                   "col" : 636
                 },
                 "d3a9b790-c573-207d-7402-9b85f07b6ad8" : {
-                  "sizeX" : 124,
-                  "sizeY" : 153,
+                  "sizeX" : 96,
+                  "sizeY" : 76,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
                   "row" : 448,
                   "col" : 45
                 },
                 "2bd989cd-d711-6b70-2cb0-e0b16c9b9ff3" : {
-                  "sizeX" : 426,
+                  "sizeX" : 505,
                   "sizeY" : 313,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
