@@ -16,230 +16,6 @@
     "configuration" : {
       "description" : "",
       "widgets" : {
-        "67439487-6cfa-f98d-8770-135ddf5f7948" : {
-          "typeFullFqn" : "system.scada_symbol",
-          "type" : "rpc",
-          "sizeX" : 3,
-          "sizeY" : 3,
-          "config" : {
-            "showTitle" : false,
-            "backgroundColor" : "rgba(0,0,0,0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0",
-            "settings" : {
-              "scadaSymbolUrl" : "tb-image;/api/images/tenant/tablero.svg",
-              "scadaSymbolObjectSettings" : {
-                "behavior" : {
-                  "cloro" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "cloro"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  },
-                  "ph" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "ph"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  },
-                  "conductividad" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "scope" : null,
-                      "key" : "state"
-                    },
-                    "getTimeSeries" : {
-                      "key" : "conductividad"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  },
-                  "temperatura" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "temperatura"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  },
-                  "redox" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "redox"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  },
-                  "turbidez" : {
-                    "action" : "GET_TIME_SERIES",
-                    "defaultValue" : null,
-                    "executeRpc" : {
-                      "method" : "getState",
-                      "requestTimeout" : 5000,
-                      "requestPersistent" : false,
-                      "persistentPollingInterval" : 1000
-                    },
-                    "getAttribute" : {
-                      "key" : "state",
-                      "scope" : null
-                    },
-                    "getTimeSeries" : {
-                      "key" : "turbidez"
-                    },
-                    "getAlarmStatus" : {
-                      "severityList" : null,
-                      "typeList" : null
-                    },
-                    "dataToValue" : {
-                      "type" : "NONE",
-                      "compareToValue" : true,
-                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                    }
-                  }
-                },
-                "properties" : {
-                  "ph_fuera" : 8.6
-                }
-              },
-              "background" : {
-                "type" : "color",
-                "color" : "rgba(0,0,0,0)",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                },
-                "imageUrl" : null
-              },
-              "padding" : "0"
-            },
-            "title" : "SCADA symbol",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "actions" : { },
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : null,
-              "lineHeight" : "1.6"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleStyle" : null,
-            "pageSize" : 1024,
-            "titleIcon" : "mdi:lightbulb-outline",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "configMode" : "advanced",
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "6fa5f4b0-039a-11f1-ab3d-b9171825f6b6"
-            },
-            "titleColor" : null,
-            "borderRadius" : "0px",
-            "margin" : "0",
-            "datasources" : [ ],
-            "resizable" : true,
-            "preserveAspectRatio" : false
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "67439487-6cfa-f98d-8770-135ddf5f7948"
-        },
         "450d61bd-9330-06d5-f40e-b87842eb00a3" : {
           "typeFullFqn" : "system.line_chart",
           "type" : "timeseries",
@@ -2116,6 +1892,256 @@
           "row" : 0,
           "col" : 0,
           "id" : "2039bdf3-98b3-6572-47b2-26d5549fd749"
+        },
+        "70cef4c2-0ab9-fa61-ac03-388440a0677c" : {
+          "typeFullFqn" : "system.scada_symbol",
+          "type" : "rpc",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0",
+              "scadaSymbolUrl" : "tb-image;/api/images/tenant/tablero_flujo_2_decimales.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : {
+                  "cloro" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "cloro"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "ph" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "ph"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "conductividad" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "conductividad"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "temperatura" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "temperatura"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "redox" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "redox"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "turbidez" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "turbidez"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "flujo" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "scope" : null,
+                      "key" : "state"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "flujoInst"
+                    },
+                    "getAlarmStatus" : {
+                      "severityList" : null,
+                      "typeList" : null
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  }
+                },
+                "properties" : {
+                  "ph_fuera" : 8.5
+                }
+              }
+            },
+            "title" : "SCADA symbol",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "6fa5f4b0-039a-11f1-ab3d-b9171825f6b6"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0",
+            "datasources" : [ ],
+            "resizable" : true,
+            "preserveAspectRatio" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "70cef4c2-0ab9-fa61-ac03-388440a0677c"
         }
       },
       "states" : {
@@ -2125,14 +2151,6 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "67439487-6cfa-f98d-8770-135ddf5f7948" : {
-                  "sizeX" : 452,
-                  "sizeY" : 590,
-                  "preserveAspectRatio" : false,
-                  "resizable" : true,
-                  "row" : 59,
-                  "col" : 994
-                },
                 "8edab1e5-ad8b-acb7-26c2-246511246895" : {
                   "sizeX" : 89,
                   "sizeY" : 27,
@@ -2142,7 +2160,7 @@
                   "col" : 268
                 },
                 "476a3be5-81ed-3c4f-becb-5e81b5c95ff6" : {
-                  "sizeX" : 965,
+                  "sizeX" : 957,
                   "sizeY" : 569,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
@@ -2156,6 +2174,14 @@
                   "resizable" : true,
                   "row" : 28,
                   "col" : 177
+                },
+                "70cef4c2-0ab9-fa61-ac03-388440a0677c" : {
+                  "sizeX" : 582,
+                  "sizeY" : 588,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 46,
+                  "col" : 984
                 }
               },
               "gridSettings" : {
