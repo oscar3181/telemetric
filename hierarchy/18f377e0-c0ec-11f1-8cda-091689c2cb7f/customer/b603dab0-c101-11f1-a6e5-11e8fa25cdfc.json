@@ -1,0 +1,43 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "customMenuId" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "18f377e0-c0ec-11f1-8cda-091689c2cb7f"
+    },
+    "email" : "chemipol@gmail.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "b603dab0-c101-11f1-a6e5-11e8fa25cdfc"
+    },
+    "name" : "chemipol admin",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "18f377e0-c0ec-11f1-8cda-091689c2cb7f"
+    },
+    "parentCustomerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "18f377e0-c0ec-11f1-8cda-091689c2cb7f"
+    },
+    "phone" : null,
+    "state" : null,
+    "title" : "chemipol admin",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
