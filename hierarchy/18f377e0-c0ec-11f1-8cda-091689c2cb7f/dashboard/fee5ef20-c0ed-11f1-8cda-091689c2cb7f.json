@@ -1,0 +1,32 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "fee5ef20-c0ed-11f1-8cda-091689c2cb7f"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "18f377e0-c0ec-11f1-8cda-091689c2cb7f"
+    },
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "18f377e0-c0ec-11f1-8cda-091689c2cb7f"
+    },
+    "title" : "Pruebas",
+    "name" : "Pruebas",
+    "image" : "tb-image;/api/images/tenant/1000060471.png",
+    "assignedCustomers" : null,
+    "mobileHide" : false,
+    "mobileOrder" : 1,
+    "configuration" : {
+      "description" : ""
+    },
+    "resources" : null,
+    "externalId" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
