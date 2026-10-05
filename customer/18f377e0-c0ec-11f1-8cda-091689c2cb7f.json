@@ -19,12 +19,12 @@
       "entityType" : "CUSTOMER",
       "id" : "18f377e0-c0ec-11f1-8cda-091689c2cb7f"
     },
-    "name" : "Chemipol",
+    "name" : "admin2",
     "ownerId" : null,
     "parentCustomerId" : null,
     "phone" : null,
     "state" : null,
-    "title" : "Chemipol",
+    "title" : "admin2",
     "zip" : null
   },
   "attributes" : {
