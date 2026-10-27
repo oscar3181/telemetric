@@ -1,0 +1,26 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "c0bac230-d244-11f1-9968-e99913795e0c"
+    },
+    "customerId" : null,
+    "ownerId" : null,
+    "title" : "Configuración de alarmas · Telemetría",
+    "name" : "Configuración de alarmas · Telemetría",
+    "image" : null,
+    "assignedCustomers" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "Límites mínimo y máximo por dispositivo para pH, cloro, temperatura, redox, conductividad y turbidez. Destinatario de alarmas configurable."
+    },
+    "resources" : null,
+    "externalId" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
