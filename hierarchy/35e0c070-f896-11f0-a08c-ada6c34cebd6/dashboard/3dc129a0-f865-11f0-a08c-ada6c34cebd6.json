@@ -3628,7 +3628,7 @@
             "alarmFilterConfig" : {
               "statusList" : [ "ACTIVE" ],
               "severityList" : [ "CRITICAL", "MAJOR" ],
-              "typeList" : [ "General Alarm", "desconectado" ],
+              "typeList" : [ "General Alarm", "desconectado", "telemetria_cloro_fuera_rango", "telemetria_ph_fuera_rango", "telemetria_temperatura_fuera_rango" ],
               "searchPropagatedAlarms" : true,
               "assignedToCurrentUser" : false,
               "assigneeId" : {
