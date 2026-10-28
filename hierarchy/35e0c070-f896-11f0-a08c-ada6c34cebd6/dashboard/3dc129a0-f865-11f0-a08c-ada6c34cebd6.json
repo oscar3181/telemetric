@@ -9865,7 +9865,7 @@
               "appearance" : {
                 "type" : "outlined",
                 "showLabel" : true,
-                "label" : "Sinóptico",
+                "label" : "Limites alarma",
                 "showIcon" : true,
                 "icon" : "image",
                 "iconSize" : 24,
