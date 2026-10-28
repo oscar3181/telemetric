@@ -3629,11 +3629,11 @@
               "statusList" : [ "ACTIVE" ],
               "severityList" : [ "CRITICAL", "MAJOR" ],
               "typeList" : [ "General Alarm", "desconectado" ],
-              "searchPropagatedAlarms" : false,
+              "searchPropagatedAlarms" : true,
               "assignedToCurrentUser" : false,
               "assigneeId" : {
                 "entityType" : "USER",
-                "id" : "061d1370-ccae-11f0-9d66-1135b9cdad4e"
+                "id" : "459e4100-f840-11f0-a24d-13b2783631c6"
               }
             },
             "datasources" : [ ],
