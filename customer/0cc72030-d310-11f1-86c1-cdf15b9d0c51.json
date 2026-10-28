@@ -1,0 +1,34 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : "Calle Rota 462",
+    "address2" : null,
+    "city" : "Casarrubios del Monte",
+    "country" : null,
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : "control@aquafilter.es",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "0cc72030-d310-11f1-86c1-cdf15b9d0c51"
+    },
+    "name" : "control",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : "+34682060828",
+    "state" : "Toledo",
+    "title" : "control",
+    "zip" : "45950"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
