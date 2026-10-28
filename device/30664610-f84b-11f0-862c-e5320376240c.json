@@ -1,0 +1,445 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT",
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "27da7c00-d315-11f1-9968-e99913795e0c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "30664610-f84b-11f0-862c-e5320376240c"
+    },
+    "label" : "",
+    "name" : "PL19_Frío Cubit",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Telemetría - Alarmas configurables"
+  },
+  "credentials" : {
+    "credentialsId" : "fwmr9j41ggs6d1zy9sds",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1790891759002,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_cloro_max",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_cloro_min",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_conductividad_max",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 5000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_conductividad_min",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 200,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_ph_max",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 9,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_ph_min",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 6,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_redox_max",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 800,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_redox_min",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 50,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_temperatura_max",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 40,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_temperatura_min",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 5,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_turbidez_max",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 14,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_turbidez_min",
+      "lastUpdateTs" : 1793133303407,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1790891757986,
+      "longValue" : 1790891757986,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1793222339325,
+      "longValue" : 1793222338415,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1793197301811,
+      "longValue" : 1793197301811,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1793197297533,
+      "longValue" : 1793197297533,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 41.61520104597325,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1779374681355,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -4.7155999335245715,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1779374681355,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_email",
+      "lastUpdateTs" : 1774724605633,
+      "longValue" : null,
+      "strValue" : "oscar3181@gmail.com"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 1.135,
+      "jsonValue" : null,
+      "key" : "cloro",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 1538.4,
+      "jsonValue" : null,
+      "key" : "conductividad",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "flujo",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.038,
+      "jsonValue" : null,
+      "key" : "flujoInst",
+      "lastUpdateTs" : 1769524887094,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 8.988,
+      "jsonValue" : null,
+      "key" : "ph",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "purga",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "redox",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : 581,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendcloro",
+      "lastUpdateTs" : 1788905233797,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendph",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendtemperatura",
+      "lastUpdateTs" : 1788898750697,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sendturbidez",
+      "lastUpdateTs" : 1788905233797,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 769.22,
+      "jsonValue" : null,
+      "key" : "tds",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 31.629,
+      "jsonValue" : null,
+      "key" : "temperatura",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "temperature",
+      "lastUpdateTs" : 1774728397572,
+      "longValue" : 55,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 1.594,
+      "jsonValue" : null,
+      "key" : "turbidez",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "wifi",
+      "lastUpdateTs" : 1788905233816,
+      "longValue" : -3,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ {
+    "additionalInfo" : {
+      "aiGenerated" : true,
+      "aiGeneratedBy" : "AI Assistant"
+    },
+    "configuration" : {
+      "type" : "SCRIPT",
+      "output" : {
+        "type" : "TIME_SERIES",
+        "strategy" : {
+          "type" : "IMMEDIATE",
+          "processCfs" : true,
+          "saveLatest" : true,
+          "saveTimeSeries" : true,
+          "sendWsUpdate" : true,
+          "ttl" : 0
+        }
+      },
+      "arguments" : {
+        "conductividad" : {
+          "limit" : 5000,
+          "refEntityKey" : {
+            "key" : "conductividad",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 86400000
+        }
+      },
+      "expression" : "var totalPurgaMs = 0;\nvar duracionEventoActualMs = 0;\n\nvar purgando = false;\nvar inicioPurgaTs = 0;\n\nvar contadorSubidas = 0;\nvar toleranciaSubida = 5;      // µS/cm\nvar lecturasParaCerrar = 3;    // subidas consecutivas\n\nvar count = conductividad.size;\n\nif (count > 1) {\n\n    for (var i = 1; i < count; i++) {\n\n        var prev = conductividad.values[i - 1];\n        var curr = conductividad.values[i];\n\n        if (!isNaN(prev.value) && !isNaN(curr.value)) {\n\n            // INICIO DE PURGA\n            // Cruce de 2000 µS/cm hacia abajo\n            if (!purgando &&\n                prev.value >= 2000 &&\n                curr.value < 2000) {\n\n                purgando = true;\n                inicioPurgaTs = prev.ts;\n                contadorSubidas = 0;\n            }\n\n            // PURGA EN CURSO\n            if (purgando) {\n\n                // Si la conductividad sube claramente\n                if (curr.value > prev.value + toleranciaSubida) {\n\n                    contadorSubidas++;\n\n                } else {\n\n                    // Si vuelve a bajar o prácticamente se mantiene,\n                    // anulamos el intento de cierre\n                    contadorSubidas = 0;\n                }\n\n                // FIN DE PURGA:\n                // 3 lecturas consecutivas claramente ascendentes\n                if (contadorSubidas >= lecturasParaCerrar) {\n\n                    // Tomamos como final aproximado el instante\n                    // anterior al inicio de la subida sostenida\n                    var indiceFin = i - lecturasParaCerrar;\n\n                    if (indiceFin < 0) {\n                        indiceFin = 0;\n                    }\n\n                    var finPurgaTs =\n                        conductividad.values[indiceFin].ts;\n\n                    var duracion =\n                        finPurgaTs - inicioPurgaTs;\n\n                    if (duracion > 0) {\n                        totalPurgaMs += duracion;\n                    }\n\n                    purgando = false;\n                    inicioPurgaTs = 0;\n                    contadorSubidas = 0;\n                }\n            }\n        }\n    }\n\n    // Si al terminar el periodo consultado\n    // todavía estamos dentro de una purga\n    if (purgando && inicioPurgaTs > 0) {\n\n        var ultimoTs =\n            conductividad.values[count - 1].ts;\n\n        duracionEventoActualMs =\n            ultimoTs - inicioPurgaTs;\n\n        if (duracionEventoActualMs > 0) {\n            totalPurgaMs += duracionEventoActualMs;\n        }\n    }\n}\n\nreturn {\n\n    \"tiempo_purga_24h_min\":\n        toFixed(totalPurgaMs / 60000.0, 2),\n\n    \"tiempo_purga_24h_h\":\n        toFixed(totalPurgaMs / 3600000.0, 2),\n\n    \"duracion_purga_actual_min\":\n        toFixed(duracionEventoActualMs / 60000.0, 2),\n\n    \"en_purga\":\n        purgando\n};"
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : null,
+    "name" : "Tiempo de purga por conductividad (24h)",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "4570c860-f840-11f0-a24d-13b2783631c6"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "ph" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "30664610-f84b-11f0-862c-e5320376240c"
+          },
+          "refEntityKey" : {
+            "key" : "ph",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : null,
+      "createRules" : {
+        "CRITICAL" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "ph",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS_OR_EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 6.5
+                  }
+                }, {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER_OR_EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 8.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1770414726307,
+      "failuresEnabled" : true
+    },
+    "name" : "ph_fuera_rango",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "4570c860-f840-11f0-a24d-13b2783631c6"
+    },
+    "type" : "ALARM"
+  } ]
+}
