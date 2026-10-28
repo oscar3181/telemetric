@@ -3544,7 +3544,7 @@
             "alarmSource" : {
               "type" : "device",
               "name" : "",
-              "deviceId" : "fc118ff0-bfc4-11f0-9d66-1135b9cdad4e",
+              "deviceId" : "30664610-f84b-11f0-862c-e5320376240c",
               "dataKeys" : [ {
                 "name" : "createdTime",
                 "type" : "alarm",
@@ -3642,7 +3642,16 @@
             "enableDataExport" : true,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "24px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : null,
+              "color" : "#4CAF50",
+              "displayTypePrefix" : true
+            }
           },
           "row" : 0,
           "col" : 0,
