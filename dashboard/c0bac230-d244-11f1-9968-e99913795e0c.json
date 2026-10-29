@@ -25,7 +25,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "e3f6be1e-49b0-69a6-15c3-a979444eab6c",
+              "entityAliasId" : "82e6d167-c795-10a2-674f-efda61bf899f",
               "dataKeys" : [ {
                 "name" : "alarm_ph_min",
                 "type" : "attribute",
@@ -735,6 +735,16 @@
             "type" : "entityType",
             "resolveMultiple" : true,
             "entityType" : "DEVICE"
+          }
+        },
+        "82e6d167-c795-10a2-674f-efda61bf899f" : {
+          "id" : "82e6d167-c795-10a2-674f-efda61bf899f",
+          "alias" : "Dispositivo seleccionado",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "",
+            "defaultStateEntity" : null
           }
         }
       },
