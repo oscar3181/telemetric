@@ -1488,9 +1488,9 @@
               "appearance" : {
                 "type" : "outlined",
                 "showLabel" : true,
-                "label" : "Gráficos",
+                "label" : "Ubicación",
                 "showIcon" : true,
-                "icon" : "multiline_chart",
+                "icon" : "pin_drop",
                 "iconSize" : 24,
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
