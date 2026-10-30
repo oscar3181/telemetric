@@ -11454,6 +11454,7 @@
                 "layerType" : "Esri.WorldImagery",
                 "referenceLayer" : "openstreetmap_hybrid"
               } ],
+              "imageSource" : null,
               "markers" : [ {
                 "dsType" : "entity",
                 "dsEntityAliasId" : "41857b37-d333-461e-a3fe-2894ff9c1737",
@@ -11496,14 +11497,36 @@
               } ],
               "polygons" : [ ],
               "circles" : [ ],
+              "polylines" : [ ],
+              "additionalDataSources" : [ ],
+              "controlsPosition" : "topleft",
+              "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
+              "scales" : [ "metric" ],
+              "dragModeButton" : false,
+              "fitMapBounds" : true,
+              "useDefaultCenterPosition" : false,
+              "defaultCenterPosition" : "0,0",
+              "defaultZoomLevel" : null,
+              "mapPageSize" : 16384,
               "mapActionButtons" : [ ],
-              "fitMapBounds" : true
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "8px"
             },
             "enableDataExport" : true,
             "showTitleIcon" : true,
             "titleIcon" : "pin_drop",
             "iconColor" : "rgba(255, 2, 2, 0.87)",
-            "iconSize" : "24px"
+            "iconSize" : "24px",
+            "titleColor" : null,
+            "actions" : { }
           },
           "sizeX" : 24,
           "sizeY" : 12
