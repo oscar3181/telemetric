@@ -12356,6 +12356,15 @@
               "id" : "30664610-f84b-11f0-862c-e5320376240c"
             }
           }
+        },
+        "97813bc1-26c8-4810-0c2f-4117429eca1f" : {
+          "id" : "97813bc1-26c8-4810-0c2f-4117429eca1f",
+          "alias" : "Selector Dispositivo",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : false,
+            "entityType" : "DEVICE"
+          }
         }
       },
       "filters" : { },
