@@ -11501,7 +11501,7 @@
               "additionalDataSources" : [ ],
               "controlsPosition" : "topleft",
               "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
-              "scales" : [ "metric" ],
+              "scales" : [ ],
               "dragModeButton" : false,
               "fitMapBounds" : true,
               "useDefaultCenterPosition" : false,
