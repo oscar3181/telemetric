@@ -1603,9 +1603,9 @@
               "appearance" : {
                 "type" : "outlined",
                 "showLabel" : true,
-                "label" : "Gráficos",
+                "label" : "Inicio",
                 "showIcon" : true,
-                "icon" : "multiline_chart",
+                "icon" : "home",
                 "iconSize" : 24,
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
