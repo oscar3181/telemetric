@@ -12348,9 +12348,13 @@
           "id" : "91128115-19bb-52e3-bb34-5d5fa13740d0",
           "alias" : "Dispositivo",
           "filter" : {
-            "type" : "entityType",
+            "type" : "stateEntity",
             "resolveMultiple" : false,
-            "entityType" : "DEVICE"
+            "stateEntityParamName" : "default",
+            "defaultStateEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "30664610-f84b-11f0-862c-e5320376240c"
+            }
           }
         }
       },
