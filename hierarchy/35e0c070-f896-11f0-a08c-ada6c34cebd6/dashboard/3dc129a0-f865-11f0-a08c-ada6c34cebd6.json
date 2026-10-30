@@ -11416,6 +11416,97 @@
           "row" : 0,
           "col" : 0,
           "id" : "2185db66-dc40-de68-3daf-0d5c9d6efbfc"
+        },
+        "7fcab187-2656-47cd-9e23-1fd9c8d6f98a" : {
+          "id" : "7fcab187-2656-47cd-9e23-1fd9c8d6f98a",
+          "type" : "latest",
+          "typeFullFqn" : "system.map",
+          "config" : {
+            "title" : "Ubicación",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ ],
+            "enableFullscreen" : true,
+            "settings" : {
+              "mapType" : "geoMap",
+              "layers" : [ {
+                "label" : "{i18n:widgets.maps.layer.roadmap}",
+                "provider" : "openfreemap",
+                "layerType" : "bright"
+              }, {
+                "label" : "{i18n:widgets.maps.layer.satellite}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery"
+              }, {
+                "label" : "{i18n:widgets.maps.layer.hybrid}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery",
+                "referenceLayer" : "openstreetmap_hybrid"
+              } ],
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsEntityAliasId" : "41857b37-d333-461e-a3fe-2894ff9c1737",
+                "xKey" : {
+                  "name" : "latitude",
+                  "type" : "attribute",
+                  "label" : "latitude",
+                  "settings" : { }
+                },
+                "yKey" : {
+                  "name" : "longitude",
+                  "type" : "attribute",
+                  "label" : "longitude",
+                  "settings" : { }
+                },
+                "markerType" : "icon",
+                "markerIcon" : {
+                  "icon" : "place"
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "${entityName}"
+                },
+                "additionalDataKeys" : [ {
+                  "name" : "cloro",
+                  "type" : "timeseries",
+                  "label" : "cloro",
+                  "settings" : { }
+                } ],
+                "tooltip" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/>Lat: ${latitude:4}, Lng: ${longitude:4}<br/>Cloro: ${cloro} ppm",
+                  "trigger" : "click"
+                }
+              } ],
+              "polygons" : [ ],
+              "circles" : [ ],
+              "mapActionButtons" : [ ],
+              "fitMapBounds" : true
+            },
+            "enableDataExport" : true,
+            "showTitleIcon" : true,
+            "titleIcon" : "pin_drop",
+            "iconColor" : "rgba(255, 2, 2, 0.87)",
+            "iconSize" : "24px"
+          },
+          "sizeX" : 24,
+          "sizeY" : 12
         }
       },
       "states" : {
@@ -11947,7 +12038,14 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "7fcab187-2656-47cd-9e23-1fd9c8d6f98a" : {
+                  "sizeX" : 24,
+                  "sizeY" : 12,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
@@ -12263,7 +12361,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793368238243,
+        "aiUpdateTs" : 1793368246634,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
