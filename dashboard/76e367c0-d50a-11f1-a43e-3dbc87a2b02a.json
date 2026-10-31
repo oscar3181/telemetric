@@ -1479,7 +1479,11 @@
               "iconPosition" : "left",
               "displayTypePrefix" : false
             },
-            "datasources" : [ ]
+            "datasources" : [ ],
+            "enableFullscreen" : true,
+            "showTitleIcon" : true,
+            "titleIcon" : "notifications",
+            "iconSize" : "20px"
           },
           "sizeX" : 24,
           "sizeY" : 10
@@ -1858,7 +1862,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793449813585,
+        "aiUpdateTs" : 1793449834774,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
