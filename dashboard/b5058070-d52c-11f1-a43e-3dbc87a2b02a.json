@@ -1380,7 +1380,7 @@
             "titleIcon" : "place",
             "iconSize" : "20px"
           },
-          "sizeX" : 24,
+          "sizeX" : 16,
           "sizeY" : 10
         },
         "f0d479fc-0cd7-4659-abda-ec2a45a43600" : {
@@ -1801,7 +1801,7 @@
             "main" : {
               "widgets" : {
                 "281f8b32-de0a-4f9e-8fcb-023767dd2512" : {
-                  "sizeX" : 24,
+                  "sizeX" : 16,
                   "sizeY" : 10,
                   "row" : 0,
                   "col" : 0,
@@ -1892,7 +1892,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793479851359,
+        "aiUpdateTs" : 1793479889513,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
