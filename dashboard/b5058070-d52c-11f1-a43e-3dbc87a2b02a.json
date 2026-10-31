@@ -1391,7 +1391,7 @@
           "type" : "alarm",
           "typeFullFqn" : "system.alarm_widgets.alarms_table",
           "config" : {
-            "title" : "Registro de Alarmas",
+            "title" : "Registro de Alarmas · ${entityName}",
             "showTitle" : false,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1413,6 +1413,12 @@
                 "type" : "alarm",
                 "label" : "Fecha de registro",
                 "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "originator",
+                "type" : "alarm",
+                "label" : "Dispositivo",
+                "color" : "#4caf50",
                 "settings" : { }
               }, {
                 "name" : "type",
@@ -1968,7 +1974,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793479954457,
+        "aiUpdateTs" : 1793479956342,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
