@@ -1391,7 +1391,7 @@
           "type" : "alarm",
           "typeFullFqn" : "system.alarm_widgets.alarms_table",
           "config" : {
-            "title" : "Registro de Alarmas · ${entityName}",
+            "title" : "Registro de Alarmas",
             "showTitle" : false,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1976,7 +1976,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793480228122,
+        "aiUpdateTs" : 1793480475731,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
