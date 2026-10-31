@@ -429,7 +429,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Histórico de Conductividad · ${entityName}",
+            "title" : "Histórico de Conductividad",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1976,7 +1976,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793480476765,
+        "aiUpdateTs" : 1793480477112,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
