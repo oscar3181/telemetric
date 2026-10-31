@@ -1199,7 +1199,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Caudal medio por hora · ${entityName}",
+            "title" : "Caudal medio por hora",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1976,7 +1976,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793480620231,
+        "aiUpdateTs" : 1793480620598,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
