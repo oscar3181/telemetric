@@ -26,6 +26,16 @@
             },
             "type" : "singleEntity"
           }
+        },
+        "a0677d61-03fc-464c-a7f3-273eba127ddd" : {
+          "id" : "a0677d61-03fc-464c-a7f3-273eba127ddd",
+          "alias" : "Dispositivos disponibles",
+          "filter" : {
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "30664610-f84b-11f0-862c-e5320376240c", "6fa5f4b0-039a-11f1-ab3d-b9171825f6b6", "979d9340-8b5a-11f1-a40e-2ba7ae4918b3", "01bd4c00-a98a-11f1-8680-eb7b4f3816b1", "b42cac70-0cd5-11f1-b5a7-93241ed57bdc", "61a2fb00-195d-11f1-92b2-1da25bcc708d" ],
+            "type" : "entityList"
+          }
         }
       },
       "filters" : { },
@@ -1864,7 +1874,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793449858680,
+        "aiUpdateTs" : 1793452740898,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
