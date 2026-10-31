@@ -1368,7 +1368,7 @@
                   "trigger" : "click"
                 },
                 "edit" : {
-                  "enabledActions" : [ "move" ],
+                  "enabledActions" : [ "add", "move", "remove" ],
                   "attributeScope" : "SERVER_SCOPE",
                   "snappable" : false
                 }
@@ -1976,7 +1976,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793480487918,
+        "aiUpdateTs" : 1793480493917,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
