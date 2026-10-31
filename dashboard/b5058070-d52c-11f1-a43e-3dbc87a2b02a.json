@@ -1289,8 +1289,8 @@
           "type" : "latest",
           "typeFullFqn" : "system.map",
           "config" : {
-            "title" : "Mapa del sistema · ${entityName}",
-            "showTitle" : true,
+            "title" : "Mapa del sistema",
+            "showTitle" : false,
             "configMode" : "basic",
             "dropShadow" : false,
             "borderRadius" : "8px",
@@ -1976,7 +1976,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793480477850,
+        "aiUpdateTs" : 1793480487918,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
