@@ -685,7 +685,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Histórico de Redox",
+            "title" : "Histórico de Redox · ${entityName}",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1974,7 +1974,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793479971578,
+        "aiUpdateTs" : 1793479971971,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
