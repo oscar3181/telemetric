@@ -301,7 +301,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Histórico de Temperatura · ${entityName}",
+            "title" : "Histórico de Temperatura",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1976,7 +1976,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793480476461,
+        "aiUpdateTs" : 1793480476765,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
