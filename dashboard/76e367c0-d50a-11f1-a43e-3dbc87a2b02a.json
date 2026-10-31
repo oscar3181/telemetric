@@ -1273,6 +1273,212 @@
           },
           "sizeX" : 12,
           "sizeY" : 6
+        },
+        "281f8b32-de0a-4f9e-8fcb-023767dd2512" : {
+          "id" : "281f8b32-de0a-4f9e-8fcb-023767dd2512",
+          "type" : "latest",
+          "typeFullFqn" : "system.map",
+          "config" : {
+            "title" : "Ubicación geográfica · PL19_Frío Cubit",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "datasources" : [ ],
+            "enableFullscreen" : false,
+            "settings" : {
+              "mapType" : "geoMap",
+              "layers" : [ {
+                "label" : "{i18n:widgets.maps.layer.roadmap}",
+                "provider" : "openfreemap",
+                "layerType" : "bright"
+              }, {
+                "label" : "{i18n:widgets.maps.layer.satellite}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery"
+              }, {
+                "label" : "{i18n:widgets.maps.layer.hybrid}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery",
+                "referenceLayer" : "openstreetmap_hybrid"
+              } ],
+              "useDefaultCenterPosition" : true,
+              "defaultCenterPosition" : "41.61520104597325,-4.7155999335245715",
+              "defaultZoomLevel" : 16,
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsEntityAliasId" : "10640d50-bc0e-4c63-a691-55c26f1692ff",
+                "xKey" : {
+                  "name" : "latitude",
+                  "type" : "attribute",
+                  "label" : "latitude",
+                  "settings" : { }
+                },
+                "yKey" : {
+                  "name" : "longitude",
+                  "type" : "attribute",
+                  "label" : "longitude",
+                  "settings" : { }
+                },
+                "markerType" : "icon",
+                "markerIcon" : {
+                  "icon" : "place",
+                  "color" : {
+                    "type" : "function",
+                    "color" : "#307FE5",
+                    "colorFunction" : "return (data.Active === 'false' || data.Active === false) ? '#94A3B8' : '#10B981';"
+                  },
+                  "size" : 36
+                },
+                "click" : {
+                  "type" : "doNothing"
+                },
+                "label" : {
+                  "show" : true,
+                  "type" : "function",
+                  "patternFunction" : "var online = data.Active === 'true' || data.Active === true; return '<span style=\\\"display:inline-flex;align-items:center;gap:6px;padding:3px 8px;border-radius:12px;background:#ffffff;box-shadow:0 1px 4px rgba(0,0,0,0.2);font-size:11px;font-weight:600;color:#1E293B;\\\">' + data.entityName + '<span style=\\\"width:8px;height:8px;border-radius:50%;background:' + (online ? '#10B981' : '#94A3B8') + ';box-shadow:0 0 4px ' + (online ? '#10B981' : '#94A3B8') + ';\\\"></span></span>';"
+                },
+                "additionalDataKeys" : [ {
+                  "name" : "active",
+                  "type" : "attribute",
+                  "label" : "Active",
+                  "settings" : { }
+                } ],
+                "tooltip" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/>Estado: ${Active}",
+                  "trigger" : "click"
+                }
+              } ],
+              "polygons" : [ ],
+              "circles" : [ ],
+              "mapActionButtons" : [ ],
+              "fitMapBounds" : false
+            },
+            "enableDataExport" : false
+          },
+          "sizeX" : 24,
+          "sizeY" : 10
+        },
+        "f0d479fc-0cd7-4659-abda-ec2a45a43600" : {
+          "id" : "f0d479fc-0cd7-4659-abda-ec2a45a43600",
+          "type" : "alarm",
+          "typeFullFqn" : "system.alarm_widgets.alarms_table",
+          "config" : {
+            "title" : "Registro de Alarmas · PL19_Frío Cubit",
+            "showTitle" : true,
+            "configMode" : "basic",
+            "dropShadow" : false,
+            "borderRadius" : "8px",
+            "widgetStyle" : {
+              "box-shadow" : "0px 2px 4px 0px #00000024;"
+            },
+            "titleFont" : {
+              "size" : 21,
+              "sizeUnit" : "px",
+              "weight" : "500",
+              "lineHeight" : "22px"
+            },
+            "alarmSource" : {
+              "type" : "entity",
+              "entityAliasId" : "10640d50-bc0e-4c63-a691-55c26f1692ff",
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "type" : "alarm",
+                "label" : "Fecha de registro",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "type",
+                "type" : "alarm",
+                "label" : "Tipo de alarma",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "severity",
+                "type" : "alarm",
+                "label" : "Severidad",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "status",
+                "type" : "alarm",
+                "label" : "Estado",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "startTime",
+                "type" : "alarm",
+                "label" : "Inicio",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "clearTime",
+                "type" : "alarm",
+                "label" : "Limpieza",
+                "color" : "#00bcd4",
+                "settings" : { }
+              } ]
+            },
+            "alarmFilterConfig" : {
+              "searchPropagatedAlarms" : false
+            },
+            "alarmsPollingInterval" : 5,
+            "useDashboardTimewindow" : false,
+            "timewindow" : {
+              "selectedTab" : 0,
+              "realtime" : {
+                "interval" : 1800000,
+                "timewindowMs" : 604800000,
+                "advancedParams" : {
+                  "lastAggIntervalsConfig" : {
+                    "86400000" : {
+                      "defaultAggInterval" : 300000
+                    },
+                    "604800000" : {
+                      "defaultAggInterval" : 1800000
+                    },
+                    "2592000000" : {
+                      "defaultAggInterval" : 7200000
+                    }
+                  }
+                },
+                "realtimeType" : 0
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 25000
+              }
+            },
+            "settings" : {
+              "defaultSortOrder" : "-createdTime",
+              "defaultPageSize" : 10,
+              "pageStepIncrement" : 10,
+              "pageStepCount" : 3
+            },
+            "displayTimewindow" : true,
+            "enableDataExport" : true,
+            "tbAiTimeRanges" : [ "86400000", "604800000", "2592000000" ],
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "icon" : "date_range",
+              "iconSize" : "16px",
+              "iconPosition" : "left",
+              "displayTypePrefix" : false
+            }
+          },
+          "sizeX" : 24,
+          "sizeY" : 10
         }
       },
       "states" : {
@@ -1573,7 +1779,14 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "281f8b32-de0a-4f9e-8fcb-023767dd2512" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
@@ -1591,7 +1804,14 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "f0d479fc-0cd7-4659-abda-ec2a45a43600" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
@@ -1628,7 +1848,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793440352335,
+        "aiUpdateTs" : 1793440390603,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
