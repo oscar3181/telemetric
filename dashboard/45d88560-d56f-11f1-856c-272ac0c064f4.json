@@ -22,7 +22,7 @@
             "resolveMultiple" : false,
             "defaultStateEntity" : {
               "entityType" : "DEVICE",
-              "id" : "30664610-f84b-11f0-862c-e5320376240c"
+              "id" : "b42cac70-0cd5-11f1-b5a7-93241ed57bdc"
             },
             "type" : "stateEntity"
           }
@@ -1980,7 +1980,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793480620598,
+        "aiUpdateTs" : 1793481521134,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
