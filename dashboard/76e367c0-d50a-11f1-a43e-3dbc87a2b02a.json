@@ -1279,7 +1279,7 @@
           "type" : "latest",
           "typeFullFqn" : "system.map",
           "config" : {
-            "title" : "Ubicación geográfica · PL19_Frío Cubit",
+            "title" : "Mapa del sistema · PL19_Frío Cubit",
             "showTitle" : false,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1294,7 +1294,7 @@
               "lineHeight" : "22px"
             },
             "datasources" : [ ],
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "settings" : {
               "mapType" : "geoMap",
               "layers" : [ {
@@ -1365,7 +1365,10 @@
               "mapActionButtons" : [ ],
               "fitMapBounds" : false
             },
-            "enableDataExport" : false
+            "enableDataExport" : false,
+            "showTitleIcon" : true,
+            "titleIcon" : "place",
+            "iconSize" : "20px"
           },
           "sizeX" : 24,
           "sizeY" : 10
@@ -1855,7 +1858,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793448499180,
+        "aiUpdateTs" : 1793449813585,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
