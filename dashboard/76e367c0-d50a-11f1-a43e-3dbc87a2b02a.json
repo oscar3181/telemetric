@@ -83,6 +83,24 @@
               }
             }
           }
+        },
+        "monitor_de_flujo" : {
+          "name" : "Monitor de flujo",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true
+              }
+            }
+          }
         }
       },
       "timewindow" : {
@@ -107,7 +125,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793437822796,
+        "aiUpdateTs" : 1793437829798,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
