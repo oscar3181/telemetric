@@ -1103,7 +1103,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Histórico de flujo · ${entityName}",
+            "title" : "Histórico de flujo",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1976,7 +1976,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793480611712,
+        "aiUpdateTs" : 1793480620231,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
