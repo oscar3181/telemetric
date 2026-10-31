@@ -14,7 +14,20 @@
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
-      "entityAliases" : { },
+      "entityAliases" : {
+        "10640d50-bc0e-4c63-a691-55c26f1692ff" : {
+          "id" : "10640d50-bc0e-4c63-a691-55c26f1692ff",
+          "alias" : "PL19_Frío Cubit",
+          "filter" : {
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "30664610-f84b-11f0-862c-e5320376240c"
+            },
+            "type" : "singleEntity"
+          }
+        }
+      },
       "filters" : { },
       "widgets" : { },
       "states" : {
@@ -58,7 +71,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793437771610,
+        "aiUpdateTs" : 1793437808833,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
