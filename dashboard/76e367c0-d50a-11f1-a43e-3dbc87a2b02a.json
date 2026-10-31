@@ -1189,7 +1189,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Volumen horario de flujo",
+            "title" : "Caudal medio por hora",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1209,12 +1209,12 @@
               "dataKeys" : [ {
                 "name" : "flujo",
                 "type" : "timeseries",
-                "label" : "Flujo medio horario",
+                "label" : "Caudal medio horario",
                 "color" : "#0891B2",
                 "settings" : {
                   "type" : "bar"
                 },
-                "units" : "m³/h",
+                "units" : "L/min",
                 "decimals" : 2
               } ]
             } ],
@@ -1256,7 +1256,7 @@
                   "order" : 0,
                   "position" : "left",
                   "show" : true,
-                  "units" : "m³/h"
+                  "units" : "L/min"
                 }
               }
             },
@@ -1854,7 +1854,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793441941422,
+        "aiUpdateTs" : 1793442007943,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
