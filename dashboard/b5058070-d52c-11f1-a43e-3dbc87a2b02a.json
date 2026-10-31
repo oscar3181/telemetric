@@ -45,7 +45,7 @@
           "type" : "timeseries",
           "typeFullFqn" : "system.time_series_chart",
           "config" : {
-            "title" : "Histórico de pH · ${entityName}",
+            "title" : "Histórico de pH",
             "showTitle" : true,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1976,7 +1976,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793480475731,
+        "aiUpdateTs" : 1793480476090,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
