@@ -47,6 +47,24 @@
               }
             }
           }
+        },
+        "gr_ficas_de_par_metros" : {
+          "name" : "Gráficas de parámetros",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true
+              }
+            }
+          }
         }
       },
       "timewindow" : {
@@ -71,7 +89,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793437808833,
+        "aiUpdateTs" : 1793437819130,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
