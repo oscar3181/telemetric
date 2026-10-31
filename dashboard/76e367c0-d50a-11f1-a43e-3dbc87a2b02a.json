@@ -1567,6 +1567,24 @@
               }
             }
           }
+        },
+        "mapa" : {
+          "name" : "Mapa",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true
+              }
+            }
+          }
         }
       },
       "timewindow" : {
@@ -1592,7 +1610,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793438015759,
+        "aiUpdateTs" : 1793440311964,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
