@@ -7,8 +7,8 @@
     },
     "customerId" : null,
     "ownerId" : null,
-    "title" : "New Dashboard",
-    "name" : "New Dashboard",
+    "title" : "Calidad del agua · Frío Cubit",
+    "name" : "Calidad del agua · Frío Cubit",
     "image" : null,
     "assignedCustomers" : null,
     "mobileHide" : false,
@@ -19,7 +19,7 @@
       "widgets" : { },
       "states" : {
         "default" : {
-          "name" : "New Dashboard",
+          "name" : "Calidad del agua · Frío Cubit",
           "root" : true,
           "layouts" : {
             "main" : {
@@ -55,6 +55,11 @@
         "showDashboardTimewindow" : true,
         "showDashboardExport" : true,
         "toolbarAlwaysOpen" : true
+      },
+      "additionalInfo" : {
+        "aiUpdated" : true,
+        "aiUpdateTs" : 1793437771610,
+        "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
     "resources" : null,
