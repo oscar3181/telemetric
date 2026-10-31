@@ -1124,7 +1124,7 @@
                     }
                   }
                 },
-                "units" : "m³/h",
+                "units" : "L/min",
                 "decimals" : 2
               } ]
             } ],
@@ -1166,7 +1166,7 @@
                   "order" : 0,
                   "position" : "left",
                   "show" : true,
-                  "units" : "m³/h"
+                  "units" : "L/min"
                 }
               }
             },
@@ -1854,7 +1854,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793441903857,
+        "aiUpdateTs" : 1793441941422,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
