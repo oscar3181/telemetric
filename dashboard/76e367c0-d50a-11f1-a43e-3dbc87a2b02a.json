@@ -1507,7 +1507,9 @@
                     "resources" : [ ]
                   },
                   "actions" : { }
-                }
+                },
+                "outerMargin" : true,
+                "margin" : 10
               }
             }
           }
