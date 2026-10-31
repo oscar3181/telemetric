@@ -1016,10 +1016,16 @@
                 "timewindowMs" : 86400000,
                 "advancedParams" : {
                   "lastAggIntervalsConfig" : {
+                    "21600000" : {
+                      "defaultAggInterval" : 1800000
+                    },
                     "86400000" : {
                       "defaultAggInterval" : 3600000
                     },
                     "604800000" : {
+                      "defaultAggInterval" : 86400000
+                    },
+                    "2592000000" : {
                       "defaultAggInterval" : 86400000
                     }
                   }
@@ -1070,7 +1076,7 @@
             },
             "displayTimewindow" : true,
             "enableDataExport" : true,
-            "tbAiTimeRanges" : [ "86400000", "604800000" ],
+            "tbAiTimeRanges" : [ "21600000", "86400000", "604800000", "2592000000" ],
             "timewindowStyle" : {
               "showIcon" : true,
               "icon" : "date_range",
@@ -1220,6 +1226,12 @@
                 "timewindowMs" : 86400000,
                 "advancedParams" : {
                   "lastAggIntervalsConfig" : {
+                    "3600000" : {
+                      "defaultAggInterval" : 300000
+                    },
+                    "21600000" : {
+                      "defaultAggInterval" : 1800000
+                    },
                     "86400000" : {
                       "defaultAggInterval" : 3600000
                     },
@@ -1250,7 +1262,7 @@
             },
             "displayTimewindow" : true,
             "enableDataExport" : true,
-            "tbAiTimeRanges" : [ "86400000", "604800000" ],
+            "tbAiTimeRanges" : [ "3600000", "21600000", "86400000", "604800000" ],
             "timewindowStyle" : {
               "showIcon" : true,
               "icon" : "date_range",
@@ -1271,12 +1283,17 @@
             "main" : {
               "widgets" : { },
               "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
-                "columns" : 24,
-                "margin" : 10,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "layoutType" : "html",
+                "htmlPageConfig" : {
+                  "settings" : {
+                    "type" : "ANGULAR",
+                    "html" : "<div class=\"qc-shell\">\n  <header class=\"qc-header\">\n    <div class=\"qc-header__info\">\n      <div class=\"qc-header__title-row\">\n        <h1 class=\"qc-header__title\">Calidad del agua · Frío Cubit</h1>\n        <span class=\"qc-badge\" [class.qc-badge--online]=\"isActive\" [class.qc-badge--offline]=\"!isActive\">\n          <span class=\"qc-badge__dot\"></span>\n          {{ isActive ? 'Online' : 'Desconectado' }}\n        </span>\n      </div>\n      <div class=\"qc-header__subtitle\">Monitorización de circuito de refrigeración · Dispositivo PL19_Frío Cubit (Frio Cubit)</div>\n      <div class=\"qc-header__meta\">\n        <span class=\"qc-header__meta-item\">\n          <tb-icon>schedule</tb-icon>\n          Última actualización: <strong>{{ lastUpdateStr }}</strong> ({{ lastRelativeStr }})\n        </span>\n        <span class=\"qc-header__meta-item qc-header__status-summary\" [class.is-warn]=\"outOfRangeCount > 0\">\n          <tb-icon>{{ outOfRangeCount > 0 ? 'warning' : 'check_circle' }}</tb-icon>\n          {{ outOfRangeCount > 0 ? (outOfRangeCount + ' parámetro(s) fuera de rango nominal') : 'Todos los parámetros en rango nominal' }}\n        </span>\n      </div>\n    </div>\n    <div class=\"qc-header__actions\">\n      <button type=\"button\" class=\"qc-btn qc-btn--ghost\" (click)=\"toggleSettings()\">\n        <tb-icon>tune</tb-icon>\n        {{ showSettings ? 'Cerrar límites' : 'Ajustar límites provisionales' }}\n      </button>\n    </div>\n  </header>\n\n  @if (showSettings) {\n    <section class=\"qc-card qc-settings\">\n      <div class=\"qc-settings__header\">\n        <div class=\"qc-settings__title-wrap\">\n          <div class=\"qc-settings__title\">\n            <tb-icon>tune</tb-icon>\n            Límites provisionales para circuito de refrigeración\n          </div>\n          <div class=\"qc-settings__desc\">Rangos operativos iniciales orientativos para supervisión de calidad, sin disparar nuevas alarmas externas.</div>\n        </div>\n        <div class=\"qc-settings__actions\">\n          <button type=\"button\" class=\"qc-btn qc-btn--sm\" [disabled]=\"busy || !isDirty()\" (click)=\"resetLimits()\">Descartar</button>\n          <button type=\"button\" class=\"qc-btn qc-btn--primary qc-btn--sm\" [disabled]=\"busy || !isDirty()\" (click)=\"saveLimits()\">{{ busy ? 'Guardando…' : 'Guardar límites' }}</button>\n        </div>\n      </div>\n      <div class=\"qc-settings__grid\">\n        @for (p of params; track p.key) {\n          <div class=\"qc-setting-item\" [style.--param-color]=\"p.color\">\n            <div class=\"qc-setting-item__head\">\n              <span class=\"qc-setting-item__color-tag\"></span>\n              <span class=\"qc-setting-item__name\">{{ p.name }}</span>\n              <span class=\"qc-setting-item__unit\">({{ p.unit }})</span>\n            </div>\n            <div class=\"qc-setting-item__inputs\">\n              <label class=\"qc-input-group\">\n                <span class=\"qc-input-group__label\">Mín</span>\n                <input type=\"number\" class=\"qc-input\" [value]=\"shownLimit(p, 'min')\" (input)=\"onLimitInput(p, 'min', $any($event.target).value)\" [step]=\"p.step\"/>\n              </label>\n              <label class=\"qc-input-group\">\n                <span class=\"qc-input-group__label\">Máx</span>\n                <input type=\"number\" class=\"qc-input\" [value]=\"shownLimit(p, 'max')\" (input)=\"onLimitInput(p, 'max', $any($event.target).value)\" [step]=\"p.step\"/>\n              </label>\n            </div>\n          </div>\n        }\n      </div>\n      @if (saveMessage) {\n        <div class=\"qc-settings__msg\" [class.is-error]=\"saveMessageIsError\">{{ saveMessage }}</div>\n      }\n    </section>\n  }\n\n  <div class=\"qc-grid-params\">\n    @for (p of params; track p.key) {\n      <article class=\"qc-card qc-param-card\" [style.--param-color]=\"p.color\" [style.--param-bg]=\"p.bg\">\n        <div class=\"qc-param-card__top\">\n          <div class=\"qc-param-card__label-group\">\n            <span class=\"qc-param-card__title\">{{ p.name }}</span>\n            <span class=\"qc-param-card__limits-txt\">Límites: {{ p.min !== null ? (p.min | number:'1.0-2') : '—' }} - {{ p.max !== null ? (p.max | number:'1.0-2') : '—' }} {{ p.unit }}</span>\n          </div>\n          <span class=\"qc-param-card__status-tag\" [class]=\"'qc-param-card__status-tag--' + p.statusTone\">\n            {{ p.statusLabel }}\n          </span>\n        </div>\n\n        <div class=\"qc-param-card__body\">\n          <div class=\"qc-param-card__main-val\">\n            <span class=\"qc-param-card__number\">{{ p.value !== null ? (p.value | number:'1.1-2') : '—' }}</span>\n            <span class=\"qc-param-card__unit\">{{ p.unit }}</span>\n          </div>\n          <div class=\"qc-donut\" [class]=\"'qc-donut--' + p.statusTone\">\n            <svg viewBox=\"0 0 100 100\" class=\"qc-donut__svg\">\n              <circle class=\"qc-donut__track\" cx=\"50\" cy=\"50\" r=\"38\" pathLength=\"100\" />\n              <circle class=\"qc-donut__fill\" cx=\"50\" cy=\"50\" r=\"38\" pathLength=\"100\" [attr.stroke-dasharray]=\"p.gaugeDash\" transform=\"rotate(-90 50 50)\" />\n            </svg>\n            <span class=\"qc-donut__zone-text\">{{ p.zoneShort }}</span>\n          </div>\n        </div>\n\n        <div class=\"qc-param-card__footer\">\n          <div class=\"qc-param-card__trend\" [class.is-up]=\"p.trendDiff > 0\" [class.is-down]=\"p.trendDiff < 0\">\n            <tb-icon>{{ p.trendDiff > 0 ? 'trending_up' : (p.trendDiff < 0 ? 'trending_down' : 'trending_flat') }}</tb-icon>\n            <span>{{ p.trendText }}</span>\n          </div>\n          <div class=\"qc-sparkline-wrap\">\n            <svg viewBox=\"0 0 120 32\" class=\"qc-sparkline\" preserveAspectRatio=\"none\">\n              @if (p.sparklinePts) {\n                <polyline [attr.points]=\"p.sparklinePts\" class=\"qc-sparkline__line\" />\n              }\n            </svg>\n          </div>\n        </div>\n      </article>\n    }\n  </div>\n\n  <section class=\"qc-card qc-flow-section\">\n    <div class=\"qc-flow-section__overview\">\n      <div class=\"qc-flow-section__title-row\">\n        <div class=\"qc-flow-section__icon\"><tb-icon>mdi:waves</tb-icon></div>\n        <div>\n          <h2 class=\"qc-flow-section__title\">Caudal de Flujo Circulante</h2>\n          <p class=\"qc-flow-section__sub\">Monitorización hidráulica de entrada / retorno</p>\n        </div>\n      </div>\n      <div class=\"qc-flow-section__kpi\">\n        <div class=\"qc-flow-section__val-row\">\n          <span class=\"qc-flow-section__value\">{{ flow.value !== null ? (flow.value | number:'1.1-2') : '—' }}</span>\n          <span class=\"qc-flow-section__unit\">m³/h</span>\n        </div>\n        <div class=\"qc-flow-section__trend\" [class.is-up]=\"flow.trendDiff > 0\" [class.is-down]=\"flow.trendDiff < 0\">\n          <tb-icon>{{ flow.trendDiff > 0 ? 'arrow_upward' : (flow.trendDiff < 0 ? 'arrow_downward' : 'remove') }}</tb-icon>\n          <span>{{ flow.trendText }}</span>\n        </div>\n      </div>\n      <div class=\"qc-flow-section__spark-box\">\n        <div class=\"qc-flow-section__spark-title\">Tendencia última hora</div>\n        <svg viewBox=\"0 0 180 40\" class=\"qc-sparkline qc-sparkline--flow\" preserveAspectRatio=\"none\">\n          @if (flow.sparklinePts) {\n            <polyline [attr.points]=\"flow.sparklinePts\" class=\"qc-sparkline__line\" />\n          }\n        </svg>\n      </div>\n    </div>\n    <div class=\"qc-flow-section__embed\">\n      <div class=\"tb-ai-shared-range tb-ai-shared-range--embed\" data-tb-ai-time-range=\"monitor_de_flujo\"></div><tb-dashboard-state class=\"tb-ai-framed\" [ctx]=\"ctx\" stateId=\"monitor_de_flujo\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n    </div>\n  </section>\n\n  <section class=\"qc-views-wrapper\">\n    <nav class=\"qc-tabs\">\n      <button type=\"button\" class=\"qc-tab\" [class.is-active]=\"activeTab === 'graficas'\" (click)=\"selectTab('graficas')\">\n        <tb-icon>mdi:chart-timeline-variant</tb-icon>\n        <span>Gráficas de parámetros</span>\n      </button>\n      <button type=\"button\" class=\"qc-tab\" [class.is-active]=\"activeTab === 'comparativo'\" (click)=\"selectTab('comparativo')\">\n        <tb-icon>mdi:chart-areaspline</tb-icon>\n        <span>Análisis comparativo</span>\n      </button>\n    </nav>\n    <div class=\"qc-view-content\">\n      @switch (activeTab) {\n        @case ('graficas') {\n          <div class=\"qc-embed-state-box\">\n            <div class=\"tb-ai-shared-range tb-ai-shared-range--embed\" data-tb-ai-time-range=\"gr_ficas_de_par_metros\"></div><tb-dashboard-state class=\"tb-ai-framed\" [ctx]=\"ctx\" stateId=\"gr_ficas_de_par_metros\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n          </div>\n        }\n        @case ('comparativo') {\n          <div class=\"qc-embed-state-box\">\n            <div class=\"tb-ai-shared-range tb-ai-shared-range--embed\" data-tb-ai-time-range=\"an_lisis_comparativo\"></div><tb-dashboard-state class=\"tb-ai-framed\" [ctx]=\"ctx\" stateId=\"an_lisis_comparativo\" [syncParentStateParams]=\"true\"></tb-dashboard-state>\n          </div>\n        }\n      }\n    </div>\n  </section>\n</div>",
+                    "css" : "/* tb-ai-palette */ .qc-shell { --canvas: var(--tb-ai-canvas, #F7F8FA); --surface: var(--tb-ai-surface, #FFFFFF); --text: var(--tb-ai-text, rgba(0,0,0,0.87)); --text-secondary: var(--tb-ai-text-secondary, rgba(0,0,0,0.54)); --border: var(--tb-ai-border, rgba(0,0,0,0.12)); --primary: var(--tb-ai-primary, var(--tb-primary-500, #00695C)); --on-primary: var(--tb-ai-on-primary, var(--tb-primary-contrast-500, #FFFFFF)); --accent: var(--tb-ai-accent, var(--tb-accent-500, #FF5722)); }\ntb-icon {\n  width: 1em;\n  height: 1em;\n  min-width: 1em;\n  min-height: 1em;\n  font-size: 24px;\n  line-height: 1;\n}\n\n.qc-shell {\n  --tb-ai-font: 'Inter',-apple-system,BlinkMacSystemFont,sans-serif;\n  font-family: var(--tb-ai-font);\n  --tb-ai-card-border: 1px solid rgba(226,232,240,0.8);\n  --tb-ai-card-radius: 16px;\n  --tb-ai-card-shadow: 0 2px 8px rgba(0,0,0,0.04);\n  --tb-ai-card-padding: 16px;\n  --tb-ai-card-title-size: 14px;\n  --tb-ai-card-title-weight: 600;\n  --tb-ai-card-title-color: var(--text);\n  --tb-ai-card-title-line-height: 20px;\n  --tb-ai-table-header-size: 12px;\n  --tb-ai-table-header-weight: 600;\n  --tb-ai-table-header-color: var(--text-secondary);\n  --tb-ai-table-cell-size: 13px;\n  --tb-ai-table-cell-weight: 400;\n  --tb-ai-table-cell-color: var(--text);\n  --tb-ai-table-divider-color: var(--border);\n  height: 100%;\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n  padding: 20px;\n  background: var(--canvas,#F8FAFC);\n  color: var(--text,#1E293B);\n  overflow-y: auto;\n}\n\n.qc-header {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  justify-content: space-between;\n  gap: 16px;\n  padding-bottom: 4px;\n}\n\n.qc-header__info {\n  display: flex;\n  flex-direction: column;\n  gap: 6px;\n}\n\n.qc-header__title-row {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  flex-wrap: wrap;\n}\n\n.qc-header__title {\n  font-size: 22px;\n  font-weight: 700;\n  margin: 0;\n  color: var(--text,#0F172A);\n  letter-spacing: -0.02em;\n}\n\n.qc-header__subtitle {\n  font-size: 13px;\n  color: var(--text-secondary,#64748B);\n}\n\n.qc-header__meta {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 16px;\n  font-size: 12px;\n  color: var(--text-secondary,#64748B);\n  margin-top: 4px;\n}\n\n.qc-header__meta-item {\n  display: inline-flex;\n  align-items: center;\n  gap: 6px;\n}\n\n.qc-header__meta-item tb-icon {\n  font-size: 16px;\n}\n\n.qc-header__status-summary {\n  font-weight: 500;\n  color: #10B981;\n}\n\n.qc-header__status-summary.is-warn {\n  color: #F59E0B;\n}\n\n.qc-badge {\n  display: inline-flex;\n  align-items: center;\n  gap: 6px;\n  padding: 3px 10px;\n  border-radius: 999px;\n  font-size: 12px;\n  font-weight: 600; white-space: nowrap; flex: none;\n}\n\n.qc-badge__dot {\n  width: 8px;\n  height: 8px;\n  border-radius: 50%; white-space: nowrap; flex: none;\n}\n\n.qc-badge--online {\n  background: rgba(16,185,129,0.12);\n  color: #059669;\n}\n\n.qc-badge--online .qc-badge__dot {\n  background: #10B981;\n  box-shadow: 0 0 6px #10B981;\n}\n\n.qc-badge--offline {\n  background: rgba(100,116,139,0.12);\n  color: #64748B;\n}\n\n.qc-badge--offline .qc-badge__dot {\n  background: #94A3B8;\n}\n\n.qc-btn {\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n  padding: 8px 14px;\n  border-radius: 10px;\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  border: 1px solid transparent;\n  transition: all .15s ease;\n}\n\n.qc-btn tb-icon {\n  font-size: 18px;\n}\n\n.qc-btn--ghost {\n  background: var(--surface,#FFF);\n  border: 1px solid var(--border,#E2E8F0);\n  color: var(--text,#334155);\n}\n\n.qc-btn--ghost:hover {\n  background: rgba(0,0,0,0.03);\n}\n\n.qc-btn--primary {\n  background: var(--primary,#0284C7);\n  color: var(--on-primary,#FFF);\n}\n\n.qc-btn--primary:hover {\n  opacity: .92;\n}\n\n.qc-btn--sm {\n  padding: 6px 12px;\n  font-size: 12px;\n}\n\n.qc-btn:disabled {\n  opacity: .5;\n  cursor: not-allowed;\n}\n\n.qc-card {\n  background: var(--surface,#FFF);\n  border: var(--tb-ai-card-border);\n  border-radius: var(--tb-ai-card-radius);\n  box-shadow: var(--tb-ai-card-shadow);\n  padding: var(--tb-ai-card-padding);\n  box-sizing: border-box;\n}\n\n.qc-settings {\n  display: flex;\n  flex-direction: column;\n  gap: 14px;\n  background: #F1F5F9;\n  border: 1px solid #CBD5E1;\n}\n\n.qc-settings__header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 12px;\n  flex-wrap: wrap;\n}\n\n.qc-settings__title {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  font-size: 14px;\n  font-weight: 700;\n  color: #0F172A;\n}\n\n.qc-settings__desc {\n  font-size: 12px;\n  color: #64748B;\n  margin-top: 2px;\n}\n\n.qc-settings__actions {\n  display: flex;\n  gap: 8px;\n}\n\n.qc-settings__grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));\n  gap: 10px;\n}\n\n.qc-setting-item {\n  background: #FFF;\n  padding: 10px 12px;\n  border-radius: 10px;\n  border: 1px solid #E2E8F0;\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.qc-setting-item__head {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n}\n\n.qc-setting-item__color-tag {\n  width: 10px;\n  height: 10px;\n  border-radius: 3px;\n  background: var(--param-color,#0284C7);\n}\n\n.qc-setting-item__name {\n  font-size: 12px;\n  font-weight: 600;\n  color: #1E293B;\n}\n\n.qc-setting-item__unit {\n  font-size: 11px;\n  color: #64748B;\n  margin-left: auto;\n}\n\n.qc-setting-item__inputs {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 8px;\n}\n\n.qc-input-group {\n  display: flex;\n  flex-direction: column;\n  gap: 3px;\n}\n\n.qc-input-group__label {\n  font-size: 10px;\n  font-weight: 600;\n  text-transform: uppercase;\n  color: #64748B;\n}\n\n.qc-input {\n  width: 100%;\n  box-sizing: border-box;\n  padding: 5px 8px;\n  border: 1px solid #CBD5E1;\n  border-radius: 6px;\n  font-size: 12px;\n  font-weight: 600;\n  background: #F8FAFC;\n  color: #0F172A;\n}\n\n.qc-settings__msg {\n  font-size: 12px;\n  font-weight: 500;\n  color: #059669;\n}\n\n.qc-settings__msg.is-error {\n  color: #DC2626;\n}\n\n.qc-grid-params {\n  display: grid;\n  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));\n  gap: 16px;\n}\n\n.qc-param-card {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n  background: var(--surface,#FFF);\n  border-top: 4px solid var(--param-color,#0284C7);\n  transition: transform .2s ease,box-shadow .2s ease;\n}\n\n.qc-param-card:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 6px 16px rgba(0,0,0,0.06);\n}\n\n.qc-param-card__top {\n  display: flex;\n  align-items: flex-start;\n  justify-content: space-between;\n  gap: 8px; flex-wrap: wrap;\n}\n\n.qc-param-card__title {\n  font-size: 14px;\n  font-weight: 700;\n  color: var(--text,#1E293B);\n}\n\n.qc-param-card__limits-txt {\n  display: block;\n  font-size: 11px;\n  color: var(--text-secondary,#64748B);\n  margin-top: 2px;\n}\n\n.qc-param-card__status-tag {\n  padding: 2px 8px;\n  border-radius: 999px;\n  font-size: 11px;\n  font-weight: 600;\n  white-space: nowrap;\n}\n\n.qc-param-card__status-tag--ok {\n  background: rgba(16,185,129,0.12);\n  color: #059669;\n}\n\n.qc-param-card__status-tag--warn {\n  background: rgba(245,158,11,0.15);\n  color: #D97706;\n}\n\n.qc-param-card__status-tag--crit {\n  background: rgba(239,68,68,0.15);\n  color: #DC2626;\n}\n\n.qc-param-card__status-tag--none {\n  background: rgba(148,163,184,0.15);\n  color: #64748B;\n}\n\n.qc-param-card__body {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 12px;\n}\n\n.qc-param-card__main-val {\n  display: flex;\n  align-items: baseline;\n  gap: 4px;\n}\n\n.qc-param-card__number {\n  font-size: 32px;\n  font-weight: 800;\n  letter-spacing: -0.03em;\n  color: var(--text,#0F172A);\n  font-variant-numeric: tabular-nums;\n}\n\n.qc-param-card__unit {\n  font-size: 13px;\n  font-weight: 600;\n  color: var(--text-secondary,#64748B);\n}\n\n.qc-donut {\n  position: relative;\n  width: 64px;\n  height: 64px;\n  flex: none;\n}\n\n.qc-donut__svg {\n  width: 100%;\n  height: 100%;\n  display: block;\n}\n\n.qc-donut__track {\n  fill: none;\n  stroke: #E2E8F0;\n  stroke-width: 8;\n}\n\n.qc-donut__fill {\n  fill: none;\n  stroke: var(--param-color,#0284C7);\n  stroke-width: 8;\n  stroke-linecap: round;\n  transition: stroke-dasharray .5s ease;\n}\n\n.qc-donut--warn .qc-donut__fill {\n  stroke: #F59E0B;\n}\n\n.qc-donut--crit .qc-donut__fill {\n  stroke: #EF4444;\n}\n\n.qc-donut__zone-text {\n  position: absolute;\n  inset: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  font-weight: 700;\n  color: var(--text-secondary,#475569);\n}\n\n.qc-param-card__footer {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 8px;\n  padding-top: 8px;\n  border-top: 1px solid rgba(226,232,240,0.6);\n}\n\n.qc-param-card__trend {\n  display: inline-flex;\n  align-items: center;\n  gap: 4px;\n  font-size: 11px;\n  font-weight: 600;\n  color: var(--text-secondary,#64748B);\n}\n\n.qc-param-card__trend tb-icon {\n  font-size: 14px;\n}\n\n.qc-param-card__trend.is-up {\n  color: #059669;\n}\n\n.qc-param-card__trend.is-down {\n  color: #D97706;\n}\n\n.qc-sparkline-wrap {\n  width: 90px;\n  height: 24px;\n}\n\n.qc-sparkline {\n  width: 100%;\n  height: 100%;\n  display: block;\n}\n\n.qc-sparkline__line {\n  fill: none;\n  stroke: var(--param-color,#0284C7);\n  stroke-width: 2;\n  stroke-linecap: round;\n  stroke-linejoin: round;\n}\n\n.qc-flow-section {\n  display: grid;\n  grid-template-columns: 320px 1fr;\n  gap: 20px;\n  border-left: 5px solid #06B6D4;\n  padding: 20px;\n  align-items: stretch;\n}\n\n.qc-flow-section__overview {\n  display: flex;\n  flex-direction: column;\n  gap: 14px;\n  justify-content: space-between;\n}\n\n.qc-flow-section__title-row {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n}\n\n.qc-flow-section__icon {\n  width: 40px;\n  height: 40px;\n  border-radius: 12px;\n  background: #CFFAFE;\n  color: #0891B2;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 22px;\n  flex: none;\n}\n\n.qc-flow-section__title {\n  font-size: 16px;\n  font-weight: 700;\n  margin: 0;\n  color: #0F172A;\n}\n\n.qc-flow-section__sub {\n  font-size: 12px;\n  color: #64748B;\n  margin: 2px 0 0;\n}\n\n.qc-flow-section__kpi {\n  display: flex;\n  flex-direction: column;\n  gap: 4px;\n}\n\n.qc-flow-section__val-row {\n  display: flex;\n  align-items: baseline;\n  gap: 6px;\n}\n\n.qc-flow-section__value {\n  font-size: 36px;\n  font-weight: 800;\n  color: #0F172A;\n  letter-spacing: -0.03em;\n  font-variant-numeric: tabular-nums;\n}\n\n.qc-flow-section__unit {\n  font-size: 14px;\n  font-weight: 600;\n  color: #64748B;\n}\n\n.qc-flow-section__trend {\n  display: inline-flex;\n  align-items: center;\n  gap: 4px;\n  font-size: 12px;\n  font-weight: 600;\n  color: #64748B;\n}\n\n.qc-flow-section__trend tb-icon {\n  font-size: 16px;\n}\n\n.qc-flow-section__trend.is-up {\n  color: #059669;\n}\n\n.qc-flow-section__trend.is-down {\n  color: #0284C7;\n}\n\n.qc-flow-section__spark-box {\n  background: #F8FAFC;\n  border: 1px solid #E2E8F0;\n  border-radius: 10px;\n  padding: 10px;\n}\n\n.qc-flow-section__spark-title {\n  font-size: 11px;\n  font-weight: 600;\n  color: #64748B;\n  margin-bottom: 4px;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n}\n\n.qc-sparkline--flow .qc-sparkline__line {\n  stroke: #06B6D4;\n  stroke-width: 2.2;\n}\n\n.qc-flow-section__embed {\n  min-height: 360px;\n  height: 100%;\n  border-radius: 12px;\n  overflow: hidden;\n  border: 1px solid #E2E8F0;\n}\n\n.qc-flow-section__embed tb-dashboard-state {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n\n.qc-views-wrapper {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n}\n\n.qc-tabs {\n  display: flex;\n  gap: 8px;\n  border-bottom: 1px solid var(--border,#E2E8F0);\n  padding-bottom: 2px;\n  overflow-x: auto; flex-shrink: 0; max-width: 100%; min-width: 0; overflow-y: hidden;\n}\n\n.qc-tab {\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n  padding: 10px 16px;\n  border-radius: 10px 10px 0 0;\n  border: none;\n  background: transparent;\n  color: var(--text-secondary,#64748B);\n  font-size: 13px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all .15s ease;\n  border-bottom: 2px solid transparent;\n}\n\n.qc-tab tb-icon {\n  font-size: 18px;\n}\n\n.qc-tab.is-active {\n  color: var(--primary,#0284C7);\n  background: color-mix(in srgb,var(--primary,#0284C7) 8%,transparent);\n  border-bottom-color: var(--primary,#0284C7);\n}\n\n.qc-view-content {\n  background: var(--surface,#FFF);\n  border: var(--tb-ai-card-border);\n  border-radius: var(--tb-ai-card-radius);\n  box-shadow: var(--tb-ai-card-shadow);\n  overflow: hidden;\n}\n\n.qc-embed-state-box {\n  height: 460px;\n  width: 100%;\n}\n\n.qc-embed-state-box tb-dashboard-state {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n\n@media (max-width:960px) {\n  .qc-flow-section {\n    grid-template-columns: 1fr;\n  }\n  .qc-flow-section__embed {\n    height: 360px;\n  }\n}\n\n/* tb-ai-shared-range */\n:has(> .tb-ai-shared-range--title) { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 12px; }\n.tb-ai-shared-range--title { margin-left: auto; }\n:has(> .tb-ai-shared-range--embed) { display: flex; flex-direction: column; }\n.tb-ai-shared-range--embed { align-self: flex-end; flex: none; margin-bottom: 8px; }\n:has(> .tb-ai-shared-range--embed) > tb-dashboard-state { flex: 1 1 auto; min-height: 0; height: auto; }\n\n/* tb-ai-responsive */\n@media (max-width: 1279px) {\n  .qc-flow-section__embed:has(> tb-dashboard-state[stateid=\"monitor_de_flujo\"]) { height: 970px; min-height: 970px; }\n  .qc-embed-state-box:has(> tb-dashboard-state[stateid=\"gr_ficas_de_par_metros\"]) { height: 2890px; min-height: 2890px; }\n  .qc-embed-state-box:has(> tb-dashboard-state[stateid=\"an_lisis_comparativo\"]) { height: 970px; min-height: 970px; }\n}",
+                    "js" : "(function tbAiTimeRanges(ctx) {\n  var api = window.tbAiTimeRanges;\n  if (!api || api.version !== 7) {\n    if (api) { api.sync = api.schedule = function () {}; }\n    api = window.tbAiTimeRanges = { version: 7, contexts: [], timer: null };\n    var MAX_BUCKETS = 500;\n    var style = document.createElement('style');\n    style.textContent = [\n      '.tb-ai-range { display: inline-flex; align-items: center; flex: none; gap: 2px; padding: 3px; border-radius: 10px;',\n      '  max-width: 100%; box-sizing: border-box; overflow-x: auto; scrollbar-width: thin;',\n      '  text-transform: none; letter-spacing: normal;',\n      '  background: color-mix(in srgb, var(--tb-ai-text, rgba(0, 0, 0, 0.87)) 6%, transparent); }',\n      '.tb-ai-range__btn { min-width: 40px; padding: 3px 10px; border: none; border-radius: 7px; background: transparent;',\n      '  color: var(--tb-ai-text-secondary, rgba(0, 0, 0, 0.54)); font: inherit; font-size: 12px; font-weight: 500;',\n      '  line-height: 18px; cursor: pointer; transition: background 0.15s ease, color 0.15s ease; }',\n      '.tb-ai-range__btn:hover { color: var(--tb-ai-text, rgba(0, 0, 0, 0.87)); }',\n      '.tb-ai-range__btn--active, .tb-ai-range__btn--active:hover { background: var(--tb-ai-primary, var(--tb-primary-500, #00695C));',\n      '  color: var(--tb-ai-on-primary, var(--tb-primary-contrast-500, #FFFFFF)); }',\n      '.tb-ai-range > * { flex: none; }',\n      '.tb-ai-range--widget { margin-top: 6px; }',\n      '.tb-widget-title:has(.tb-ai-range--widget) { min-width: 0 !important; max-height: none !important; overflow: visible !important; }',\n      '.tb-ai-range__custom { display: inline-flex; align-items: center; min-width: 0; }',\n      '.tb-ai-range__custom .tb-timewindow { display: inline-flex !important; align-items: center; gap: 4px; margin: 0 !important;',\n      '  padding: 3px 10px !important; border-radius: 7px; cursor: pointer; transition: background 0.15s ease, color 0.15s ease;',\n      '  color: var(--tb-ai-text-secondary, rgba(0, 0, 0, 0.54)) !important; font-size: 12px !important; font-weight: 500 !important;',\n      '  line-height: 18px !important; }',\n      '.tb-ai-range__custom .tb-timewindow:hover { color: var(--tb-ai-text, rgba(0, 0, 0, 0.87)) !important; }',\n      '.tb-ai-range__custom tb-icon { font-size: 16px !important; width: 16px !important; height: 16px !important;',\n      '  min-width: 16px; line-height: 16px !important; color: inherit !important; }',\n      '.tb-ai-range__custom .tb-timewindow-label { font: inherit !important; color: inherit !important; max-width: 220px;',\n      '  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }',\n      '.tb-ai-range__custom:not(.tb-ai-range__custom--active) .tb-timewindow-label { display: none !important; }',\n      '.tb-ai-range__custom:not(.tb-ai-range__custom--active) .tb-timewindow::after { content: \"Custom\"; }',\n      '.tb-ai-range__custom--active .tb-timewindow, .tb-ai-range__custom--active .tb-timewindow:hover {',\n      '  background: var(--tb-ai-primary, var(--tb-primary-500, #00695C));',\n      '  color: var(--tb-ai-on-primary, var(--tb-primary-contrast-500, #FFFFFF)) !important; }',\n      '[data-tb-ai-time-range]:empty { display: none; }',\n      '*:has(> [data-tb-ai-time-range]:not(:empty)) { flex-wrap: wrap !important; row-gap: 8px; overflow-x: visible !important; }',\n      '*:has(> [data-tb-ai-time-range]:not(:empty)) > :not([data-tb-ai-time-range]) { min-width: 0; max-width: 100%;',\n      '  overflow-x: auto; scrollbar-width: thin; }'\n    ].join('\\n');\n    document.head.appendChild(style);\n    var QUICK = {\n      CURRENT_HOUR: ['This hour', 1], CURRENT_DAY: ['Today', 24], CURRENT_DAY_SO_FAR: ['Today', 24],\n      YESTERDAY: ['Yesterday', 24], DAY_BEFORE_YESTERDAY: ['Day before', 24], THIS_DAY_LAST_WEEK: ['Day last week', 24],\n      CURRENT_WEEK: ['This week', 168], CURRENT_WEEK_ISO: ['This week', 168],\n      CURRENT_WEEK_SO_FAR: ['Week to date', 168], CURRENT_WEEK_ISO_SO_FAR: ['Week to date', 168],\n      PREVIOUS_WEEK: ['Last week', 168], PREVIOUS_WEEK_ISO: ['Last week', 168],\n      CURRENT_MONTH: ['This month', 744], CURRENT_MONTH_SO_FAR: ['Month to date', 744], PREVIOUS_MONTH: ['Last month', 744],\n      CURRENT_QUARTER: ['This quarter', 2208], CURRENT_QUARTER_SO_FAR: ['Quarter to date', 2208], PREVIOUS_QUARTER: ['Last quarter', 2208],\n      CURRENT_HALF_YEAR: ['This half-year', 4392], CURRENT_HALF_YEAR_SO_FAR: ['Half-year to date', 4392], PREVIOUS_HALF_YEAR: ['Last half-year', 4392],\n      CURRENT_YEAR: ['This year', 8760], CURRENT_YEAR_SO_FAR: ['Year to date', 8760], PREVIOUS_YEAR: ['Last year', 8760]\n    };\n    var label = function (key) {\n      if (QUICK[key]) { return QUICK[key][0]; }\n      var ms = Number(key);\n      var minute = 60000, hour = 3600000, day = 86400000, year = 365 * day;\n      if (ms % year === 0) { return (ms / year) + 'y'; }\n      if (ms % day === 0 && ms > day) { return (ms / day) + 'd'; }\n      if (ms % hour === 0) { return (ms / hour) + 'h'; }\n      return Math.max(1, Math.round(ms / minute)) + 'm';\n    };\n    var spanMs = function (key) {\n      return QUICK[key] ? QUICK[key][1] * 3600000 : Number(key);\n    };\n    var order = function (a, b) {\n      var quickA = QUICK[a] ? 1 : 0, quickB = QUICK[b] ? 1 : 0;\n      if (quickA !== quickB) { return quickA - quickB; }\n      if (spanMs(a) !== spanMs(b)) { return spanMs(a) - spanMs(b); }\n      var pastA = quickA && a.indexOf('CURRENT_') !== 0 ? 1 : 0, pastB = quickB && b.indexOf('CURRENT_') !== 0 ? 1 : 0;\n      return pastA - pastB || (a < b ? -1 : a > b ? 1 : 0);\n    };\n    var rootView = function () {\n      for (var i = api.contexts.length - 1; i >= 0; i--) {\n        var context = api.contexts[i];\n        var ref = context.changeDetectorValue || context.containerChangeDetectorValue;\n        if (ref && ref._lView) { return ref._lView; }\n      }\n      return null;\n    };\n    var widgets = function () {\n      var found = [];\n      var seen = new Set();\n      var stack = [rootView()];\n      while (stack.length) {\n        var node = stack.pop();\n        if (!Array.isArray(node) || seen.has(node)) { continue; }\n        seen.add(node);\n        for (var i = 0; i < node.length; i++) {\n          var item = node[i];\n          if (Array.isArray(item)) {\n            stack.push(item);\n          } else if (item && typeof item.onTimewindowChanged === 'function' && item.widget && item.widgetContext\n              && item.elementRef && found.indexOf(item) < 0) {\n            found.push(item);\n          }\n        }\n      }\n      return found;\n    };\n    var ranges = function (widget) {\n      var config = widget.widget.config || {};\n      var tw = config.useDashboardTimewindow === false && config.timewindow;\n      if (!tw) { return null; }\n      var realtime = (tw.realtime && tw.realtime.advancedParams) || {};\n      var history = (tw.history && tw.history.advancedParams) || {};\n      var options = [];\n      var add = function (key) {\n        key = String(key);\n        if ((QUICK[key] || Number(key) > 0) && options.indexOf(key) < 0) { options.push(key); }\n      };\n      if (Array.isArray(config.tbAiTimeRanges) && config.tbAiTimeRanges.length) {\n        config.tbAiTimeRanges.forEach(add);\n      } else {\n        (realtime.allowedLastIntervals || []).forEach(add);\n        (realtime.allowedQuickIntervals || []).concat(history.allowedQuickIntervals || []).forEach(add);\n      }\n      options.sort(order);\n      return options.length > 1 ? options : null;\n    };\n    var current = function (widget) {\n      var tw = widget.widget.config.timewindow || {};\n      if (tw.selectedTab === 1) {\n        var history = tw.history || {};\n        return history.historyType === 2 ? history.quickInterval : 'custom';\n      }\n      var realtime = tw.realtime || {};\n      if (realtime.realtimeType === 1) { return realtime.quickInterval; }\n      return realtime.realtimeType === 0 || realtime.realtimeType === undefined ? String(realtime.timewindowMs) : 'custom';\n    };\n    var bucket = function (window, key, configName) {\n      var params = window.advancedParams || {};\n      var agg = params[configName] && params[configName][key];\n      return Math.max((agg && agg.defaultAggInterval) || 1000, Math.ceil(spanMs(key) / MAX_BUCKETS));\n    };\n    var clone = function (value) {\n      return value === undefined ? undefined : JSON.parse(JSON.stringify(value));\n    };\n    var remember = function (widget) {\n      if (!widget.tbAiOwn) {\n        var own = widget.widget.config.timewindow || {};\n        widget.tbAiOwn = { aggregation: clone(own.aggregation), window: clone(own.realtime), history: clone(own.history) };\n      }\n    };\n    var spanOf = function (tw) {\n      if (tw.selectedTab === 1) {\n        var history = tw.history || {};\n        if (history.historyType === 2) { return spanMs(history.quickInterval); }\n        if (history.historyType === 1 && history.fixedTimewindow) {\n          return history.fixedTimewindow.endTimeMs - history.fixedTimewindow.startTimeMs;\n        }\n        return history.timewindowMs || 0;\n      }\n      var realtime = tw.realtime || {};\n      return realtime.realtimeType === 1 ? spanMs(realtime.quickInterval) : realtime.timewindowMs || 0;\n    };\n    var ownParams = function (widget, tw) {\n      [['realtime', widget.tbAiOwn.window], ['history', widget.tbAiOwn.history]].forEach(function (pair) {\n        if (pair[1] && pair[1].advancedParams) {\n          tw[pair[0]] = Object.assign({}, tw[pair[0]], { advancedParams: clone(pair[1].advancedParams) });\n        }\n      });\n    };\n    var customBucket = function (widget, tw) {\n      var span = spanOf(tw);\n      var config = (((widget.tbAiOwn.window || {}).advancedParams) || {}).lastAggIntervalsConfig || {};\n      var keys = Object.keys(config).map(Number).filter(function (ms) { return ms > 0; }).sort(function (a, b) { return a - b; });\n      var preset = keys.filter(function (ms) { return ms >= span; })[0] || keys[keys.length - 1];\n      var bucket = preset ? config[String(preset)].defaultAggInterval : 0;\n      return Math.max(Math.min(bucket || 0, Math.floor(span / 2)), Math.ceil(span / MAX_BUCKETS), 1000);\n    };\n    var apply = function (widget, key) {\n      remember(widget);\n      var tw = JSON.parse(JSON.stringify(widget.widget.config.timewindow || {}));\n      if (widget.tbAiOwn.aggregation) { tw.aggregation = clone(widget.tbAiOwn.aggregation); }\n      ownParams(widget, tw);\n      if (!QUICK[key]) {\n        tw.selectedTab = 0;\n        tw.realtime = Object.assign({}, tw.realtime, { realtimeType: 0, timewindowMs: Number(key) });\n        tw.realtime.interval = bucket(tw.realtime, key, 'lastAggIntervalsConfig');\n      } else if (key.indexOf('CURRENT_') === 0) {\n        tw.selectedTab = 0;\n        tw.realtime = Object.assign({}, tw.realtime, { realtimeType: 1, quickInterval: key });\n        tw.realtime.interval = bucket(tw.realtime, key, 'quickAggIntervalsConfig');\n      } else {\n        tw.selectedTab = 1;\n        tw.history = Object.assign({}, tw.history, { historyType: 2, quickInterval: key });\n        tw.history.interval = bucket(tw.history, key, 'quickAggIntervalsConfig');\n      }\n      widget.widget.config.timewindow = tw;\n      widget.onTimewindowChanged(tw);\n    };\n    var anchorOf = function (widget) {\n      if (widget.tbAiAnchor && widget.tbAiAnchor.isConnected) { return widget.tbAiAnchor; }\n      var element = widget.elementRef.nativeElement;\n      var container = element.closest('tb-widget-container') || element.parentElement;\n      widget.tbAiAnchor = container && container.querySelector('tb-timewindow');\n      return widget.tbAiAnchor;\n    };\n    var hide = function (anchor) {\n      var control = anchor.parentElement;\n      if (control && control.classList.contains('tb-ai-range')) {\n        control.insertAdjacentElement('beforebegin', anchor);\n        if (control.classList.contains('tb-ai-range--widget')) { control.remove(); }\n      }\n      anchor.classList.remove('tb-ai-range__custom', 'tb-ai-range__custom--active');\n      anchor.style.display = 'none';\n    };\n    var render = function (control, targets, options, anchor) {\n      control.tbAiRangeWidgets = targets;\n      var active = current(targets[0]);\n      var custom = options.indexOf(active) < 0;\n      if (anchor) {\n        anchor.style.display = '';\n        anchor.classList.add('tb-ai-range__custom');\n        anchor.classList.toggle('tb-ai-range__custom--active', custom);\n        if (anchor.parentElement !== control || control.lastElementChild !== anchor) { control.appendChild(anchor); }\n      }\n      var key = options.join(',') + '|' + active;\n      if (control.getAttribute('data-key') === key) { return; }\n      control.setAttribute('data-key', key);\n      control.querySelectorAll('.tb-ai-range__btn').forEach(function (button) { button.remove(); });\n      options.forEach(function (key) {\n        var button = document.createElement('button');\n        button.type = 'button';\n        button.className = 'tb-ai-range__btn' + (key === active ? ' tb-ai-range__btn--active' : '');\n        button.setAttribute('data-range', key);\n        button.textContent = label(key);\n        control.insertBefore(button, anchor && anchor.parentElement === control ? anchor : null);\n      });\n    };\n    var follow = function (marker, members) {\n      members.forEach(remember);\n      var leader = JSON.stringify(members[0].widget.config.timewindow || {});\n      if (marker.tbAiLeader !== undefined && marker.tbAiLeader !== leader) {\n        members.slice(1).forEach(function (widget) {\n          var tw = JSON.parse(leader);\n          var own = widget.tbAiOwn.aggregation;\n          ownParams(widget, tw);\n          if (own) {\n            tw.aggregation = clone(own);\n            var window = tw.selectedTab === 1 ? tw.history : tw.realtime;\n            if (window && own.type && own.type !== 'NONE') {\n              window.interval = customBucket(widget, tw);\n            }\n          }\n          widget.widget.config.timewindow = tw;\n          widget.onTimewindowChanged(tw);\n        });\n      }\n      marker.tbAiLeader = leader;\n    };\n    var shared = function (ranged) {\n      var groups = [];\n      document.querySelectorAll('[data-tb-ai-time-range]').forEach(function (marker) {\n        var stateId = marker.getAttribute('data-tb-ai-time-range');\n        var embeds = Array.prototype.filter.call(document.querySelectorAll('tb-dashboard-state'), function (embed) {\n          return embed.getAttribute('stateId') === stateId;\n        });\n        var members = ranged.filter(function (widget) {\n          var element = widget.elementRef.nativeElement;\n          return embeds.some(function (embed) { return embed.contains(element); });\n        });\n        groups.push({ marker: marker, widgets: members });\n      });\n      return groups;\n    };\n    api.sync = function () {\n      api.timer = null;\n      document.querySelectorAll('.tb-ai-range--widget').forEach(function (control) {\n        if (!control.querySelector('tb-timewindow')) { control.remove(); }\n      });\n      if (!rootView()) { return; }\n      var ranged = widgets().filter(function (widget) {\n        var element = widget.elementRef.nativeElement;\n        return ranges(widget) && element && element.isConnected;\n      });\n      var grouped = [];\n      shared(ranged).forEach(function (group) {\n        var marker = group.marker;\n        if (!group.widgets.length) {\n          marker.querySelectorAll('.tb-ai-range__btn').forEach(function (button) { button.remove(); });\n          marker.removeAttribute('data-key');\n          return;\n        }\n        var options = [];\n        group.widgets.forEach(function (widget) {\n          grouped.push(widget);\n          ranges(widget).forEach(function (key) { if (options.indexOf(key) < 0) { options.push(key); } });\n        });\n        options.sort(order);\n        group.widgets.slice(1).forEach(function (widget) {\n          var anchor = anchorOf(widget);\n          if (anchor) { hide(anchor); }\n        });\n        marker.classList.add('tb-ai-range');\n        follow(marker, group.widgets);\n        render(marker, group.widgets, options, anchorOf(group.widgets[0]));\n      });\n      ranged.forEach(function (widget) {\n        remember(widget);\n        if (grouped.indexOf(widget) >= 0) { return; }\n        var anchor = anchorOf(widget);\n        if (!anchor) { return; }\n        var control = anchor.parentElement;\n        if (!control || !control.classList.contains('tb-ai-range--widget')) {\n          control = document.createElement('div');\n          control.className = 'tb-ai-range tb-ai-range--widget';\n          anchor.insertAdjacentElement('beforebegin', control);\n        }\n        render(control, [widget], ranges(widget), anchor);\n      });\n    };\n    api.schedule = function () {\n      if (!api.timer) { api.timer = setTimeout(api.sync, 120); }\n    };\n    document.addEventListener('click', function (event) {\n      if (event.target && event.target.closest && event.target.closest('.cdk-overlay-container')) {\n        setTimeout(api.schedule, 300);\n      }\n      var button = event.target && event.target.closest && event.target.closest('.tb-ai-range__btn');\n      var control = button && button.closest('.tb-ai-range');\n      if (!control || !control.tbAiRangeWidgets) { return; }\n      event.stopPropagation();\n      var key = button.getAttribute('data-range');\n      control.tbAiRangeWidgets.forEach(function (widget) { apply(widget, key); });\n      if (control.hasAttribute('data-tb-ai-time-range')) {\n        control.tbAiLeader = JSON.stringify(control.tbAiRangeWidgets[0].widget.config.timewindow || {});\n      }\n      api.sync();\n    }, true);\n    new MutationObserver(function (mutations) {\n      for (var i = 0; i < mutations.length; i++) {\n        var added = mutations[i].addedNodes;\n        for (var j = 0; j < added.length; j++) {\n          var node = added[j];\n          if (node.nodeType === 1 && (node.tagName === 'TB-TIMEWINDOW' || node.querySelector('tb-timewindow')\n              || node.hasAttribute('data-tb-ai-time-range') || node.querySelector('[data-tb-ai-time-range]'))) {\n            api.schedule();\n            return;\n          }\n        }\n      }\n    }).observe(document.body, { childList: true, subtree: true });\n  }\n  api.contexts.push(ctx);\n  if (typeof ctx.registerDestroyCallback === 'function') {\n    ctx.registerDestroyCallback(function () {\n      var index = api.contexts.indexOf(ctx);\n      if (index >= 0) { api.contexts.splice(index, 1); }\n    });\n  }\n  api.schedule();\n})(ctx);\nthis.ctx = ctx;\nthis.isActive = false;\nthis.lastUpdateStr = '—';\nthis.lastRelativeStr = '—';\nthis.outOfRangeCount = 0;\nthis.showSettings = false;\nthis.busy = false;\nthis.saveMessage = '';\nthis.saveMessageIsError = false;\nthis.activeTab = 'graficas';\nthis.entity = null;\n\nconst PARAM_DEFS = [\n  { key: 'ph', name: 'pH', unit: 'pH', color: '#8B5CF6', bg: '#EDE9FE', minKey: 'alarm_ph_min', maxKey: 'alarm_ph_max', step: 0.1, defaultMin: 6.5, defaultMax: 8.5 },\n  { key: 'cloro', name: 'Cloro', unit: 'mg/L', color: '#10B981', bg: '#D1FAE5', minKey: 'alarm_cloro_min', maxKey: 'alarm_cloro_max', step: 0.05, defaultMin: 0.2, defaultMax: 1.5 },\n  { key: 'temperatura', name: 'Temperatura', unit: '°C', color: '#F87171', bg: '#FEE2E2', minKey: 'alarm_temperatura_min', maxKey: 'alarm_temperatura_max', step: 0.5, defaultMin: 10, defaultMax: 30 },\n  { key: 'conductividad', name: 'Conductividad', unit: 'µS/cm', color: '#38BDF8', bg: '#E0F2FE', minKey: 'alarm_conductividad_min', maxKey: 'alarm_conductividad_max', step: 10, defaultMin: 200, defaultMax: 1500 },\n  { key: 'turbidez', name: 'Turbidez', unit: 'NTU', color: '#14B8A6', bg: '#CCFBF1', minKey: 'alarm_turbidez_min', maxKey: 'alarm_turbidez_max', step: 0.1, defaultMin: 0.1, defaultMax: 5.0 },\n  { key: 'redox', name: 'Redox', unit: 'mV', color: '#FBBF24', bg: '#FEF3C7', minKey: 'alarm_redox_min', maxKey: 'alarm_redox_max', step: 5, defaultMin: 400, defaultMax: 800 }\n];\n\nthis.params = PARAM_DEFS.map((d) => ({\n  key: d.key,\n  name: d.name,\n  unit: d.unit,\n  color: d.color,\n  bg: d.bg,\n  minKey: d.minKey,\n  maxKey: d.maxKey,\n  step: d.step,\n  value: null,\n  min: null,\n  max: null,\n  inputMin: null,\n  inputMax: null,\n  statusTone: 'none',\n  statusLabel: 'Sin datos',\n  zoneShort: '—',\n  gaugeDash: '0 100',\n  trendText: '—',\n  trendDiff: 0,\n  sparklinePts: ''\n}));\n\nthis.flow = {\n  value: null,\n  trendText: '—',\n  trendDiff: 0,\n  sparklinePts: ''\n};\n\nlet lastTs = null;\n\nconst calcRelativeTime = (ts) => {\n  if (!ts) return '—';\n  const diff = Math.round((Date.now() - ts) / 60000);\n  if (diff < 1) return 'hace un momento';\n  if (diff < 60) return 'hace ' + diff + ' min';\n  if (diff < 1440) return 'hace ' + Math.round(diff / 60) + ' h';\n  return 'hace ' + Math.round(diff / 1440) + ' d';\n};\n\nconst buildSparkline = (pts, w, h) => {\n  if (!pts || pts.length < 2) return '';\n  const vals = pts.map((p) => p[1]).filter((v) => v !== null && !isNaN(v));\n  if (vals.length < 2) return '';\n  const min = Math.min(...vals);\n  const max = Math.max(...vals);\n  const span = max - min || 1;\n  const step = w / (pts.length - 1);\n  return pts.map((p, i) => {\n    const x = (i * step).toFixed(1);\n    const y = (h - ((p[1] - min) / span) * (h - 6) - 3).toFixed(1);\n    return x + ',' + y;\n  }).join(' ');\n};\n\nconst calcGaugeAndStatus = (val, min, max) => {\n  if (val === null || isNaN(val)) {\n    return { tone: 'none', label: 'Sin datos', zone: '—', dash: '0 100' };\n  }\n  if (min === null && max === null) {\n    return { tone: 'ok', label: 'Nominal', zone: 'OK', dash: '50 100' };\n  }\n  const low = min !== null ? min : val - 1;\n  const high = max !== null ? max : val + 1;\n  const span = high - low || 1;\n  const pct = Math.min(100, Math.max(0, ((val - (low - span * 0.2)) / (span * 1.4)) * 100));\n  const dash = pct.toFixed(1) + ' 100';\n\n  if (min !== null && val < min) {\n    return { tone: 'warn', label: 'Inferior', zone: 'BAJO', dash };\n  }\n  if (max !== null && val > max) {\n    return { tone: 'crit', label: 'Superior', zone: 'ALTO', dash };\n  }\n  return { tone: 'ok', label: 'Normal', zone: 'NORMAL', dash };\n};\n\nthis.toggleSettings = () => {\n  this.showSettings = !this.showSettings;\n  this.saveMessage = '';\n};\n\nthis.shownLimit = (p, type) => {\n  const inp = type === 'min' ? p.inputMin : p.inputMax;\n  if (inp !== null) return inp;\n  const val = type === 'min' ? p.min : p.max;\n  return val === null ? '' : String(val);\n};\n\nthis.onLimitInput = (p, type, val) => {\n  if (type === 'min') p.inputMin = val;\n  else p.inputMax = val;\n};\n\nthis.isDirty = () => {\n  return this.params.some((p) =>\n    (p.inputMin !== null && p.inputMin !== '' && Number(p.inputMin) !== p.min) ||\n    (p.inputMax !== null && p.inputMax !== '' && Number(p.inputMax) !== p.max)\n  );\n};\n\nthis.resetLimits = () => {\n  this.params.forEach((p) => {\n    p.inputMin = null;\n    p.inputMax = null;\n  });\n  this.saveMessage = '';\n  ctx.detectChanges();\n};\n\nthis.saveLimits = () => {\n  if (!this.entity || this.busy) return;\n  const attrs = [];\n  this.params.forEach((p) => {\n    if (p.inputMin !== null && p.inputMin !== '') {\n      attrs.push({ key: p.minKey, value: Number(p.inputMin) });\n    }\n    if (p.inputMax !== null && p.inputMax !== '') {\n      attrs.push({ key: p.maxKey, value: Number(p.inputMax) });\n    }\n  });\n  if (!attrs.length) return;\n  this.busy = true;\n  this.saveMessage = '';\n  ctx.detectChanges();\n\n  ctx.attributeService.saveEntityAttributes(\n    { id: this.entity.id, entityType: this.entity.entityType },\n    'SERVER_SCOPE',\n    attrs\n  ).subscribe({\n    next: () => {\n      this.params.forEach((p) => {\n        if (p.inputMin !== null && p.inputMin !== '') p.min = Number(p.inputMin);\n        if (p.inputMax !== null && p.inputMax !== '') p.max = Number(p.inputMax);\n        p.inputMin = null;\n        p.inputMax = null;\n      });\n      this.busy = false;\n      this.saveMessage = 'Límites provisionales guardados correctamente en servidor.';\n      this.saveMessageIsError = false;\n      this.recalculateAll();\n      ctx.detectChanges();\n    },\n    error: () => {\n      this.busy = false;\n      this.saveMessage = 'Error al guardar límites. Compruebe permisos.';\n      this.saveMessageIsError = true;\n      ctx.detectChanges();\n    }\n  });\n};\n\nthis.selectTab = (tab) => {\n  this.activeTab = tab;\n  ctx.detectChanges();\n};\n\nthis.recalculateAll = () => {\n  let bad = 0;\n  this.params.forEach((p) => {\n    const res = calcGaugeAndStatus(p.value, p.min, p.max);\n    p.statusTone = res.tone;\n    p.statusLabel = res.label;\n    p.zoneShort = res.zone;\n    p.gaugeDash = res.dash;\n    if (res.tone === 'warn' || res.tone === 'crit') bad++;\n  });\n  this.outOfRangeCount = bad;\n};\n\nlet latestSubId = null;\nlet tsSubId = null;\n\nconst tsKeys = ['ph', 'cloro', 'temperatura', 'conductividad', 'turbidez', 'redox', 'flujo'];\nconst attrKeys = [\n  'active', 'lastActivityTime',\n  'alarm_ph_min', 'alarm_ph_max',\n  'alarm_cloro_min', 'alarm_cloro_max',\n  'alarm_temperatura_min', 'alarm_temperatura_max',\n  'alarm_conductividad_min', 'alarm_conductividad_max',\n  'alarm_turbidez_min', 'alarm_turbidez_max',\n  'alarm_redox_min', 'alarm_redox_max'\n];\n\nctx.subscriptionApi.createSubscription({\n  type: 'latest',\n  datasources: [{\n    type: 'entity',\n    entityAliasId: ctx.aliasController.getEntityAliasId('PL19_Frío Cubit'),\n    dataKeys: [\n      ...tsKeys.map((k) => ({ type: 'timeseries', name: k, settings: {} })),\n      ...attrKeys.map((k) => ({ type: 'attribute', name: k, settings: {} }))\n    ]\n  }],\n  callbacks: {\n    onDataUpdated: (sub) => {\n      const vals = {};\n      let newestTs = null;\n      for (const e of sub.data || []) {\n        if (!this.entity && e.datasource) {\n          this.entity = { id: e.datasource.entityId, entityType: e.datasource.entityType, name: e.datasource.entityName };\n        }\n        const k = e.dataKey.name;\n        if (e.data && e.data.length) {\n          const pair = e.data[e.data.length - 1];\n          vals[k] = pair[1];\n          if (!newestTs || pair[0] > newestTs) newestTs = pair[0];\n        }\n      }\n\n      this.isActive = vals.active === true || vals.active === 'true';\n      const actTime = vals.lastActivityTime ? Number(vals.lastActivityTime) : null;\n      lastTs = actTime || newestTs || lastTs;\n      if (lastTs) {\n        this.lastUpdateStr = new Date(lastTs).toLocaleString();\n        this.lastRelativeStr = calcRelativeTime(lastTs);\n      }\n\n      this.params.forEach((p) => {\n        if (vals[p.key] !== undefined) p.value = Number(vals[p.key]);\n        if (vals[p.minKey] !== undefined) p.min = Number(vals[p.minKey]);\n        if (vals[p.maxKey] !== undefined) p.max = Number(vals[p.maxKey]);\n      });\n\n      if (vals.flujo !== undefined) {\n        this.flow.value = Number(vals.flujo);\n      }\n\n      this.recalculateAll();\n      ctx.detectChanges();\n    }\n  }\n}, true).subscribe((sub) => { latestSubId = sub.id; });\n\nctx.subscriptionApi.createSubscription({\n  type: 'timeseries',\n  useDashboardTimewindow: false,\n  timeWindowConfig: {\n    selectedTab: 0,\n    realtime: { realtimeType: 0, timewindowMs: 3600000 },\n    aggregation: { type: 'NONE', limit: 200 }\n  },\n  datasources: [{\n    type: 'entity',\n    entityAliasId: ctx.aliasController.getEntityAliasId('PL19_Frío Cubit'),\n    dataKeys: tsKeys.map((k) => ({ type: 'timeseries', name: k, settings: {} }))\n  }],\n  callbacks: {\n    onDataUpdated: (sub) => {\n      for (const e of sub.data || []) {\n        const k = e.dataKey.name;\n        const series = e.data || [];\n        if (k === 'flujo') {\n          this.flow.sparklinePts = buildSparkline(series, 180, 40);\n          if (series.length >= 2) {\n            const first = series[0][1];\n            const last = series[series.length - 1][1];\n            const diff = last - first;\n            this.flow.trendDiff = diff;\n            this.flow.trendText = (diff >= 0 ? '+' : '') + diff.toFixed(2) + ' vs 1h';\n          }\n        } else {\n          const target = this.params.find((p) => p.key === k);\n          if (target) {\n            target.sparklinePts = buildSparkline(series, 120, 32);\n            if (series.length >= 2) {\n              const first = series[0][1];\n              const last = series[series.length - 1][1];\n              const diff = last - first;\n              target.trendDiff = diff;\n              target.trendText = (diff >= 0 ? '+' : '') + diff.toFixed(target.step < 1 ? 2 : 1) + ' vs 1h';\n            }\n          }\n        }\n      }\n      ctx.detectChanges();\n    }\n  }\n}, true).subscribe((sub) => { tsSubId = sub.id; });\n\nconst timeTicker = setInterval(() => {\n  if (lastTs) {\n    this.lastRelativeStr = calcRelativeTime(lastTs);\n    ctx.detectChanges();\n  }\n}, 60000);\n\nctx.registerDestroyCallback(() => {\n  clearInterval(timeTicker);\n  if (latestSubId) ctx.subscriptionApi.removeSubscription(latestSubId);\n  if (tsSubId) ctx.subscriptionApi.removeSubscription(tsSubId);\n});",
+                    "resources" : [ ]
+                  },
+                  "actions" : { }
+                }
               }
             }
           }
@@ -1291,47 +1308,122 @@
                   "sizeX" : 8,
                   "sizeY" : 6,
                   "row" : 0,
-                  "col" : 0
+                  "col" : 0,
+                  "mobileHeight" : 6
                 },
                 "8624893c-1ad1-4def-bb84-294673d5a6b4" : {
                   "sizeX" : 8,
                   "sizeY" : 6,
                   "row" : 0,
-                  "col" : 8
+                  "col" : 8,
+                  "mobileHeight" : 6
                 },
                 "ac4f5427-cef7-4721-b55b-fbafd1734287" : {
                   "sizeX" : 8,
                   "sizeY" : 6,
                   "row" : 0,
-                  "col" : 16
+                  "col" : 16,
+                  "mobileHeight" : 6
                 },
                 "e9697079-c44f-443e-95fb-4de3a01233ad" : {
                   "sizeX" : 8,
                   "sizeY" : 6,
                   "row" : 6,
-                  "col" : 0
+                  "col" : 0,
+                  "mobileHeight" : 6
                 },
                 "64227f5f-a466-4f23-b8cb-ddc2b37da6f6" : {
                   "sizeX" : 8,
                   "sizeY" : 6,
                   "row" : 6,
-                  "col" : 8
+                  "col" : 8,
+                  "mobileHeight" : 6
                 },
                 "04aa43b7-f30a-4042-9a4e-ea17e18df3eb" : {
                   "sizeX" : 8,
                   "sizeY" : 6,
                   "row" : 6,
-                  "col" : 16
+                  "col" : 16,
+                  "mobileHeight" : 6
                 }
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "rgba(0,0,0,0)",
                 "columns" : 24,
                 "margin" : 10,
-                "outerMargin" : true,
+                "outerMargin" : false,
                 "backgroundSizeMode" : "100%",
-                "autoFillHeight" : true
+                "autoFillHeight" : true,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              },
+              "breakpoints" : {
+                "md" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "rgba(0,0,0,0)",
+                    "columns" : 24,
+                    "margin" : 10,
+                    "outerMargin" : false,
+                    "backgroundSizeMode" : "100%",
+                    "autoFillHeight" : false,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70,
+                    "viewFormat" : "list",
+                    "rowHeight" : 70
+                  },
+                  "widgets" : {
+                    "24f335cf-654a-4489-961e-8056e142cb34" : {
+                      "sizeX" : 8,
+                      "sizeY" : 6,
+                      "row" : 0,
+                      "col" : 0,
+                      "mobileHeight" : 6,
+                      "mobileOrder" : 0
+                    },
+                    "8624893c-1ad1-4def-bb84-294673d5a6b4" : {
+                      "sizeX" : 8,
+                      "sizeY" : 6,
+                      "row" : 0,
+                      "col" : 8,
+                      "mobileHeight" : 6,
+                      "mobileOrder" : 1
+                    },
+                    "ac4f5427-cef7-4721-b55b-fbafd1734287" : {
+                      "sizeX" : 8,
+                      "sizeY" : 6,
+                      "row" : 0,
+                      "col" : 16,
+                      "mobileHeight" : 6,
+                      "mobileOrder" : 2
+                    },
+                    "e9697079-c44f-443e-95fb-4de3a01233ad" : {
+                      "sizeX" : 8,
+                      "sizeY" : 6,
+                      "row" : 6,
+                      "col" : 0,
+                      "mobileHeight" : 6,
+                      "mobileOrder" : 3
+                    },
+                    "64227f5f-a466-4f23-b8cb-ddc2b37da6f6" : {
+                      "sizeX" : 8,
+                      "sizeY" : 6,
+                      "row" : 6,
+                      "col" : 8,
+                      "mobileHeight" : 6,
+                      "mobileOrder" : 4
+                    },
+                    "04aa43b7-f30a-4042-9a4e-ea17e18df3eb" : {
+                      "sizeX" : 8,
+                      "sizeY" : 6,
+                      "row" : 6,
+                      "col" : 16,
+                      "mobileHeight" : 6,
+                      "mobileOrder" : 5
+                    }
+                  }
+                }
               }
             }
           }
@@ -1346,23 +1438,62 @@
                   "sizeX" : 12,
                   "sizeY" : 7,
                   "row" : 0,
-                  "col" : 0
+                  "col" : 0,
+                  "mobileHeight" : 6
                 },
                 "e5a6f3d8-8d4b-4da8-b2eb-ec3770b7528f" : {
                   "sizeX" : 12,
                   "sizeY" : 7,
                   "row" : 0,
-                  "col" : 12
+                  "col" : 12,
+                  "mobileHeight" : 6
                 }
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "rgba(0,0,0,0)",
                 "columns" : 24,
                 "margin" : 10,
-                "outerMargin" : true,
+                "outerMargin" : false,
                 "backgroundSizeMode" : "100%",
-                "autoFillHeight" : true
+                "autoFillHeight" : true,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              },
+              "breakpoints" : {
+                "md" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "rgba(0,0,0,0)",
+                    "columns" : 24,
+                    "margin" : 10,
+                    "outerMargin" : false,
+                    "backgroundSizeMode" : "100%",
+                    "autoFillHeight" : false,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70,
+                    "viewFormat" : "list",
+                    "rowHeight" : 70
+                  },
+                  "widgets" : {
+                    "b2c778f7-6a04-48b8-9f3f-977fe924ae84" : {
+                      "sizeX" : 12,
+                      "sizeY" : 7,
+                      "row" : 0,
+                      "col" : 0,
+                      "mobileHeight" : 6,
+                      "mobileOrder" : 0
+                    },
+                    "e5a6f3d8-8d4b-4da8-b2eb-ec3770b7528f" : {
+                      "sizeX" : 12,
+                      "sizeY" : 7,
+                      "row" : 0,
+                      "col" : 12,
+                      "mobileHeight" : 6,
+                      "mobileOrder" : 1
+                    }
+                  }
+                }
               }
             }
           }
@@ -1377,23 +1508,62 @@
                   "sizeX" : 12,
                   "sizeY" : 6,
                   "row" : 0,
-                  "col" : 0
+                  "col" : 0,
+                  "mobileHeight" : 6
                 },
                 "51e7bee4-7163-49e1-920f-e0abc1df7585" : {
                   "sizeX" : 12,
                   "sizeY" : 6,
                   "row" : 0,
-                  "col" : 12
+                  "col" : 12,
+                  "mobileHeight" : 6
                 }
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
+                "backgroundColor" : "rgba(0,0,0,0)",
                 "columns" : 24,
                 "margin" : 10,
-                "outerMargin" : true,
+                "outerMargin" : false,
                 "backgroundSizeMode" : "100%",
-                "autoFillHeight" : true
+                "autoFillHeight" : true,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              },
+              "breakpoints" : {
+                "md" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "rgba(0,0,0,0)",
+                    "columns" : 24,
+                    "margin" : 10,
+                    "outerMargin" : false,
+                    "backgroundSizeMode" : "100%",
+                    "autoFillHeight" : false,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70,
+                    "viewFormat" : "list",
+                    "rowHeight" : 70
+                  },
+                  "widgets" : {
+                    "cfcc79ce-e23c-48ae-9b39-0f60fbf16a3c" : {
+                      "sizeX" : 12,
+                      "sizeY" : 6,
+                      "row" : 0,
+                      "col" : 0,
+                      "mobileHeight" : 6,
+                      "mobileOrder" : 0
+                    },
+                    "51e7bee4-7163-49e1-920f-e0abc1df7585" : {
+                      "sizeX" : 12,
+                      "sizeY" : 6,
+                      "row" : 0,
+                      "col" : 12,
+                      "mobileHeight" : 6,
+                      "mobileOrder" : 1
+                    }
+                  }
+                }
               }
             }
           }
@@ -1417,11 +1587,12 @@
         "showEntitiesSelect" : true,
         "showDashboardTimewindow" : false,
         "showDashboardExport" : true,
-        "toolbarAlwaysOpen" : true
+        "toolbarAlwaysOpen" : true,
+        "dashboardCss" : "/* tb-ai-embeds:start */\n.tb-dashboard-page tb-dashboard-state div.tb-dashboard-page.mat-content,\n.tb-dashboard-page tb-dashboard-state .mat-drawer-container,\n.tb-dashboard-page tb-dashboard-state tb-dashboard-layout > div.mat-content,\n.tb-dashboard-page tb-dashboard-state tb-dashboard > div {\n    background-color: transparent !important;\n}\n\n.tb-dashboard-page tb-dashboard-state .tb-widget {\n    font-family: var(--tb-ai-font, inherit);\n    --mat-paginator-container-text-font: var(--tb-ai-font, Roboto, \"Helvetica Neue\", sans-serif);\n}\n\n.tb-dashboard-page :not(.tb-ai-header-actions) > tb-dashboard-state .tb-widget-container > .tb-widget {\n    border: var(--tb-ai-card-border, 1px solid var(--tb-ai-border, rgba(0,0,0,0.12))) !important;\n    border-radius: var(--tb-ai-card-radius, 8px) !important;\n    box-shadow: var(--tb-ai-card-shadow, none) !important;\n}\n\n.tb-dashboard-page :not(.tb-ai-header-actions) > tb-dashboard-state .tb-widget-container > .tb-widget:not(:has(.widget-type-system-html_container, .tb-ai-title-bar)) {\n    padding: var(--tb-ai-card-padding, 16px) !important;\n}\n\n.tb-dashboard-page :not(.tb-ai-header-actions) > tb-dashboard-state .tb-widget-container > .tb-widget > .tb-widget-header:has(> .tb-widget-title) {\n    align-items: flex-start !important;\n}\n\n.tb-dashboard-page :not(.tb-ai-header-actions) > tb-dashboard-state .tb-widget-container > .tb-widget .tb-widget-title .title-row {\n    min-height: 32px;\n    align-items: center;\n}\n\n.tb-dashboard-page :not(.tb-ai-header-actions) > tb-dashboard-state .tb-widget-container > .tb-widget > .tb-widget-header > .tb-widget-title {\n    padding: 0 !important;\n}\n\n.tb-dashboard-page :not(.tb-ai-header-actions) > tb-dashboard-state .tb-widget-container > .tb-widget > .tb-widget-header > .tb-widget-actions {\n    margin-top: 0 !important;\n}\n\n.tb-dashboard-page :not(.tb-ai-header-actions) > tb-dashboard-state .tb-widget-container > .tb-widget tb-dynamic-component div[class*=\"-panel\"]:not(div[class*=\"-panel\"] div) {\n    padding: 0 !important;\n}\n\n.tb-dashboard-page :not(.tb-ai-header-actions) > tb-dashboard-state .tb-widget-title .title-row > .title {\n    font-family: var(--tb-ai-card-title-family, var(--tb-ai-font, inherit)) !important;\n    font-size: var(--tb-ai-card-title-size, 16px) !important;\n    font-weight: var(--tb-ai-card-title-weight, 500) !important;\n    line-height: var(--tb-ai-card-title-line-height, 24px) !important;\n    letter-spacing: var(--tb-ai-card-title-letter-spacing, normal) !important;\n    text-transform: var(--tb-ai-card-title-transform, none) !important;\n    color: var(--tb-ai-card-title-color, var(--tb-ai-text, rgba(0,0,0,0.87))) !important;\n}\n\n.tb-dashboard-page :not(.tb-ai-header-actions) > tb-dashboard-state .tb-widget-title .title-row > tb-icon {\n    color: var(--tb-ai-card-title-color, var(--tb-ai-text, rgba(0,0,0,0.87)));\n}\n\n.tb-dashboard-page tb-dashboard-state .tb-widget .mat-mdc-table {\n    --mat-table-header-headline-font: var(--tb-ai-table-font, var(--tb-ai-font, Roboto, \"Helvetica Neue\", sans-serif));\n    --mat-table-header-headline-color: var(--tb-ai-table-header-color, var(--tb-ai-text-secondary, rgba(0,0,0,0.54)));\n    --mat-table-header-headline-weight: var(--tb-ai-table-header-weight, 500);\n    --mat-table-row-item-label-text-font: var(--tb-ai-table-font, var(--tb-ai-font, Roboto, \"Helvetica Neue\", sans-serif));\n    --mat-table-row-item-label-text-color: var(--tb-ai-table-cell-color, var(--tb-ai-text, rgba(0,0,0,0.87)));\n    --mat-table-row-item-label-text-weight: var(--tb-ai-table-cell-weight, 400);\n    --mat-table-row-item-outline-color: var(--tb-ai-table-divider-color, var(--tb-ai-border, rgba(0,0,0,0.12)));\n}\n\n.tb-dashboard-page tb-dashboard-state .tb-widget .mat-mdc-table .mat-mdc-header-row .mat-mdc-header-cell {\n    font-size: var(--tb-ai-table-header-size, 12px);\n    letter-spacing: var(--tb-ai-table-header-letter-spacing, normal);\n    text-transform: var(--tb-ai-table-header-transform, none);\n}\n\n.tb-dashboard-page tb-dashboard-state .tb-widget .mat-mdc-table .mat-mdc-row .mat-mdc-cell {\n    font-size: var(--tb-ai-table-cell-size, 13px);\n}\n\n.tb-dashboard-page tb-dashboard-state.tb-ai-framed .tb-widget-container > .tb-widget {\n    border: none !important;\n    border-radius: 0 !important;\n    box-shadow: none !important;\n}\n/* tb-ai-embeds:end */"
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793437926245,
+        "aiUpdateTs" : 1793438015759,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
