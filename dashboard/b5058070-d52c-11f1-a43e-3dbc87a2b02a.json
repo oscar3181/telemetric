@@ -1845,7 +1845,7 @@
         "selectedTab" : 0,
         "realtime" : {
           "realtimeType" : 0,
-          "timewindowMs" : 3600000
+          "timewindowMs" : 7200000
         },
         "aggregation" : {
           "type" : "NONE",
