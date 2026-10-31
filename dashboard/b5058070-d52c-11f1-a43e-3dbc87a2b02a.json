@@ -1289,7 +1289,7 @@
           "type" : "latest",
           "typeFullFqn" : "system.map",
           "config" : {
-            "title" : "Mapa del sistema · PL19_Frío Cubit",
+            "title" : "Mapa del sistema",
             "showTitle" : false,
             "configMode" : "basic",
             "dropShadow" : false,
@@ -1874,7 +1874,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793452777837,
+        "aiUpdateTs" : 1793452814390,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
