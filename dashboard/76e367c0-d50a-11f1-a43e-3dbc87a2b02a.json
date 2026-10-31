@@ -1475,7 +1475,8 @@
               "iconSize" : "16px",
               "iconPosition" : "left",
               "displayTypePrefix" : false
-            }
+            },
+            "datasources" : [ ]
           },
           "sizeX" : 24,
           "sizeY" : 10
@@ -1499,7 +1500,9 @@
                     "resources" : [ ]
                   },
                   "actions" : { }
-                }
+                },
+                "outerMargin" : true,
+                "margin" : 10
               }
             }
           }
