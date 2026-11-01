@@ -19,12 +19,13 @@
           "id" : "10640d50-bc0e-4c63-a691-55c26f1692ff",
           "alias" : "Dispositivo seleccionado",
           "filter" : {
+            "type" : "stateEntity",
             "resolveMultiple" : false,
+            "stateEntityParamName" : null,
             "defaultStateEntity" : {
               "entityType" : "DEVICE",
-              "id" : "30664610-f84b-11f0-862c-e5320376240c"
-            },
-            "type" : "stateEntity"
+              "id" : "6fa5f4b0-039a-11f1-ab3d-b9171825f6b6"
+            }
           }
         },
         "a0677d61-03fc-464c-a7f3-273eba127ddd" : {
