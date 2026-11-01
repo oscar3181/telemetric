@@ -19,13 +19,12 @@
           "id" : "10640d50-bc0e-4c63-a691-55c26f1692ff",
           "alias" : "Dispositivo seleccionado",
           "filter" : {
-            "type" : "stateEntity",
             "resolveMultiple" : false,
-            "stateEntityParamName" : "entityId",
             "defaultStateEntity" : {
               "entityType" : "DEVICE",
-              "id" : "30664610-f84b-11f0-862c-e5320376240c"
-            }
+              "id" : "c4205e10-d5f7-11f1-9968-e99913795e0c"
+            },
+            "type" : "stateEntity"
           }
         },
         "a0677d61-03fc-464c-a7f3-273eba127ddd" : {
@@ -1981,7 +1980,7 @@
       },
       "additionalInfo" : {
         "aiUpdated" : true,
-        "aiUpdateTs" : 1793481766329,
+        "aiUpdateTs" : 1793547181022,
         "aiUpdatedBy" : [ "AI Assistant" ]
       }
     },
