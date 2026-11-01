@@ -12,6 +12,7 @@
     },
     "deviceData" : {
       "configuration" : {
+        "type" : "DEFAULT",
         "type" : "DEFAULT"
       },
       "transportConfiguration" : {
@@ -20,7 +21,7 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "45869a50-f840-11f0-a24d-13b2783631c6"
+      "id" : "27da7c00-d315-11f1-9968-e99913795e0c"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -32,7 +33,7 @@
     "name" : "San Miguel Dioxido de Cloro",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "default"
+    "type" : "Telemetría - Alarmas configurables"
   },
   "credentials" : {
     "credentialsId" : "vvm699g01e2rodvx9hg1",
@@ -45,7 +46,103 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1777752673076,
+      "lastUpdateTs" : 1791438210361,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.9,
+      "jsonValue" : null,
+      "key" : "alarm_cloro_max",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.1,
+      "jsonValue" : null,
+      "key" : "alarm_cloro_min",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_conductividad_max",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : 500,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_conductividad_min",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : 100,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_ph_max",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : 8,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_ph_min",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : 6,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_redox_max",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : 800,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_redox_min",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : 250,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_temperatura_max",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : 25,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_temperatura_min",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarm_turbidez_max",
+      "lastUpdateTs" : 1793455830310,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.1,
+      "jsonValue" : null,
+      "key" : "alarm_turbidez_min",
+      "lastUpdateTs" : 1793455830310,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -53,32 +150,48 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1773271934372,
-      "longValue" : 1773271934368,
+      "lastUpdateTs" : 1791438208172,
+      "longValue" : 1791438208172,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1777754079574,
-      "longValue" : 1777754078812,
+      "lastUpdateTs" : 1793536631364,
+      "longValue" : 1793536630058,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1777754053511,
-      "longValue" : 1777754053511,
+      "lastUpdateTs" : 1793507108014,
+      "longValue" : 1793507108014,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1777754053395,
-      "longValue" : 1777754053395,
+      "lastUpdateTs" : 1793469906883,
+      "longValue" : 1793469906883,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 42.10265262438586,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1779374856139,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -5.0284016132354745,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1779374856139,
+      "longValue" : null,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
