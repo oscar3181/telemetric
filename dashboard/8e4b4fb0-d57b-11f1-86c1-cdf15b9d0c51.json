@@ -169,7 +169,7 @@
             "enableFullscreen" : true,
             "backgroundColor" : "#111B27",
             "color" : "#E8EEF7",
-            "widgetCss" : "",
+            "widgetCss" : ".tb-time-series-chart-panel { background: #111B27 !importantimportant; }",
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
