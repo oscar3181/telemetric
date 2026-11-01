@@ -47,7 +47,7 @@
           "config" : {
             "title" : "Histórico de pH",
             "showTitle" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -163,7 +163,19 @@
               "iconSize" : "16px",
               "iconPosition" : "left",
               "displayTypePrefix" : false
-            }
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableFullscreen" : true,
+            "backgroundColor" : "#111B27",
+            "color" : "#E8EEF7",
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "sizeX" : 8,
           "sizeY" : 6
@@ -175,7 +187,7 @@
           "config" : {
             "title" : "Histórico de Cloro",
             "showTitle" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -291,7 +303,19 @@
               "iconSize" : "16px",
               "iconPosition" : "left",
               "displayTypePrefix" : false
-            }
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableFullscreen" : true,
+            "backgroundColor" : "#111B27",
+            "color" : "#E8EEF7",
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "sizeX" : 8,
           "sizeY" : 6
@@ -303,7 +327,7 @@
           "config" : {
             "title" : "Histórico de Temperatura",
             "showTitle" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -419,7 +443,19 @@
               "iconSize" : "16px",
               "iconPosition" : "left",
               "displayTypePrefix" : false
-            }
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableFullscreen" : true,
+            "backgroundColor" : "#111B27",
+            "color" : "#E8EEF7",
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "sizeX" : 8,
           "sizeY" : 6
@@ -431,7 +467,7 @@
           "config" : {
             "title" : "Histórico de Conductividad",
             "showTitle" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -547,7 +583,19 @@
               "iconSize" : "16px",
               "iconPosition" : "left",
               "displayTypePrefix" : false
-            }
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableFullscreen" : true,
+            "backgroundColor" : "#111B27",
+            "color" : "#E8EEF7",
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "sizeX" : 8,
           "sizeY" : 6
@@ -559,7 +607,7 @@
           "config" : {
             "title" : "Histórico de Turbidez",
             "showTitle" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -675,7 +723,19 @@
               "iconSize" : "16px",
               "iconPosition" : "left",
               "displayTypePrefix" : false
-            }
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableFullscreen" : true,
+            "backgroundColor" : "#111B27",
+            "color" : "#E8EEF7",
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "sizeX" : 8,
           "sizeY" : 6
@@ -687,7 +747,7 @@
           "config" : {
             "title" : "Histórico de Redox",
             "showTitle" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "dropShadow" : false,
             "borderRadius" : "8px",
             "widgetStyle" : {
@@ -803,7 +863,19 @@
               "iconSize" : "16px",
               "iconPosition" : "left",
               "displayTypePrefix" : false
-            }
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableFullscreen" : true,
+            "backgroundColor" : "#111B27",
+            "color" : "#E8EEF7",
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "sizeX" : 8,
           "sizeY" : 6
